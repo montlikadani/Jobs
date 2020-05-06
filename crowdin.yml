@@ -1,6 +1,6 @@
 files:
-  - source: /src/main/resources/locale/messages_en.yml
-    translation: /src/main/resources/locale/messages_%locale_with_underscore%.yml
+  - source: "/src/main/resources/locale/messages_en.yml"
+    translation: "/src/main/resources/locale/messages_%locale_with_underscore%.yml"
     languages_mapping:
       locale_with_underscore:
         cs: cs
