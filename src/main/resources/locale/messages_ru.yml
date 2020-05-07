@@ -1,97 +1,97 @@
 ---
 economy:
   error:
-    nomoney: '&cSorry, no money left in national bank!'
+    nomoney: 'Простите, но не осталось денег в банке!'
 limitedItem:
   error:
-    levelup: '&cYou need to level up in [jobname] to use this item!'
+    levelup: '&cВам нужно повысить свой уровень в работе под именем [jobname], чтобы использовать эту вещь!'
 general:
-  Spawner: '&r[type] Spawner'
+  Spawner: '&r[type] Спавнер'
   info:
     toplineseparator: '&7*********************** &6%playername% &7***********************'
     separator: '&7*******************************************************'
     time:
-      days: '&e%days% &6days '
-      hours: '&e%hours% &6hours '
-      mins: '&e%mins% &6min '
-      secs: '&e%secs% &6sec '
-    invalidPage: '&cInvalid page'
+      days: '&e%days% &6дней '
+      hours: '&e%hours% &6часов '
+      mins: '&e%mins% &6мин '
+      secs: '&e%secs% &6сек '
+    invalidPage: '&cНеверная страница'
     'true': '&2True'
     'false': '&cFalse'
   admin:
-    error: '&cThere was an error in the command.'
-    success: '&eYour command has been performed.'
+    error: '&cОшибка в этой команде.'
+    success: '&eВаша команда была выполнена успешно.'
   error:
-    noHelpPage: '&cThere is no help page by this number!'
-    notNumber: '&ePlease use numbers!'
-    job: '&cThe job you selected does not exist or you not joined to this'
-    noCommand: '&cThere is no command by this name!'
-    permission: '&cYou do not have permission to do that!'
-    noinfo: '&cNo information found!'
-    noinfoByPlayer: '&cNo information found by [%playername%] player name!'
-    ingame: '&cYou can use this command only in game!'
-    fromconsole: '&cYou can use this command only from console!'
-    worldisdisabled: '&cYou can''t use command in this world!'
-    newFurnaceRegistration: '&eRegistered new ownership for furnace &7[current]&e/&f[max]'
-    newBrewingRegistration: '&eRegistered new ownership for brewing stand &7[current]&e/&f[max]'
-    noFurnaceRegistration: '&cYou''ve reached max furnace count!'
-    noBrewingRegistration: '&cYou''ve reached max brewing stand count!'
+    noHelpPage: '&cНет страницы справочника с этим номером!'
+    notNumber: '&eПожалуйста, используйте целые числа!'
+    job: '&cУказанной профессии не существует или вы не устроились в ней'
+    noCommand: '&cТакой команды не существует!'
+    permission: '&cУ вас нет прав на совершение этого дествия!'
+    noinfo: '&cИнформация не найдена!'
+    noinfoByPlayer: '&cИнформация не найдена связанная с игроком [%playername%]!'
+    ingame: '&cВы можете использовать эту команду только в игре!'
+    fromconsole: '&cВы можете использовать эту команду только в консоле!'
+    worldisdisabled: '&cВы не можете использовать эту команду в этом мире!'
+    newFurnaceRegistration: '&eЗарегистрирован новый владелец печи &7[current]&e/&f[max]'
+    newBrewingRegistration: '&eЗарегистрирован новый владелец варочной стойки &7[current]&e/&f[max]'
+    noFurnaceRegistration: '&cВы достигли лимита действующих печей!'
+    noBrewingRegistration: '&cВы достигли лимита варочных стоек!'
 command:
   help:
     output:
-      info: Type /jobs [cmd] ? for more information about a command.
-      cmdUsage: '&2Usage: &7[command]'
+      info: Используйте /jobs [cmd] ? Для более точной информации.
+      cmdUsage: '&2Использование: &7[command]'
       label: Jobs
       cmdInfoFormat: '[command] &f- &2[description]'
       cmdFormat: '&7/[command] &f[arguments]'
       helpPageDescription: '&2* [description]'
-      title: '&e-------&e ======= &6Jobs &e======= &e-------'
-      page: '&e-----&e ====== Page &6[1] &eof &6[2] &e====== &e-----'
+      title: '&e-------&e ======= &6Работы &e======= &e-------'
+      page: '&e-----&e ====== Страница &6[1] &eиз &6[2] &e====== &e-----'
       fliperSimbols: '&e----------'
-      prevPage: '&2----<< &6Prev '
-      prevPageOff: '&7----<< Prev '
-      nextPage: '&6 Next &2>>----'
-      nextPageOff: '&7 Next >>----'
+      prevPage: '&2----<< &6Предыдущая страница '
+      prevPageOff: '&7----<< Предыдущая страница '
+      nextPage: '&6 Следующая страница &2>>----'
+      nextPageOff: '&7 Следующая страница >>----'
       pageCount: '&2[current]/[total]'
       pageCountHover: '&e[totalEntries] entries'
-      prevPageGui: '&6Previous page '
-      nextPageGui: '&6Next Page'
+      prevPageGui: '&6Предыдущая страница '
+      nextPageGui: '&6Следующая страница'
   moneyboost:
     help:
-      info: Boosts money gain for all players
+      info: Ускоряет получение денег для всех игроков
       args: '[jobname]/all/reset [rate]/all'
     output:
-      allreset: All money boosts turned off
-      jobsboostreset: Money boost has been turned off for %jobname%
-      nothingtoreset: Nothing to reset
-      boostalladded: Money boost of %boost% added for all jobs!
-      boostadded: Money boost of &e%boost% &aadded for &e%jobname%!
-      infostats: '&c-----> &aMoney rate x%boost% enabled&c <-------'
+      allreset: Ускорение получения денег отключено
+      jobsboostreset: Ускорение получения денег %jobname% было отключено
+      nothingtoreset: Нечего сбросить
+      boostalladded: Ускорение получения денег x%boost% было добавлено для всех работ!
+      boostadded: Ускорение получения денег x&e%boost% &aдобавлено к &e%jobname%!
+      infostats: '&c-----> &aУскорение получения денег x%boost% включено&c <-------'
   pointboost:
     help:
-      info: Boosts point gain for all players
+      info: Ускоряет получение очков для всех игроков
       args: '[jobname]/all/reset [rate]/all'
     output:
-      allreset: All point boosts turned off
-      jobsboostreset: Point boost has been turned off for %jobname%
-      nothingtoreset: Nothing to reset
-      boostalladded: Points boost of %boost% added for all jobs!
-      boostadded: Points boost of &e%boost% &aadded for &e%jobname%!
-      infostats: '&c-----> &aPoints rate x%boost% enabled&c <-------'
+      allreset: Ускорение получения очков отключено
+      jobsboostreset: Ускорение получения очков %jobname% было отключено
+      nothingtoreset: Нечего сбросить
+      boostalladded: Ускорение получения очков x%boost% было добавлено для всех работ!
+      boostadded: Ускорение получения очков x&e%boost% &aдобавлено к &e%jobname%!
+      infostats: '&c-----> &aУскорение получения очков x%boost% включено&c <-------'
   expboost:
     help:
-      info: Boosts exp gain for all players
+      info: Ускоряет получение опыта для всех игроков
       args: '[jobname]/all/reset [rate]/all'
     output:
-      allreset: All exp boosts turned off
-      jobsboostreset: Exp boost has been turned off for %jobname%
-      nothingtoreset: Nothing to reset
-      boostalladded: Exp boost of %boost% added for all jobs!
-      boostadded: Exp boost of &e%boost% &aadded for &e%jobname%!
-      infostats: '&c-----> &aExp rate x%boost% enabled&c <-------'
+      allreset: Ускорение получения опыта отключено
+      jobsboostreset: Ускорение получения опыта %jobname% было отключено
+      nothingtoreset: Нечего сбросить
+      boostalladded: Ускорение получения опыта %boost% было добавлено для всех работ!
+      boostadded: Ускорение получения опыта &e%boost% &aдобавлено к &e%jobname%!
+      infostats: '&c-----> &aУскорение получения опыта x%boost% включено&c <-------'
   itembonus:
     help:
-      info: Check item bonus
+      info: Проверить бонусы.
       args: ''
     output:
       list: '&e[jobname]: %money% %points% %exp%'
@@ -100,11 +100,11 @@ command:
       hoverLevelLimits: "&7From level: %from% \n&7Until level: %until%"
   edititembonus:
     help:
-      info: Edit item boost bonus
+      info: Редактировать бонусы работ.
       args: list/add/remove [jobname] [itemBoostName]
   bonus:
     help:
-      info: Show job bonuses
+      info: Показывает бонусы работ.
       args: '[jobname]'
     output:
       topline: '&7**************** &2[money] &6[points] &e[exp] &7****************'
@@ -117,36 +117,36 @@ command:
       area: ' &eArea bonus: &2%money% &6%points% &e%exp%'
       mcmmo: ' &eMcMMO bonus: &2%money% &6%points% &e%exp%'
       final: ' &eFinal bonus: &2%money% &6%points% &e%exp%'
-      finalExplanation: ' &eDoes not include Petpay and Near spawner bonus/penalty'
+      finalExplanation: ' &eНе включает бонусы/пенальти Petpay и Спавнеров'
   convert:
     help:
-      info: Converts the database system from one system to another. If you are currently running SQLite, this will convert it to MySQL and vice versa.
+      info: Конвертирует данные из одного вида БД в другой. Если сейчас все работает под SQLite, то команда конвертирует все данные в MySQL или наоборот.
       args: ''
   limit:
     help:
-      info: Shows payment limits for jobs
+      info: Показывает лимит оплаты для работы.
       args: '[playername]'
     output:
-      moneytime: '&eTime left until money limit resets: &2%time%'
-      moneyLimit: '&eMoney limit: &2%current%&e/&2%total%'
-      exptime: '&eTime left until Exp limit resets: &2%time%'
-      expLimit: '&eExp limit: &2%current%&e/&2%total%'
-      pointstime: '&eTime left until Point limit resets: &2%time%'
-      pointsLimit: '&ePoint limit: &2%current%&e/&2%total%'
-      reachedmoneylimit: '&4You have reached money limit in given time!'
-      reachedmoneylimit2: '&eYou can check your limit with &2/jobs limit &ecommand'
-      reachedmoneylimit3: '&eMoney earned is now reduced exponentially... But you still earn a little!'
-      reachedexplimit: '&4You have reached exp limit in given time!'
-      reachedexplimit2: '&eYou can check your limit with &2/jobs limit &ecommand'
-      reachedpointslimit: '&4You have reached exp limit in given time!'
-      reachedpointslimit2: '&eYou can check your limit with &2/jobs limit &ecommand'
-      notenabled: '&eMoney limit is not enabled'
+      moneytime: '&eДо сброса лимита: &2%time%'
+      moneyLimit: '&eЛимит денег: &2%current%&e/&2%total%'
+      exptime: '&eДо сброса XP лимита: &2%time%'
+      expLimit: '&eЛимит опыта: &2%current%&e/&2%total%'
+      pointstime: '&eДо сброса лимита очков: &2%time%'
+      pointsLimit: '&eЛимит очков: &2%current%&e/&2%total%'
+      reachedmoneylimit: '&4Вы достигли предела денег, которые можно получить!'
+      reachedmoneylimit2: '&eВы можете проверить лимит командой &2/jobs limit'
+      reachedmoneylimit3: '&eВаш заработок постепенно уменьшается... Но вы еще можете заработать немного!'
+      reachedexplimit: '&4Вы достигли предела опыта, которые можно получить!'
+      reachedexplimit2: '&eВы можете проверить лимит командой &2/jobs limit'
+      reachedpointslimit: '&4Вы достигли предела очков, которые можно получить!'
+      reachedpointslimit2: '&eВы можете проверить лимит командой &2/jobs limit'
+      notenabled: '&eЛимит денег выключен'
   resetlimit:
     help:
-      info: Resets a player's payment limits
+      info: Сбрасывает установленные лимиты игроков
       args: '[playername]'
     output:
-      reseted: '&ePayment limits have been reset for: &2%playername%'
+      reseted: '&eУспешно сброшен лимит игрока: &2%playername%'
   resetquest:
     help:
       info: Resets a player's quest
@@ -156,40 +156,40 @@ command:
       noQuests: '&eCan''t find any quests'
   points:
     help:
-      info: Shows how much points does a player have.
+      info: Выводит кол-во очков у игрока.
       args: '[playername]'
-    currentpoints: ' &eCurrent point amount: &6%currentpoints%'
-    totalpoints: ' &eTotal amount of collected points until now: &6%totalpoints%'
+    currentpoints: ' &eТекущий баланс очков: &6%currentpoints%'
+    totalpoints: ' &eОчков за все время: &6%totalpoints%'
   editpoints:
     help:
-      info: Edit player's points.
+      info: Позволяет редактировать очки игроков.
       args: set/add/take [playername] [amount]
     output:
-      set: '&ePlayers (&6%playername%&e) points was set to &6%amount%'
-      add: '&ePlayer (&6%playername%&e) got additional &6%amount% &epoints. Now they have &6%total%'
-      take: '&ePlayer (&6%playername%&e) lost &6%amount% &epoints. Now they have &6%total%'
+      set: '&eКоличество очков игрока &6%playername%&e приведены к &6%amount% ед.'
+      add: '&eИгрок &6%playername%&e получил дополнительные &6%amount% &eочков. Сейчас у него всего &6%total%'
+      take: '&eИгрок &6%playername%&e потерял &6%amount% &eочков. Сейчас у него всего &6%total%'
   editjobs:
     help:
-      info: Edit current jobs.
+      info: Редактировать существующие работы.
       args: ''
       list:
-        job: '&eJobs:'
+        job: '&eРаботы:'
         jobs: '  -> [&e%jobname%&r]'
         actions: '    -> [&e%actionname%&r]'
         material: '      -> [&e%materialname%&r]      '
         materialRemove: '&c[X]'
         materialAdd: '      -> &e[&2+&e]'
-        money: '        -> &eMoney: &6%amount%'
-        exp: '        -> &eExp: &6%amount%'
-        points: '        -> &ePoints: &6%amount%'
+        money: '        -> &eДеньги: &6%amount%'
+        exp: '        -> &eОпыт: &6%amount%'
+        points: '        -> &eОчки: &6%amount%'
       modify:
-        newValue: '&eEnter new value'
-        enter: '&eEnter new name or press '
-        hand: '&6HAND '
-        handHover: '&6Press to grab info from item in your hand'
+        newValue: '&eВведите новое значение'
+        enter: '&eУкажите новое название или нажмите '
+        hand: '&6РУКА '
+        handHover: '&6Нажмите, чтобы получить информацию о предмете в вашей руке'
         or: '&eor '
-        look: '&6LOOKING AT'
-        lookHover: '&6Press to grab info from block you are looking'
+        look: '&6СМОТРЕТЬ НА'
+        lookHover: '&6Нажмите, чтобы получить информацию о блоке, на который вы смотрите'
   editquests:
     help:
       info: Edit current quests.
@@ -203,8 +203,8 @@ command:
         objectiveRemove: '&c[X]'
         objectiveAdd: '      -> &e[&2+&e]'
       modify:
-        newValue: '&eEnter new value'
-        enter: '&eEnter new name or press '
+        newValue: '&eВведите новое значение'
+        enter: '&eВведите новое название или нажмите '
         hand: '&6HAND '
         handHover: '&6Press to grab info from item in your hand'
         or: '&eor '
@@ -212,22 +212,22 @@ command:
         lookHover: '&6Press to grab info from block you are looking'
   blockinfo:
     help:
-      info: Shows information for the block you are looking at.
+      info: Показывает информацию о блоке, на который вы смотрите.
       args: ''
     output:
-      name: ' &eBlock name: &6%blockname%'
-      id: ' &eBlock id: &6%blockid%'
-      data: ' &eBlock data: &6%blockdata%'
-      usage: ' &eUsage: &6%first% &eor &6%second%'
+      name: ' &eНазвание блока: &6%blockname%'
+      id: ' &eID блока: &6%blockid%'
+      data: ' &eДанные блока: &6%blockdata%'
+      usage: ' &eИспользование: &6%first% &eили &6%second%'
   iteminfo:
     help:
-      info: Shows information for the item you are holding.
+      info: Отображает информацию о предмете, который вы держите.
       args: ''
     output:
-      name: ' &eItem name: &6%itemname%'
-      id: ' &eItem id: &6%itemid%'
-      data: ' &eItem data: &6%itemdata%'
-      usage: ' &eUsage: &6%first% &eor &6%second%'
+      name: ' &eНазвание предмета: &6%itemname%'
+      id: ' &eID предмета: &6%itemid%'
+      data: ' &eДанные предмета: &6%itemdata%'
+      usage: ' &eИспользование: &6%first% &eor &6%second%'
   placeholders:
     help:
       info: List out all placeholders
@@ -238,198 +238,198 @@ command:
       parse: '&6[placeholder] &7by [source] &6result &8|&f[result]&8|'
   entitylist:
     help:
-      info: Shows all possible entities that can be used with the plugin.
+      info: Показывает все возможные сущности, которые могут быть задействованы плагином.
       args: ''
   stats:
     help:
-      info: Show the level you are in each job you are part of.
+      info: Показывет Ваш уровень по отдельным работам.
       args: '[playername]'
     error:
-      nojob: Please join a job first.
-    output: 'Level %joblevel% for %jobname%: %jobxp%/%jobmaxxp% xp'
+      nojob: Сперва устройтесь на работу.
+    output: 'Уровень%joblevel% %jobname% : %jobxp%/%jobmaxxp% опыта'
     bossBarOutput: 'Lvl %joblevel% %jobname%: %jobxp%/%jobmaxxp% xp%gain%'
     bossBarGain: ' &7(&f%gain%&7)'
   shop:
     help:
-      info: Opens special jobs shop.
+      info: Открывает специальный магазин за бонусные очки.
       args: ''
     info:
-      title: '&e------- &8Jobs shop &e-------'
-      currentPoints: '&eYou have: &6%currentpoints%'
-      price: '&ePrice: &6%price%'
-      reqJobs: '&eRequired jobs:'
+      title: '&e--- &8Магазин спецтоваров &e----'
+      currentPoints: '&eКол-во очков, которые у вас: &6%currentpoints%'
+      price: '&eЦена: &6%price%'
+      reqJobs: '&eТребуемые работы:'
       reqJobsList: '  &6%jobsname%&e: &e%level% lvl'
-      reqTotalLevel: '&6Required total level: &e%totalLevel%'
+      reqTotalLevel: '&6Требуется совокупный уровень: &e%totalLevel%'
       reqJobsColor: '&c'
       reqJobsLevelColor: '&4'
       reqTotalLevelColor: '&4'
-      cantOpen: '&cCan''t open this page'
-      NoPermForItem: '&cYou don''t have required permissions for this item!'
-      NoPermToBuy: '&cNo permissions to buy this item'
-      NoJobReqForitem: '&cYou don''t have the required job (&6%jobname%&e) with required (&6%joblevel%&e) level'
-      NoPoints: '&cYou don''t have enough points'
-      NoTotalLevel: '&cTotal jobs level is too low (%totalLevel%)'
-      Paid: '&eYou have paid &6%amount% &efor this item'
+      cantOpen: '&cНе могу открыть эту страницу'
+      NoPermForItem: '&cУ Вас нет прав на совершение этого действия!'
+      NoPermToBuy: '&cУ Вас нет прав на покупку этого товара!'
+      NoJobReqForitem: '&cВы не работаете &6(%jobname%), &eлибо не достигли &6(%joblevel%) &eуровня'
+      NoPoints: '&cУ Вас недостаточно очков'
+      NoTotalLevel: '&cУ Вас недостаточный совокупный уровень работ. Требуется (%totalLevel%)'
+      Paid: '&eВы заплатили &6%amount% &eза эту вещь'
   archive:
     help:
-      info: Shows all jobs saved in archive by user.
+      info: Показывает все работы, сохраненные в архиве пользователем.
       args: '[playername]'
     error:
-      nojob: There is no jobs saved.
+      nojob: Нет сохранёных работ.
   give:
     help:
-      info: Gives item by jobs name and item category name. Player name is optional
+      info: Выдать предмет по названию Работы либо по категории. Имя игрока необязательно.
       args: '[playername] [jobname] [items/limiteditems] [jobitemname]'
     output:
-      notonline: '&4Player with that name is not online!'
-      noitem: '&4Can''t find any item by given name!'
+      notonline: '&4Этот игрок не в сети!'
+      noitem: '&4Нет предмета с таким именем!'
   info:
     help:
-      title: '&2*** &eJobs&2 ***'
-      info: Show how much each job is getting paid and for what.
-      penalty: '&eThis job has a penalty of &c[penalty]% &ebecause there are too many players working in it.'
-      bonus: '&eThis job has a bonus of &2[bonus]% &ebecause there are not enough players working in it.'
+      title: '&2*** &eРаботы&2 ***'
+      info: Показывает информацию о работе.
+      penalty: '&eРабота &c[penalty]% &eв данный момент ограничена, потому что уже достаточно игроков на этой работе.'
+      bonus: '&eУ этой работы предусмотрен бонус &2[bonus]%&e, т.к недостаточно игроков на этой работе.'
       args: '[jobname] [action]'
-      actions: '&eValid actions are: &f%actions%'
-      max: ' - &emax level:&f '
-      newMax: ' &eMax level: &f[max]'
+      actions: '&eДопустимые действия: &f%actions%'
+      max: ' - &eмаксимальный уровень:&f '
+      newMax: ' &eНовый максимальный уровень: &f[max]'
       material: '&7%material%'
-      levelRange: ' &a(&e%levelFrom% &a- &e%levelUntil% &alevels)'
-      levelFrom: ' &a(from &e%levelFrom% &alevel)'
-      levelUntil: ' &a(until &e%levelUntil% &alevel)'
+      levelRange: ' &a(&e%levelFrom% &a- &e%levelUntil% &aуровней)'
+      levelFrom: ' &a(от &e%levelFrom% &aуровня)'
+      levelUntil: ' &a(вплоть до &e%levelUntil% &aуровня)'
       money: ' &2%money%$'
       points: ' &6%points%pts'
       exp: ' &e%exp%xp'
     gui:
-      pickjob: '&ePick your job!'
-      jobinfo: '&e[jobname] info!'
-      actions: '&eValid actions are:'
-      leftClick: '&eLeft Click for more info'
-      middleClick: '&eMiddle Click to leave this job'
-      rightClick: '&eRight click to join job'
-      leftSlots: '&eLeft slots:&f '
-      working: '&2&nAlready working'
-      cantJoin: '&cYou can''t join to the selected job.'
-      max: '&eMax level:&f '
-      back: '&e<<< Back'
+      pickjob: '&eВыберите Вашу работу!'
+      jobinfo: '&eИнформация о[jobname]!'
+      actions: '&eДоступные действия:'
+      leftClick: '&eНажмите ЛКМ, чтобы узнать подробнее'
+      middleClick: '&eКликните средней кнопкой мыши чтобы покинуть эту профессию'
+      rightClick: '&eНажмите ПКМ, чтобы устроиться на работу'
+      leftSlots: '&e"Осталось вакансий":&f '
+      working: '&2&nТекущая работа'
+      cantJoin: '&cВы не можете устроиться в указанной профессии.'
+      max: '&eМаксимальный уровень:&f '
+      back: '&e<--Вернуться'
     output:
       break:
-        info: '&eBreak'
-        none: '%jobname% does not get money for breaking blocks.'
+        info: 'Разрушение блоков'
+        none: '%jobname% не получает денег за разрушение блоков.'
       tntbreak:
-        info: '&eTNTBreak'
-        none: '%jobname% does not get money for breaking blocks with TNT.'
+        info: 'TNT-подрыв'
+        none: '%jobname% не получает денег за подрыв блоков с помощью TNT.'
       place:
-        info: '&ePlace'
-        none: '%jobname% does not get money for placing blocks.'
+        info: 'Размещение блоков'
+        none: '%jobname% не получает денег за размещение блоков.'
       striplogs:
-        info: '&eStrip logs'
-        none: '%jobname% does not get money for stripping logs.'
+        info: '&eНарубить брёвен'
+        none: '%jobname% не зарабатывает на рубке брёвен.'
       kill:
-        info: '&eKill'
-        none: '%jobname% does not get money for killing monsters.'
+        info: 'Сражение с мобами'
+        none: '%jobname% не получает денег за убийство мобов.'
       mmkill:
-        info: '&eMMKill'
-        none: '%jobname% does not get money for killing Mythic monsters.'
+        info: 'MMKill'
+        none: '%jobname% не получает денег за убийство вымышленных мобов.'
       fish:
-        info: '&eFish'
-        none: '%jobname% does not get money from fishing.'
+        info: 'Рыбная ловля'
+        none: '%jobname% не получает денег за рыбалку.'
       craft:
-        info: '&eCraft'
-        none: '%jobname% does not get money from crafting.'
+        info: 'Крафт'
+        none: '%jobname% не получает денег за крафт.'
       smelt:
-        info: '&eSmelt'
-        none: '%jobname% does not get money from smelting.'
+        info: 'Обработка в печи'
+        none: '%jobname% не получает денег за обработку в печи.'
       brew:
-        info: '&eBrew'
-        none: '%jobname% does not get money from brewing.'
+        info: 'Зельеварение'
+        none: '%jobname% не получает денег за зельеварение.'
       eat:
-        info: '&eEat'
-        none: '%jobname% does not get money from eating food.'
+        info: 'Поглощение еды'
+        none: '%jobname% не получает денег за поедание еды.'
       dye:
-        info: '&eDye'
-        none: '%jobname% does not get money from dyeing.'
+        info: 'Покраска'
+        none: '%jobname% не получает денег за покраску блоков шерсти.'
       enchant:
-        info: '&eEnchant'
-        none: '%jobname% does not get money from enchanting.'
+        info: 'Зачарование'
+        none: '%jobname% не получает денег за зачарование.'
       vtrade:
-        info: '&eVillager trade'
-        none: '%jobname% does not get money for trading a villager.'
+        info: '&eТорговля с жителями'
+        none: '%jobname% не зарабатывает на торговле с жителями.'
       repair:
-        info: '&eRepair'
-        none: '%jobname% does not get money from repairing.'
+        info: 'Восстановление предметов'
+        none: '%jobname% не получает денег за восстановление предметов.'
       breed:
-        info: '&eBreed'
-        none: '%jobname% does not get money from breeding.'
+        info: 'Размножение млекопитающих'
+        none: '%jobname% не получает денег за размножение млекопитающих.'
       tame:
-        info: '&eTame'
-        none: '%jobname% does not get money from taming.'
+        info: 'Приручение животных'
+        none: '%jobname% не получает денег за приручание.'
       milk:
-        info: '&eMilk'
-        none: '%jobname% does not get money from milking cows.'
+        info: 'Доение коров'
+        none: '%jobname% не получает денег за доение коров.'
       shear:
-        info: '&eShear'
-        none: '%jobname% does not get money from shearing sheep.'
+        info: 'Стрижка овец'
+        none: '%jobname% не получает денег за стрижку овец.'
       explore:
-        info: '&eExplore'
-        none: '%jobname% does not get money from exploring.'
+        info: 'Исследование'
+        none: '%jobname% не получает денег за исследование.'
       custom-kill:
-        info: '&eCustom kill'
-        none: '%jobname% does not get money from custom player kills.'
+        info: 'Специальное ликвидация'
+        none: '%jobname% не получает денег за убийство игрока.'
       collect:
-        info: '&eCollect'
-        none: '%jobname% does not get money for collecting blocks.'
+        info: '&eДобыча'
+        none: '%jobname% не зарабатывает на добыче блоков.'
       bake:
-        info: '&eBake'
-        none: '%jobname% does not get money for cooking foods.'
+        info: '&eВыпекание'
+        none: '%jobname% не зарабатывает на выпекании еды.'
   playerinfo:
     help:
-      info: Show how much each job is getting paid and for what on another player.
+      info: Вывести информацию о игроке.
       args: '[playername] [jobname] [action]'
   join:
     help:
-      info: Join the selected job.
+      info: Устроиться работу.
       args: '[jobname]'
     error:
-      alreadyin: You are already in the job %jobname%.
-      fullslots: You cannot join the job %jobname%, there are no slots available.
-      maxjobs: You have already joined too many jobs.
-      rejoin: '&cCan''t rejoin this job. Wait [time]'
-    rejoin: '&aClick to rejoin this job: '
-    success: You have joined the job %jobname%.
-    confirm: '&2Click to confirm joining action for the &7[jobname] &2job.'
+      alreadyin: Вы уже устроились на работу %jobname%.
+      fullslots: Невозможно устроиться на %jobname% - нет свободных мест.
+      maxjobs: Слишком много работ.
+      rejoin: '&cВы не можете устроиться прямо сейчас. Подождите [time]'
+    rejoin: '&aКликните чтобы заново устроиться на эту профессию: '
+    success: Вы устроились на %jobname%.
+    confirm: '&2Кликните, чтобы подтвердить приём на работу &7[jobname]'
   leave:
     help:
-      info: Leave the selected job.
+      info: Уволиться с работы.
       args: '[oldplayerjob]'
-    success: You have left the job %jobname%.
-    confirmationNeed: '&cAre you sure you want to leave from&e [jobname]&c job? Type the command again within&6 [time] seconds &cto confirm!'
+    success: Вы уволились с %jobname%.
+    confirmationNeed: '&cВы действительно хотите покинуть профессию&e [jobname]&c? Для подтверждения, введите команду повторно в течение&6 [time] секунд!'
   leaveall:
     help:
-      info: Leave all your jobs.
+      info: Уволиться со всех работ.
     error:
-      nojobs: You do not have any jobs to leave!
-    success: You have left all your jobs.
-    confirmationNeed: '&cAre you sure you want to leave from all jobs? Type the command again within&6 [time] seconds &cto confirm!'
+      nojobs: Нет работ с которых можно уволится!
+    success: Вы уволились со всех работ.
+    confirmationNeed: '&cВы действительно хотите покинуть все ваши профессии? Для подтверждения, введите команду повторно в течение&6 [time] секунд!'
   explored:
     help:
-      info: Check who visited this chunk
+      info: Проверить, кто посещал этот чанк.
     error:
-      noexplore: No one visited this chunk
-    fullExplore: '&aThis chunk is fully explored'
+      noexplore: Никто ещё не был замечен на этом чанке
+    fullExplore: '&aЭта область исследована полностью'
     list: '&e%place%. %playername%'
   browse:
     help:
-      info: List the jobs available to you.
+      info: Вывести список доступных работ.
     error:
-      nojobs: There are no jobs you can join.
+      nojobs: Нет доступных работ.
     output:
-      header: 'You are allowed to join the following jobs:'
-      footer: For more information type in /jobs info [JobName]
-      totalWorkers: ' &7Workers: &e[amount]'
-      penalty: ' &4Penalty: &c[amount]%'
-      bonus: ' &2Bonus: &a[amount]%'
-      newHeader: '&2========== [amount] Available Jobs ========='
+      header: 'Доступные работы:'
+      footer: Для информации введите /jobs info [JobName]
+      totalWorkers: ' &7Рабочих: &e[amount]'
+      penalty: ' &4Ограниченых: &c[amount]%'
+      bonus: ' &2Бонус: &a[amount]%'
+      newHeader: '&2========== [amount] Доступные Работы ========='
       description: '[description]'
       list: '    &8[place]. &7[jobname]'
       console:
@@ -439,15 +439,15 @@ command:
         penalty: ' &4Penalty: &c[amount]%'
         bonus: ' &2Bonus: &a[amount]%'
         list: ' &6[jobname]'
-        newMax: ' &eMax level: &f[max]'
-      click: '&bClick on the job to see more info about it!'
-      detailed: '&bClick to see more detailed list on job actions'
+        newMax: ' &eМаксимальный уровень: &f[max]'
+      click: '&bКликните по работе, чтобы узнать больше про неё!'
+      detailed: '&bКликните, чтобы увидеть детальный список действий по данной работе'
       jobHeader: '&2========== [jobname] ========='
-      chooseJob: '&7&n&oChoose this job'
-      chooseJobHover: '&7Click here to get this job'
+      chooseJob: '&7&n&oВыбрать эту работу'
+      chooseJobHover: '&7Кликните здесь, чтобы получить эту работу'
   clearownership:
     help:
-      info: Clear block ownership
+      info: Очистить информацию о владельце.
       args: '[playername]'
     output:
       cleared: '&2Removed &7[furnaces] &2furnaces and &7[brewing] &2brewing stands'
@@ -456,20 +456,20 @@ command:
       info: Skip defined quest and get new one
       args: '[jobname] [questname] (playerName)'
     output:
-      questSkipForCost: '&2You skipped the quest and paid:&e %amount%$'
+      questSkipForCost: '&2Ты пропустил задание и заплатил:&e %amount%$'
   quests:
     help:
-      info: List available quests
+      info: Отобразить список доступных квестов.
       args: '[playername]'
     error:
-      noquests: '&cThere are no quests'
+      noquests: '&cКвесты не найдены'
     toplineseparator: '&7*********************** &6[playerName] &2(&f[questsDone]&2) &7***********************'
     status:
       changed: '&2The quests status has been changed to&r %status%'
       started: '&aStarted'
       stopped: '&cStopped'
     output:
-      completed: '&2      !Completed!&r      '
+      completed: '&2      !Завершено!&r      '
       questLine: '[progress] &7[questName] &f[done]&7/&8[required]'
       skip: '&7Click to skip this quest'
       skips: '&7Left skips: &f[skips]'
@@ -508,8 +508,8 @@ command:
     output:
       topline: '&aTop&e %amount% &aplayers by &e%jobname% &ajob'
       list: '&e%number%&a. &e%playername% &alvl &e%level% &awith&e %exp% &aexp'
-      prev: '&e<<<<< Prev page &2|'
-      next: '&2|&e Next Page >>>>'
+      prev: '&e<<<<< Предыдущая страница &2|'
+      next: '&2|&e Следующая страница >>>>'
       show: '&2Show from &e[from] &2until &e[until] &2top list'
   gtop:
     help:
@@ -520,8 +520,8 @@ command:
     output:
       topline: '&aTop&e %amount% &aplayers by global job level'
       list: '&e%number%&a. &e%playername% &alvl &e%level% &awith&e %exp% &aexp'
-      prev: '&e<<<<< Prev page &2|'
-      next: '&2|&e Next Page >>>>'
+      prev: '&e<<<<< Предыдущая страница &2|'
+      next: '&2|&e Следующая страница >>>>'
       show: '&2Show from &e[from] &2until &e[until] &2global top list'
   area:
     help:
@@ -545,14 +545,14 @@ command:
       wgDontExist: '&eWorldGuard area by this name does not exist'
   log:
     help:
-      info: Shows statistics.
+      info: Показать статистику.
       args: '[playername]'
     output:
       topline: '&7************************* &6%playername% &7*************************'
       ls: '&7* &6%number%. &3%action%: &6%item% &eqty: %qty% %money%%exp%%points%'
-      money: '&6money: %amount% '
+      money: '&6деньги: %amount% '
       exp: '&eexp: %amount% '
-      points: '&6points: %amount%'
+      points: '&6очки: %amount%'
       totalIncomes: '    &6Total money:&2 %money%&6, Total exp:&2 %exp%&6, Total points:&2 %points%'
       bottomline: '&7***********************************************************'
       prev: '&e<<<<< Prev page &2|'
@@ -565,12 +565,12 @@ command:
     output:
       topline: '&7*********************** &6Global statistics &7***********************'
       ls: '&7* &6%number%. &3%action%: &6%item% &eqty: %qty% %money%%exp%%points%'
-      money: '&6money: %amount% '
-      exp: '&eexp: %amount% '
-      points: '&6points: %amount%'
+      money: '&6деньги: %amount% '
+      exp: '&eопыт: %amount% '
+      points: '&6очки: %amount%'
       totalIncomes: '    &6Total money:&2 %money%&6, Total exp:&2 %exp%&6, Total points:&2 %points%'
       bottomline: '&7**************************************************************'
-      nodata: '&cData not found'
+      nodata: '&cДанные не найдены'
   transfer:
     help:
       info: Transfer a player's job from an old job to a new job.
@@ -638,10 +638,10 @@ command:
     output:
       turnedoff: '&4This feature is turned off!'
       paid:
-        main: '&aYou got:'
-        money: '&e[amount] money'
-        exp: '&7[exp] exp'
-        points: '&6[points] points'
+        main: '&aВы получили:'
+        money: '&e[amount] денег'
+        exp: '&7[exp] опыта'
+        points: '&6[points] очков'
       'on': '&aToggled: &aON'
       'off': '&aToggled: &4OFF'
 message:
@@ -660,7 +660,7 @@ message:
   boostStarted: '&eJobs boost time have been started!'
   boostStoped: '&eJobs boost time have been ended!'
   crafting:
-    fullinventory: '&cYour inventory is full!'
+    fullinventory: '&cВаш инвентарь заполнен!'
 signs:
   List: '&0[number].&8[player]&7:&4[level]'
   questList: '&0[number].&8[player]&7:&4[quests]'
