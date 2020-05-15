@@ -24,7 +24,7 @@ general:
   error:
     noHelpPage: '&cEs gibt keine Hilfeseite mit dieser Nummer.'
     notNumber: '&eBitte benutze Nummern!'
-    job: '&cThe job you selected does not exist or you not joined to this'
+    job: '%cDer Job des du ausgesucht hast existiert nicht oder du bist nicht disem angestellt'
     noCommand: '&cEs gibt keinen Befehl mit diesem Namen!'
     permission: '&cDu hast keine Berechtigung für diesen Befehl!'
     noinfo: '&cKeine Informationen vorhanden.'
@@ -53,9 +53,9 @@ command:
       nextPage: '&6 Nächste Seite &2>>----'
       nextPageOff: '&7 Nächste Seite >>----'
       pageCount: '&2[current]/[total]'
-      pageCountHover: '&e[totalEntries] entries'
-      prevPageGui: '&6Previous page '
-      nextPageGui: '&6Next Page'
+      pageCountHover: '&e[totalEntries] einträge'
+      prevPageGui: '&6Vorherige Seite '
+      nextPageGui: '&6Nächste Seite'
   moneyboost:
     help:
       info: Der Geldbonus für alle Spieler wird erhöht.
@@ -108,15 +108,15 @@ command:
       args: '[jobname]'
     output:
       topline: '&7**************** &2[money] &6[points] &e[exp] &7****************'
-      permission: ' &ePerm bonus: &2%money% &6%points% &e%exp%'
-      item: ' &eItem bonus: &2%money% &6%points% &e%exp%'
-      global: ' &eGlobal bonus: &2%money% &6%points% &e%exp%'
-      dynamic: ' &eDynamic bonus: &2%money% &6%points% &e%exp%'
-      nearspawner: ' &eSpawner bonus: &2%money% &6%points% &e%exp%'
-      petpay: ' &ePetPay bonus: &2%money% &6%points% &e%exp%'
-      area: ' &eArea bonus: &2%money% &6%points% &e%exp%'
-      mcmmo: ' &eMcMMO bonus: &2%money% &6%points% &e%exp%'
-      final: ' &eFinal bonus: &2%money% &6%points% &e%exp%'
+      permission: ' &eRechte Bonus:&2%money% &6%points% &e%exp%'
+      item: ' &eItem Bonus: &2%money% &6%points% &e%exp%'
+      global: ' &eGlobaler Bonus: &2%money% &6%points% &e%exp%'
+      dynamic: ' &eDynamischer Bonus: &2%money% &6%points% &e%exp%'
+      nearspawner: ' &eSpawner Bonus: &2%money% &6%points% &e%exp%'
+      petpay: ' &ePetPay Bonus: &2%money% &6%points% &e%exp%'
+      area: ' &eBereichs Bonus: &2%money% &6%points% &e%exp%'
+      mcmmo: ' &eMcMMO Bonus: &2%money% &6%points% &e%exp%'
+      final: ' &eFinaler Bonus: &2%money% &6%points% &e%exp%'
       finalExplanation: ' &ePetpay und Spawner Bonus/Strafe nicht eingerechnet'
   convert:
     help:
@@ -192,7 +192,7 @@ command:
         lookHover: '&6Klick mich um Infos über den Block, den du gerade anschaust, auszulesen.'
   editquests:
     help:
-      info: Edit current quests.
+      info: Editiere aktuelle Quests.
       args: ''
       list:
         quest: '&eQuests:'
@@ -203,8 +203,8 @@ command:
         objectiveRemove: '&c[X]'
         objectiveAdd: '      -> &e[&2+&e]'
       modify:
-        newValue: '&eEnter new value'
-        enter: '&eEnter new name or press '
+        newValue: '&eGib einen Wert ein'
+        enter: '&eGib einen Namen ein oder drücke '
         hand: '&6HAND '
         handHover: '&6Press to grab info from item in your hand'
         or: '&eor '
