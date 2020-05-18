@@ -285,7 +285,7 @@ command:
       noitem: '&4Nincs találat ezzel a névvel lévő tárgyról!'
   info:
     help:
-      title: '&2*** &eJobs&2 ***'
+      title: '&2*** &eMunkák&2 ***'
       info: Megmutatja, hogy mennyi minden munkát fizet, és miért.
       penalty: '&eEz a munka &c[penalty]% &ebüntetés miatt túl sok játékos dolgozik benne.'
       bonus: '&eEz a munka &2[bonus]% &ebónusza van, mert nem elég játékos dolgozik benne.'
@@ -690,7 +690,7 @@ signs:
     browse: '&0Böngészés'
     stats: '&0Statizstika'
     limit: '&0Limit'
-    info: '&0Info'
+    info: '&0Infó'
     archive: '&0Archív'
 scoreboard:
   topline: '&2Top &e%jobname%'
