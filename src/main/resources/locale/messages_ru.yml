@@ -598,13 +598,13 @@ command:
     error:
       nojob: '&cThis player must first join a job.'
     output:
-      target: '&eYour level was changed for %jobname% &eand now you at &6%level%lvl &eand with &6%exp%exp.'
+      target: '&eВаш уровень изменился для работы %jobname% &eи сейчас вы &6%level%lvl &eопыта &6%exp%exp.'
   demote:
     help:
-      info: Demote the player X levels in a job.
+      info: Снизить уровень работы игрока X.
       args: '[playername] [jobname] [levels]'
     output:
-      target: You have been demoted %levelslost% levels in %jobname%.
+      target: Вас понизили на %levelslost% уровней в работе %jobname%.
   grantxp:
     help:
       info: Grants the player X experience in a job.
@@ -694,5 +694,5 @@ signs:
     archive: '&0Archive'
 scoreboard:
   topline: '&2Top &e%jobname%'
-  gtopline: '&2Global top list'
+  gtopline: 'Глобальный топ'
   line: '&2%number%. &e%playername% (&6%level%&e)'
