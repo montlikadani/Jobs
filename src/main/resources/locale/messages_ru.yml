@@ -607,7 +607,7 @@ command:
       target: Вас понизили на %levelslost% уровней в работе %jobname%.
   grantxp:
     help:
-      info: Grants the player X experience in a job.
+      info: Повысить уровень работы у игрока X.
       args: '[playername] [jobname] [xp]'
     output:
       target: You have been granted %xpgained% experience in %jobname%.
