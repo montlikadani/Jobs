@@ -16,11 +16,11 @@ general:
       mins: '&e%mins% &6minutter '
       secs: '&e%secs% &6sekunder '
     invalidPage: '&cUgyldig side'
-    'true': '&2True'
-    'false': '&cFalse'
+    'true': '&2Aktivert'
+    'false': '&cDeaktivert'
   admin:
-    error: '&cThere was an error in the command.'
-    success: '&eYour command has been performed.'
+    error: '&cDet var en feil i kommandoen. Prøv igjen.'
+    success: '&eKommandoen din er utført.'
   error:
     noHelpPage: '&cThere is no help page by this number!'
     notNumber: '&ePlease use numbers!'
