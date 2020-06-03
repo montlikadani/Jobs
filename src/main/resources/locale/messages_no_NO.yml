@@ -1,21 +1,21 @@
 ---
 economy:
   error:
-    nomoney: '&cSorry, no money left in national bank!'
+    nomoney: '&cBeklager, ikke mer penger igjen i nasjonalbanken!'
 limitedItem:
   error:
-    levelup: '&cYou need to level up in [jobname] to use this item!'
+    levelup: '&cDu må levle opp i [jobname] for å bruke dette itemet!'
 general:
   Spawner: '&r[type] Spawner'
   info:
     toplineseparator: '&7*********************** &6%playername% &7***********************'
     separator: '&7*******************************************************'
     time:
-      days: '&e%days% &6days '
-      hours: '&e%hours% &6hours '
-      mins: '&e%mins% &6min '
-      secs: '&e%secs% &6sec '
-    invalidPage: '&cInvalid page'
+      days: '&e%days% &6dager '
+      hours: '&e%hours% &6timer '
+      mins: '&e%mins% &6minutter '
+      secs: '&e%secs% &6sekunder '
+    invalidPage: '&cUgyldig side'
     'true': '&2True'
     'false': '&cFalse'
   admin:
@@ -694,5 +694,5 @@ signs:
     archive: '&0Archive'
 scoreboard:
   topline: '&2Top &e%jobname%'
-  gtopline: '&2Global top list'
+  gtopline: '&2Global toppliste'
   line: '&2%number%. &e%playername% (&6%level%&e)'
