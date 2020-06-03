@@ -22,9 +22,9 @@ general:
     error: '&cDet var en feil i kommandoen. Prøv igjen.'
     success: '&eKommandoen din er utført.'
   error:
-    noHelpPage: '&cThere is no help page by this number!'
-    notNumber: '&ePlease use numbers!'
-    job: '&cThe job you selected does not exist or you not joined to this'
+    noHelpPage: '&cDet er ingen hjelpeside med dette nummeret!'
+    notNumber: '&eVennligst bruk tall!'
+    job: '&cJobben du har valgt, eksisterer ikke, eller så er du ikke med på dette'
     noCommand: '&cThere is no command by this name!'
     permission: '&cYou do not have permission to do that!'
     noinfo: '&cNo information found!'
