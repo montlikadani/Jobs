@@ -50,8 +50,8 @@ command:
       fliperSimbols: '&e----------'
       prevPage: '&2----<< &6Prev '
       prevPageOff: '&7----<< Prev '
-      nextPage: '&6 Next &2>>----'
-      nextPageOff: '&7 Next >>----'
+      nextPage: '&6 Neste &2>>----'
+      nextPageOff: '&7 Neste >>----'
       pageCount: '&2[current]/[total]'
       pageCountHover: '&e[totalEntries] entries'
       prevPageGui: '&6Previous page '
@@ -185,7 +185,7 @@ command:
       modify:
         newValue: '&eEnter new value'
         enter: '&eEnter new name or press '
-        hand: '&6HAND '
+        hand: '&6HÅND '
         handHover: '&6Press to grab info from item in your hand'
         or: '&eor '
         look: '&6LOOKING AT'
@@ -205,9 +205,9 @@ command:
       modify:
         newValue: '&eEnter new value'
         enter: '&eEnter new name or press '
-        hand: '&6HAND '
+        hand: '&6HÅND '
         handHover: '&6Press to grab info from item in your hand'
-        or: '&eor '
+        or: '&eeller '
         look: '&6LOOKING AT'
         lookHover: '&6Press to grab info from block you are looking'
   blockinfo:
@@ -347,7 +347,7 @@ command:
         info: '&eEat'
         none: '%jobname% does not get money from eating food.'
       dye:
-        info: '&eDye'
+        info: '&eFarge'
         none: '%jobname% does not get money from dyeing.'
       enchant:
         info: '&eEnchant'
@@ -508,7 +508,7 @@ command:
     output:
       topline: '&aTop&e %amount% &aplayers by &e%jobname% &ajob'
       list: '&e%number%&a. &e%playername% &alvl &e%level% &awith&e %exp% &aexp'
-      prev: '&e<<<<< Prev page &2|'
+      prev: '&e<<<<< Forrige side &2|'
       next: '&2|&e Next Page >>>>'
       show: '&2Show from &e[from] &2until &e[until] &2top list'
   gtop:
@@ -520,8 +520,8 @@ command:
     output:
       topline: '&aTop&e %amount% &aplayers by global job level'
       list: '&e%number%&a. &e%playername% &alvl &e%level% &awith&e %exp% &aexp'
-      prev: '&e<<<<< Prev page &2|'
-      next: '&2|&e Next Page >>>>'
+      prev: '&e<<<<< Forrige side &2|'
+      next: '&2|&e Neste side >>>>'
       show: '&2Show from &e[from] &2until &e[until] &2global top list'
   area:
     help:
@@ -545,7 +545,7 @@ command:
       wgDontExist: '&eWorldGuard area by this name does not exist'
   log:
     help:
-      info: Shows statistics.
+      info: Vis statistikk.
       args: '[playername]'
     output:
       topline: '&7************************* &6%playername% &7*************************'
@@ -638,10 +638,10 @@ command:
     output:
       turnedoff: '&4This feature is turned off!'
       paid:
-        main: '&aYou got:'
+        main: '&aDu fikk:'
         money: '&e[amount] money'
         exp: '&7[exp] exp'
-        points: '&6[points] points'
+        points: '&6[points] poeng'
       'on': '&aToggled: &aON'
       'off': '&aToggled: &4OFF'
 message:
@@ -665,7 +665,7 @@ signs:
   List: '&0[number].&8[player]&7:&4[level]'
   questList: '&0[number].&8[player]&7:&4[quests]'
   SpecialList:
-    p1: '&b** &8First &b**'
+    p1: '&b** &8Først &b**'
     p2: '&b** &8Second &b**'
     p3: '&b** &8Third &b**'
     p4: '&b** &8Fourth &b**'
