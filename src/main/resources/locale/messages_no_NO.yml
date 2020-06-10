@@ -58,14 +58,14 @@ command:
       nextPageGui: '&6Neste side'
   moneyboost:
     help:
-      info: Booster pengegevinsten for alle spillere
+      info: Øker pengegevinsten for alle spillere
       args: '[jobname]/all/reset [rate]/all'
     output:
-      allreset: Pengeboost er slått av
-      jobsboostreset: Pengeboost er slått av for %jobname%
-      nothingtoreset: Nothing to reset
-      boostalladded: Money boost of %boost% added for all jobs!
-      boostadded: Money boost of &e%boost% &aadded for &e%jobname%!
+      allreset: Pengeøkning er slått av
+      jobsboostreset: Pengeøkning er slått av for %jobname%
+      nothingtoreset: Ikke noe å resette
+      boostalladded: Pengeøkning på %boost% er lagt til for alle jobber!
+      boostadded: Pengeøkning på &e%boost% &aer lagt til for &e%jobname%!
       infostats: '&c-----> &aMoney rate x%boost% enabled&c <-------'
   pointboost:
     help:
@@ -74,7 +74,7 @@ command:
     output:
       allreset: All point boosts turned off
       jobsboostreset: Point boost has been turned off for %jobname%
-      nothingtoreset: Nothing to reset
+      nothingtoreset: Ikke noe å resette
       boostalladded: Points boost of %boost% added for all jobs!
       boostadded: Points boost of &e%boost% &aadded for &e%jobname%!
       infostats: '&c-----> &aPoints rate x%boost% enabled&c <-------'
@@ -85,7 +85,7 @@ command:
     output:
       allreset: All exp boosts turned off
       jobsboostreset: Exp boost has been turned off for %jobname%
-      nothingtoreset: Nothing to reset
+      nothingtoreset: Ikke noe å resette
       boostalladded: Exp boost of %boost% added for all jobs!
       boostadded: Exp boost of &e%boost% &aadded for &e%jobname%!
       infostats: '&c-----> &aExp rate x%boost% enabled&c <-------'
