@@ -58,11 +58,11 @@ command:
       nextPageGui: '&6Neste side'
   moneyboost:
     help:
-      info: Boosts money gain for all players
+      info: Booster pengegevinsten for alle spillere
       args: '[jobname]/all/reset [rate]/all'
     output:
-      allreset: All money boosts turned off
-      jobsboostreset: Money boost has been turned off for %jobname%
+      allreset: Pengeboost er slått av
+      jobsboostreset: Pengeboost er slått av for %jobname%
       nothingtoreset: Nothing to reset
       boostalladded: Money boost of %boost% added for all jobs!
       boostadded: Money boost of &e%boost% &aadded for &e%jobname%!
