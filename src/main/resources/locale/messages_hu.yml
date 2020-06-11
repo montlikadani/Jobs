@@ -513,7 +513,7 @@ command:
       show: '&2Megjelenítés &e[from]&2-tól/től &e[until]&2-ig.'
   gtop:
     help:
-      info: A top %amount% legjobb játékosokat mutatja a globális munkákon.
+      info: Megmutatja a legjobb játékosokat a globális munkákon.
       args: ''
     error:
       nojob: '&cNem találok semmilyen információt.'
