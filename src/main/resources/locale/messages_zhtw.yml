@@ -304,9 +304,9 @@ command:
       pickjob: '&e選擇你的職業!'
       jobinfo: '&e[jobname] 資訊!'
       actions: '&e可用的動作:'
-      leftClick: '&e左键查看更多資訊'
-      middleClick: '&eMiddle Click to leave this job'
-      rightClick: '&e右键加入職業'
+      leftClick: '&e左键 查看更多'
+      middleClick: '&e中間鍵 辭職不幹'
+      rightClick: '&e右键 加入職業'
       leftSlots: '&e剩餘:&f '
       working: '&2&n已經就業'
       cantJoin: '&c你無法加入這個職業'
@@ -323,8 +323,8 @@ command:
         info: '放置'
         none: '%jobname% 不會從放置獲得報酬'
       striplogs:
-        info: '&eStrip logs'
-        none: '%jobname% does not get money for stripping logs.'
+        info: '&e去皮原木'
+        none: '%jobname% 不會從去皮原木獲得報酬'
       kill:
         info: '擊殺'
         none: '%jobname% 不會從擊殺獲得報酬'
@@ -353,8 +353,8 @@ command:
         info: '附魔'
         none: '%jobname% 不會從附魔獲得報酬'
       vtrade:
-        info: '&eVillager trade'
-        none: '%jobname% does not get money for trading a villager.'
+        info: '&e村民交易'
+        none: '%jobname% 不會從與村民交易中獲得報酬'
       repair:
         info: '修復'
         none: '%jobname% 不會從修復獲得報酬'
@@ -377,11 +377,11 @@ command:
         info: '自定義擊殺'
         none: '%jobname% 不會從自定義擊殺獲得報酬'
       collect:
-        info: '&eCollect'
-        none: '%jobname% does not get money for collecting blocks.'
+        info: '&e收集'
+        none: '%jobname% 不會從收集方塊中獲得報酬'
       bake:
-        info: '&eBake'
-        none: '%jobname% does not get money for cooking foods.'
+        info: '&e烤焗'
+        none: '%jobname% 不會從烹飪獲得報酬'
   playerinfo:
     help:
       info: 查看玩家的職業資訊.
@@ -394,29 +394,29 @@ command:
       alreadyin: 你已經加入了職業 %jobname%.
       fullslots: 你不能加入職業 %jobname%, 已經滿员.
       maxjobs: 你已經加入了很多的職業了.
-      rejoin: '&cCan''t rejoin this job. Wait [time]'
-    rejoin: '&aClick to rejoin this job: '
+      rejoin: '&c無法重新加入同一職業. 冷卻時間: [time]'
+    rejoin: '&a點擊重新加入這職業: '
     success: 你加入了職業 %jobname%.
-    confirm: '&2Click to confirm joining action for the &7[jobname] &2job.'
+    confirm: '&2點擊簽訂 &7[jobname] &2的職業合同.'
   leave:
     help:
       info: 離開選擇的職業.
       args: '[oldplayerjob]'
     success: 你離開了職業 %jobname%.
-    confirmationNeed: '&cAre you sure you want to leave from&e [jobname]&c job? Type the command again within&6 [time] seconds &cto confirm!'
+    confirmationNeed: '&c你肯定要辭職不幹 &e [jobname] &c了嗎? 請在 &6 [time] 秒內 &c再次使用同一指令!'
   leaveall:
     help:
       info: 離開你所有的職業.
     error:
       nojobs: 你沒有任何職業!
     success: 你已經徹底失業.
-    confirmationNeed: '&cAre you sure you want to leave from all jobs? Type the command again within&6 [time] seconds &cto confirm!'
+    confirmationNeed: '&c你肯定要辭職不幹 &l所有職業 &r&c了嗎? 請在 &6 [time] 秒內 &c再次使用同一指令!'
   explored:
     help:
-      info: Check who visited this chunk
+      info: 查看誰人來過這區塊
     error:
-      noexplore: No one visited this chunk
-    fullExplore: '&aThis chunk is fully explored'
+      noexplore: 沒有人來過這區塊
+    fullExplore: '&a這區塊已經完整的遊覽過'
     list: '&e%place%. %playername%'
   browse:
     help:
@@ -425,21 +425,21 @@ command:
       nojobs: 你沒有可加入的職業.
     output:
       header: '你可以加入以下職業:'
-      footer: For more information type in /jobs info [JobName]
+      footer: 使用 /jobs info [JobName] 獲得更多資訊
       totalWorkers: ' &7就職中: &e[amount]'
       penalty: ' &4懲罰: &c[amount]%'
       bonus: ' &2加成: &a[amount]%'
-      newHeader: '&2========== [amount] Available Jobs ========='
+      newHeader: '&2========== [amount] 職位空缺 ========='
       description: '[description]'
       list: '    &8[place]. &7[jobname]'
       console:
-        newHeader: '&2========== [amount] Available Jobs ========='
+        newHeader: '&2========== [amount] 職位空缺 ========='
         description: '[description]'
-        totalWorkers: ' &7Workers: &e[amount]'
-        penalty: ' &4Penalty: &c[amount]%'
-        bonus: ' &2Bonus: &a[amount]%'
+        totalWorkers: ' &7就職中: &e[amount]'
+        penalty: ' &4懲罰: &c[amount]%'
+        bonus: ' &2加成: &a[amount]%'
         list: ' &6[jobname]'
-        newMax: ' &eMax level: &f[max]'
+        newMax: ' &e最高等級: &f[max]'
       click: '&bClick on the job to see more info about it!'
       detailed: '&bClick to see more detailed list on job actions'
       jobHeader: '&2========== [jobname] ========='
