@@ -467,13 +467,13 @@ command:
     status:
       changed: '&2任務狀態已經更新為&r%status%'
       started: '&a進行中'
-      stopped: '&cStopped'
+      stopped: '&c已停止'
     output:
-      completed: '&2      !Completed!&r      '
+      completed: '&2      !完成!&r      '
       questLine: '[progress] &7[questName] &f[done]&7/&8[required]'
-      skip: '&7Click to skip this quest'
-      skips: '&7Left skips: &f[skips]'
-      hover: "&f[jobName] \n[desc] \n&7New quest in: [time]"
+      skip: '&7點擊跳過這任務'
+      skips: '&7可用跳過次數: &f[skips]'
+      hover: "&f[jobName] \n[desc] \n&7下一個新任務: [time]"
   fire:
     help:
       info: 將玩家從指定職業開除.
@@ -496,24 +496,24 @@ command:
       args: '[playername] [jobname]'
     error:
       alreadyin: 玩家已經加入了職業 %jobname%.
-      fullslots: You cannot join the job %jobname%, there are no slots available.
+      fullslots: 你不能加入職業 %jobname%, 已經滿員了.
     output:
       target: 你被聘請為一名 %jobname%.
   top:
     help:
-      info: Shows top players by jobs name.
+      info: 依職業列出最具經驗玩家
       args: '[jobname]'
     error:
       nojob: 沒有這個職業.
     output:
       topline: '&a前&e %amount% &a個職業為 &e%jobname% &a的玩家'
-      list: '&e%number%&a. &e%playername% &alvl &e%level% &awith&e %exp% &aexp'
+      list: '&e%number%&a. &e%playername% &a等級.&e%level% &awith&e %exp% &a經驗'
       prev: '&e<<<<< 上一頁 &2|'
       next: '&2|&e 下一頁 >>>>'
       show: '&2顯示 &e[from] &2到 &e[until] &2的排行榜'
   gtop:
     help:
-      info: Shows top players by global jobs level.
+      info: 顯示全部職業中最具經驗的玩家.
       args: ''
     error:
       nojob: 沒有找到任何資訊, 你這是新服吧23333.
@@ -527,8 +527,8 @@ command:
     help:
       info: 编輯管制區域.
       args: add/remove/info/list
-      addUsage: '&eUsage: &6/Jobs area add [areaName/wg:worldGuardAreaName] [bonus]'
-      removeUsage: '&eUsage: &6/Jobs area remove [areaName]'
+      addUsage: '&e用法: &6/Jobs area add [areaName/wg:worldGuardAreaName] [bonus]'
+      removeUsage: '&e用法: &6/Jobs area remove [areaName]'
     output:
       addedNew: '&e添加了新的管制區域, 加成 &6%bonus%'
       removed: '&e移除了管制區域 &6%name%'
@@ -542,18 +542,18 @@ command:
       select: '&e用 (%tool%) 選擇兩個點'
       exist: '&e這個名字的管制區域已經存在'
       dontExist: '&e這個名字的管制區域不存在'
-      wgDontExist: '&eWorldGuard area by this name does not exist'
+      wgDontExist: '&e這個名字的WorldGuard區域不存在'
   log:
     help:
       info: 顯示統計資訊.
       args: '[playername]'
     output:
       topline: '&7************************* &6%playername% &7*************************'
-      ls: '&7* &6%number%. &3%action%: &6%item% &eqty: %qty% %money%%exp%%points%'
-      money: '&6money: %amount% '
-      exp: '&eexp: %amount% '
-      points: '&6points: %amount%'
-      totalIncomes: '    &6Total money:&2 %money%&6, Total exp:&2 %exp%&6, Total points:&2 %points%'
+      ls: '&7* &6%number%. &3%action%: &6%item% &e數量: %qty% %money%%exp%%points%'
+      money: '&6遊戲幣: %amount% '
+      exp: '&e經驗: %amount% '
+      points: '&6點數: %amount%'
+      totalIncomes: '    &6遊戲幣結餘:&2 %money%&6, 經驗結餘:&2 %exp%&6, 點數結餘:&2 %points%'
       bottomline: '&7***********************************************************'
       prev: '&e<<<<< 上一頁 &2|'
       next: '&2|&e 下一頁 >>>>'
@@ -563,12 +563,12 @@ command:
       info: 顯示全伺服統計資訊.
       args: ''
     output:
-      topline: '&7*********************** &6Global statistics &7***********************'
-      ls: '&7* &6%number%. &3%action%: &6%item% &eqty: %qty% %money%%exp%%points%'
-      money: '&6money: %amount% '
-      exp: '&eexp: %amount% '
-      points: '&6points: %amount%'
-      totalIncomes: '    &6Total money:&2 %money%&6, Total exp:&2 %exp%&6, Total points:&2 %points%'
+      topline: '&7*********************** &6全服數據 &7***********************'
+      ls: '&7* &6%number%. &3%action%: &6%item% &e數量: %qty% %money%%exp%%points%'
+      money: '&6遊戲幣: %amount% '
+      exp: '&e經驗: %amount% '
+      points: '&6點數: %amount%'
+      totalIncomes: '    &6遊戲幣結餘:&2 %money%&6, 經驗結餘:&2 %exp%&6, 點數結餘:&2 %points%'
       bottomline: '&7**************************************************************'
       nodata: '&c沒有資料'
   transfer:
@@ -585,10 +585,10 @@ command:
       target: 你的 %jobname% 職業被提升了 %levelsgained% 級.
   exp:
     help:
-      info: Change the player exp for job.
+      info: 更改玩家這職業的經驗值
       args: '[playername] [jobname] set/add/take [amount]'
     error:
-      nojob: '&cThis player must first join a job.'
+      nojob: '&c這玩家必須先加入一個職業'
     output:
       target: '&eYour exp was changed for %jobname% &eand now you at &6%level%lvl &eand with &6%exp%exp.'
   level:
@@ -596,7 +596,7 @@ command:
       info: Change the player's level in a job.
       args: '[playername] [jobname] set/add/take [amount]'
     error:
-      nojob: '&cThis player must first join a job.'
+      nojob: '&c這玩家必須先加入一個職業'
     output:
       target: '&eYour level was changed for %jobname% &eand now you at &6%level%lvl &eand with &6%exp%exp.'
   demote:
@@ -665,19 +665,19 @@ signs:
   List: '&0[number].&8[player]&7:&4[level]'
   questList: '&0[number].&8[player]&7:&4[quests]'
   SpecialList:
-    p1: '&b** &8First &b**'
-    p2: '&b** &8Second &b**'
-    p3: '&b** &8Third &b**'
-    p4: '&b** &8Fourth &b**'
-    p5: '&b** &8Fifth &b**'
-    p6: '&b** &8Sixth &b**'
-    p7: '&b** &8Seventh &b**'
-    p8: '&b** &8Eight &b**'
-    p9: '&b** &8Ninth &b**'
-    p10: '&b** &8Tenth &b**'
+    p1: '&b** &8第一名 &b**'
+    p2: '&b** &8第二名 &b**'
+    p3: '&b** &8第三名 &b**'
+    p4: '&b** &8第四名 &b**'
+    p5: '&b** &8第五名 &b**'
+    p6: '&b** &8第六名 &b**'
+    p7: '&b** &8第七名 &b**'
+    p8: '&b** &8第八名 &b**'
+    p9: '&b** &8第九名 &b**'
+    p10: '&b** &8第十名 &b**'
     name: '&9[player]'
-    level: '&8[level] level'
-    quests: '&8[quests] quests'
+    level: '&8[level] 等級'
+    quests: '&8[quests] 任務'
     bottom: '&b************'
   cantcreate: '&4你不能創建這個告示牌!'
   cantdestroy: '&4你不能破壞這個告示牌!'
