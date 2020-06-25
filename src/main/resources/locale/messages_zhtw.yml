@@ -24,7 +24,7 @@ general:
   error:
     noHelpPage: '&c幫助頁面沒有這個頁數!'
     notNumber: '&e請使用數字!'
-    job: '&c你選擇的工種不存在或是你沒有加入這工種'
+    job: '&c你選擇的職業不存在或是你沒有加入這職業'
     noCommand: '&c不明指令!'
     permission: '&c你沒有權限這樣做!'
     noinfo: '&c沒有找到資訊!'
@@ -33,19 +33,19 @@ general:
     fromconsole: '&c你只能在控制台使用這條指令!'
     worldisdisabled: '&c你不能在這個世界使用這個指令!'
     newFurnaceRegistration: '&e成功登記了熔爐的新擁有人 &7[current]&e/&f[max]'
-    newBrewingRegistration: '&eRegistered new ownership for brewing stand &7[current]&e/&f[max]'
-    noFurnaceRegistration: '&cYou''ve reached max furnace count!'
-    noBrewingRegistration: '&cYou''ve reached max brewing stand count!'
+    newBrewingRegistration: '&e成功登記了釀造台的新擁有人 &7[current]&e/&f[max]'
+    noFurnaceRegistration: '&c你已到達了最大熔爐數量'
+    noBrewingRegistration: '&c你已到達了最大釀造台數量'
 command:
   help:
     output:
-      info: 输入 /jobs [cmd] ? 查看關於此指令的更多資訊.
-      cmdUsage: '&2Usage: &7[command]'
+      info: 輸入 /jobs [cmd] ? 查看關於此指令的更多資訊.
+      cmdUsage: '&2用法: &7[command]'
       label: Jobs
       cmdInfoFormat: '[command] &f- &2[description]'
       cmdFormat: '&7/[command] &f[arguments]'
       helpPageDescription: '&2* [description]'
-      title: '&e---&e ===== &6Jobs 插件 - &d繁體中文化 Ogoo &e===== &e---'
+      title: '&e---&e ===== &6Jobs 插件 - &d繁體中文化 &e===== &e---'
       page: '&e-----&e ====== 第 &6[1] &e頁 - 共 &6[2] 頁 &e====== &e-----'
       fliperSimbols: '&e----------'
       prevPage: '&2----<< &6前一頁 '
@@ -53,7 +53,7 @@ command:
       nextPage: '&6 下一頁 &2>>----'
       nextPageOff: '&7 下一頁 >>----'
       pageCount: '&2[current]/[total]'
-      pageCountHover: '&e[totalEntries] entries'
+      pageCountHover: '&e[totalEntries] 生物'
       prevPageGui: '&6上一頁 '
       nextPageGui: '&6下一頁'
   moneyboost:
@@ -91,16 +91,16 @@ command:
       infostats: '&c-----> &a經驗獲得 x%boost% 倍正在進行&c <-------'
   itembonus:
     help:
-      info: Check item bonus
+      info: 查看物品加成
       args: ''
     output:
       list: '&e[jobname]: %money% %points% %exp%'
       notAplyingList: '&7[jobname]: %money% %points% %exp%'
       hover: '&7%itemtype%'
-      hoverLevelLimits: "&7From level: %from% \n&7Until level: %until%"
+      hoverLevelLimits: "&7從經驗等級: %from% \n&7直到經驗等級: %until%"
   edititembonus:
     help:
-      info: Edit item boost bonus
+      info: 更改物品加成
       args: list/add/remove [jobname] [itemBoostName]
   bonus:
     help:
@@ -108,15 +108,15 @@ command:
       args: '[jobname]'
     output:
       topline: '&7**************** &2[money] &6[points] &e[exp] &7****************'
-      permission: ' &e權限獎勵: &2%money% &6%points% &e%exp%'
-      item: ' &e物品獎勵: &2%money% &6%points% &e%exp%'
-      global: ' &e全服獎勵: &2%money% &6%points% &e%exp%'
-      dynamic: ' &eDynamic bonus: &2%money% &6%points% &e%exp%'
-      nearspawner: ' &eSpawner bonus: &2%money% &6%points% &e%exp%'
-      petpay: ' &ePetPay bonus: &2%money% &6%points% &e%exp%'
-      area: ' &eArea bonus: &2%money% &6%points% &e%exp%'
-      mcmmo: ' &eMcMMO bonus: &2%money% &6%points% &e%exp%'
-      final: ' &eFinal bonus: &2%money% &6%points% &e%exp%'
+      permission: ' &e權限加成: &2%money% &6%points% &e%exp%'
+      item: ' &e物品加成: &2%money% &6%points% &e%exp%'
+      global: ' &e全服加成: &2%money% &6%points% &e%exp%'
+      dynamic: ' &e動態加成: &2%money% &6%points% &e%exp%'
+      nearspawner: ' &e生怪磚加成: &2%money% &6%points% &e%exp%'
+      petpay: ' &ePetPay加成: &2%money% &6%points% &e%exp%'
+      area: ' &e地區加成: &2%money% &6%points% &e%exp%'
+      mcmmo: ' &eMcMMO加成: &2%money% &6%points% &e%exp%'
+      final: ' &e終究加成: &2%money% &6%points% &e%exp%'
       finalExplanation: ' &e不包括寵物和附近生成加成'
   convert:
     help:
@@ -135,7 +135,7 @@ command:
       pointsLimit: '&e點數限制: &2%current%&e/&2%total%'
       reachedmoneylimit: '&4你達到了一段時間内的遊戲幣限制!'
       reachedmoneylimit2: '&e你可以通過 &2/jobs limit &e查看你的限制'
-      reachedmoneylimit3: '&eMoney earned is now reduced exponentially... But you still earn a little!'
+      reachedmoneylimit3: '&e獲得遊戲幣的數量已相應地減少... 但你仍然可以獲得一點點!'
       reachedexplimit: '&4你達到了一段時間内的經驗限制!'
       reachedexplimit2: '&e你可以通過 &2/jobs limit &e查看你的限制'
       reachedpointslimit: '&4你達到了一段時間内的點數限制!'
@@ -146,7 +146,7 @@ command:
       info: 重置玩家的報酬限制
       args: '[playername]'
     output:
-      reseted: '&ePayment limits have been reset for: &2%playername%'
+      reseted: '&e玩家 &2%playername% &e的付款額度已經被重置了'
   resetquest:
     help:
       info: 重置玩家的任務
@@ -181,12 +181,12 @@ command:
         materialAdd: '      -> &e[&2+&e]'
         money: '        -> &e收入: &6%amount%'
         exp: '        -> &e經驗: &6%amount%'
-        points: '        -> &ePoints: &6%amount%'
+        points: '        -> &e點數: &6%amount%'
       modify:
         newValue: '&e輸入新的數值'
-        enter: '&eEnter new name or press '
-        hand: '&6HAND '
-        handHover: '&6Press to grab info from item in your hand'
+        enter: '&e輸入新的名稱或點擊'
+        hand: '&6手上'
+        handHover: '&6點擊查看有關你手上的物品的資料'
         or: '&e或是 '
         look: '&6正看著'
         lookHover: '&6點擊查看有關你正在看著的方塊的資料'
@@ -209,7 +209,7 @@ command:
         handHover: '&6點擊查看有關你手上的物品的資料'
         or: '&e或是 '
         look: '&6正看著'
-        lookHover: '&6Press to grab info from block you are looking'
+        lookHover: '&6點擊查看有關你正在看著的方塊的資料'
   blockinfo:
     help:
       info: 顯示你正在看的方塊的資訊.
@@ -230,12 +230,12 @@ command:
       usage: ' &e使用: &6%first% &e或 &6%second%'
   placeholders:
     help:
-      info: List out all placeholders
+      info: 列出所有變量代理
       args: (parse) (placeholder)
     output:
       list: '&e[place]. &7[placeholder]'
-      outputResult: ' &eresult: &7[result]'
-      parse: '&6[placeholder] &7by [source] &6result &8|&f[result]&8|'
+      outputResult: ' &e結果: &7[result]'
+      parse: '&7[source] 的 &6[placeholder] &6結果 &8|&f[result]&8|'
   entitylist:
     help:
       info: 顯示插件可用的所有生物列表.
@@ -246,8 +246,8 @@ command:
       args: '[playername]'
     error:
       nojob: 請先加入一個職業.
-    output: 'Level %joblevel% for %jobname%: %jobxp%/%jobmaxxp% xp'
-    bossBarOutput: 'Lvl %joblevel% %jobname%: %jobxp%/%jobmaxxp% xp%gain%'
+    output: '職業%jobname%的等級%joblevel%: %jobxp%/%jobmaxxp% 經驗值'
+    bossBarOutput: '等級 %joblevel% %jobname%: %jobxp%/%jobmaxxp% 經驗值%gain%'
     bossBarGain: ' &7(&f%gain%&7)'
   shop:
     help:
@@ -281,25 +281,25 @@ command:
       info: 玩家名可選. 给玩家職業以物品
       args: '[playername] [jobname] [items/limiteditems] [jobitemname]'
     output:
-      notonline: '&4Player with that name is not online!'
+      notonline: '&4這玩家不在線!'
       noitem: '&4沒有找到此物品!'
   info:
     help:
-      title: '&2*** &eJobs&2 ***'
+      title: '&2*** &eJobs 職業&2 ***'
       info: 顯示一個職業的詳細資訊.
-      penalty: '&eThis job has a penalty of &c[penalty]% &ebecause there are too many players working in it.'
-      bonus: '&e這個職業擁有 &2[bonus]% &e加成因為就業人數較少.'
+      penalty: '&e這個職業擁有 &c[penalty]% &e懲罰  &4原因: 因為就業人數過多.'
+      bonus: '&e這個職業擁有 &c[bonus]% &e加成獎勵  &4原因: 因為就業人數太少.'
       args: '[jobname] [action]'
       actions: '&e所有可用的動作: &f%actions%'
       max: ' - &e最高等級:&f '
-      newMax: ' &eMax level: &f[max]'
+      newMax: ' &e最高等級: &f[max]'
       material: '&7%material%'
-      levelRange: ' &a(&e%levelFrom% &a- &e%levelUntil% &a級)'
-      levelFrom: ' &a(從 &e%levelFrom% &a級)'
-      levelUntil: ' &a(到 &e%levelUntil% &a級)'
-      money: ' &2%money%$'
-      points: ' &6%points%pts'
-      exp: ' &e%exp%xp'
+      levelRange: ' &a(&e%levelFrom% &a- &e%levelUntil% &a等級)'
+      levelFrom: ' &a(從 &e%levelFrom% &a等級)'
+      levelUntil: ' &a(到 &e%levelUntil% &a等級)'
+      money: ' &2$%money%'
+      points: ' &6%points% 點數'
+      exp: ' &e%exp% 經驗值'
     gui:
       pickjob: '&e選擇你的職業!'
       jobinfo: '&e[jobname] 資訊!'
@@ -309,7 +309,7 @@ command:
       rightClick: '&e右键加入職業'
       leftSlots: '&e剩餘:&f '
       working: '&2&n已經就業'
-      cantJoin: '&cYou can''t join to the selected job.'
+      cantJoin: '&c你無法加入這個職業'
       max: '&e最高等級:&f '
       back: '&e<<< 返回'
     output:
