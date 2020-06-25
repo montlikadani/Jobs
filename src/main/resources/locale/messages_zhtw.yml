@@ -440,33 +440,33 @@ command:
         bonus: ' &2加成: &a[amount]%'
         list: ' &6[jobname]'
         newMax: ' &e最高等級: &f[max]'
-      click: '&bClick on the job to see more info about it!'
-      detailed: '&bClick to see more detailed list on job actions'
+      click: '&b點擊職業獲得更多相關資訊!'
+      detailed: '&b點擊查看列出職業相關動作的詳細清單'
       jobHeader: '&2========== [jobname] ========='
-      chooseJob: '&7&n&oChoose this job'
-      chooseJobHover: '&7Click here to get this job'
+      chooseJob: '&7&n&o選定這職業'
+      chooseJobHover: '&7點擊這裡加入這職業'
   clearownership:
     help:
-      info: Clear block ownership
+      info: 清除方塊所有擁有人
       args: '[playername]'
     output:
-      cleared: '&2Removed &7[furnaces] &2furnaces and &7[brewing] &2brewing stands'
+      cleared: '&2刪除了 &7[furnaces] &2個熔爐及 &7[brewing] &2個釀造台'
   skipquest:
     help:
-      info: Skip defined quest and get new one
+      info: 跳過任務及獲得新任務
       args: '[jobname] [questname] (playerName)'
     output:
-      questSkipForCost: '&2You skipped the quest and paid:&e %amount%$'
+      questSkipForCost: '&2你支付了&e$%amount%&2跳過任務'
   quests:
     help:
-      info: List available quests
+      info: 列出可接受的任務
       args: '[playername]'
     error:
-      noquests: '&cThere are no quests'
+      noquests: '&c暫時沒有任務'
     toplineseparator: '&7*********************** &6[playerName] &2(&f[questsDone]&2) &7***********************'
     status:
-      changed: '&2The quests status has been changed to&r %status%'
-      started: '&aStarted'
+      changed: '&2任務狀態已經更新為&r%status%'
+      started: '&a進行中'
       stopped: '&cStopped'
     output:
       completed: '&2      !Completed!&r      '
