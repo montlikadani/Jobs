@@ -25,7 +25,7 @@ general:
     noHelpPage: '&c幫助頁面沒有這個頁數!'
     notNumber: '&e請使用數字!'
     job: '&cThe job you selected does not exist or you not joined to this'
-    noCommand: '&cThere is no command by this name!'
+    noCommand: '&c不明指令!'
     permission: '&c你沒有權限這樣做!'
     noinfo: '&c沒有找到資訊!'
     noinfoByPlayer: '&c沒有找到玩家 [%playername%] 的資訊!'
@@ -54,8 +54,8 @@ command:
       nextPageOff: '&7 下一頁 >>----'
       pageCount: '&2[current]/[total]'
       pageCountHover: '&e[totalEntries] entries'
-      prevPageGui: '&6Previous page '
-      nextPageGui: '&6Next Page'
+      prevPageGui: '&6上一頁 '
+      nextPageGui: '&6下一頁'
   moneyboost:
     help:
       info: 加成玩家得到的遊戲幣
@@ -108,9 +108,9 @@ command:
       args: '[jobname]'
     output:
       topline: '&7**************** &2[money] &6[points] &e[exp] &7****************'
-      permission: ' &ePerm bonus: &2%money% &6%points% &e%exp%'
-      item: ' &eItem bonus: &2%money% &6%points% &e%exp%'
-      global: ' &eGlobal bonus: &2%money% &6%points% &e%exp%'
+      permission: ' &e權限獎勵: &2%money% &6%points% &e%exp%'
+      item: ' &e物品獎勵: &2%money% &6%points% &e%exp%'
+      global: ' &e全服獎勵: &2%money% &6%points% &e%exp%'
       dynamic: ' &eDynamic bonus: &2%money% &6%points% &e%exp%'
       nearspawner: ' &eSpawner bonus: &2%money% &6%points% &e%exp%'
       petpay: ' &ePetPay bonus: &2%money% &6%points% &e%exp%'
