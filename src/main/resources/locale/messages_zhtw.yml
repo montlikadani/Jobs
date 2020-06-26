@@ -590,15 +590,15 @@ command:
     error:
       nojob: '&c這玩家必須先加入一個職業'
     output:
-      target: '&eYour exp was changed for %jobname% &eand now you at &6%level%lvl &eand with &6%exp%exp.'
+      target: '&e你的 %jobname% 經驗值已被更改, 你現在等級: &6%level%等 &6%exp%經驗.'
   level:
     help:
-      info: Change the player's level in a job.
+      info: 更改玩家的職業等級
       args: '[playername] [jobname] set/add/take [amount]'
     error:
       nojob: '&c這玩家必須先加入一個職業'
     output:
-      target: '&eYour level was changed for %jobname% &eand now you at &6%level%lvl &eand with &6%exp%exp.'
+      target: '&e你的 %jobname% 等級已被更改, 你現在等級: &6%level%等 &6%exp%經驗.'
   demote:
     help:
       info: 降低玩家的職業等級.
@@ -649,10 +649,10 @@ message:
     broadcast: '%playername% 獲得了升級 %titlename% %jobname%.'
     nobroadcast: 恭喜, 你升級為了 %titlename% %jobname%.
   levelup:
-    broadcast: '%playername% is now a level %joblevel% %jobname%.'
-    nobroadcast: You are now level %joblevel% %jobname%.
+    broadcast: '%playername% 現在是 %joblevel%等級 %jobname%.'
+    nobroadcast: 你現在是 %joblevel%等級 %jobname%.
   leveldown:
-    message: '&cYou lost level&e %lostLevel%&c in&e %jobname%&c job! Level:&6 %joblevel%&c.'
+    message: '&c你失去了 &e%jobname% &c的 &e%lostLevel%等級, 你現在是 &6%joblevel%&c.'
   cowtimer: '&e你還需要等待 &6%time% &e秒來獲得職業報酬.'
   blocktimer: '&e你需要等待: &3[time] &e秒來獲得職業報酬!'
   placeblocktimer: '&e你放置方塊的速度不能超過 &6[time] &e秒一個!'
