@@ -192,7 +192,7 @@ command:
         lookHover: '&6Cliquez pour prendre les infos du bloc que vous regardez'
   editquests:
     help:
-      info: Edit current quests.
+      info: Modifier la quêtes en cours.
       args: ''
       list:
         quest: '&eQuêtes :'
@@ -281,7 +281,7 @@ command:
       info: Donne un objet par nom de métier et nom de catégorie d'objet. Le pseudo est facultatif.
       args: '[playername] [jobname] [items/limiteditems] [jobitemname]'
     output:
-      notonline: '&4Player with that name is not online!'
+      notonline: '&4Le joueur avec ce nom n''est pas connecté!'
       noitem: '&4Ce nom ne correspond à aucun objet !'
   info:
     help:
@@ -380,7 +380,7 @@ command:
         info: '&eCollecter'
         none: '%jobname% ne gagne pas d''argent en collectant les blocs.'
       bake:
-        info: '&eBake'
+        info: '&eCuire'
         none: '%jobname% does not get money for cooking foods.'
   playerinfo:
     help:
