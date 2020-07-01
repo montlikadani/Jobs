@@ -88,7 +88,7 @@ command:
       nothingtoreset: Нечего сбросить
       boostalladded: Ускорение получения опыта %boost% было добавлено для всех работ!
       boostadded: Ускорение получения опыта &e%boost% &aдобавлено к &e%jobname%!
-      infostats: '&c-----> &aУскорение получения опыта x%boost% включено&c <-------'
+      infostats: '&c-----> &aПреумножение опыта x%boost% включено&c <-------'
   itembonus:
     help:
       info: Проверить бонусы.
