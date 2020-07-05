@@ -312,6 +312,7 @@ command:
       cantJoin: '&cYou can''t join to the selected job.'
       max: '&eNivel máximo:&f '
       back: '&e<<< Volver'
+      next: '&eNext >>>'
     output:
       break:
         info: '&eBreak'
