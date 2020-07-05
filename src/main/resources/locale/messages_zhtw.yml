@@ -312,6 +312,7 @@ command:
       cantJoin: '&c你無法加入這個職業'
       max: '&e最高等級:&f '
       back: '&e<<< 返回'
+      next: '&eNext >>>'
     output:
       break:
         info: '破壞'
