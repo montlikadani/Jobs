@@ -1,7 +1,7 @@
 ---
 economy:
   error:
-    nomoney: '&cSorry, no money left in national bank!'
+    nomoney: '&cTyvärr, inga pengar kvar i nationalbanken!'
 limitedItem:
   error:
     levelup: '&cYou need to level up in [jobname] to use this item!'
