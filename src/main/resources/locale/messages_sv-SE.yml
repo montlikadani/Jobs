@@ -4,7 +4,7 @@ economy:
     nomoney: '&cTyvärr, inga pengar kvar i nationalbanken!'
 limitedItem:
   error:
-    levelup: '&cDu behöver levla upp [jobname] för att använda detta föremål!'
+    levelup: '&cDu behöver gå upp en nivå i [jobname] för att använda detta föremål!'
 general:
   Spawner: '&r[type] Spawner'
   info:
@@ -97,7 +97,7 @@ command:
       list: '&e[jobname]: %money% %points% %exp%'
       notAplyingList: '&7[jobname]: %money% %points% %exp%'
       hover: '&7%itemtype%'
-      hoverLevelLimits: "&7From level: %from% \n&7Until level: %until%"
+      hoverLevelLimits: "&7Från level: %from% \n&7Till level: %until%"
   edititembonus:
     help:
       info: Edit item boost bonus
@@ -149,11 +149,11 @@ command:
       reseted: '&ePayment limits have been reset for: &2%playername%'
   resetquest:
     help:
-      info: Resets a player's quest
+      info: Återställer en spelares uppdrag
       args: '[playername] [jobname]'
     output:
       reseted: '&eQuest has been reset for: &2%playername%'
-      noQuests: '&eCan''t find any quests'
+      noQuests: '&eKan inte hitta några uppdrag'
   points:
     help:
       info: Shows how much points does a player have.
@@ -170,7 +170,7 @@ command:
       take: '&ePlayer (&6%playername%&e) lost &6%amount% &epoints. Now they have &6%total%'
   editjobs:
     help:
-      info: Edit current jobs.
+      info: Redigera nuvarande jobb.
       args: ''
       list:
         job: '&eJobs:'
@@ -179,23 +179,23 @@ command:
         material: '      -> [&e%materialname%&r]      '
         materialRemove: '&c[X]'
         materialAdd: '      -> &e[&2+&e]'
-        money: '        -> &eMoney: &6%amount%'
-        exp: '        -> &eExp: &6%amount%'
-        points: '        -> &ePoints: &6%amount%'
+        money: '        -> &ePengar: &6%amount%'
+        exp: '        -> &eXP: &6%amount%'
+        points: '        -> &ePoäng: &6%amount%'
       modify:
-        newValue: '&eEnter new value'
-        enter: '&eEnter new name or press '
+        newValue: '&eMata in nytt värde'
+        enter: '&eMata in nya namnet eller tryck '
         hand: '&6HAND '
-        handHover: '&6Press to grab info from item in your hand'
-        or: '&eor '
-        look: '&6LOOKING AT'
-        lookHover: '&6Press to grab info from block you are looking'
+        handHover: '&6Tryck för att ta information om objektet i handen'
+        or: '&eeller '
+        look: '&6TITTAR PÅ'
+        lookHover: '&6Tryck för att ta information från blocket du tittar på'
   editquests:
     help:
-      info: Edit current quests.
+      info: Redigera nuvarande uppdrag.
       args: ''
       list:
-        quest: '&eQuests:'
+        quest: '&eUppdrag:'
         jobs: '  -> [&e%jobname%&r]'
         quests: '  -> [&e%questname%&r]'
         actions: '    -> [&e%actionname%&r]'
@@ -203,8 +203,8 @@ command:
         objectiveRemove: '&c[X]'
         objectiveAdd: '      -> &e[&2+&e]'
       modify:
-        newValue: '&eEnter new value'
-        enter: '&eEnter new name or press '
+        newValue: '&eMata in nytt värde'
+        enter: '&eMata in nya namnet eller tryck '
         hand: '&6HAND '
         handHover: '&6Press to grab info from item in your hand'
         or: '&eor '
@@ -666,9 +666,9 @@ signs:
   List: '&0[number].&8[player]&7:&4[level]'
   questList: '&0[number].&8[player]&7:&4[quests]'
   SpecialList:
-    p1: '&b** &8First &b**'
-    p2: '&b** &8Second &b**'
-    p3: '&b** &8Third &b**'
+    p1: '&b** &8Första &b**'
+    p2: '&b** &8Andra &b**'
+    p3: '&b** &8Tredje &b**'
     p4: '&b** &8Fourth &b**'
     p5: '&b** &8Fifth &b**'
     p6: '&b** &8Sixth &b**'
@@ -690,10 +690,10 @@ signs:
     top: '&0Top'
     browse: '&0Bläddra'
     stats: '&0Statistik'
-    limit: '&0Limit'
-    info: '&0Info'
-    archive: '&0Archive'
+    limit: '&0Begränsning'
+    info: '&0Information'
+    archive: '&0Arkiv'
 scoreboard:
   topline: '&2Top &e%jobname%'
-  gtopline: '&2Global top list'
+  gtopline: '&2Global topplista'
   line: '&2%number%. &e%playername% (&6%level%&e)'
