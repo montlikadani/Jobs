@@ -4,66 +4,66 @@ economy:
     nomoney: '&cTyvärr, inga pengar kvar i nationalbanken!'
 limitedItem:
   error:
-    levelup: '&cYou need to level up in [jobname] to use this item!'
+    levelup: '&cDu behöver levla upp [jobname] för att använda detta föremål!'
 general:
   Spawner: '&r[type] Spawner'
   info:
     toplineseparator: '&7*********************** &6%playername% &7***********************'
     separator: '&7*******************************************************'
     time:
-      days: '&e%days% &6days '
-      hours: '&e%hours% &6hours '
+      days: '&e%days% &6dagar '
+      hours: '&e%hours% &6timmar '
       mins: '&e%mins% &6min '
-      secs: '&e%secs% &6sec '
-    invalidPage: '&cInvalid page'
-    'true': '&2True'
-    'false': '&cFalse'
+      secs: '&e%secs% &6sek '
+    invalidPage: '&cOgiltig sida'
+    'true': '&2Sant'
+    'false': '&cFalskt'
   admin:
-    error: '&cThere was an error in the command.'
-    success: '&eYour command has been performed.'
+    error: '&cDet blev ett fel i kommandot. Försök igen.'
+    success: '&eDitt kommando har körts.'
   error:
-    noHelpPage: '&cThere is no help page by this number!'
-    notNumber: '&ePlease use numbers!'
-    job: '&cThe job you selected does not exist or you not joined to this'
-    noCommand: '&cThere is no command by this name!'
-    permission: '&cYou do not have permission to do that!'
-    noinfo: '&cNo information found!'
-    noinfoByPlayer: '&cNo information found by [%playername%] player name!'
-    ingame: '&cYou can use this command only in game!'
-    fromconsole: '&cYou can use this command only from console!'
-    worldisdisabled: '&cYou can''t use command in this world!'
-    newFurnaceRegistration: '&eRegistered new ownership for furnace &7[current]&e/&f[max]'
-    newBrewingRegistration: '&eRegistered new ownership for brewing stand &7[current]&e/&f[max]'
-    noFurnaceRegistration: '&cYou''ve reached max furnace count!'
-    noBrewingRegistration: '&cYou''ve reached max brewing stand count!'
+    noHelpPage: '&cDet finns ingen hjälpsida med detta nummer!'
+    notNumber: '&eSnälla använd siffror!'
+    job: '&cJobbet du har valt existerar inte eller så har du inte gått med på detta'
+    noCommand: '&cDet finns inte ett kommando med detta namn!'
+    permission: '&cDu har inte tillåtelse till att göra detta!'
+    noinfo: '&cIngen information hittad!'
+    noinfoByPlayer: '&cIngen information hittad av [%playername%] spelar namn!'
+    ingame: '&cDu kan bara använda detta kommando i spelet!'
+    fromconsole: '&cDu kan bara använda detta kommando i konsolen!'
+    worldisdisabled: '&cDu kan inte använda kommanot i denna värld!'
+    newFurnaceRegistration: '&eRegistrerade nytt ägarskap för ugn &7[current]&e/&f[max]'
+    newBrewingRegistration: '&eRegistrerade nytt ägarskap för bryggningsstånd &7[current]&e/&f[max]'
+    noFurnaceRegistration: '&cDu har nått max antal ugnar!'
+    noBrewingRegistration: '&cDu har nått max antal bryggstånd!'
 command:
   help:
     output:
-      info: Type /jobs [cmd] ? for more information about a command.
-      cmdUsage: '&2Usage: &7[command]'
+      info: Skriv /jobs [cmd] ? för mer information om ett kommando.
+      cmdUsage: '&2Användning: &7[command]'
       label: Jobs
       cmdInfoFormat: '[command] &f- &2[description]'
       cmdFormat: '&7/[command] &f[arguments]'
       helpPageDescription: '&2* [description]'
       title: '&e-------&e ======= &6Jobs &e======= &e-------'
-      page: '&e-----&e ====== Page &6[1] &eof &6[2] &e====== &e-----'
+      page: '&e-----&e ====== Sida &6[1] &eof &6[2] &e====== &e-----'
       fliperSimbols: '&e----------'
-      prevPage: '&2----<< &6Prev '
-      prevPageOff: '&7----<< Prev '
-      nextPage: '&6 Next &2>>----'
-      nextPageOff: '&7 Next >>----'
+      prevPage: '&2----<< &6Föregående '
+      prevPageOff: '&7----<< Föregående '
+      nextPage: '&6 Nästa &2>>----'
+      nextPageOff: '&7 Nästa >>----'
       pageCount: '&2[current]/[total]'
-      pageCountHover: '&e[totalEntries] entries'
-      prevPageGui: '&6Previous page '
-      nextPageGui: '&6Next Page'
+      pageCountHover: '&e[totalEntries] uppgifter'
+      prevPageGui: '&6Föregående sida '
+      nextPageGui: '&6Nästa sida'
   moneyboost:
     help:
-      info: Boosts money gain for all players
+      info: Ökar inkomsten av pengar för alla spelare
       args: '[jobname]/all/reset [rate]/all'
     output:
-      allreset: All money boosts turned off
-      jobsboostreset: Money boost has been turned off for %jobname%
-      nothingtoreset: Nothing to reset
+      allreset: Alla ökningar av inkomst stängdes av
+      jobsboostreset: Pengarökningen har stängts av för %jobname%
+      nothingtoreset: Inget att återställa
       boostalladded: Money boost of %boost% added for all jobs!
       boostadded: Money boost of &e%boost% &aadded for &e%jobname%!
       infostats: '&c-----> &aMoney rate x%boost% enabled&c <-------'
@@ -74,7 +74,7 @@ command:
     output:
       allreset: All point boosts turned off
       jobsboostreset: Point boost has been turned off for %jobname%
-      nothingtoreset: Nothing to reset
+      nothingtoreset: Inget att återställa
       boostalladded: Points boost of %boost% added for all jobs!
       boostadded: Points boost of &e%boost% &aadded for &e%jobname%!
       infostats: '&c-----> &aPoints rate x%boost% enabled&c <-------'
@@ -685,11 +685,11 @@ signs:
   topline: '&0[Jobs]'
   secondline:
     join: '&0Join'
-    leave: '&0Leave'
-    toggle: '&0Toggle'
+    leave: '&0Lämmna'
+    toggle: '&0Växla'
     top: '&0Top'
-    browse: '&0Browse'
-    stats: '&0Stats'
+    browse: '&0Bläddra'
+    stats: '&0Statistik'
     limit: '&0Limit'
     info: '&0Info'
     archive: '&0Archive'
