@@ -114,7 +114,7 @@ command:
       dynamic: ' &eBonificacion dinamica: &2%money% &6%points% &e%exp%'
       nearspawner: ' &eBonificacion de spawner: &2%money% &6%points% &e%exp%'
       petpay: ' &ePetPay bonus: &2%money% &6%points% &e%exp%'
-      area: ' &eArea bonus: &2%money% &6%points% &e%exp%'
+      area: ' &eBonificacion de area: &2%money% &6%points% &e%exp%'
       mcmmo: ' &eMcMMO bonus: &2%money% &6%points% &e%exp%'
       final: ' &eBonificacion final: &2%money% &6%points% &e%exp%'
       finalExplanation: ' &eNo se incluye la prima de Mascota o la penalización de proximidad de spawner.'
@@ -526,24 +526,24 @@ command:
       show: '&2Muestra el top global desde &e[from] &2hasta &e[until]'
   area:
     help:
-      info: Modify restricted areas.
+      info: Modifica áreas restringidas.
       args: add/remove/info/list
-      addUsage: '&eUsage: &6/Jobs area add [areaName/wg:worldGuardAreaName] [bonus]'
-      removeUsage: '&eUsage: &6/Jobs area remove [areaName]'
+      addUsage: '&eUsa: &6/Jobs area add [areaName/wg:worldGuardAreaName] [bonus]'
+      removeUsage: '&eUsa: &6/Jobs area remove [areaName]'
     output:
-      addedNew: '&eAdded a new restricted area with &6%bonus% &ebonus'
-      removed: '&eRemoved the restricted area &6%name%'
+      addedNew: '&eSe ha añadido una nueva área restringida con un bonus de &6%bonus%'
+      removed: '&eSe ha eliminado el área restringida &6%name%'
       list: '&e%number%&a. &e%areaname% &e%worldname% (&a%x1%:%y1%:%z1%/&e%x2%:%y2%:%z2%) &6%bonus%'
       wgList: '&e%number%&a. WorldGuard: &e%areaname% &6%bonus%'
-      noAreas: '&eThere are no saved restricted areas'
-      noAreasByLoc: '&eThere are no restricted areas in this location'
-      areaList: '&eRestricted areas by your location: &6%list%'
-      selected1: '&eSelected the first point: &6%x%:%y%:%z%'
-      selected2: '&eSelected the second point: &6%x%:%y%:%z%'
-      select: '&eSelect 2 points with the selection tool (%tool%)'
-      exist: '&eRestriction area by this name already exists'
-      dontExist: '&eRestriction area by this name does not exist'
-      wgDontExist: '&eWorldGuard area by this name does not exist'
+      noAreas: '&eNo hay áreas restringidas guardadas'
+      noAreasByLoc: '&eNo hay áreas restringidas en esta ubicación'
+      areaList: '&eÁreas restringidas en tu ubicación: &6%list%'
+      selected1: '&ePrimer punto seleccionado: &6%x%:%y%:%z%'
+      selected2: '&eSegundo punto seleccionado: &6%x%:%y%:%z%'
+      select: '&eSelecciona 2 puntos con la herramienta de selección (%tool%)'
+      exist: '&eYa existe un área restringida con este nombre'
+      dontExist: '&eNo existe ningún área restringida con este nombre'
+      wgDontExist: '&eNo existe ninguna región WorldGuard con este nombre'
   log:
     help:
       info: Muestra las estadísticas.
@@ -628,10 +628,10 @@ command:
       args: ''
     output:
       found: '&eFound &6%amount% &eprotected blocks around you'
-      notFound: '&eNo protected blocks found around you'
+      notFound: '&eNo se encontraron bloques de protección alrededor tuyo'
   reload:
     help:
-      info: Reload configurations.
+      info: Recarga las configuraciones.
   toggle:
     help:
       info: Toggles payment output on action bar or bossbar.
@@ -639,19 +639,19 @@ command:
     output:
       turnedoff: '&4This feature is turned off!'
       paid:
-        main: '&aYou got:'
+        main: '&aTienes:'
         money: '&e[amount] dinero'
         exp: '&7[exp] exp'
         points: '&6[points] puntos'
-      'on': '&aToggled: &aON'
-      'off': '&aToggled: &4OFF'
+      'on': '&aEstado: &aON'
+      'off': '&aEstado: &aOFF'
 message:
   skillup:
-    broadcast: '%playername% has been promoted to a %titlename% %jobname%.'
-    nobroadcast: Congratulations, you have been promoted to a %titlename% %jobname%.
+    broadcast: '%playername% ha sido ascendido a %titlename% %jobname%.'
+    nobroadcast: Felicidades, has sido ascendido a %titlename% %jobname%.
   levelup:
-    broadcast: '%playername% is now a level %joblevel% %jobname%.'
-    nobroadcast: You are now level %joblevel% %jobname%.
+    broadcast: '%playername% ahora es nivel %joblevel% %jobname%.'
+    nobroadcast: Ahora eres nivel %joblevel% %jobname%.
   leveldown:
     message: '&c¡Has perdido&e %lostLevel%&c en tu trabajo de&e %jobname%&c! Nivel:&6 %joblevel%&c.'
   cowtimer: '&eAún tienes que esperar &6%time% &esegundos para ser pagado por este trabajo.'
