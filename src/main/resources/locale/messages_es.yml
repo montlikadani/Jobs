@@ -485,21 +485,21 @@ command:
       target: You have been fired from %jobname%.
   fireall:
     help:
-      info: Fire player from all their jobs.
+      info: Despedir al jugador de todos sus trabajos.
       args: '[playername]/all'
     error:
       nojobs: Player does not have any jobs to be fired from!
     output:
-      target: You have been fired from all your jobs.
+      target: Has sido despedido de todos tus trabajos.
   employ:
     help:
-      info: Employ the player to the job.
+      info: Contratar a este jugador.
       args: '[playername] [jobname]'
     error:
-      alreadyin: Player is already in the job %jobname%.
-      fullslots: You cannot join the job %jobname%, there are no slots available.
+      alreadyin: El jugador ya está trabajando de %jobname%.
+      fullslots: No puedes entrar en el trabajo de %jobname%, no hay cupos disponibles.
     output:
-      target: You have been employed as a %jobname%.
+      target: Has sido contratado para trabajar como %jobname%.
   top:
     help:
       info: Shows top players by jobs name.
