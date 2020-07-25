@@ -308,14 +308,14 @@ command:
       middleClick: '&eClique no botão do meio para sair da profissão'
       rightClick: '&eClique direito para entrar na profissão'
       leftSlots: '&eSlots esquerdos:&f '
-      working: '&2&nJá tem uma profissão'
+      working: '&2&nJá esta nessa profissão'
       cantJoin: '&cVocê não pode entrar nesta profissão.'
       max: '&eNível max:&f '
       back: '&e<<< Voltar'
       next: '&ePróx. >>>'
     output:
       break:
-        info: '&ePausa'
+        info: '&eQuebrar'
         none: '%jobname% não ganha dinheiro por quebrar blocos.'
       tntbreak:
         info: '&eQuebrar com Tnt'
@@ -324,8 +324,8 @@ command:
         info: '&eColocar'
         none: '%jobname% não ganha dinheiro por colocar blocos.'
       striplogs:
-        info: '&eCortar madeira'
-        none: '%jobname% não ganha dinheiro por cortar madeira.'
+        info: '&eDescascar madeira'
+        none: '%jobname% não ganha dinheiro por descascar madeira.'
       kill:
         info: '&eMatar'
         none: '%jobname% não ganha dinheiro por matar monstros.'
