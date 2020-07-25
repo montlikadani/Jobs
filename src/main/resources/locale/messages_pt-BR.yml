@@ -1,7 +1,7 @@
 ---
 economy:
   error:
-    nomoney: 'Desculpe, saldo insuficiente no banco do Reino!'
+    nomoney: 'Desculpe, saldo insuficiente no banco!'
 limitedItem:
   error:
     levelup: 'Você precisa subir de nível em [jobname] para usar este item!'
@@ -11,11 +11,11 @@ general:
     toplineseparator: '&7*********************** &6%playername% &7***********************'
     separator: '&7*******************************************************'
     time:
-      days: '&e%days% &6Dias '
+      days: '&e%days% &6dias '
       hours: '&e%hours% &6horas '
       mins: '&e%mins% &6min '
       secs: '&e%secs% &6seg '
-    invalidPage: '&Pagina Invalida'
+    invalidPage: '&Página inválida'
     'true': '&2Verdadeiro'
     'false': '&cFalso'
   admin:
@@ -24,22 +24,22 @@ general:
   error:
     noHelpPage: '&cNão existe nenhuma página de ajuda com este número!'
     notNumber: '&ePor favor, use números!'
-    job: '&cThe job you selected does not exist or you not joined to this'
+    job: '&cO trabalho que você escolheu não existe ou você não trabalha nele'
     noCommand: '&cNão há comando com esse nome!'
     permission: '&cVocê não tem permissão para fazer isso!'
     noinfo: '&cNenhuma informação encontrada!'
-    noinfoByPlayer: '&c nenhuma informação encontrada para [%playername%]!'
+    noinfoByPlayer: '&cNenhuma informação encontrada para [%playername%]!'
     ingame: '&cVocê pode usar este comando apenas no jogo!'
     fromconsole: '&cVocê pode usar este comando apenas no console!'
     worldisdisabled: '&cVocê não pode usar o comando neste mundo!'
     newFurnaceRegistration: '&eNova propriedade registrada para fornalha &7[current]&e/&f[max]'
-    newBrewingRegistration: '&eNovo proprietário registrada para suporte de poções &7[current]&e/&f[max]'
-    noFurnaceRegistration: '&cVocê atingiu a quantidade máxima de fornos!'
-    noBrewingRegistration: 'Você atingiu a quantidade máxima de suporte de poção!'
+    newBrewingRegistration: '&eNovo proprietário registrado para suporte de poções &7[current]&e/&f[max]'
+    noFurnaceRegistration: '&cVocê atingiu a quantidade máxima de fornalhas!'
+    noBrewingRegistration: '&cVocê atingiu a quantidade máxima de suporte de poção!'
 command:
   help:
     output:
-      info: Digite / jobs [cmd] para mais informações sobre um comando.
+      info: Digite /jobs [cmd] ? para mais informações sobre um comando.
       cmdUsage: '&2Uso: &7[command]'
       label: Jobs
       cmdInfoFormat: '[command] &f- &2[description]'
@@ -117,7 +117,7 @@ command:
       area: ' &eBônus de área: &2%money% &6%points% &e%exp%'
       mcmmo: ' &eBônus do McMMO: &2%money% &6%points% &e%exp%'
       final: ' &eBônus final: &2%money% &6%points% &e%exp%'
-      finalExplanation: ' & Não inclui bônus / penalidade de Petpay e spawner proximo'
+      finalExplanation: ' & Não inclui bônus/penalidade de Petpay e spawners próximos'
   convert:
     help:
       info: Converte o sistema de banco de dados de um sistema para outro. Se você estiver atualmente executando o SQLite, isso o converterá no MySQL e vice-versa.
@@ -281,7 +281,7 @@ command:
       info: Fornece item por profissão e por categoria de item o nome do jogador é opcional
       args: '[playername] [jobname] [items/limiteditems] [jobitemname]'
     output:
-      notonline: '&4Player with that name is not online!'
+      notonline: '&4Nenhum player online com este nome!'
       noitem: '&4Não foi possível encontrar nenhum item com o mesmo nome!'
   info:
     help:
@@ -296,23 +296,23 @@ command:
       material: '&7%material%'
       levelRange: ' &a(&e%levelFrom% &a- &e%levelUntil% &aníveis)'
       levelFrom: ' &a(De &e%levelFrom% &alevel)'
-      levelUntil: ' &a(until &e%levelUntil% &alevel)'
+      levelUntil: ' &a(até o level &e%levelUntil%)'
       money: ' &2%money%$'
       points: ' &6%points%pts'
       exp: ' &e%exp%xp'
     gui:
       pickjob: '&eEscolha a sua Profissão!'
-      jobinfo: '&e[jobname] info!'
+      jobinfo: '&eInfo sobre [jobname]!'
       actions: '&eAções validas são:'
       leftClick: '&eClique esquerdo para mais informações'
       middleClick: '&eClique no botão do meio para sair esta profissão'
       rightClick: 'Clique direito para mais informações'
       leftSlots: '&eSlots Esquerdo:&f '
       working: '&2&nJá esta nessa profissão'
-      cantJoin: '&cYou can''t join to the selected job.'
+      cantJoin: '&cVocê não pode entrar neste trabalho.'
       max: '&eLevel Maxl:&f '
       back: '&e<< Voltar'
-      next: '&eNext >>>'
+      next: '&ePróx. >>>'
     output:
       break:
         info: '&ePausa'
@@ -466,9 +466,9 @@ command:
       noquests: '&cNão há missões disponíveis'
     toplineseparator: '&7*********************** &6[playerName] &2(&f[questsDone]&2) &7***********************'
     status:
-      changed: '&2The quests status has been changed to&r %status%'
-      started: '&aStarted'
-      stopped: '&cStopped'
+      changed: '&2O status das missões foi alterado para &r %status%'
+      started: '&aIniciado'
+      stopped: '&cParado'
     output:
       completed: '&2      !Completado!&r      '
       questLine: '[progress] &7[questName] &f[done]&7/&8[required]'
@@ -514,7 +514,7 @@ command:
       show: '&2Mostrar top desde &e[from] &2até &e[until]'
   gtop:
     help:
-      info: Shows top players by global jobs level.
+      info: Mostra os melhores jogadores por nível de emprego global.
       args: ''
     error:
       nojob: Não foi possível encontrar qualquer informação.
@@ -554,7 +554,7 @@ command:
       money: '&6dinheiro: %amount% '
       exp: '&eExperiência: %amount% '
       points: '&6pontos: %amount%'
-      totalIncomes: '    &6Total money:&2 %money%&6, Total exp:&2 %exp%&6, Total points:&2 %points%'
+      totalIncomes: '    &6Dinheiro total:&2 %money%&6, Exp. total:&2 %exp%&6, Pontos totais:&2 %points%'
       bottomline: '&7***********************************************************'
       prev: '&e<<<<< Pag Ant &2|'
       next: '&2|&e Prox Pag >>>>'
