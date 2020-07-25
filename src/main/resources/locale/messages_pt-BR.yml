@@ -1,10 +1,10 @@
 ---
 economy:
   error:
-    nomoney: 'Desculpe, saldo insuficiente no banco!'
+    nomoney: '&cDesculpe, saldo insuficiente no banco!'
 limitedItem:
   error:
-    levelup: 'Você precisa subir de nível em [jobname] para usar este item!'
+    levelup: '&cVocê precisa subir de nível em [jobname] para usar este item!'
 general:
   Spawner: '&r[type] Spawner'
   info:
@@ -15,7 +15,7 @@ general:
       hours: '&e%hours% &6horas '
       mins: '&e%mins% &6min '
       secs: '&e%secs% &6seg '
-    invalidPage: '&Página inválida'
+    invalidPage: '&cPágina inválida'
     'true': '&2Verdadeiro'
     'false': '&cFalso'
   admin:
@@ -460,13 +460,13 @@ command:
       questSkipForCost: '&2Você pulou a missão e pagou:&e %amount%$'
   quests:
     help:
-      info: Lista Quests disponiveis
+      info: Lista as missões disponíveis
       args: '[playername]'
     error:
       noquests: '&cNão há missões disponíveis'
     toplineseparator: '&7*********************** &6[playerName] &2(&f[questsDone]&2) &7***********************'
     status:
-      changed: '&2O status das missões foi alterado para &r %status%'
+      changed: '&2O status das missões foi alterado para&r %status%'
       started: '&aIniciado'
       stopped: '&cParado'
     output:
@@ -474,23 +474,23 @@ command:
       questLine: '[progress] &7[questName] &f[done]&7/&8[required]'
       skip: '&7Clique para pular esta missão'
       skips: '&7Pulos restantes: &f[skips]'
-      hover: "&f[jobName] \n[desc] \n&7Nova quest em: [time]"
+      hover: "&f[jobName] \n[desc] \n&7Nova missão em: [time]"
   fire:
     help:
-      info: Despedir o jogador de uma profissão.
+      info: Demitir o jogador de uma profissão.
       args: '[playername] [jobname]'
     error:
       nojob: Esse jogador não trabalha como %jobname%.
     output:
-      target: Você foi despedido de %jobname%.
+      target: Você foi demitido de %jobname%.
   fireall:
     help:
-      info: Despedir jogador de todas as suas profissões.
+      info: Demitir o jogador de todas as suas profissões.
       args: '[playername]/all'
     error:
-      nojobs: O jogador não tem quaisquer profissões para ser despedido!
+      nojobs: O jogador não tem profissões para ser demitido!
     output:
-      target: Você foi despedido de todas as suas profissões.
+      target: Você foi demitido de todas as suas profissões.
   employ:
     help:
       info: Contratar o jogador para uma profissão.
@@ -507,11 +507,11 @@ command:
     error:
       nojob: Não foi possível encontrar nenhuma profissão com este nome.
     output:
-      topline: '&aTop&e %amount% %jobname% &ajogadores'
-      list: '&e%number%&a. &e%playername% &anível &e%level% &acom &e %exp% &aexperiência'
+      topline: '&aTop&e %amount% &ajogadores em &e%jobname%'
+      list: '&e%number%&a. &e%playername% &anível &e%level% &acom &e%exp% &aexperiência'
       prev: '&e<<<<< Página ant. &2|'
       next: '&2|&e Próx. Página >>>>'
-      show: '&2Mostrar top desde &e[from] &2até &e[until]'
+      show: '&2Mostrar de &e[from] &2até &e[until]'
   gtop:
     help:
       info: Mostra os melhores jogadores por nível de emprego global.
@@ -523,7 +523,7 @@ command:
       list: '&e%number%&a. &e%playername% &anível &e%level% &acom&e %exp% &aexperiência'
       prev: '&e<<<<< Página ant. &2|'
       next: '&2|&e Próx. Página >>>>'
-      show: '&2Mostrar top global desde &e[from] &2até &e[until]'
+      show: '&2Mostrar top global de &e[from] &2até &e[until]'
   area:
     help:
       info: Modificar áreas restritas.
@@ -537,7 +537,7 @@ command:
       wgList: '&e%number%&a. WorldGuard: &e%areaname% &6%bonus%'
       noAreas: '&eNão há áreas restritas salvas'
       noAreasByLoc: '&eNão há áreas restritas nessa localização'
-      areaList: '&eÁreas restristas na sua localização: &6%list%'
+      areaList: '&eÁreas restritas na sua localização: &6%list%'
       selected1: '&eSelecionado o primeiro ponto: &6%x%:%y%:%z%'
       selected2: '&eSelecionado o segundo ponto: &6%x%:%y%:%z%'
       select: '&eSelecione 2 pontos com a ferramenta de seleção (%tool%)'
@@ -552,22 +552,22 @@ command:
       topline: '&7************************* &6%playername% &7*************************'
       ls: '&7* &6%number%. &3%action%: &6%item% &equant: %qty% %money%%exp%%points%'
       money: '&6dinheiro: %amount% '
-      exp: '&eExperiência: %amount% '
+      exp: '&eexp: %amount% '
       points: '&6pontos: %amount%'
       totalIncomes: '    &6Dinheiro total:&2 %money%&6, Exp. total:&2 %exp%&6, Pontos totais:&2 %points%'
       bottomline: '&7***********************************************************'
-      prev: '&e<<<<< Pag Ant &2|'
-      next: '&2|&e Prox Pag >>>>'
+      prev: '&e<<<<< Pág. Ant. &2|'
+      next: '&2|&e Próx. Pág. >>>>'
       nodata: '&cDados não encontrados'
   glog:
     help:
       info: Mostra estatísticas globais.
       args: ''
     output:
-      topline: '&7 *********************** & 6Estatísticas globais &7 ***********************'
+      topline: '&7*********************** &6Estatísticas globais &7***********************'
       ls: '&7* &6%number%. &3%action%: &6%item% &equant: %qty% %money%%exp%%points%'
       money: '&6dinheiro: %amount% '
-      exp: '&eExperiência: %amount% '
+      exp: '&eexp: %amount% '
       points: '&6pontos: %amount%'
       totalIncomes: '    &6Total de dinheiro:&2 %money%&6, Total de exp:&2 %exp%&6, Total de pontos:&2 %points%'
       bottomline: '&7**************************************************************'
@@ -589,7 +589,7 @@ command:
       info: Altera a experiência do jogador numa profissão.
       args: '[playername] [jobname] set/add/take [amount]'
     error:
-      nojob: '&cPrimeiramente, este jogador deve estar numa profissão.'
+      nojob: '&cEste jogador deve estar numa profissão primeiro.'
     output:
       target: '&eA sua experiência como %jobname% &efoi alterada e agora você é nível &6%level% &ecom &6%exp% experiência.'
   level:
@@ -597,7 +597,7 @@ command:
       info: Altera o nível do jogador numa profissão.
       args: '[playername] [jobname] set/add/take [amount]'
     error:
-      nojob: '&cPrimeiramente, este jogador deve estar numa profissão.'
+      nojob: '&cEste jogador deve estar numa profissão primeiro.'
     output:
       target: '&eO seu nível como %jobname% &efoi alterado e agora você é nível &6%level% &ecom &6%exp% experiência.'
   demote:
@@ -634,17 +634,17 @@ command:
       info: Recarregar configurações.
   toggle:
     help:
-      info: Ativa/Desativa a saída de pagamento na barra de ação ou na bossbar.
+      info: Ativa/Desativa exibir os pagamentos na barra de ação ou na bossbar.
       args: actionbar/bossbar
     output:
       turnedoff: '&4Esta função está desativada!'
       paid:
         main: '&aVocê tem:'
         money: '&e[amount] moedas'
-        exp: '&7[exp] experiência'
+        exp: '&7[exp] exp'
         points: '&6[points] pontos'
-      'on': '&aAtivado'
-      'off': '&4Desativado'
+      'on': '&aAlterado: &aLIG.'
+      'off': '&aAlterado: &4DESL.'
 message:
   skillup:
     broadcast: '%playername% foi promovido a %titlename% %jobname%.'
@@ -654,7 +654,7 @@ message:
     nobroadcast: Agora você é nível %joblevel% %jobname%.
   leveldown:
     message: '&cVocê perdeu &e%lostLevel% níveis &c como&e %jobname%&c! Nível:&6 %joblevel%&c.'
-  cowtimer: '&eVocê precisa aguardar &6%time% &esegundos para ser pago nesta profissão.'
+  cowtimer: '&eVocê ainda precisa aguardar &6%time% &esegundos para ser pago nesta profissão.'
   blocktimer: '&eVocê precisa aguardar &3[time] &esegundos para ser pago por isso!'
   placeblocktimer: '&eVocê não pode colocar blocos mais rápido do que &6[time] &esegundos no mesmo lugar!'
   taxes: '&3[amount] &eimpostos do servidor foram transferidos para esta conta'
@@ -686,7 +686,7 @@ signs:
   secondline:
     join: '&0Entrar'
     leave: '&0Sair'
-    toggle: '&0Ativar/Desativar'
+    toggle: '&0Alterar'
     top: '&0Top'
     browse: '&0Navegar'
     stats: '&0Estatísticas'
