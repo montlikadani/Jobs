@@ -86,38 +86,38 @@ command:
       allreset: Wszystkie boostery exp'a zostały wyłączone
       jobsboostreset: Exp boost został wyłączony dla pracy %jobname%
       nothingtoreset: Nie ma nic do zresetowania
-      boostalladded: Exp boost of %boost% added for all jobs!
-      boostadded: Exp boost of &e%boost% &aadded for &e%jobname%!
-      infostats: '&c-----> &aExp rate x%boost% enabled&c <-------'
+      boostalladded: Boost exp'a %boost% dodany do wszystkich prac!
+      boostadded: Boost exp'a &e%boost% &adodany do pracy &e%jobname%!
+      infostats: '&c-----> &aStawka exp''a x%boost% włączona&c <-------'
   itembonus:
     help:
-      info: Check item bonus
+      info: Sprawdź bonus przedmiotu
       args: ''
     output:
       list: '&e[jobname]: %money% %points% %exp%'
       notAplyingList: '&7[jobname]: %money% %points% %exp%'
       hover: '&7%itemtype%'
-      hoverLevelLimits: "&7From level: %from% \n&7Until level: %until%"
+      hoverLevelLimits: "&7Z levelu: %from% \n&7Do levelu: %until%"
   edititembonus:
     help:
-      info: Edit item boost bonus
+      info: Edytuj boost bonusowego przedmiotu
       args: list/add/remove [jobname] [itemBoostName]
   bonus:
     help:
-      info: Show job bonuses
+      info: Wyświetl bonuse prac
       args: '[jobname]'
     output:
       topline: '&7**************** &2[money] &6[points] &e[exp] &7****************'
-      permission: ' &ePerm bonus: &2%money% &6%points% &e%exp%'
-      item: ' &eItem bonus: &2%money% &6%points% &e%exp%'
-      global: ' &eGlobal bonus: &2%money% &6%points% &e%exp%'
-      dynamic: ' &eDynamic bonus: &2%money% &6%points% &e%exp%'
-      nearspawner: ' &eSpawner bonus: &2%money% &6%points% &e%exp%'
-      petpay: ' &ePetPay bonus: &2%money% &6%points% &e%exp%'
-      area: ' &eArea bonus: &2%money% &6%points% &e%exp%'
-      mcmmo: ' &eMcMMO bonus: &2%money% &6%points% &e%exp%'
-      final: ' &eFinal bonus: &2%money% &6%points% &e%exp%'
-      finalExplanation: ' &eDoes not include Petpay and Near spawner bonus/penalty'
+      permission: ' &eBonus permisji: &2%money% &6%points% &e%exp%'
+      item: ' &eBonus itemu: &2%money% &6%points% &e%exp%'
+      global: ' &eBonus globalny: &2%money% &6%points% &e%exp%'
+      dynamic: ' &eBonus dynamiczny: &2%money% &6%points% &e%exp%'
+      nearspawner: ' &eBonus spawneru: &2%money% &6%points% &e%exp%'
+      petpay: ' &eBonus PetPay: &2%money% &6%points% &e%exp%'
+      area: ' &eBonus miejscowy: &2%money% &6%points% &e%exp%'
+      mcmmo: ' &eBonus McMMO: &2%money% &6%points% &e%exp%'
+      final: ' &eBonus końcowy: &2%money% &6%points% &e%exp%'
+      finalExplanation: ' &eNie obejmuje bonusów Petpay i pobliskich spawnerów'
   convert:
     help:
       info: Converts the database system from one system to another. If you are currently running SQLite, this will convert it to MySQL and vice versa.
@@ -215,78 +215,78 @@ command:
       info: Shows information for the block you are looking at.
       args: ''
     output:
-      name: ' &eBlock name: &6%blockname%'
-      id: ' &eBlock id: &6%blockid%'
-      data: ' &eBlock data: &6%blockdata%'
-      usage: ' &eUsage: &6%first% &eor &6%second%'
+      name: ' &eNazwa bloku: &6%blockname%'
+      id: ' &eId bloku: &6%blockid%'
+      data: ' &eDane bloku: &6%blockdata%'
+      usage: ' &eUżycie: &6%first% &elub &6%second%'
   iteminfo:
     help:
-      info: Shows information for the item you are holding.
+      info: Wyświetla informacje przedmiotu, który trzymasz w ręce.
       args: ''
     output:
-      name: ' &eItem name: &6%itemname%'
-      id: ' &eItem id: &6%itemid%'
-      data: ' &eItem data: &6%itemdata%'
-      usage: ' &eUsage: &6%first% &eor &6%second%'
+      name: ' &eNazwa przedmiotu: &6%itemname%'
+      id: ' &eId przedmiotu: &6%itemid%'
+      data: ' &eDane przedmiotu: &6%itemdata%'
+      usage: ' &eUżycie: &6%first% &elub &6%second%'
   placeholders:
     help:
-      info: List out all placeholders
+      info: Wyświetla wszystkie placeholder'y
       args: (parse) (placeholder)
     output:
       list: '&e[place]. &7[placeholder]'
-      outputResult: ' &eresult: &7[result]'
-      parse: '&6[placeholder] &7by [source] &6result &8|&f[result]&8|'
+      outputResult: ' &ewynik: &7[result]'
+      parse: '&6[placeholder] &7przez [source] &6wynika &8|&f[result]&8|'
   entitylist:
     help:
-      info: Shows all possible entities that can be used with the plugin.
+      info: Wyświetla wszystkie możliwe istoty które mogą być użyte przez plugin.
       args: ''
   stats:
     help:
-      info: Show the level you are in each job you are part of.
+      info: Wyświetla poziom w każdej pracy jakiej jesteś.
       args: '[playername]'
     error:
-      nojob: Please join a job first.
-    output: 'Level %joblevel% for %jobname%: %jobxp%/%jobmaxxp% xp'
-    bossBarOutput: 'Lvl %joblevel% %jobname%: %jobxp%/%jobmaxxp% xp%gain%'
+      nojob: Najpierw dołącz do pracy.
+    output: 'Poziom %joblevel% dla pracy %jobname%: %jobxp%/%jobmaxxp% xp'
+    bossBarOutput: 'Poziom %joblevel% %jobname%: %jobxp%/%jobmaxxp% xp%gain%'
     bossBarGain: ' &7(&f%gain%&7)'
   shop:
     help:
-      info: Opens special jobs shop.
+      info: Otwiera specjalny sklep prac.
       args: ''
     info:
-      title: '&e------- &8Jobs shop &e-------'
-      currentPoints: '&eYou have: &6%currentpoints%'
-      price: '&ePrice: &6%price%'
-      reqJobs: '&eRequired jobs:'
-      reqJobsList: '  &6%jobsname%&e: &e%level% lvl'
-      reqTotalLevel: '&6Required total level: &e%totalLevel%'
+      title: '&e------- &8Sklep prac &e-------'
+      currentPoints: '&eMasz: &e%currentpoints%'
+      price: '&eCena: &6%price%'
+      reqJobs: '&eWymagana praca:'
+      reqJobsList: '  &6%jobsname%&e: &e%level% poziom'
+      reqTotalLevel: '&6Wymagany całkowity poziom: &e%totalLevel%'
       reqJobsColor: '&c'
       reqJobsLevelColor: '&4'
       reqTotalLevelColor: '&4'
-      cantOpen: '&cCan''t open this page'
-      NoPermForItem: '&cYou don''t have required permissions for this item!'
-      NoPermToBuy: '&cNo permissions to buy this item'
-      NoJobReqForitem: '&cYou don''t have the required job (&6%jobname%&e) with required (&6%joblevel%&e) level'
-      NoPoints: '&cYou don''t have enough points'
-      NoTotalLevel: '&cTotal jobs level is too low (%totalLevel%)'
-      Paid: '&eYou have paid &6%amount% &efor this item'
+      cantOpen: '&cNie można otworzyć tej strony'
+      NoPermForItem: '&cNie masz wymaganych permisji do tego przedmiotu!'
+      NoPermToBuy: '&cBrak permisji, aby kupić ten przedmiot'
+      NoJobReqForitem: '&cNie masz wymaganej pracy (&6%jobname%&e) z wymaganym poziomem (&6%joblevel%&e)'
+      NoPoints: '&cNie masz wystarczającej ilości punktów'
+      NoTotalLevel: '&cCałkowity poziom prac jest za niski (%totalLevel%)'
+      Paid: '&eZapłaciłeś &6%amount% &eza ten przedmiot'
   archive:
     help:
-      info: Shows all jobs saved in archive by user.
+      info: Wyświetla wszystkie prace zapisane w archiwum przez gracza.
       args: '[playername]'
     error:
-      nojob: There is no jobs saved.
+      nojob: Nie ma zapisanych prac.
   give:
     help:
-      info: Gives item by jobs name and item category name. Player name is optional
+      info: Daje przedmiot poprzez nazwę pracy i nazwę kategorii przedmiotu. Nazwa gracza jest opcjonalna
       args: '[playername] [jobname] [items/limiteditems] [jobitemname]'
     output:
-      notonline: '&4Player with that name is not online!'
-      noitem: '&4Can''t find any item by given name!'
+      notonline: '&4Gracz z tą nazwą nie jest online!'
+      noitem: '&4Nie można znaleźć żadnego przedmiotu z podaną nazwą!'
   info:
     help:
-      title: '&2*** &eJobs&2 ***'
-      info: Show how much each job is getting paid and for what.
+      title: '&2*** &ePrace&2 ***'
+      info: Wyświetla jak dużo za każdą pracę otrzymuje się płacy i za co.
       penalty: '&eThis job has a penalty of &c[penalty]% &ebecause there are too many players working in it.'
       bonus: '&eThis job has a bonus of &2[bonus]% &ebecause there are not enough players working in it.'
       args: '[jobname] [action]'
