@@ -372,95 +372,95 @@ command:
         info: '&eShear'
         none: '%jobname% does not get money from shearing sheep.'
       explore:
-        info: '&eeksplorować'
+        info: '&eEksploracja'
         none: '%jobname% nie zarabia na eksploracji.'
       custom-kill:
-        info: '&eCustom kill'
-        none: '%jobname% does not get money from custom player kills.'
+        info: '&eNiestandardowe zabójstwo'
+        none: '%jobname% nie otrzymuje pieniędzy za zabójstwa graczy.'
       collect:
-        info: '&eCollect'
-        none: '%jobname% does not get money for collecting blocks.'
+        info: '&eZbieractwo'
+        none: '%jobname% nie otrzymuje pieniędzy za zbieranie bloków.'
       bake:
-        info: '&eBake'
-        none: '%jobname% does not get money for cooking foods.'
+        info: '&ePieczenie'
+        none: '%jobname% nie otrzymuje pieniędzy za gotowanie potraw.'
   playerinfo:
     help:
-      info: Show how much each job is getting paid and for what on another player.
+      info: Wyświetla jak dużo za każdą pracę otrzymuje się płacy i za co na innym graczu.
       args: '[playername] [jobname] [action]'
   join:
     help:
-      info: Join the selected job.
+      info: Dołącza do wybranej pracy.
       args: '[jobname]'
     error:
-      alreadyin: You are already in the job %jobname%.
-      fullslots: You cannot join the job %jobname%, there are no slots available.
-      maxjobs: You have already joined too many jobs.
-      rejoin: '&cCan''t rejoin this job. Wait [time]'
-    rejoin: '&aClick to rejoin this job: '
-    success: You have joined the job %jobname%.
-    confirm: '&2Click to confirm joining action for the &7[jobname] &2job.'
+      alreadyin: Jesteś już w pracy %jobname%.
+      fullslots: Nie możesz dołączyć do pracy %jobname%, nie ma żadnych dostępnych miejsc.
+      maxjobs: Dołączyłeś już do zbyt wielu prac.
+      rejoin: '&cNie można dołączyć ponownie. Poczekaj [time]'
+    rejoin: '&aKliknij aby dołączyć ponownie do pracy: '
+    success: Dołączyłeś do pracy %jobname%.
+    confirm: '&2Naciśnij aby zatwierdzić akcję dołączania do pracy &7[jobname]&2.'
   leave:
     help:
-      info: Leave the selected job.
+      info: Opuść wybraną pracę.
       args: '[oldplayerjob]'
-    success: You have left the job %jobname%.
-    confirmationNeed: '&cAre you sure you want to leave from&e [jobname]&c job? Type the command again within&6 [time] seconds &cto confirm!'
+    success: Opuściłeś pracę %jobname%.
+    confirmationNeed: '&cCzy jesteś pewien, że chcesz opuścić pracę &e[jobname]? Wpisz komendę ponownie w czasie &6[time] sekund &caby potwierdzić!'
   leaveall:
     help:
-      info: Leave all your jobs.
+      info: Opuść wszystkie prace.
     error:
-      nojobs: You do not have any jobs to leave!
-    success: You have left all your jobs.
-    confirmationNeed: '&cAre you sure you want to leave from all jobs? Type the command again within&6 [time] seconds &cto confirm!'
+      nojobs: Nie masz żadnych prac do opuszczenia!
+    success: Opuściłeś wszystkie prace.
+    confirmationNeed: '&cCzy jesteś pewien, że chcesz opuścić wszystkie prace? Wpisz komendę ponownie w czasie &6[time] sekund &caby potwierdzić!'
   explored:
     help:
-      info: Check who visited this chunk
+      info: Sprawdź kto odwiedził ten chunk
     error:
-      noexplore: No one visited this chunk
-    fullExplore: '&aThis chunk is fully explored'
+      noexplore: Nikt nie odwiedził tego chunku
+    fullExplore: '&aTen chunk jest w pełni wyeksplorowany'
     list: '&e%place%. %playername%'
   browse:
     help:
-      info: List the jobs available to you.
+      info: Wyświetla prace dostępne dla ciebie.
     error:
-      nojobs: There are no jobs you can join.
+      nojobs: Nie ma żadnych prac do których możesz dołączyć.
     output:
-      header: 'You are allowed to join the following jobs:'
-      footer: For more information type in /jobs info [JobName]
-      totalWorkers: ' &7Workers: &e[amount]'
-      penalty: ' &4Penalty: &c[amount]%'
-      bonus: ' &2Bonus: &a[amount]%'
-      newHeader: '&2========== [amount] Available Jobs ========='
+      header: 'Masz możliwość dołączenia do następujących prac:'
+      footer: Po więcej informacji wpisz /jobs info [JobName]
+      totalWorkers: ' &7Pracownicy: &e[amount]'
+      penalty: ' &4Kary: &c[amount]%'
+      bonus: ' &2Bonusy: &a[amount]%'
+      newHeader: '&2========== [amount] Dostępnych Prac ========='
       description: '[description]'
       list: '    &8[place]. &7[jobname]'
       console:
-        newHeader: '&2========== [amount] Available Jobs ========='
+        newHeader: '&2========== [amount] Dostępnych Prac ========='
         description: '[description]'
-        totalWorkers: ' &7Workers: &e[amount]'
-        penalty: ' &4Penalty: &c[amount]%'
-        bonus: ' &2Bonus: &a[amount]%'
+        totalWorkers: ' &7Pracownicy: &e[amount]'
+        penalty: ' &4Kary: &c[amount]%'
+        bonus: ' &2Bonusy: &a[amount]%'
         list: ' &6[jobname]'
-        newMax: ' &eMax level: &f[max]'
-      click: '&bClick on the job to see more info about it!'
-      detailed: '&bClick to see more detailed list on job actions'
+        newMax: ' &eMaks poziom: &f[max]'
+      click: '&bKliknij na pracę aby zobaczyć więcej informacji o niej!'
+      detailed: '&bKliknij aby zobaczyć bardziej szczegółową listę akcji pracy'
       jobHeader: '&2========== [jobname] ========='
-      chooseJob: '&7&n&oChoose this job'
-      chooseJobHover: '&7Click here to get this job'
+      chooseJob: '&7&n&oWybierz tą pracę'
+      chooseJobHover: '&7Kliknij tutaj aby dostać tą pracę'
   clearownership:
     help:
-      info: Clear block ownership
+      info: Wyczyść własność bloku
       args: '[playername]'
     output:
-      cleared: '&2Removed &7[furnaces] &2furnaces and &7[brewing] &2brewing stands'
+      cleared: '&2Usunięto &7[furnaces] &2pieców i &7[brewing] &2statywów alchemicznych'
   skipquest:
     help:
-      info: Skip defined quest and get new one
-      args: '[jobname] [questname] (playerName)'
+      info: Pomiń dane zadanie i otrzymaj nowe
+      args: '[jobname][questname] (NazwaGracza)'
     output:
-      questSkipForCost: '&2You skipped the quest and paid:&e %amount%$'
+      questSkipForCost: '&2Pominąłeś zadanie i zapłaciłeś:&e %amount%$'
   quests:
     help:
-      info: List available quests
+      info: Wyświetla listę dostępnych zadań
       args: '[playername]'
     error:
       noquests: '&cThere are no quests'
