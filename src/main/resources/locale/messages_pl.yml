@@ -22,9 +22,9 @@ general:
     error: '&cWystąpił błąd w tej komendzie.'
     success: '&eKomenda została wykonana.'
   error:
-    noHelpPage: '&cThere is no help page by this number!'
-    notNumber: '&ePlease use numbers!'
-    job: '&cThe job you selected does not exist or you not joined to this'
+    noHelpPage: '&cNie ma strony pomocy z tym numerem!'
+    notNumber: '&eProszę użyj liczb!'
+    job: '&cPraca, którą wybrałeś nie istnieje lub do niej nie dołączyłeś'
     noCommand: '&cThere is no command by this name!'
     permission: '&cYou do not have permission to do that!'
     noinfo: '&cNo information found!'
