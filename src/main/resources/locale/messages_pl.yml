@@ -1,26 +1,26 @@
 ---
 economy:
   error:
-    nomoney: '&cSorry, no money left in national bank!'
+    nomoney: '&cNie masz wystarczająco pieniędzy na koncie!'
 limitedItem:
   error:
-    levelup: '&cYou need to level up in [jobname] to use this item!'
+    levelup: '&cMusisz zwiększyć swój poziom w pracy [jobname] aby użyć tego przedmiotu!'
 general:
-  Spawner: '&r[type] Spawner'
+  Spawner: 'Spawner &r[type]'
   info:
     toplineseparator: '&7*********************** &6%playername% &7***********************'
     separator: '&7*******************************************************'
     time:
-      days: '&e%days% &6days '
-      hours: '&e%hours% &6hours '
+      days: '&e%days% &6dni '
+      hours: '&e%hours% &6godzin(y) '
       mins: '&e%mins% &6min '
-      secs: '&e%secs% &6sec '
-    invalidPage: '&cInvalid page'
-    'true': '&2True'
-    'false': '&cFalse'
+      secs: '&e%secs% &6sek '
+    invalidPage: '&cNieprawidłowa strona'
+    'true': '&2Prawda'
+    'false': '&cFałsz'
   admin:
-    error: '&cThere was an error in the command.'
-    success: '&eYour command has been performed.'
+    error: '&cWystąpił błąd w tej komendzie.'
+    success: '&eKomenda została wykonana.'
   error:
     noHelpPage: '&cThere is no help page by this number!'
     notNumber: '&ePlease use numbers!'
