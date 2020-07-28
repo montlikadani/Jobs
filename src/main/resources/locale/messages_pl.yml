@@ -552,19 +552,19 @@ command:
       topline: '&7************************* &6%playername% &7*************************'
       ls: '&7* &6%number%. &3%action%: &6%item% &eqty: %qty% %money%%exp%%points%'
       money: '&6money: %amount% '
-      exp: '&eexp: %amount% '
-      points: '&6points: %amount%'
-      totalIncomes: '    &6Total money:&2 %money%&6, Total exp:&2 %exp%&6, Total points:&2 %points%'
+      exp: '&eexp: &%amount% '
+      points: '&epunkty: &6%amount%'
+      totalIncomes: '    &6Całkowite pieniądze:&2 %money%&6, Całkowity exp:&2 %exp%&6, Całkowite punkty:&2 %points%'
       bottomline: '&7***********************************************************'
-      prev: '&e<<<<< Prev page &2|'
-      next: '&2|&e Next Page >>>>'
-      nodata: '&cData not found'
+      prev: '&e<<<<< Poprz strona &2|'
+      next: '&2|&e Nast strona >>>>'
+      nodata: '&cDane nieodnalezione'
   glog:
     help:
-      info: Shows global statistics.
+      info: Wyświetla globalne statystyki.
       args: ''
     output:
-      topline: '&7*********************** &6Global statistics &7***********************'
+      topline: '&7*********************** &6Globalne statystyki &7***********************'
       ls: '&7* &6%number%. &3%action%: &6%item% &eqty: %qty% %money%%exp%%points%'
       money: '&6money: %amount% '
       exp: '&eexp: %amount% '
