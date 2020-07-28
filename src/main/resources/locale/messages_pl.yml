@@ -32,60 +32,60 @@ general:
     ingame: '&cMożesz użyć tej komendy tylko w grze!'
     fromconsole: '&cMożesz użyć tej komendy tylko w konsoli!'
     worldisdisabled: '&cNie możesz użyć tej komendy w tym świecie!'
-    newFurnaceRegistration: '&eRegistered new ownership for furnace &7[current]&e/&f[max]'
-    newBrewingRegistration: '&eRegistered new ownership for brewing stand &7[current]&e/&f[max]'
-    noFurnaceRegistration: '&cYou''ve reached max furnace count!'
-    noBrewingRegistration: '&cYou''ve reached max brewing stand count!'
+    newFurnaceRegistration: '&eZarejestrowano nową własność dla pieca &7[current]&e/&f[max]'
+    newBrewingRegistration: '&eZarejestrowano nową własność dla statywu alchemicznego &7[current]&e/&f[max]'
+    noFurnaceRegistration: '&cOsiągnąłeś maksymalną ilość piecy!'
+    noBrewingRegistration: '&cOsiągnąłeś maksymalną ilość statywów alchemicznych!'
 command:
   help:
     output:
-      info: Type /jobs [cmd] ? for more information about a command.
-      cmdUsage: '&2Usage: &7[command]'
+      info: Wpisz /jobs [cmd] ? aby uzyskać więcej informacji o komendzie.
+      cmdUsage: '&2Użycie: &7[command]'
       label: Jobs
       cmdInfoFormat: '[command] &f- &2[description]'
       cmdFormat: '&7/[command] &f[arguments]'
       helpPageDescription: '&2* [description]'
-      title: '&e-------&e ======= &6Jobs &e======= &e-------'
-      page: '&e-----&e ====== Page &6[1] &eof &6[2] &e====== &e-----'
+      title: '&e-------&e ======= &6Prace &e======= &e-------'
+      page: '&e-----&e ====== Strona &6[1] &ez &6[2] &e====== &e-----'
       fliperSimbols: '&e----------'
-      prevPage: '&2----<< &6Prev '
-      prevPageOff: '&7----<< Prev '
-      nextPage: '&6 Next &2>>----'
-      nextPageOff: '&7 Next >>----'
+      prevPage: '&2----<< &6Poprz '
+      prevPageOff: '&7----<< Poprz '
+      nextPage: '&6 Nast &2>>----'
+      nextPageOff: '&7 Nast >>----'
       pageCount: '&2[current]/[total]'
-      pageCountHover: '&e[totalEntries] entries'
-      prevPageGui: '&6Previous page '
-      nextPageGui: '&6Next Page'
+      pageCountHover: '&e[totalEntries] stron'
+      prevPageGui: '&6Poprzednia strona '
+      nextPageGui: '&6Następna Strona'
   moneyboost:
     help:
-      info: Boosts money gain for all players
+      info: Zwiększa zysk pieniężny dla wszystkich graczy
       args: '[jobname]/all/reset [rate]/all'
     output:
-      allreset: All money boosts turned off
-      jobsboostreset: Money boost has been turned off for %jobname%
-      nothingtoreset: Nothing to reset
-      boostalladded: Money boost of %boost% added for all jobs!
-      boostadded: Money boost of &e%boost% &aadded for &e%jobname%!
-      infostats: '&c-----> &aMoney rate x%boost% enabled&c <-------'
+      allreset: Wszystkie boostery pieniężne zostały wyłączone
+      jobsboostreset: Boost pieniężny został wyłączony dla pracy %jobname%
+      nothingtoreset: Nie ma nic do zresetowania
+      boostalladded: Boost pieniężny %boost% dodany do wszystkich prac!
+      boostadded: Boost pieniężny &e%boost% &adodany do pracy &e%jobname%!
+      infostats: '&c-----> &aStawka pieniężna x%boost% włączona&c <-------'
   pointboost:
     help:
-      info: Boosts point gain for all players
+      info: Zwiększa zysk punktów dla wszystkich graczy
       args: '[jobname]/all/reset [rate]/all'
     output:
-      allreset: All point boosts turned off
-      jobsboostreset: Point boost has been turned off for %jobname%
-      nothingtoreset: Nothing to reset
-      boostalladded: Points boost of %boost% added for all jobs!
-      boostadded: Points boost of &e%boost% &aadded for &e%jobname%!
-      infostats: '&c-----> &aPoints rate x%boost% enabled&c <-------'
+      allreset: Wszystkie boosty punktowe zostały wyłączone
+      jobsboostreset: Boost punktów został wyłączony dla pracy %jobname%
+      nothingtoreset: Nie ma nic do zresetowania
+      boostalladded: Boost punktów %boost% dodany do wszystkich prac!
+      boostadded: Boost punktów &e%boost% &adodany do pracy &e%jobname%!
+      infostats: '&c-----> &aStawka punktowa x%boost% włączona&c <-------'
   expboost:
     help:
-      info: Boosts exp gain for all players
+      info: Zwiększa zysk exp'a dla wszystkich graczy
       args: '[jobname]/all/reset [rate]/all'
     output:
-      allreset: All exp boosts turned off
-      jobsboostreset: Exp boost has been turned off for %jobname%
-      nothingtoreset: Nothing to reset
+      allreset: Wszystkie boostery exp'a zostały wyłączone
+      jobsboostreset: Exp boost został wyłączony dla pracy %jobname%
+      nothingtoreset: Nie ma nic do zresetowania
       boostalladded: Exp boost of %boost% added for all jobs!
       boostadded: Exp boost of &e%boost% &aadded for &e%jobname%!
       infostats: '&c-----> &aExp rate x%boost% enabled&c <-------'
