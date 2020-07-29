@@ -463,83 +463,83 @@ command:
       info: Wyświetla listę dostępnych zadań
       args: '[playername]'
     error:
-      noquests: '&cThere are no quests'
+      noquests: '&cNie ma żadnych zadań'
     toplineseparator: '&7*********************** &6[playerName] &2(&f[questsDone]&2) &7***********************'
     status:
-      changed: '&2The quests status has been changed to&r %status%'
-      started: '&aStarted'
-      stopped: '&cStopped'
+      changed: '&2Status misji został zmieniony na&r %status%'
+      started: '&aRozpoczęty'
+      stopped: '&cZatrzymany'
     output:
-      completed: '&2      !Completed!&r      '
+      completed: '&2      !Ukończono!&r      '
       questLine: '[progress] &7[questName] &f[done]&7/&8[required]'
-      skip: '&7Click to skip this quest'
-      skips: '&7Left skips: &f[skips]'
-      hover: "&f[jobName] \n[desc] \n&7New quest in: [time]"
+      skip: '&7Kliknij aby pominąć to zadanie'
+      skips: '&7Pozostałe pominięcia: &f[skips]'
+      hover: "&f[jobName] \n[desc] \n&7Nowe zadanie za: [time]"
   fire:
     help:
-      info: Fire the player from the job.
+      info: Zwolnij gracza z pracy.
       args: '[playername] [jobname]'
     error:
-      nojob: Player does not have the job %jobname%.
+      nojob: Gracz nie jest w pracy %jobname%.
     output:
-      target: You have been fired from %jobname%.
+      target: Zostałeś zwolniony z pracy %jobname%.
   fireall:
     help:
-      info: Fire player from all their jobs.
+      info: Zwalnia gracza z wszystkich jego prac.
       args: '[playername]/all'
     error:
-      nojobs: Player does not have any jobs to be fired from!
+      nojobs: Gracz nie ma żadnych prac z których może być zwolniony!
     output:
-      target: You have been fired from all your jobs.
+      target: Zostałeś zwolniony z wszystkich twoich prac.
   employ:
     help:
-      info: Employ the player to the job.
+      info: Zatrudnij gracza do pracy.
       args: '[playername] [jobname]'
     error:
-      alreadyin: Player is already in the job %jobname%.
-      fullslots: You cannot join the job %jobname%, there are no slots available.
+      alreadyin: Gracz już jest w pracy %jobname%.
+      fullslots: Nie możesz dołączyć do pracy %jobname%, nie ma żadnych dostępnych miejsc.
     output:
-      target: You have been employed as a %jobname%.
+      target: Zostałeś zatrudniony jako %jobname%.
   top:
     help:
-      info: Shows top players by jobs name.
+      info: Wyświetla najlepszych graczy według nazw prac.
       args: '[jobname]'
     error:
-      nojob: Can't find any job with this name.
+      nojob: Nie można znaleźć żadnej pracy z tą nazwą.
     output:
-      topline: '&aTop&e %amount% &aplayers by &e%jobname% &ajob'
+      topline: '&aTopka&e %amount% &agraczy poprzez pracę &e%jobname%'
       list: '&e%number%&a. &e%playername% &alvl &e%level% &awith&e %exp% &aexp'
-      prev: '&e<<<<< Prev page &2|'
-      next: '&2|&e Next Page >>>>'
-      show: '&2Show from &e[from] &2until &e[until] &2top list'
+      prev: '&e<<<<< Poprz strona &2|'
+      next: '&2|&e Nast strona >>>>'
+      show: '&2Wyświetla od &e[from] &2do &e[until] &2topową listę'
   gtop:
     help:
-      info: Shows top players by global jobs level.
+      info: Wyświetla najlepszych graczy według globalnego poziomu prac.
       args: ''
     error:
-      nojob: Can't find any information.
+      nojob: Nie można znaleźć żadnych informacji.
     output:
-      topline: '&aTop&e %amount% &aplayers by global job level'
+      topline: '&aTopka&e %amount% graczy poprzez globalny poziom prac'
       list: '&e%number%&a. &e%playername% &alvl &e%level% &awith&e %exp% &aexp'
-      prev: '&e<<<<< Prev page &2|'
-      next: '&2|&e Next Page >>>>'
-      show: '&2Show from &e[from] &2until &e[until] &2global top list'
+      prev: '&e<<<<< Poprz strona &2|'
+      next: '&2|&e Nast strona >>>>'
+      show: '&2Wyświetla od &e[from] &2do &e[until] &2globalną topową listę'
   area:
     help:
-      info: Modify restricted areas.
+      info: Modyfikuj obszary o ograniczonym dostępie.
       args: add/remove/info/list
-      addUsage: '&eUsage: &6/Jobs area add [areaName/wg:worldGuardAreaName] [bonus]'
-      removeUsage: '&eUsage: &6/Jobs area remove [areaName]'
+      addUsage: '&eUżycie: &6/Jobs area add [nazwaRegionu/wg:nazwaRegionuWorldGuard] [bonus]'
+      removeUsage: '&eUżycie: &6/Jobs area remove [areaName]'
     output:
-      addedNew: '&eAdded a new restricted area with &6%bonus% &ebonus'
-      removed: '&eRemoved the restricted area &6%name%'
+      addedNew: '&eDodano region z bonusem &6%bonus%'
+      removed: '&eUsunięto region &6%name%'
       list: '&e%number%&a. &e%areaname% &e%worldname% (&a%x1%:%y1%:%z1%/&e%x2%:%y2%:%z2%) &6%bonus%'
       wgList: '&e%number%&a. WorldGuard: &e%areaname% &6%bonus%'
-      noAreas: '&eThere are no saved restricted areas'
-      noAreasByLoc: '&eThere are no restricted areas in this location'
-      areaList: '&eRestricted areas by your location: &6%list%'
-      selected1: '&eSelected the first point: &6%x%:%y%:%z%'
-      selected2: '&eSelected the second point: &6%x%:%y%:%z%'
+      noAreas: '&eBrak zapisanych regionów'
+      noAreasByLoc: '&eBrak regionów w tej lokalizacji'
+      areaList: '&eRegiony w twojej lokalizacji: &6%list%'
+      selected1: '&eWybrano punkt pierwszy: &6%x%:%y%:%z%'
+      selected2: '&eWybrano punkt drugi: &6%x%:%y%:%z%'
       select: '&eSelect 2 points with the selection tool (%tool%)'
       exist: '&eRestriction area by this name already exists'
       dontExist: '&eRestriction area by this name does not exist'
