@@ -651,7 +651,7 @@ message:
     nobroadcast: Congratulations, you have been promoted to a %titlename% %jobname%.
   levelup:
     broadcast: '%playername% is now a level %joblevel% %jobname%.'
-    nobroadcast: You are now level %joblevel% %jobname%.
+    nobroadcast: Du bist nun Level %joblevel% in %jobname%.
   leveldown:
     message: '&cYou lost level&e %lostLevel%&c in&e %jobname%&c job! Level:&6 %joblevel%&c.'
   cowtimer: '&eDu musst immernoch &6%time% &eSekunden warten bevor du für diesen Beruf bezahlt wirst.'
