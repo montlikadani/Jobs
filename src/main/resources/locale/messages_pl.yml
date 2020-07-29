@@ -301,9 +301,9 @@ command:
       points: ' &6%points%ppkt'
       exp: ' &e%exp%xp'
     gui:
-      pickjob: '&ePick your job!'
-      jobinfo: '&e[jobname] info!'
-      actions: '&eValid actions are:'
+      pickjob: '&eWybierz swoją pracę!'
+      jobinfo: '&eInformacje o [jobname]!'
+      actions: '&eMożliwe akcje to:'
       leftClick: '&eLeft Click for more info'
       middleClick: '&eMiddle Click to leave this job'
       rightClick: '&eRight click to join job'
