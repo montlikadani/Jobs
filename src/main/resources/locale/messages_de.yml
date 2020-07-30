@@ -599,19 +599,19 @@ command:
     error:
       nojob: '&cDieser Spieler muss zuerst einen Beruf wählen.'
     output:
-      target: '&eYour level was changed for %jobname% &eand now you at &6%level%lvl &eand with &6%exp%exp.'
+      target: '&eDein Level für %jobname% &ewurde geändert und bist nun &6%level% Level &eund bei &6%exp% exp.'
   demote:
     help:
-      info: Demote the player X levels in a job.
+      info: Stuft den Spieler X Level in einem Job zurück.
       args: '[playername] [jobname] [levels]'
     output:
-      target: You have been demoted %levelslost% levels in %jobname%.
+      target: Du wurdest %levelslost% Level in %jobname% zurück gestuft.
   grantxp:
     help:
-      info: Grants the player X experience in a job.
+      info: Gibt dem Spieler X Erfahrung in einem Job.
       args: '[playername] [jobname] [xp]'
     output:
-      target: You have been granted %xpgained% experience in %jobname%.
+      target: Dir wurde %xpgained% Erfahrung in %jobname% gegeben.
   removexp:
     help:
       info: Entfernt X Erfahrung von einem Spieler in einem Job.
