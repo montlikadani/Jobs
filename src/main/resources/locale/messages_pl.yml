@@ -315,7 +315,7 @@ command:
       next: '&eNast >>>'
     output:
       break:
-        info: '&eZniszczenie'
+        info: '&eNiszczenie'
         none: '%jobname% nie otrzymuje pieniędzy za niszczenie bloków.'
       tntbreak:
         info: '&eNiszczenieTNT'
@@ -330,7 +330,7 @@ command:
         info: '&eZabójstwo'
         none: '%jobname% nie otrzymuje pieniędzy za zabijanie potworów.'
       mmkill:
-        info: '&eMMZabójstwo'
+        info: '&eZabójstwoMM'
         none: '%jobname% nie otrzymuje pieniędzy za zabijanie mistycznych potworów.'
       fish:
         info: '&eŁowienie'
@@ -375,7 +375,7 @@ command:
         info: '&eEksploracja'
         none: '%jobname% nie zarabia na eksploracji.'
       custom-kill:
-        info: '&eNiestandardowe zabójstwo'
+        info: '&eZabójstwo niestandardowe'
         none: '%jobname% nie otrzymuje pieniędzy za zabójstwa graczy.'
       collect:
         info: '&eZbieractwo'
