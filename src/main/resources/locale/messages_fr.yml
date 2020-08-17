@@ -653,7 +653,7 @@ message:
     broadcast: '%playername% est maintenant %jobname% niveau %joblevel%.'
     nobroadcast: Vous êtes maintenant %jobname% niveau %joblevel%.
   leveldown:
-    message: '&cYou lost level&e %lostLevel%&c in&e %jobname%&c job! Level:&6 %joblevel%&c.'
+    message: '&cVous avez perdu &e%lostLevel%&c niveau dans le métier de %jobname%! &6Niveau: %joblevel%&c.'
   cowtimer: '&eVous devez attendre &6%time% &esec avant d''être payé à nouveau.'
   blocktimer: '&eVous devez attendre &3[time] &esec avant d''être payé à nouveau.'
   placeblocktimer: '&eVous ne pouvez placer des blocs que toutes les &6[time] &esec au même endroit!'
