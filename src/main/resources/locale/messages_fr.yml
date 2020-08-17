@@ -110,13 +110,13 @@ command:
       topline: '&7**************** &2[money] &6[points] &e[exp] &7****************'
       permission: ' &ePerm bonus: &2%money% &6%points% &e%exp%'
       item: ' &eItem bonus: &2%money% &6%points% &e%exp%'
-      global: ' &eGlobal bonus: &2%money% &6%points% &e%exp%'
-      dynamic: ' &eDynamic bonus: &2%money% &6%points% &e%exp%'
-      nearspawner: ' &eSpawner bonus: &2%money% &6%points% &e%exp%'
+      global: ' &eBonus global: &2%money% &6%points% &e%exp%'
+      dynamic: ' &eBonus dynamique: &2%money% &6%points% &e%exp%'
+      nearspawner: ' &eBonus de Spawner: &2%money% &6%points% &e%exp%'
       petpay: ' &ePetPay bonus: &2%money% &6%points% &e%exp%'
-      area: ' &eArea bonus: &2%money% &6%points% &e%exp%'
+      area: ' &eBonus de zone: &2%money% &6%points% &e%exp%'
       mcmmo: ' &eMcMMO bonus: &2%money% &6%points% &e%exp%'
-      final: ' &eFinal bonus: &2%money% &6%points% &e%exp%'
+      final: ' &eBonus final: &2%money% &6%points% &e%exp%'
       finalExplanation: ' &eN''inclut pas les bonus/pénalités des spawners à proximité et de PetPay'
   convert:
     help:
@@ -208,7 +208,7 @@ command:
         hand: '&6MAIN '
         handHover: '&6Cliquez pour afficher les infos de l''objet dans votre main'
         or: '&eou '
-        look: '&6LOOKING AT'
+        look: '&6Regarde à'
         lookHover: '&6Cliquez pour afficher les infos du bloc que vous regardez'
   blockinfo:
     help:
@@ -497,12 +497,12 @@ command:
       args: '[playername] [jobname]'
     error:
       alreadyin: Ce joueur exerce déjà le métier de %jobname%.
-      fullslots: You cannot join the job %jobname%, there are no slots available.
+      fullslots: Vous ne pouvez pas devenir %jobname%, il n'y a plus de places disponibles.
     output:
       target: Vous avez été embauché pour être %jobname%.
   top:
     help:
-      info: Shows top players by jobs name.
+      info: Affiche le top des joueurs par nom de métiers.
       args: '[jobname]'
     error:
       nojob: Aucun métier ne porte ce nom.
@@ -514,7 +514,7 @@ command:
       show: '&2Montre la Top List de &e[from] &2jusqu''à &e[until]'
   gtop:
     help:
-      info: Shows top players by global jobs level.
+      info: Affiche le top des joueurs par niveau global de métiers.
       args: ''
     error:
       nojob: Impossible de trouver des informations.
@@ -554,7 +554,7 @@ command:
       money: '&6argent : %amount% '
       exp: '&eXP : %amount% '
       points: '&6points : %amount%'
-      totalIncomes: '    &6Total money:&2 %money%&6, Total exp:&2 %exp%&6, Total points:&2 %points%'
+      totalIncomes: '    &6Total gains:&2 %money%&6, Total exp:&2 %exp%&6, Total points:&2 %points%'
       bottomline: '&7***********************************************************'
       prev: '&e<<<<< Page précédente &2|'
       next: '&2|&e Page suivante >>>>'
@@ -569,7 +569,7 @@ command:
       money: '&6argent : %amount% '
       exp: '&eXP : %amount% '
       points: '&6points : %amount%'
-      totalIncomes: '    &6Total money:&2 %money%&6, Total exp:&2 %exp%&6, Total points:&2 %points%'
+      totalIncomes: '    &6Total gains:&2 %money%&6, Total exp:&2 %exp%&6, Total points:&2 %points%'
       bottomline: '&7**************************************************************'
       nodata: '&cDonnées introuvables'
   transfer:
@@ -599,7 +599,7 @@ command:
     error:
       nojob: '&cCe joueur doit d''abord choisir un métier.'
     output:
-      target: '&eYour level was changed for %jobname% &eand now you at &6%level%lvl &eand with &6%exp%exp.'
+      target: '&eVotre niveau a été changé pour %jobname%&e et maintenant vous êtes niveau &6%level%lvl &eet avec &6%exp%exp.'
   demote:
     help:
       info: Rétrograde le joueur de X niveaux dans un métier.
