@@ -624,26 +624,26 @@ command:
       args: '[jobname]'
   bp:
     help:
-      info: Shows block protections around you in 10 block radius
+      info: Viser blokkbeskyttelse rundt deg i radius på 10 blokker
       args: ''
     output:
-      found: '&eFound &6%amount% &eprotected blocks around you'
-      notFound: '&eNo protected blocks found around you'
+      found: '&eFant&6%amount% &ebeskyttede blokker rundt deg'
+      notFound: '&eIngen beskyttede blokker rundt deg'
   reload:
     help:
-      info: Reload configurations.
+      info: Last inn konfigurasjoner igjen.
   toggle:
     help:
       info: Toggles payment output on action bar or bossbar.
       args: actionbar/bossbar
     output:
-      turnedoff: '&4This feature is turned off!'
+      turnedoff: '&4Denne funksjonen er deaktivert!'
       paid:
         main: '&aDu fikk:'
-        money: '&e[amount] money'
-        exp: '&7[exp] exp'
+        money: '&e[amount] penger'
+        exp: '&7[exp] XP'
         points: '&6[points] poeng'
-      'on': '&aToggled: &aON'
+      'on': '&aTilstand: &aAKTIVERT'
       'off': '&aToggled: &4OFF'
 message:
   skillup:
