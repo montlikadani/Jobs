@@ -644,10 +644,10 @@ command:
         exp: '&7[exp] XP'
         points: '&6[points] poeng'
       'on': '&aTilstand: &aAKTIVERT'
-      'off': '&aToggled: &4OFF'
+      'off': '&aTilstand: &4DEAKTIVERT'
 message:
   skillup:
-    broadcast: '%playername% has been promoted to a %titlename% %jobname%.'
+    broadcast: '%playername% har blitt promotert til %titlename% %jobname%.'
     nobroadcast: Congratulations, you have been promoted to a %titlename% %jobname%.
   levelup:
     broadcast: '%playername% is now a level %joblevel% %jobname%.'
