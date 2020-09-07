@@ -91,20 +91,20 @@ command:
       infostats: '&c-----> &aExp rate x%boost% enabled&c <-------'
   itembonus:
     help:
-      info: Sjekk gjenstands-bonus
+      info: Sjekk gjenstandsbonus
       args: ''
     output:
       list: '&e[jobname]: %money% %points% %exp%'
       notAplyingList: '&7[jobname]: %money% %points% %exp%'
       hover: '&7%itemtype%'
-      hoverLevelLimits: "&7From level: %from% \n&7Until level: %until%"
+      hoverLevelLimits: "&7Fra nivå: %from% \n&7Til nivå: %until%"
   edititembonus:
     help:
-      info: Edit item boost bonus
+      info: Rediger gjenstandsboost-bonus
       args: list/add/remove [jobname] [itemBoostName]
   bonus:
     help:
-      info: Show job bonuses
+      info: Vis jobb-bonuser
       args: '[jobname]'
     output:
       topline: '&7**************** &2[money] &6[points] &e[exp] &7****************'
