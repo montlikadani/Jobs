@@ -88,7 +88,7 @@ command:
       nothingtoreset: Ikke noe å resette
       boostalladded: XP-boost på %boost% er lagt til for alle jobber!
       boostadded: XP-boost på &e%boost% &alagt til for &e%jobname%!
-      infostats: '&c-----> &aExp rate x%boost% enabled&c <-------'
+      infostats: '&c-----> &aXP-rate x%boost% aktivert&c <-------'
   itembonus:
     help:
       info: Sjekk gjenstandsbonus
@@ -109,14 +109,14 @@ command:
     output:
       topline: '&7**************** &2[money] &6[points] &e[exp] &7****************'
       permission: ' &ePerm bonus: &2%money% &6%points% &e%exp%'
-      item: ' &eItem bonus: &2%money% &6%points% &e%exp%'
+      item: ' &eGjenstandsbonus: &2%money% &6%points% &e%exp%'
       global: ' &eGlobal bonus: &2%money% &6%points% &e%exp%'
-      dynamic: ' &eDynamic bonus: &2%money% &6%points% &e%exp%'
+      dynamic: ' &eDynamisk bonus: &2%money% &6%points% &e%exp%'
       nearspawner: ' &eSpawner bonus: &2%money% &6%points% &e%exp%'
       petpay: ' &ePetPay bonus: &2%money% &6%points% &e%exp%'
-      area: ' &eArea bonus: &2%money% &6%points% &e%exp%'
+      area: ' &eOmrådebonus: &2%money% &6%points% &e%exp%'
       mcmmo: ' &eMcMMO bonus: &2%money% &6%points% &e%exp%'
-      final: ' &eFinal bonus: &2%money% &6%points% &e%exp%'
+      final: ' &eEndelig bonus: &2%money% &6%points% &e%exp%'
       finalExplanation: ' &eDoes not include Petpay and Near spawner bonus/penalty'
   convert:
     help:
