@@ -389,11 +389,11 @@ command:
       args: '[playername] [jobname] [action]'
   join:
     help:
-      info: Join the selected job.
+      info: Bli med i den valgte jobben.
       args: '[jobname]'
     error:
-      alreadyin: You are already in the job %jobname%.
-      fullslots: You cannot join the job %jobname%, there are no slots available.
+      alreadyin: Du er allerede med i jobben %jobname%.
+      fullslots: Du kan ikke bli med i jobben %jobname%, det er ingen ledige plasser.
       maxjobs: You have already joined too many jobs.
       rejoin: '&cCan''t rejoin this job. Wait [time]'
     rejoin: '&aClick to rejoin this job: '
@@ -485,12 +485,12 @@ command:
       target: You have been fired from %jobname%.
   fireall:
     help:
-      info: Fire player from all their jobs.
+      info: Spark spilleren fra alle dens jobber.
       args: '[playername]/all'
     error:
-      nojobs: Player does not have any jobs to be fired from!
+      nojobs: Spilleren har ikke noen jobber som spilleren kan bli sparket fra!
     output:
-      target: You have been fired from all your jobs.
+      target: Du har blitt sparket fra alle jobbene dine.
   employ:
     help:
       info: Employ the player to the job.
