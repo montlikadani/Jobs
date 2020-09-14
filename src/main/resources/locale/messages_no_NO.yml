@@ -238,7 +238,7 @@ command:
       parse: '&6[placeholder] &7av [source] &6resultat &8|&f[result]&8|'
   entitylist:
     help:
-      info: Shows all possible entities that can be used with the plugin.
+      info: Viser alle mulige enteties som kan bli brukt med pluginen.
       args: ''
   stats:
     help:
