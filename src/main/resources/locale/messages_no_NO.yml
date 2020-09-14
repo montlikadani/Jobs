@@ -278,7 +278,7 @@ command:
       nojob: Det er ingen jobber lagret.
   give:
     help:
-      info: Gives item by jobs name and item category name. Player name is optional
+      info: Gir gjenstanden navn etter jobb- og gjenstands-kategorinavn. Spillernavnet er valgfritt
       args: '[playername] [jobname] [items/limiteditems] [jobitemname]'
     output:
       notonline: '&4En spiller med det brukernavnet er ikke pålogget!'
@@ -287,31 +287,31 @@ command:
     help:
       title: '&2*** &eJobber&2 ***'
       info: Vis hvor mye hver jobb får betalt og for hva.
-      penalty: '&eThis job has a penalty of &c[penalty]% &ebecause there are too many players working in it.'
-      bonus: '&eThis job has a bonus of &2[bonus]% &ebecause there are not enough players working in it.'
+      penalty: '&eDenne jobben har en straff på &c[penalty]% &efordi det er for mange spillere som jobber med det samme.'
+      bonus: '&eDenne jobben har en bonus på &2[bonus]% &efordi det er for få spillere som jobber med det samme.'
       args: '[jobname] [action]'
-      actions: '&eValid actions are: &f%actions%'
-      max: ' - &emax level:&f '
-      newMax: ' &eMax level: &f[max]'
+      actions: '&eGyldige handlinger er: &f%actions%'
+      max: ' -&emaks nivå:&f '
+      newMax: ' &eMaks nivå: &f[max]'
       material: '&7%material%'
-      levelRange: ' &a(&e%levelFrom% &a- &e%levelUntil% &alevels)'
-      levelFrom: ' &a(from &e%levelFrom% &alevel)'
-      levelUntil: ' &a(until &e%levelUntil% &alevel)'
+      levelRange: ' &a(&e%levelFrom% &a- &e%levelUntil% &alevler)'
+      levelFrom: ' &a(fra &e%levelFrom% &alevel)'
+      levelUntil: ' &a(til &e%levelUntil% &alevel)'
       money: ' &2%money%$'
       points: ' &6%points%pts'
       exp: ' &e%exp%xp'
     gui:
-      pickjob: '&ePick your job!'
+      pickjob: '&eVelg jobben din!'
       jobinfo: '&e[jobname] info!'
-      actions: '&eValid actions are:'
-      leftClick: '&eLeft Click for more info'
-      middleClick: '&eMiddle Click to leave this job'
-      rightClick: '&eRight click to join job'
+      actions: '&eGyldige handlinger er:'
+      leftClick: '&eVenstreklikk for mer info'
+      middleClick: '&eMidtklikk for å forlate jobben'
+      rightClick: '&eHøyreklikk for å bli med i jobben'
       leftSlots: '&eLeft slots:&f '
-      working: '&2&nAlready working'
-      cantJoin: '&cYou can''t join to the selected job.'
-      max: '&eMax level:&f '
-      back: '&e<<< Back'
+      working: '&2&nVirker allerede'
+      cantJoin: '&cDu kan ikke bli med i den valgte jobben.'
+      max: '&eMaksnivå:&f '
+      back: '&e<<< Tilbake'
       next: '&eNeste >>>'
     output:
       break:
