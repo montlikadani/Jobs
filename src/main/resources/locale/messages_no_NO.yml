@@ -242,16 +242,16 @@ command:
       args: ''
   stats:
     help:
-      info: Show the level you are in each job you are part of.
+      info: Viser hvilket level du er i i de jobbene du er en del av.
       args: '[playername]'
     error:
-      nojob: Please join a job first.
-    output: 'Level %joblevel% for %jobname%: %jobxp%/%jobmaxxp% xp'
-    bossBarOutput: 'Lvl %joblevel% %jobname%: %jobxp%/%jobmaxxp% xp%gain%'
+      nojob: Vennligst start i en jobb først.
+    output: 'Level %joblevel% for %jobname%: %jobxp%/%jobmaxxp% XP'
+    bossBarOutput: 'Level %joblevel% %jobname%: %jobxp%/%jobmaxxp% XP%gain%'
     bossBarGain: ' &7(&f%gain%&7)'
   shop:
     help:
-      info: Opens special jobs shop.
+      info: Åpner butikk med spesielle jobber.
       args: ''
     info:
       title: '&e------- &8Jobs shop &e-------'
