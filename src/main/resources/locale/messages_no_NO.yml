@@ -254,39 +254,39 @@ command:
       info: Åpner butikk med spesielle jobber.
       args: ''
     info:
-      title: '&e------- &8Jobs shop &e-------'
-      currentPoints: '&eYou have: &6%currentpoints%'
-      price: '&ePrice: &6%price%'
-      reqJobs: '&eRequired jobs:'
-      reqJobsList: '  &6%jobsname%&e: &e%level% lvl'
-      reqTotalLevel: '&6Required total level: &e%totalLevel%'
+      title: '&e------- &8Jobb butikk &e-------'
+      currentPoints: '&eDu har: &6%currentpoints%'
+      price: '&ePris: &6%price%'
+      reqJobs: '&eObligatoriske jobber:'
+      reqJobsList: '  &6%jobsname%&e: &e%level% level'
+      reqTotalLevel: '&6Påkrevd totalnivå: &e%totalLevel%'
       reqJobsColor: '&c'
       reqJobsLevelColor: '&4'
       reqTotalLevelColor: '&4'
-      cantOpen: '&cCan''t open this page'
-      NoPermForItem: '&cYou don''t have required permissions for this item!'
-      NoPermToBuy: '&cNo permissions to buy this item'
-      NoJobReqForitem: '&cYou don''t have the required job (&6%jobname%&e) with required (&6%joblevel%&e) level'
-      NoPoints: '&cYou don''t have enough points'
-      NoTotalLevel: '&cTotal jobs level is too low (%totalLevel%)'
-      Paid: '&eYou have paid &6%amount% &efor this item'
+      cantOpen: '&cKan ikke åpne denne siden'
+      NoPermForItem: '&cDu har ikke påkrevde tillatelser til denne gjenstanden!'
+      NoPermToBuy: '&cDu har ikke tilgang til å kjøpe denne gjenstanden'
+      NoJobReqForitem: '&cDu har ikke den nødvendige jobben (&6%jobname%&e) med påkrevd (&6%joblevel%&e) nivå'
+      NoPoints: '&cDu har ikke nok poeng'
+      NoTotalLevel: '&cTotalt jobblevel er for lavt (%totalLevel%)'
+      Paid: '&eDu betalte &6%amount% &efor denne gjenstanden'
   archive:
     help:
-      info: Shows all jobs saved in archive by user.
+      info: Viser alle jobber lagret i arkivet av brukeren.
       args: '[playername]'
     error:
-      nojob: There is no jobs saved.
+      nojob: Det er ingen jobber lagret.
   give:
     help:
       info: Gives item by jobs name and item category name. Player name is optional
       args: '[playername] [jobname] [items/limiteditems] [jobitemname]'
     output:
-      notonline: '&4Player with that name is not online!'
-      noitem: '&4Can''t find any item by given name!'
+      notonline: '&4En spiller med det brukernavnet er ikke pålogget!'
+      noitem: '&4 Finner ingen gjenstander med det navnet!'
   info:
     help:
-      title: '&2*** &eJobs&2 ***'
-      info: Show how much each job is getting paid and for what.
+      title: '&2*** &eJobber&2 ***'
+      info: Vis hvor mye hver jobb får betalt og for hva.
       penalty: '&eThis job has a penalty of &c[penalty]% &ebecause there are too many players working in it.'
       bonus: '&eThis job has a bonus of &2[bonus]% &ebecause there are not enough players working in it.'
       args: '[jobname] [action]'
