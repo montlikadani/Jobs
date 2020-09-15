@@ -445,44 +445,44 @@ command:
       detailed: '&bKlikk for å se mer detaljert liste over handlinger'
       jobHeader: '&2========== [jobname] ========='
       chooseJob: '&7&n&oVelg denne jobben'
-      chooseJobHover: '&7Click here to get this job'
+      chooseJobHover: '&7Klikk her for å få denne jobben'
   clearownership:
     help:
-      info: Clear block ownership
+      info: Fjern blokk-eierskap
       args: '[playername]'
     output:
-      cleared: '&2Removed &7[furnaces] &2furnaces and &7[brewing] &2brewing stands'
+      cleared: '&2Fjernet &7[furnaces] &2ovner og &7[brewing] &2brewing stands'
   skipquest:
     help:
-      info: Skip defined quest and get new one
+      info: Hopp over definert oppdrag og få en ny
       args: '[jobname] [questname] (playerName)'
     output:
-      questSkipForCost: '&2You skipped the quest and paid:&e %amount%$'
+      questSkipForCost: '&2Du hoppet over oppdraget og betalte:&e %amount%$'
   quests:
     help:
-      info: List available quests
+      info: Liste over tilgjengelige oppdrag
       args: '[playername]'
     error:
-      noquests: '&cThere are no quests'
+      noquests: '&cDet finnes ingen oppdrag'
     toplineseparator: '&7*********************** &6[playerName] &2(&f[questsDone]&2) &7***********************'
     status:
-      changed: '&2The quests status has been changed to&r %status%'
-      started: '&aStarted'
-      stopped: '&cStopped'
+      changed: '&2Oppdrag-status er endret til&r %status%'
+      started: '&aStartet'
+      stopped: '&cStoppet'
     output:
-      completed: '&2      !Completed!&r      '
+      completed: '&2      !Gjennomført!&r      '
       questLine: '[progress] &7[questName] &f[done]&7/&8[required]'
-      skip: '&7Click to skip this quest'
-      skips: '&7Left skips: &f[skips]'
-      hover: "&f[jobName] \n[desc] \n&7New quest in: [time]"
+      skip: '&7Klikk for å hoppe over denne oppgaven'
+      skips: '&7Hvor mange ganger du kan hoppe over igjen: &f[skips]'
+      hover: "&f[jobName] \n[desc] \n&7Nytt oppdrag igjen: [time]"
   fire:
     help:
-      info: Fire the player from the job.
+      info: Fjern spilleren fra jobben.
       args: '[playername] [jobname]'
     error:
-      nojob: Player does not have the job %jobname%.
+      nojob: Spilleren har ikke %jobname%-jobben.
     output:
-      target: You have been fired from %jobname%.
+      target: Du har blitt fjernet fra %jobname%-jobben.
   fireall:
     help:
       info: Spark spilleren fra alle dens jobber.
@@ -493,43 +493,43 @@ command:
       target: Du har blitt sparket fra alle jobbene dine.
   employ:
     help:
-      info: Employ the player to the job.
+      info: Ansett spilleren til jobben.
       args: '[playername] [jobname]'
     error:
-      alreadyin: Player is already in the job %jobname%.
-      fullslots: You cannot join the job %jobname%, there are no slots available.
+      alreadyin: Spilleren er allerede med i jobben %jobname%.
+      fullslots: Du kan ikke bli med i %jobname%-jobben, det er ingen ledige stillinger.
     output:
-      target: You have been employed as a %jobname%.
+      target: Du har blitt ansatt som %jobname%.
   top:
     help:
-      info: Shows top players by jobs name.
+      info: Viser toppspillere i jobben.
       args: '[jobname]'
     error:
-      nojob: Can't find any job with this name.
+      nojob: Kunne ikke finne noen jobb med det jobbnavnet.
     output:
-      topline: '&aTop&e %amount% &aplayers by &e%jobname% &ajob'
-      list: '&e%number%&a. &e%playername% &alvl &e%level% &awith&e %exp% &aexp'
-      prev: '&e<<<<< Forrige side &2|'
-      next: '&2|&e Next Page >>>>'
-      show: '&2Show from &e[from] &2until &e[until] &2top list'
-  gtop:
-    help:
-      info: Shows top players by global jobs level.
-      args: ''
-    error:
-      nojob: Can't find any information.
-    output:
-      topline: '&aTop&e %amount% &aplayers by global job level'
-      list: '&e%number%&a. &e%playername% &alvl &e%level% &awith&e %exp% &aexp'
+      topline: '&aTopp&e %amount% &aspillere i &e%jobname%&a-jobben'
+      list: '&e%number%&a. &e%playername% &alevel &e%level% &awith&e %exp% &aXP'
       prev: '&e<<<<< Forrige side &2|'
       next: '&2|&e Neste side >>>>'
-      show: '&2Show from &e[from] &2until &e[until] &2global top list'
+      show: '&2Viser fra &e[from] &2til &e[until] &2toppliste'
+  gtop:
+    help:
+      info: Viser toppspillere fra globalt jobbnivå.
+      args: ''
+    error:
+      nojob: Kunne ikke finne noen informasjon.
+    output:
+      topline: '&aTopp&e %amount% &aspillere fra globalt toppnivå'
+      list: '&e%number%&a. &e%playername% &alevel &e%level% &awith&e %exp% &aXP'
+      prev: '&e<<<<< Forrige side &2|'
+      next: '&2|&e Neste side >>>>'
+      show: '&2Viser fra &e[from] &2til &e[until] &2global toppliste'
   area:
     help:
-      info: Modify restricted areas.
+      info: Endre begrensede områder.
       args: add/remove/info/list
-      addUsage: '&eUsage: &6/Jobs area add [areaName/wg:worldGuardAreaName] [bonus]'
-      removeUsage: '&eUsage: &6/Jobs area remove [areaName]'
+      addUsage: '&eBruk: &6/Jobs area add [areaName/wg:worldGuardAreaName] [bonus]'
+      removeUsage: '&eBruk: &6/Jobs area remove [areaName]'
     output:
       addedNew: '&eAdded a new restricted area with &6%bonus% &ebonus'
       removed: '&eRemoved the restricted area &6%name%'
