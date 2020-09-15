@@ -394,9 +394,9 @@ command:
     error:
       alreadyin: Du er allerede med i jobben %jobname%.
       fullslots: Du kan ikke bli med i jobben %jobname%, det er ingen ledige plasser.
-      maxjobs: You have already joined too many jobs.
-      rejoin: '&cCan''t rejoin this job. Wait [time]'
-    rejoin: '&aClick to rejoin this job: '
+      maxjobs: Du er allerede med i for mange jobber.
+      rejoin: '&cKunne ikke bli med i jobben igjen. Vent [time]'
+    rejoin: '&eKlikk for å bli med i jobben igjen: '
     success: You have joined the job %jobname%.
     confirm: '&2Click to confirm joining action for the &7[jobname] &2job.'
   leave:
