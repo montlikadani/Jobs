@@ -441,10 +441,10 @@ command:
         bonus: ' &2Tillegg: &a[amount]%'
         list: ' &6[jobname]'
         newMax: ' &eMaksnivå: &f[max]'
-      click: '&bClick on the job to see more info about it!'
-      detailed: '&bClick to see more detailed list on job actions'
+      click: '&bKlikk på jobben for å få mer informasjon om den!'
+      detailed: '&bKlikk for å se mer detaljert liste over handlinger'
       jobHeader: '&2========== [jobname] ========='
-      chooseJob: '&7&n&oChoose this job'
+      chooseJob: '&7&n&oVelg denne jobben'
       chooseJobHover: '&7Click here to get this job'
   clearownership:
     help:
