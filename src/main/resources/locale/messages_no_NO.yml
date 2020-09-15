@@ -397,50 +397,50 @@ command:
       maxjobs: Du er allerede med i for mange jobber.
       rejoin: '&cKunne ikke bli med i jobben igjen. Vent [time]'
     rejoin: '&eKlikk for å bli med i jobben igjen: '
-    success: You have joined the job %jobname%.
-    confirm: '&2Click to confirm joining action for the &7[jobname] &2job.'
+    success: Du har blitt med i jobben %jobname%.
+    confirm: '&2Klikk for å bekrefte at du blir ønsker å bli med i jobben &7[jobname].'
   leave:
     help:
-      info: Leave the selected job.
+      info: Forlat den valgte jobben.
       args: '[oldplayerjob]'
-    success: You have left the job %jobname%.
-    confirmationNeed: '&cAre you sure you want to leave from&e [jobname]&c job? Type the command again within&6 [time] seconds &cto confirm!'
+    success: Du har forlatt %jobname%-jobben.
+    confirmationNeed: '&cEr du sikker på at du vil forlate &e[jobname]&c-jobben? Skriv kommandoen igjen innen &6 [time] sekund(er) &cfor å bekrefte!'
   leaveall:
     help:
-      info: Leave all your jobs.
+      info: Forlat alle jobbene du har.
     error:
-      nojobs: You do not have any jobs to leave!
-    success: You have left all your jobs.
-    confirmationNeed: '&cAre you sure you want to leave from all jobs? Type the command again within&6 [time] seconds &cto confirm!'
+      nojobs: Du har ingen jobber du kan forlate!
+    success: Du har forlatt alle jobbene dine.
+    confirmationNeed: '&cEr du sikker på at du vil forlate alle jobbene du har? Skriv kommandoen igjen innen &6 [time] sekund(er) &cfor å bekrefte!'
   explored:
     help:
-      info: Check who visited this chunk
+      info: Sjekk hvem som har besøkt denne chunken
     error:
-      noexplore: No one visited this chunk
-    fullExplore: '&aThis chunk is fully explored'
+      noexplore: Ingen har besøkt denne chunken
+    fullExplore: '&aDenne chunken er fullstendig utforsket'
     list: '&e%place%. %playername%'
   browse:
     help:
-      info: List the jobs available to you.
+      info: Liste over jobber som er tilgjengelige for deg.
     error:
-      nojobs: There are no jobs you can join.
+      nojobs: Det er ingen jobber du kan bli med i.
     output:
-      header: 'You are allowed to join the following jobs:'
-      footer: For more information type in /jobs info [JobName]
-      totalWorkers: ' &7Workers: &e[amount]'
+      header: 'Du kan bli med i følgende jobber:'
+      footer: For mer informasjon, skriv /jobs info [JobName]
+      totalWorkers: ' &7Arbeidere: &e[amount]'
       penalty: ' &4Penalty: &c[amount]%'
-      bonus: ' &2Bonus: &a[amount]%'
-      newHeader: '&2========== [amount] Available Jobs ========='
+      bonus: ' &2Tillegg: &a[amount]%'
+      newHeader: '&2========== [amount] Tilgjengelige jobber ========='
       description: '[description]'
       list: '    &8[place]. &7[jobname]'
       console:
-        newHeader: '&2========== [amount] Available Jobs ========='
+        newHeader: '&2========== [amount] Tilgjengelige jobber ========='
         description: '[description]'
-        totalWorkers: ' &7Workers: &e[amount]'
+        totalWorkers: ' &7Arbeidere: &e[amount]'
         penalty: ' &4Penalty: &c[amount]%'
-        bonus: ' &2Bonus: &a[amount]%'
+        bonus: ' &2Tillegg: &a[amount]%'
         list: ' &6[jobname]'
-        newMax: ' &eMax level: &f[max]'
+        newMax: ' &eMaksnivå: &f[max]'
       click: '&bClick on the job to see more info about it!'
       detailed: '&bClick to see more detailed list on job actions'
       jobHeader: '&2========== [jobname] ========='
