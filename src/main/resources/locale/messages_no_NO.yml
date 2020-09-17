@@ -580,7 +580,7 @@ command:
       target: Du har blitt overført fra %oldjobname% til %newjobname%.
   promote:
     help:
-      info: Promote the player X levels in a job.
+      info: Promoter spilleren med X-nivåer i en jobb.
       args: '[playername] [jobname] [levels]'
     output:
       target: Nivået ditt i %jobname%-jobben har økt med %levelsgained%.
@@ -591,21 +591,21 @@ command:
     error:
       nojob: '&cDenne spilleren må først bli med i en jobb.'
     output:
-      target: '&eYour exp was changed for %jobname% &eand now you at &6%level%lvl &eand with &6%exp%exp.'
+      target: '.&eXP-en din ble endret for %jobname% &eså nå er du i &6%level%lvl &emed %exp%eXP.'
   level:
     help:
-      info: Change the player's level in a job.
+      info: Endre en spillers nivå i en jobb.
       args: '[playername] [jobname] set/add/take [amount]'
     error:
-      nojob: '&cThis player must first join a job.'
+      nojob: '&cDenne spilleren må først bli med i en jobb.'
     output:
-      target: '&eYour level was changed for %jobname% &eand now you at &6%level%lvl &eand with &6%exp%exp.'
+      target: '&eNivået ditt ble endret for %jobname% &eså nå er du i &6%level%lvl &emed &6%exp%exp.'
   demote:
     help:
-      info: Demote the player X levels in a job.
+      info: Degrader spilleren med X-nivåer i en jobb.
       args: '[playername] [jobname] [levels]'
     output:
-      target: You have been demoted %levelslost% levels in %jobname%.
+      target: Du har blitt degradert %levelslost% nivåer i %jobname%-jobben.
   grantxp:
     help:
       info: Grants the player X experience in a job.
