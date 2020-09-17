@@ -554,7 +554,7 @@ command:
       money: '&6penger: %amount% '
       exp: '&eXP: %amount% '
       points: '&6poeng: %amount%'
-      totalIncomes: '    &6Total saldo:&2 %money%&6, Total Xp:&2 %exp%&6, Poeng totalt:&2 %points%'
+      totalIncomes: '    &6Penger totalt:&2 %money%&6, XP totalt:&2 %exp%&6, Poeng totalt:&2 %points%'
       bottomline: '&7***********************************************************'
       prev: '&e<<<<< Forrige side &2|'
       next: '&2|&e Neste side >>>>'
@@ -569,27 +569,27 @@ command:
       money: '&6penger: %amount% '
       exp: '&eXP: %amount% '
       points: '&epoeng: %amount%'
-      totalIncomes: '    &6Penger totalt:&2 %money%&6, Xp totalt:&2 %exp%&6, Poeng totalt:&2 %points%'
+      totalIncomes: '    &6Penger totalt:&2 %money%&6, XP totalt:&2 %exp%&6, Poeng totalt:&2 %points%'
       bottomline: '&7**************************************************************'
-      nodata: '&cData not found'
+      nodata: '&cIngen data funnet'
   transfer:
     help:
-      info: Transfer a player's job from an old job to a new job.
+      info: Overfør en spillers jobb fra en gammel jobb til en ny jobb.
       args: '[playername] [oldjob] [newjob]'
     output:
-      target: You have been transferred from %oldjobname% to %newjobname%.
+      target: Du har blitt overført fra %oldjobname% til %newjobname%.
   promote:
     help:
       info: Promote the player X levels in a job.
       args: '[playername] [jobname] [levels]'
     output:
-      target: You have been promoted %levelsgained% levels in %jobname%.
+      target: Nivået ditt i %jobname%-jobben har økt med %levelsgained%.
   exp:
     help:
-      info: Change the player exp for job.
+      info: Endre spiller-XP for jobb.
       args: '[playername] [jobname] set/add/take [amount]'
     error:
-      nojob: '&cThis player must first join a job.'
+      nojob: '&cDenne spilleren må først bli med i en jobb.'
     output:
       target: '&eYour exp was changed for %jobname% &eand now you at &6%level%lvl &eand with &6%exp%exp.'
   level:
