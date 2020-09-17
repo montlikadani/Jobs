@@ -541,9 +541,9 @@ command:
       selected1: '&eValgt første punkt: &6%x%:%y%:%z%'
       selected2: '&eValgt andre punkt: &6%x%:%y%:%z%'
       select: '&eVelg to punkter med markeringsverktøyet (%tool%)'
-      exist: '&eRestriction area by this name already exists'
-      dontExist: '&eRestriction area by this name does not exist'
-      wgDontExist: '&eWorldGuard area by this name does not exist'
+      exist: '&eDet eksisterer allerede et begrenset område med dette navnet'
+      dontExist: '&eDet eksisterer ikke et begrenset område med dette navnet'
+      wgDontExist: '&eWorldGuard-område med dette område, eksisterer ikke'
   log:
     help:
       info: Vis statistikk.
@@ -551,25 +551,25 @@ command:
     output:
       topline: '&7************************* &6%playername% &7*************************'
       ls: '&7* &6%number%. &3%action%: &6%item% &eqty: %qty% %money%%exp%%points%'
-      money: '&6money: %amount% '
-      exp: '&eexp: %amount% '
-      points: '&6points: %amount%'
-      totalIncomes: '    &6Total money:&2 %money%&6, Total exp:&2 %exp%&6, Total points:&2 %points%'
+      money: '&6penger: %amount% '
+      exp: '&eXP: %amount% '
+      points: '&6poeng: %amount%'
+      totalIncomes: '    &6Total saldo:&2 %money%&6, Total Xp:&2 %exp%&6, Poeng totalt:&2 %points%'
       bottomline: '&7***********************************************************'
-      prev: '&e<<<<< Prev page &2|'
-      next: '&2|&e Next Page >>>>'
-      nodata: '&cData not found'
+      prev: '&e<<<<< Forrige side &2|'
+      next: '&2|&e Neste side >>>>'
+      nodata: '&eIngen data funnet'
   glog:
     help:
-      info: Shows global statistics.
+      info: Viser global statistikk.
       args: ''
     output:
-      topline: '&7*********************** &6Global statistics &7***********************'
+      topline: '&7*********************** &6Global statistikk &7***********************'
       ls: '&7* &6%number%. &3%action%: &6%item% &eqty: %qty% %money%%exp%%points%'
-      money: '&6money: %amount% '
-      exp: '&eexp: %amount% '
-      points: '&6points: %amount%'
-      totalIncomes: '    &6Total money:&2 %money%&6, Total exp:&2 %exp%&6, Total points:&2 %points%'
+      money: '&6penger: %amount% '
+      exp: '&eXP: %amount% '
+      points: '&epoeng: %amount%'
+      totalIncomes: '    &6Penger totalt:&2 %money%&6, Xp totalt:&2 %exp%&6, Poeng totalt:&2 %points%'
       bottomline: '&7**************************************************************'
       nodata: '&cData not found'
   transfer:
