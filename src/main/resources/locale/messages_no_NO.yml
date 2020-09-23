@@ -64,8 +64,8 @@ command:
       allreset: Pengeøkning er slått av
       jobsboostreset: Pengeøkning er slått av for %jobname%
       nothingtoreset: Ikke noe å resette
-      boostalladded: Pengeøkning på %boost% er lagt til for alle jobber!
-      boostadded: Pengeøkning på &e%boost% &aer lagt til for &e%jobname%!
+      boostalladded: Pengeboost på %boost% er lagt til for alle jobber!
+      boostadded: Pengeboost på &e%boost% &aer lagt til for &e%jobname%!
       infostats: '&c-----> &aPengesats x%boost% aktivert&c <-------'
   pointboost:
     help:
@@ -307,7 +307,7 @@ command:
       leftClick: '&eVenstreklikk for mer info'
       middleClick: '&eMidtklikk for å forlate jobben'
       rightClick: '&eHøyreklikk for å bli med i jobben'
-      leftSlots: '&eLeft slots:&f '
+      leftSlots: '&eLedige slotter:&f '
       working: '&2&nVirker allerede'
       cantJoin: '&cDu kan ikke bli med i den valgte jobben.'
       max: '&eMaksnivå:&f '
@@ -648,52 +648,52 @@ command:
 message:
   skillup:
     broadcast: '%playername% har blitt promotert til %titlename% %jobname%.'
-    nobroadcast: Congratulations, you have been promoted to a %titlename% %jobname%.
+    nobroadcast: Gratulerer, du har blitt promotert til %titlename% i %jobname%.
   levelup:
-    broadcast: '%playername% is now a level %joblevel% %jobname%.'
-    nobroadcast: You are now level %joblevel% %jobname%.
+    broadcast: '%playername% er nå nivå %joblevel% i %jobname%.'
+    nobroadcast: Du er nå %joblevel% i %jobname%.
   leveldown:
-    message: '&cYou lost level&e %lostLevel%&c in&e %jobname%&c job! Level:&6 %joblevel%&c.'
-  cowtimer: '&eYou still need to wait &6%time% &esec to get paid for this job.'
-  blocktimer: '&eYou need to wait &3[time] &esec more to get paid for this!'
-  placeblocktimer: '&eYou can''t place blocks faster than &6[time] &esec in the same place!'
-  taxes: '&3[amount] &eserver taxes were transferred to this account'
-  boostStarted: '&eJobs boost time have been started!'
-  boostStoped: '&eJobs boost time have been ended!'
+    message: '&eDu mistet&e %lostLevel%&c in&e %jobname%&c-jobben! Nivå: &6 %joblevel%&c.'
+  cowtimer: '&eDu må vente &6%time% &esek for å få betalt for denne jobben.'
+  blocktimer: '&eDu må vente &3[time] &esek til for å få betalt for dette!'
+  placeblocktimer: '&eDu kan ikke plassere blokker fortere enn &6[time] &esek på samme tid!'
+  taxes: '&3[amount] &eserverskatt ble overført til denne kontoen'
+  boostStarted: '&eJobb boost-tid er startet!'
+  boostStoped: '&eJobb boost-tid er avsluttet!'
   crafting:
-    fullinventory: '&cYour inventory is full!'
+    fullinventory: '&cInventorien din er full!'
 signs:
   List: '&0[number].&8[player]&7:&4[level]'
   questList: '&0[number].&8[player]&7:&4[quests]'
   SpecialList:
     p1: '&b** &8Først &b**'
-    p2: '&b** &8Second &b**'
-    p3: '&b** &8Third &b**'
-    p4: '&b** &8Fourth &b**'
-    p5: '&b** &8Fifth &b**'
-    p6: '&b** &8Sixth &b**'
-    p7: '&b** &8Seventh &b**'
-    p8: '&b** &8Eight &b**'
-    p9: '&b** &8Ninth &b**'
-    p10: '&b** &8Tenth &b**'
+    p2: '&b** &8Andre &b**'
+    p3: '&b** &8Tredje &b**'
+    p4: '&b** &8Fjerde &b**'
+    p5: '&b** &8Femte &b**'
+    p6: '&b** &8Sjette &b**'
+    p7: '&b** &8Syvende &b**'
+    p8: '&b** &8Åtte &b**'
+    p9: '&b** &8Niende &b**'
+    p10: '&b** &8Tiende &b**'
     name: '&9[player]'
-    level: '&8[level] level'
-    quests: '&8[quests] quests'
+    level: '&8[level] nivå'
+    quests: '&8[quests] oppdrag'
     bottom: '&b************'
-  cantcreate: '&4You can''t create this sign!'
-  cantdestroy: '&4You can''t destroy this sign!'
+  cantcreate: '&4Du kan ikke opprette dette skiltet!'
+  cantdestroy: '&4Du kan ikke ødelegge dette skiltet!'
   topline: '&0[Jobs]'
   secondline:
-    join: '&0Join'
-    leave: '&0Leave'
-    toggle: '&0Toggle'
-    top: '&0Top'
-    browse: '&0Browse'
-    stats: '&0Stats'
-    limit: '&0Limit'
+    join: '&0Bli med'
+    leave: '&0Forlat'
+    toggle: '&0Veksle'
+    top: '&oTopp'
+    browse: '&0Bla'
+    stats: '&0Statistikk'
+    limit: '&0Grense'
     info: '&0Info'
-    archive: '&0Archive'
+    archive: '&0Arkiv'
 scoreboard:
-  topline: '&2Top &e%jobname%'
+  topline: '&2Topp &e%jobname%'
   gtopline: '&2Global toppliste'
   line: '&2%number%. &e%playername% (&6%level%&e)'
