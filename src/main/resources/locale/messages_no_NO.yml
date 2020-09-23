@@ -608,19 +608,19 @@ command:
       target: Du har blitt degradert %levelslost% nivåer i %jobname%-jobben.
   grantxp:
     help:
-      info: Grants the player X experience in a job.
+      info: Gir spilleren X-antall exp i en jobb.
       args: '[playername] [jobname] [xp]'
     output:
-      target: You have been granted %xpgained% experience in %jobname%.
+      target: Du har fått %xpgained% exp i %jobname%.
   removexp:
     help:
-      info: Remove X experience from the player in a job.
+      info: Fjern X-antall exp fra en spiller i en jobb.
       args: '[playername] [jobname] [xp]'
     output:
-      target: You have lost %xplost% experience in %jobname%.
+      target: Du har mistet %xplost% exp i %jobname%.
   signupdate:
     help:
-      info: Manually updates a sign by its name
+      info: Oppdaterer et skilt manuelt med skiltets navn
       args: '[jobname]'
   bp:
     help:
