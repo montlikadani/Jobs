@@ -6,7 +6,6 @@ limitedItem:
   error:
     levelup: '你的 [jobname] 職業等級不足以使用這個道具'
 general:
-  Spawner: '&r[type] 生怪磚'
   info:
     toplineseparator: '&7*********************** &6%playername% &7***********************'
     separator: '&7*******************************************************'
@@ -656,7 +655,6 @@ message:
     message: '&c你失去了 &e%jobname% &c的 &e%lostLevel%等級, 你現在是 &6%joblevel%&c.'
   cowtimer: '&e你還需要等待 &6%time% &e秒來獲得職業報酬.'
   blocktimer: '&e你需要等待: &3[time] &e秒來獲得職業報酬!'
-  placeblocktimer: '&e你放置方塊的速度不能超過 &6[time] &e秒一個!'
   taxes: '&3[amount] &e伺服器税收轉移到了此帳號'
   boostStarted: '&e職業加成時間已經開始!'
   boostStoped: '&e職業加成時間结束了!'
