@@ -6,7 +6,6 @@ limitedItem:
   error:
     levelup: '&cこのアイテムを使うには [jobname] のレベルが足りません'
 general:
-  Spawner: '&r[type] スポナー'
   info:
     toplineseparator: '&7*********************** &6%playername% &7***********************'
     separator: '&7*******************************************************'
@@ -656,7 +655,6 @@ message:
     message: '&cYou lost level&e %lostLevel%&c in&e %jobname%&c job! Level:&6 %joblevel%&c.'
   cowtimer: '&eYou still need to wait &6%time% &esec to get paid for this job.'
   blocktimer: '&eこのジョブの報酬を受け取るには: &3[time] &esec 待つ必要があります'
-  placeblocktimer: '&eあなたがこの場所で報酬を得るには&6[time] &e秒待つ必要があります'
   taxes: '&e税金を&3[amount]&eに納めました'
   boostStarted: '&eJobsのスペシャル報酬時間が始まりました'
   boostStoped: '&eJobsのスペシャル報酬時間が終わりました'
