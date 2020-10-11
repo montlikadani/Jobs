@@ -6,7 +6,6 @@ limitedItem:
   error:
     levelup: '[jobname] 직업의 레벨을 더 올려야 이 아이템을 사용하실 수 있습니다.'
 general:
-  Spawner: '&r[type] 스포너'
   info:
     toplineseparator: '&7*********************** &6%playername% &7***********************'
     separator: '&7*******************************************************'
@@ -656,7 +655,6 @@ message:
     message: '&cYou lost level&e %lostLevel%&c in&e %jobname%&c job! Level:&6 %joblevel%&c.'
   cowtimer: '&eYou still need to wait &6%time% &esec to get paid for this job.'
   blocktimer: '&eYou need to wait &3[time] &esec more to get paid for this!'
-  placeblocktimer: '&eYou can''t place blocks faster than &6[time] &esec in the same place!'
   taxes: '&3[amount] &eserver taxes were transferred to this account'
   boostStarted: '&eJobs boost time have been started!'
   boostStoped: '&eJobs boost time have been ended!'
