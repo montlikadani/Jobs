@@ -6,7 +6,6 @@ limitedItem:
   error:
     levelup: '&cDu må levle opp i [jobname] for å bruke dette itemet!'
 general:
-  Spawner: '&r[type] Spawner'
   info:
     toplineseparator: '&7*********************** &6%playername% &7***********************'
     separator: '&7*******************************************************'
@@ -656,7 +655,6 @@ message:
     message: '&eDu mistet&e %lostLevel%&c in&e %jobname%&c-jobben! Nivå: &6 %joblevel%&c.'
   cowtimer: '&eDu må vente &6%time% &esek for å få betalt for denne jobben.'
   blocktimer: '&eDu må vente &3[time] &esek til for å få betalt for dette!'
-  placeblocktimer: '&eDu kan ikke plassere blokker fortere enn &6[time] &esek på samme tid!'
   taxes: '&3[amount] &eserverskatt ble overført til denne kontoen'
   boostStarted: '&eJobb boost-tid er startet!'
   boostStoped: '&eJobb boost-tid er avsluttet!'
