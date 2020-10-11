@@ -6,7 +6,6 @@ limitedItem:
   error:
     levelup: '&cSzintet kell lépned a(z) [jobname] munkában, hogy használd ezt az elemet!'
 general:
-  Spawner: '&r[type] Spawner'
   info:
     toplineseparator: '&7*********************** &6%playername% &7***********************'
     separator: '&7*******************************************************'
@@ -656,7 +655,6 @@ message:
     message: '&e%lostLevel%&c szintet estél a(z)&e %jobname%&c munkában! Szint:&6 %joblevel%&c.'
   cowtimer: '&eMég várnod kell &6%time% &emásodpercet, hogy fizesse ezt a munkát.'
   blocktimer: '&eKérlek, várj &3[time] &emásodpercet, hogy újra küldjön pénzt!'
-  placeblocktimer: '&eNem lehet gyorsabban lerakni blokkokat &6[time] &esec intervallumot ugyanazon a helyen!'
   taxes: '&3[amount] &eszerver adókat, amennyiben átutalták erre a fiókra.'
   boostStarted: '&eMegkezdődött a munka pénz gyorsítása!'
   boostStoped: '&eA munka növelési ideje befejeződött!'
