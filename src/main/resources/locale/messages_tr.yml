@@ -6,7 +6,6 @@ limitedItem:
   error:
     levelup: '&cBunun için [meslek] mesleğinde level atlaman lazım!'
 general:
-  Spawner: '&r[type] Spawner'
   info:
     toplineseparator: '&7*********************** &6%playername% &7***********************'
     separator: '&7*******************************************************'
@@ -656,7 +655,6 @@ message:
     message: '&cYou lost level&e %lostLevel%&c in&e %jobname%&c job! Level:&6 %joblevel%&c.'
   cowtimer: '&eŞuan ödeme alabilmen için &6%time% &esaniye beklemen gerek.'
   blocktimer: '&eÖdeme yapabilmen için gereken süre: &3[time] !'
-  placeblocktimer: '&eYou cant place block faster than &6[time] &esec interval in same place!'
   taxes: '&3[amount] &ekadar vergi hesabınıza eklendi'
   boostStarted: '&eMeslek avansı şuan başladı!'
   boostStoped: '&eMeslek avansı şuan sona erdi!'
