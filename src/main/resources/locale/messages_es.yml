@@ -6,7 +6,6 @@ limitedItem:
   error:
     levelup: '&cPara usar esto necesitas aumentar el nivel de profesión de [jobname].'
 general:
-  Spawner: '&rEngendrador de [type]'
   info:
     toplineseparator: '&7*********************** &6%playername% &7***********************'
     separator: '&7*******************************************************'
@@ -656,7 +655,6 @@ message:
     message: '&c¡Has perdido&e %lostLevel%&c en tu trabajo de&e %jobname%&c! Nivel:&6 %joblevel%&c.'
   cowtimer: '&eAún tienes que esperar &6%time% &esegundos para ser pagado por este trabajo.'
   blocktimer: '&e¡Tienes que esperar &3[time] &epara ser pagado por esto!'
-  placeblocktimer: '&e¡No puedes poner bloques más rápido que en &6[time] &esegundos en el mismo sitio!'
   taxes: '&3[amount] &eimpuestos del servidor se transfirieron a esta cuenta'
   boostStarted: '&e¡Acaba de empezar el boost de trabajos!'
   boostStoped: '&e¡Acaba de terminar el boost de trabajos!'
