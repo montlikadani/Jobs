@@ -531,18 +531,18 @@ command:
       addUsage: '&eBenutzung: &6/Jobs area add [areaName/wg:worldGuardAreaName] [bonus]'
       removeUsage: '&eBenutzung: &6/Jobs area remove [areaName]'
     output:
-      addedNew: '&eEine neue beschränkte Fläche mit &6%bonus% &eBonis würde hinzugefügt'
+      addedNew: '&eEin neuer Sperrbereich mit einem Bonus von &6%bonus% &ewurde hinzugefügt'
       removed: '&eDer eingeschränkte Bereich wurde entfernt &6%name%'
       list: '&e%number%&a. &e%areaname% &e%worldname% (&a%x1%:%y1%:%z1%/&e%x2%:%y2%:%z2%) &6%bonus%'
       wgList: '&e%number%&a. WorldGuard: &e%areaname% &6%bonus%'
-      noAreas: '&eThere are no saved restricted areas'
-      noAreasByLoc: '&eThere are no restricted areas in this location'
-      areaList: '&eRestricted areas by your location: &6%list%'
+      noAreas: '&eEs gibt keine gespeicherten Sperrbereiche'
+      noAreasByLoc: '&eEs gibt keine Sperrbereiche an diesem Ort'
+      areaList: '&eEingeschränkte Breiche in deine Nähe: &6%list%'
       selected1: '&eErster Punkt ausgewählt: &6%x%:%y%:%z%'
       selected2: '&eZweiter Punkt ausgewählt: &6%x%:%y%:%z%'
       select: '&e2 Punkte mit dem Auswähl-Tool (%tool%) ausgewählt'
-      exist: '&eRestriction area by this name already exists'
-      dontExist: '&eRestriction area by this name does not exist'
+      exist: '&eEin Beschränkungsbereich mit diesem Namen existiert nicht'
+      dontExist: '&eEin Beschränkungsbereich mit diesem Namen existiert nicht'
       wgDontExist: '&eEine WorldGuard Region mit diesem Namen existiert nicht'
   log:
     help:
@@ -620,7 +620,7 @@ command:
       target: Du hast %xplost% Erfahrung in %jobname% verloren.
   signupdate:
     help:
-      info: Manually updates a sign by its name
+      info: Aktualisiert ein Schild manuell anhand seines Namens
       args: '[jobname]'
   bp:
     help:
@@ -634,7 +634,7 @@ command:
       info: Konfigurationen neu laden.
   toggle:
     help:
-      info: Toggles payment output on action bar or bossbar.
+      info: Schaltet die Zahlungsausgabe in der Aktionsleiste oder der Bossleiste um.
       args: actionbar/bossbar
     output:
       turnedoff: '&4Diese Funktion ist deaktiviert!'
