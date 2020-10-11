@@ -5,7 +5,6 @@ limitedItem:
   error:
     levelup: '&cYou need to level up in [jobname] to use this item!'
 general:
-  Spawner: '&r[type] Spawner'
   info:
     toplineseparator: '&7*********************** &6%playername% &7***********************'
     separator: '&7*******************************************************'
@@ -58,7 +57,7 @@ command:
   moneyboost:
     help:
       info: Boosts money gain for all players
-      args: '[jobname]/all/reset [rate]/all'
+      args: '[jobname]/all/reset [time]/[rate]'
     output:
       allreset: All money boosts turned off
       jobsboostreset: Money boost has been turned off for %jobname%
@@ -69,7 +68,7 @@ command:
   pointboost:
     help:
       info: Boosts point gain for all players
-      args: '[jobname]/all/reset [rate]/all'
+      args: '[jobname]/all/reset [time]/[rate]'
     output:
       allreset: All point boosts turned off
       jobsboostreset: Point boost has been turned off for %jobname%
@@ -80,7 +79,7 @@ command:
   expboost:
     help:
       info: Boosts exp gain for all players
-      args: '[jobname]/all/reset [rate]/all'
+      args: '[jobname]/all/reset [time]/[rate]'
     output:
       allreset: All exp boosts turned off
       jobsboostreset: Exp boost has been turned off for %jobname%
@@ -316,6 +315,7 @@ command:
       cantJoin: '&cYou can't join to the selected job.'
       max: '&eMax level:&f '
       back: '&e<<< Back'
+      next: '&eNext >>>'
     output:
       break:
         info: '&eBreak'
@@ -520,7 +520,7 @@ command:
       show: '&2Show from &e[from] &2until &e[until] &2top list'
   gtop:
     help:
-      info: Shows top %amount% players by global jobs level.
+      info: Shows top players by global jobs level.
       args: ''
     error:
       nojob: Can't find any information.
@@ -665,7 +665,6 @@ message:
     message: '&cYou lost level&e %lostLevel%&c in&e %jobname%&c job! Level:&6 %joblevel%&c.'
   cowtimer: '&eYou still need to wait &6%time% &esec to get paid for this job.'
   blocktimer: '&eYou need to wait &3[time] &esec more to get paid for this!'
-  placeblocktimer: '&eYou can''t place blocks faster than &6[time] &esec in the same place!'
   taxes: '&3[amount] &eserver taxes were transferred to this account'
   boostStarted: '&eJobs boost time have been started!'
   boostStoped: '&eJobs boost time have been ended!'
