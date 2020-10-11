@@ -6,7 +6,6 @@ limitedItem:
   error:
     levelup: '&cDu musst den Job [jobname] leveln, um das Item zu benutzen!'
 general:
-  Spawner: '&r[type] Spawner'
   info:
     toplineseparator: '&7*********************** &6%playername% &7***********************'
     separator: '&7*******************************************************'
@@ -656,7 +655,6 @@ message:
     message: '&cDu hast Level&e %lostLevel%&c in&e %jobname%&c job verloren! Level:&6 %joblevel%&c.'
   cowtimer: '&eDu musst immernoch &6%time% &eSekunden warten bevor du für diesen Beruf bezahlt wirst.'
   blocktimer: '&eDu musst noch weitere &e[time] &eSekunden warten bevor du dafür bezahlt wirst!'
-  placeblocktimer: '&eDu kannst Blöcke nicht schneller als &6[time] Sekunden am selben Ort platzieren!'
   taxes: '&3[amount] &eServer Steuern wurden zu diesem Account gesendet'
   boostStarted: '&eJobs Boos Zeit wurde gestarted!'
   boostStoped: '&eJobs Boost Zeit wurde beendet!'
