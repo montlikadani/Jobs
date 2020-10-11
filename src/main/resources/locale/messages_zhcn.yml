@@ -6,7 +6,6 @@ limitedItem:
   error:
     levelup: '&cYou need to level up in [jobname] to use this item!'
 general:
-  Spawner: '&r[type] 刷怪笼'
   info:
     toplineseparator: '&7*********************** &6%playername% &7***********************'
     separator: '&7*******************************************************'
@@ -656,7 +655,6 @@ message:
     message: '&cYou lost level&e %lostLevel%&c in&e %jobname%&c job! Level:&6 %joblevel%&c.'
   cowtimer: '&e你还需要等待 &6%time% &e秒来获得职业报酬.'
   blocktimer: '&e你需要等待: &3[time] &e秒来获得职业报酬!'
-  placeblocktimer: '&e你放置方块的速度不能超过 &6[time] &e秒一个!'
   taxes: '&3[amount] &e服务器税收转移到了此账户'
   boostStarted: '&e职业加成时间已经开始!'
   boostStoped: '&e职业加成时间结束了!'
