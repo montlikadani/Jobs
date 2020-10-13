@@ -17,6 +17,11 @@ general:
     invalidPage: '&cUngültige Seite'
     'true': 'Wahr'
     'false': 'Falsch'
+    blocks:
+      furnace: Furnace
+      smoker: Smoker
+      blastfurnace: Blast furnace
+      brewingstand: Brewing stand
   admin:
     error: '&cEs ist ein Fehler aufgetreten.'
     success: '&eDer Befehl ist erfolgreich ausgeführt worden.'
@@ -31,10 +36,8 @@ general:
     ingame: '&cDer Befehl kann nur ingame benutzt werden!'
     fromconsole: '&cDer Befehl kann nur in der Konsole benutzt werden!'
     worldisdisabled: '&cDer Befehl kann nicht in dieser Welt ausgeführt werden!'
-    newFurnaceRegistration: '&eNeuer Besitzer für den Zaun &7[current]&e/&f[max] registriert'
-    newBrewingRegistration: '&eNeuer Besitzer für den Braustand &7[current]&e/&f[max]'
-    noFurnaceRegistration: '&cDu hast die maximale Anzahl an Zäune erreicht!'
-    noBrewingRegistration: '&cDu hast die maximale Anzahl an Brauständen erreicht!'
+    newRegistration: '&eRegistered new ownership for [block] &7[current]&e/&f[max]'
+    noRegistration: '&cYou''ve reached max [block] count!'
 command:
   help:
     output:
@@ -450,7 +453,7 @@ command:
       info: Blockbesitzer entfernen
       args: '[playername]'
     output:
-      cleared: '&2Es wurden &7[furnaces] &2Zäune und &7[brewing] &2Braustände entfernt.'
+      cleared: '&2Removed &7[furnaces] &2furnaces, &7[brewing] &2brewing stands, &7[smoker]&2 smokers and &7[blast]&2 blast furnaces.'
   skipquest:
     help:
       info: Überspringe die definierte Quest und hol dir eine neue
