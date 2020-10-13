@@ -17,6 +17,11 @@ general:
     invalidPage: '&cUgyldig side'
     'true': '&2Aktivert'
     'false': '&cDeaktivert'
+    blocks:
+      furnace: Furnace
+      smoker: Smoker
+      blastfurnace: Blast furnace
+      brewingstand: Brewing stand
   admin:
     error: '&cDet var en feil i kommandoen. Prøv igjen.'
     success: '&eKommandoen din er utført.'
@@ -31,10 +36,8 @@ general:
     ingame: '&cDu kan bare bruke denne kommandoen i spillet!'
     fromconsole: '&cDu kan bare bruke denne kommandoen fra konsoll!'
     worldisdisabled: '&cDu kan ikke bruke denne kommandoen i denne verdenen!'
-    newFurnaceRegistration: '&eRegistrerte nytt eierskap for ovn &7[current]&e/&f[max]'
-    newBrewingRegistration: '&eRegistrerte nytt eierskap for brewing stand &7[current]&e/&f[max]'
-    noFurnaceRegistration: '&cDu har maks antall ovner!'
-    noBrewingRegistration: '&cDu har nådd maks antall brewing stander!'
+    newRegistration: '&eRegistered new ownership for [block] &7[current]&e/&f[max]'
+    noRegistration: '&cYou''ve reached max [block] count!'
 command:
   help:
     output:
@@ -450,7 +453,7 @@ command:
       info: Fjern blokk-eierskap
       args: '[playername]'
     output:
-      cleared: '&2Fjernet &7[furnaces] &2ovner og &7[brewing] &2brewing stands'
+      cleared: '&2Removed &7[furnaces] &2furnaces, &7[brewing] &2brewing stands, &7[smoker]&2 smokers and &7[blast]&2 blast furnaces.'
   skipquest:
     help:
       info: Hopp over definert oppdrag og få en ny
