@@ -17,6 +17,11 @@ general:
     invalidPage: '&cOngeldige pagina'
     'true': '&2True'
     'false': '&cFalse'
+    blocks:
+      furnace: Furnace
+      smoker: Smoker
+      blastfurnace: Blast furnace
+      brewingstand: Brewing stand
   admin:
     error: '&cEr is een fout opgetreden in de command.'
     success: '&eJe command is uitgevoerd.'
@@ -31,10 +36,8 @@ general:
     ingame: '&cJe kan deze command alleen uitvoeren in game!'
     fromconsole: '&cJe kan deze command alleen uitvoeren in console!'
     worldisdisabled: '&cJe kan deze command niet uitvoeren in deze wereld'
-    newFurnaceRegistration: '&eGeregistreerd nieuw eigendom voor oven &7[current]&e/&f[max]'
-    newBrewingRegistration: '&eGeregistreerd nieuw eigendom voor brouwer &7[current]&e/&f[max]'
-    noFurnaceRegistration: '&cJe hebt de maximale oven registraties bereikt!'
-    noBrewingRegistration: '&cJe hebt de maximale brouwer registraties bereikt!'
+    newRegistration: '&eRegistered new ownership for [block] &7[current]&e/&f[max]'
+    noRegistration: '&cYou''ve reached max [block] count!'
 command:
   help:
     output:
@@ -450,7 +453,7 @@ command:
       info: Blok van eigenaar wissen
       args: '[playername]'
     output:
-      cleared: '&2Verwijderd &7[furnaces] &2Ovens end &7[brewing] &2brouwerij'
+      cleared: '&2Removed &7[furnaces] &2furnaces, &7[brewing] &2brewing stands, &7[smoker]&2 smokers and &7[blast]&2 blast furnaces.'
   skipquest:
     help:
       info: Skip defined quest and get new one
