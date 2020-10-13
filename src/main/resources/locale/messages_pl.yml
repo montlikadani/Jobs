@@ -17,6 +17,11 @@ general:
     invalidPage: '&cNieprawidłowa strona'
     'true': '&2Prawda'
     'false': '&cFałsz'
+    blocks:
+      furnace: Furnace
+      smoker: Smoker
+      blastfurnace: Blast furnace
+      brewingstand: Brewing stand
   admin:
     error: '&cWystąpił błąd w tej komendzie.'
     success: '&eKomenda została wykonana.'
@@ -31,10 +36,8 @@ general:
     ingame: '&cMożesz użyć tej komendy tylko w grze!'
     fromconsole: '&cMożesz użyć tej komendy tylko w konsoli!'
     worldisdisabled: '&cNie możesz użyć tej komendy w tym świecie!'
-    newFurnaceRegistration: '&eZarejestrowano nową własność dla pieca &7[current]&e/&f[max]'
-    newBrewingRegistration: '&eZarejestrowano nową własność dla statywu alchemicznego &7[current]&e/&f[max]'
-    noFurnaceRegistration: '&cOsiągnąłeś maksymalną ilość piecy!'
-    noBrewingRegistration: '&cOsiągnąłeś maksymalną ilość statywów alchemicznych!'
+    newRegistration: '&eRegistered new ownership for [block] &7[current]&e/&f[max]'
+    noRegistration: '&cYou''ve reached max [block] count!'
 command:
   help:
     output:
@@ -450,7 +453,7 @@ command:
       info: Wyczyść własność bloku
       args: '[playername]'
     output:
-      cleared: '&2Usunięto &7[furnaces] &2pieców i &7[brewing] &2statywów alchemicznych'
+      cleared: '&2Removed &7[furnaces] &2furnaces, &7[brewing] &2brewing stands, &7[smoker]&2 smokers and &7[blast]&2 blast furnaces.'
   skipquest:
     help:
       info: Pomiń dane zadanie i otrzymaj nowe
