@@ -17,6 +17,11 @@ general:
     invalidPage: '&cNeplatná stránka'
     'true': '&2Povoleno'
     'false': '&cZakázáno'
+    blocks:
+      furnace: Furnace
+      smoker: Smoker
+      blastfurnace: Blast furnace
+      brewingstand: Brewing stand
   admin:
     error: '&cV příkazu se objevil problém.'
     success: '&eVáš příkaz byl proveden.'
@@ -31,10 +36,8 @@ general:
     ingame: '&cTento příkaz můžete používat pouze ve hře!'
     fromconsole: '&cTento příkaz můžete používat pouze z konzole!'
     worldisdisabled: '&cTento příkaz nemůžete používat v tomhle světě!'
-    newFurnaceRegistration: '&eZaregistrováno nové vlastnioctví pro pec &7[current]&e/&f[max]'
-    newBrewingRegistration: '&eRegistrováno nové vlastnictví pro varný stojan &7[current]&e/&f[max]'
-    noFurnaceRegistration: '&cDosahl jsi maximalni pocet peci!'
-    noBrewingRegistration: '&cDosahl jsi maximalni pocet varnych stojanu!'
+    newRegistration: '&eRegistered new ownership for [block] &7[current]&e/&f[max]'
+    noRegistration: '&cYou''ve reached max [block] count!'
 command:
   help:
     output:
@@ -450,7 +453,7 @@ command:
       info: Vyčistí vlastnictví bloku
       args: '[playername]'
     output:
-      cleared: '&2Odstraneny &7[furnaces] &2pece a &7[brewing] &2varne stojany'
+      cleared: '&2Removed &7[furnaces] &2furnaces, &7[brewing] &2brewing stands, &7[smoker]&2 smokers and &7[blast]&2 blast furnaces.'
   skipquest:
     help:
       info: Přeskočit quest a dostat nový
