@@ -17,6 +17,11 @@ general:
     invalidPage: '&c無效的頁面'
     'true': '&2True'
     'false': '&cFalse'
+    blocks:
+      furnace: Furnace
+      smoker: Smoker
+      blastfurnace: Blast furnace
+      brewingstand: Brewing stand
   admin:
     error: '&c執行指令出錯.'
     success: '&a你的指令執行成功.'
@@ -31,10 +36,8 @@ general:
     ingame: '&c你只能在遊戲中使用!'
     fromconsole: '&c你只能在控制台使用這條指令!'
     worldisdisabled: '&c你不能在這個世界使用這個指令!'
-    newFurnaceRegistration: '&e成功登記了熔爐的新擁有人 &7[current]&e/&f[max]'
-    newBrewingRegistration: '&e成功登記了釀造台的新擁有人 &7[current]&e/&f[max]'
-    noFurnaceRegistration: '&c你已到達了最大熔爐數量'
-    noBrewingRegistration: '&c你已到達了最大釀造台數量'
+    newRegistration: '&eRegistered new ownership for [block] &7[current]&e/&f[max]'
+    noRegistration: '&cYou''ve reached max [block] count!'
 command:
   help:
     output:
@@ -450,7 +453,7 @@ command:
       info: 清除方塊所有擁有人
       args: '[playername]'
     output:
-      cleared: '&2刪除了 &7[furnaces] &2個熔爐及 &7[brewing] &2個釀造台'
+      cleared: '&2Removed &7[furnaces] &2furnaces, &7[brewing] &2brewing stands, &7[smoker]&2 smokers and &7[blast]&2 blast furnaces.'
   skipquest:
     help:
       info: 跳過任務及獲得新任務
