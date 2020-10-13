@@ -17,6 +17,11 @@ general:
     invalidPage: '&cPágina no válida'
     'true': '&2Veritat'
     'false': '&cFals'
+    blocks:
+      furnace: Furnace
+      smoker: Smoker
+      blastfurnace: Blast furnace
+      brewingstand: Brewing stand
   admin:
     error: '&cSe ha producido un error al aplicar el conjuro.'
     success: '&eEl conjuro ha sido aplicado.'
@@ -31,10 +36,8 @@ general:
     ingame: '&cEsto es un conjuro y solo puede ser usado por un jugador.'
     fromconsole: '&cEsto es un comando y solo puede ser usado desde la consola.'
     worldisdisabled: '&cNo puedes usar este conjuro en este mundo.'
-    newFurnaceRegistration: '&eSe ha registrado un nuevo propietario del Horno &7[current]&e/&f[max]'
-    newBrewingRegistration: '&eSe ha registrado un nuevo propietario del Soporte para Pociones &7[current]&e/&f[max]'
-    noFurnaceRegistration: '&c¡Has alcanzado el número máximo de Hornos!'
-    noBrewingRegistration: '&c¡Has alcanzado el número máximo de Soportes de Pociones!'
+    newRegistration: '&eRegistered new ownership for [block] &7[current]&e/&f[max]'
+    noRegistration: '&cYou''ve reached max [block] count!'
 command:
   help:
     output:
@@ -450,7 +453,7 @@ command:
       info: Eliminar propietarios.
       args: '[playername]'
     output:
-      cleared: '&2Se han eliminado &7[furnaces] &2hornos y &7[brewing] &2Soportes para Pociones'
+      cleared: '&2Removed &7[furnaces] &2furnaces, &7[brewing] &2brewing stands, &7[smoker]&2 smokers and &7[blast]&2 blast furnaces.'
   skipquest:
     help:
       info: Omite la misión en progreso y obten una nueva
