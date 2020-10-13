@@ -17,6 +17,11 @@ general:
     invalidPage: '&cPage invalide'
     'true': '&2Vrai'
     'false': '&cFaux'
+    blocks:
+      furnace: Furnace
+      smoker: Smoker
+      blastfurnace: Blast furnace
+      brewingstand: Brewing stand
   admin:
     error: '&cUne erreur est survenue pendant l''exécution de la commande.'
     success: '&eLa commande a été exécutée avec succès.'
@@ -31,10 +36,8 @@ general:
     ingame: '&cVous ne pouvez utiliser cette commande qu''en jeu!'
     fromconsole: '&cCette commande doit être lancée depuis la console!'
     worldisdisabled: '&cVous ne pouvez pas utiliser cette commande dans ce monde!'
-    newFurnaceRegistration: '&eNouveau propriétaire enregistré pour le fourneau &7[current]&e/&f[max]'
-    newBrewingRegistration: '&eNouveau propriétaire enregistré pour l''alambic &7[current]&e/&f[max]'
-    noFurnaceRegistration: '&cVous avez atteins la limite de fourneau maximal !'
-    noBrewingRegistration: '&cVous avez atteint la limite du nombre maximum d''alambics !'
+    newRegistration: '&eRegistered new ownership for [block] &7[current]&e/&f[max]'
+    noRegistration: '&cYou''ve reached max [block] count!'
 command:
   help:
     output:
@@ -450,7 +453,7 @@ command:
       info: Clear block ownership
       args: '[playername]'
     output:
-      cleared: '&2Removed &7[furnaces] &2furnaces and &7[brewing] &2brewing stands'
+      cleared: '&2Removed &7[furnaces] &2furnaces, &7[brewing] &2brewing stands, &7[smoker]&2 smokers and &7[blast]&2 blast furnaces.'
   skipquest:
     help:
       info: Passer la quête pour en obtenir une nouvelle
