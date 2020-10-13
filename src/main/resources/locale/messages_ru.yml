@@ -17,6 +17,11 @@ general:
     invalidPage: '&cНеверная страница'
     'true': '&2True'
     'false': '&cFalse'
+    blocks:
+      furnace: Furnace
+      smoker: Smoker
+      blastfurnace: Blast furnace
+      brewingstand: Brewing stand
   admin:
     error: '&cОшибка в этой команде.'
     success: '&eВаша команда была выполнена успешно.'
@@ -31,10 +36,8 @@ general:
     ingame: '&cВы можете использовать эту команду только в игре!'
     fromconsole: '&cВы можете использовать эту команду только в консоле!'
     worldisdisabled: '&cВы не можете использовать эту команду в этом мире!'
-    newFurnaceRegistration: '&eЗарегистрирован новый владелец печи &7[current]&e/&f[max]'
-    newBrewingRegistration: '&eЗарегистрирован новый владелец варочной стойки &7[current]&e/&f[max]'
-    noFurnaceRegistration: '&cВы достигли лимита действующих печей!'
-    noBrewingRegistration: '&cВы достигли лимита варочных стоек!'
+    newRegistration: '&eRegistered new ownership for [block] &7[current]&e/&f[max]'
+    noRegistration: '&cYou''ve reached max [block] count!'
 command:
   help:
     output:
@@ -450,7 +453,7 @@ command:
       info: Очистить информацию о владельце.
       args: '[playername]'
     output:
-      cleared: '&2Removed &7[furnaces] &2furnaces and &7[brewing] &2brewing stands'
+      cleared: '&2Removed &7[furnaces] &2furnaces, &7[brewing] &2brewing stands, &7[smoker]&2 smokers and &7[blast]&2 blast furnaces.'
   skipquest:
     help:
       info: Skip defined quest and get new one
