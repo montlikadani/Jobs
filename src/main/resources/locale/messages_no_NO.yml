@@ -37,7 +37,7 @@ general:
     fromconsole: '&cDu kan bare bruke denne kommandoen fra konsoll!'
     worldisdisabled: '&cDu kan ikke bruke denne kommandoen i denne verdenen!'
     newRegistration: '&eRegistrert nytt eierskap for [block] &7[current]&e/&f[max]'
-    noRegistration: '&cYou''ve reached max [block] count!'
+    noRegistration: '&cDu har nådd maks antall [block]!'
 command:
   help:
     output:
@@ -453,7 +453,7 @@ command:
       info: Fjern blokk-eierskap
       args: '[playername]'
     output:
-      cleared: '&2Removed &7[furnaces] &2furnaces, &7[brewing] &2brewing stands, &7[smoker]&2 smokers and &7[blast]&2 blast furnaces.'
+      cleared: '&2Fjernet &7[furnaces] &2smelteovner, &7[brewing], &2bryggeapparat, &7[smoker]&2 røykovner og &7[blast]&2 masovner.'
   skipquest:
     help:
       info: Hopp over definert oppdrag og få en ny
