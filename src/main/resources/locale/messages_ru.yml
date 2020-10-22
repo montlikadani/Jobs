@@ -91,6 +91,14 @@ command:
       boostalladded: Ускорение получения опыта %boost% было добавлено для всех работ!
       boostadded: Ускорение получения опыта &e%boost% &aдобавлено к &e%jobname%!
       infostats: '&c-----> &aПреумножение опыта x%boost% включено&c <-------'
+  schedule:
+    help:
+      info: Enables the given scheduler
+      args: enable [scheduleName] [untilTime]
+    output:
+      noScheduleFound: '&cSchedule with this name not found.'
+      alreadyEnabled: '&cThis schedule already enabled.'
+      enabled: '&eSchedule have been enabled from&a %from%&e until&a %until%'
   itembonus:
     help:
       info: Проверить бонусы.
@@ -248,7 +256,9 @@ command:
       args: '[playername]'
     error:
       nojob: Сперва устройтесь на работу.
-    output: 'Уровень%joblevel% %jobname% : %jobxp%/%jobmaxxp% опыта'
+    output:
+      message: 'Level %joblevel% for %jobname%: %jobxp%/%jobmaxxp% xp'
+      max-level: '     &cMax level   -   %jobname%'
     bossBarOutput: 'Ур. %joblevel% %jobname%: %jobxp%/%jobmaxxp% оп.%gain%'
     bossBarGain: ' &7(&f%gain%&7)'
   shop:
@@ -651,6 +661,10 @@ message:
   skillup:
     broadcast: '%playername% has been promoted to a %titlename% %jobname%.'
     nobroadcast: Congratulations, you have been promoted to a %titlename% %jobname%.
+  max-level-reached:
+    title: '&2Max level reached'
+    subtitle: '&2in %jobname%!'
+    chat: '&cYou have reached the maximum level in %jobname%!'
   levelup:
     broadcast: '%playername% is now a level %joblevel% %jobname%.'
     nobroadcast: You are now level %joblevel% %jobname%.
