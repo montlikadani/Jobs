@@ -18,7 +18,7 @@ general:
     'true': '&2Prawda'
     'false': '&cFałsz'
     blocks:
-      furnace: Furnace
+      furnace: Piec
       smoker: Smoker
       blastfurnace: Blast furnace
       brewingstand: Brewing stand
