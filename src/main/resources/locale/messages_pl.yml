@@ -91,6 +91,14 @@ command:
       boostalladded: Boost exp'a %boost% dodany do wszystkich prac!
       boostadded: Boost exp'a &e%boost% &adodany do pracy &e%jobname%!
       infostats: '&c-----> &aStawka exp''a x%boost% włączona&c <-------'
+  schedule:
+    help:
+      info: Enables the given scheduler
+      args: enable [scheduleName] [untilTime]
+    output:
+      noScheduleFound: '&cSchedule with this name not found.'
+      alreadyEnabled: '&cThis schedule already enabled.'
+      enabled: '&eSchedule have been enabled from&a %from%&e until&a %until%'
   itembonus:
     help:
       info: Sprawdź bonus przedmiotu
@@ -248,7 +256,9 @@ command:
       args: '[playername]'
     error:
       nojob: Najpierw dołącz do pracy.
-    output: 'Poziom %joblevel% dla pracy %jobname%: %jobxp%/%jobmaxxp% xp'
+    output:
+      message: 'Level %joblevel% for %jobname%: %jobxp%/%jobmaxxp% xp'
+      max-level: '     &cMax level   -   %jobname%'
     bossBarOutput: 'Poziom %joblevel% %jobname%: %jobxp%/%jobmaxxp% xp%gain%'
     bossBarGain: ' &7(&f%gain%&7)'
   shop:
@@ -651,6 +661,10 @@ message:
   skillup:
     broadcast: '%playername% został awansowany do %titlename% %jobname%.'
     nobroadcast: Gratulacje, zostałeś awansowany do %titlename% %jobname%.
+  max-level-reached:
+    title: '&2Max level reached'
+    subtitle: '&2in %jobname%!'
+    chat: '&cYou have reached the maximum level in %jobname%!'
   levelup:
     broadcast: '%playername% jest teraz na poziomie %joblevel% %jobname%.'
     nobroadcast: Jesteś teraz na poziomie %joblevel% %jobname%.
