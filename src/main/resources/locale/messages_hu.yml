@@ -257,7 +257,7 @@ command:
     error:
       nojob: '&cElőször csatlakozz egy munkához.'
     output:
-      message: 'Szint %joblevel% %jobname%-nak/nek: %jobxp%/%jobmaxxp% xp'
+      message: ' lvl%joblevel% %jobname%: %jobxp%/%jobmaxxp% xp'
       max-level: '     &cMax szint   -   %jobname%'
     bossBarOutput: 'Lvl %joblevel% %jobname%: %jobxp%/%jobmaxxp% xp%gain%'
     bossBarGain: ' &7(&f%gain%&7)'
