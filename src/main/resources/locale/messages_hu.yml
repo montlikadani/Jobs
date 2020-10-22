@@ -91,6 +91,14 @@ command:
       boostalladded: '&aTapasztalat növelése %boost% minden munkához hozzáadva!'
       boostadded: '&aTapasztalat növelése &e%boost% &ahozzáadva a(z) &e%jobname% &amunkához!'
       infostats: '&c-----> &aTapasztalat arány x%boost% engedélyezve&c <-------'
+  schedule:
+    help:
+      info: Engedélyezi a megadott feladatot
+      args: enable [scheduleName] [untilTime]
+    output:
+      noScheduleFound: '&cFeladat ezzel a névvel nem található.'
+      alreadyEnabled: '&cEz a feladat már engedélyezve van.'
+      enabled: '&eA feladat engedélyezve &a%from%&e-tól &a%until%&e-ig'
   itembonus:
     help:
       info: Ellenőrzi az elem bónuszt.
@@ -248,7 +256,9 @@ command:
       args: '[playername]'
     error:
       nojob: '&cElőször csatlakozz egy munkához.'
-    output: ' lvl%joblevel% %jobname% : %jobxp%/%jobmaxxp% xp'
+    output:
+      message: 'Szint %joblevel% %jobname%-nak/nek: %jobxp%/%jobmaxxp% xp'
+      max-level: '     &cMax szint   -   %jobname%'
     bossBarOutput: 'Lvl %joblevel% %jobname%: %jobxp%/%jobmaxxp% xp%gain%'
     bossBarGain: ' &7(&f%gain%&7)'
   shop:
@@ -651,6 +661,10 @@ message:
   skillup:
     broadcast: '%playername% játékost előléptették a %titlename% %jobname% munkában.'
     nobroadcast: '&aGratulálok, képességet léptél a(z)&r %titlename% %jobname%&a munkában.'
+  max-level-reached:
+    title: '&2Elérted a max szintet'
+    subtitle: '&2a(z) %jobname% munkában!'
+    chat: '&cElérted a maximális szintet a(z) %jobname% munkában!'
   levelup:
     broadcast: '%playername% %joblevel% szintet lépett a(z) %jobname% munkában.'
     nobroadcast: '&aSzintet léptél a(z) %jobname% &amunkában! Szint:&6 %joblevel%&a.'
