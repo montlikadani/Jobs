@@ -91,6 +91,14 @@ command:
       boostalladded: Ein XP-Bonus um %boost% wurde für alle Jobs hinzugefügt!
       boostadded: Es wurde ein XP-Bonus um &e%boost% &afür &e%jobname% hinzugefügt!
       infostats: '&c-----> &aXP x%boost% eingeschaltet&c <-------'
+  schedule:
+    help:
+      info: Enables the given scheduler
+      args: enable [scheduleName] [untilTime]
+    output:
+      noScheduleFound: '&cSchedule with this name not found.'
+      alreadyEnabled: '&cThis schedule already enabled.'
+      enabled: '&eSchedule have been enabled from&a %from%&e until&a %until%'
   itembonus:
     help:
       info: Item-Bonus überprüfen
@@ -248,7 +256,9 @@ command:
       args: '[playername]'
     error:
       nojob: Du bist aktuell arbeitslos.
-    output: 'Level %joblevel% %jobname% : %jobxp%/%jobmaxxp% XP'
+    output:
+      message: 'Level %joblevel% for %jobname%: %jobxp%/%jobmaxxp% xp'
+      max-level: '     &cMax level   -   %jobname%'
     bossBarOutput: 'Level %joblevel% %jobname%: %jobxp%/%jobmaxxp% XP'
     bossBarGain: ' &7(&f%gain%&7)'
   shop:
@@ -651,6 +661,10 @@ message:
   skillup:
     broadcast: '%playername% wurde zu einem %titlename% %jobname%befördert.'
     nobroadcast: Herzlichen Glückwunsch, du wurdest zum %titlename%%jobname% befördert.
+  max-level-reached:
+    title: '&2Max level reached'
+    subtitle: '&2in %jobname%!'
+    chat: '&cYou have reached the maximum level in %jobname%!'
   levelup:
     broadcast: '%playername% ist nun ein Level %joblevel%%jobname%.'
     nobroadcast: Du bist nun Level %joblevel% in %jobname%.
