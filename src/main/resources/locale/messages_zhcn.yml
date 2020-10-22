@@ -91,6 +91,14 @@ command:
       boostalladded: 所有职业的经验获得加成了 %boost% 倍
       boostadded: '%jobname% 职业的经验获得加成了 %boost% 倍'
       infostats: '&c-----> &a经验获得 x%boost% 倍正在进行&c <-------'
+  schedule:
+    help:
+      info: Enables the given scheduler
+      args: enable [scheduleName] [untilTime]
+    output:
+      noScheduleFound: '&cSchedule with this name not found.'
+      alreadyEnabled: '&cThis schedule already enabled.'
+      enabled: '&eSchedule have been enabled from&a %from%&e until&a %until%'
   itembonus:
     help:
       info: Check item bonus
@@ -248,7 +256,9 @@ command:
       args: '[playername]'
     error:
       nojob: 请先加入一个职业.
-    output: 'Level %joblevel% for %jobname%: %jobxp%/%jobmaxxp% xp'
+    output:
+      message: 'Level %joblevel% for %jobname%: %jobxp%/%jobmaxxp% xp'
+      max-level: '     &cMax level   -   %jobname%'
     bossBarOutput: 'Lvl %joblevel% %jobname%: %jobxp%/%jobmaxxp% xp%gain%'
     bossBarGain: ' &7(&f%gain%&7)'
   shop:
@@ -651,6 +661,10 @@ message:
   skillup:
     broadcast: '%playername% 获得了升级 %titlename% %jobname%.'
     nobroadcast: 恭喜, 你升级为了 %titlename% %jobname%.
+  max-level-reached:
+    title: '&2Max level reached'
+    subtitle: '&2in %jobname%!'
+    chat: '&cYou have reached the maximum level in %jobname%!'
   levelup:
     broadcast: '%playername% is now a level %joblevel% %jobname%.'
     nobroadcast: You are now level %joblevel% %jobname%.
