@@ -651,7 +651,7 @@ command:
     output:
       turnedoff: '&4Ta funkcja jest wyłączona!'
       paid:
-        main: '&aMasz:'
+        main: '&aOtrzymujesz:'
         money: '&e[amount] pieniędzy'
         exp: '&7[exp] exp''a'
         points: '&6[points] punktów'
@@ -671,7 +671,7 @@ message:
   leveldown:
     message: '&cUtraciłeś poziom&e %lostLevel%&c w pracy&e %jobname%&c! Poziom:&6 %joblevel%&c.'
   cowtimer: '&eMusisz nadal poczekać &6%time% &esek aby otrzymać zapłatę za pracę.'
-  blocktimer: '&eMusisz poczekać &3[time] &esek więcej aby otrzymać zapłatę za to!'
+  blocktimer: '&eMusisz poczekać &3[time] &esek aby otrzymać zapłatę za to!'
   taxes: '&3[amount] &eserwerowych podatków zostało przelane na te konto'
   boostStarted: '&eCzas boostów prac został rozpoczęty!'
   boostStoped: '&eCzas boostów prac został zakończony!'
