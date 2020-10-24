@@ -19,9 +19,9 @@ general:
     'false': '&cFałsz'
     blocks:
       furnace: Piec
-      smoker: Smoker
-      blastfurnace: Blast furnace
-      brewingstand: Brewing stand
+      smoker: Wędzarka
+      blastfurnace: Piec hutniczy
+      brewingstand: Statyw alchemiczny
   admin:
     error: '&cWystąpił błąd w tej komendzie.'
     success: '&eKomenda została wykonana.'
@@ -310,7 +310,7 @@ command:
       levelFrom: ' &a(z &e%levelFrom% &apoziomu)'
       levelUntil: ' &a (do &e%levelUntil% &apoziomu)'
       money: ' &2%money%$'
-      points: ' &6%points%ppkt'
+      points: ' &6%points%pkt'
       exp: ' &e%exp%xp'
     gui:
       pickjob: '&eWybierz swoją pracę!'
@@ -662,9 +662,9 @@ message:
     broadcast: '%playername% został awansowany do %titlename% %jobname%.'
     nobroadcast: Gratulacje, zostałeś awansowany do %titlename% %jobname%.
   max-level-reached:
-    title: '&2Max level reached'
-    subtitle: '&2in %jobname%!'
-    chat: '&cYou have reached the maximum level in %jobname%!'
+    title: '&2Osiągnięto maksymalny poziom'
+    subtitle: '&2w pracy %jobname%!'
+    chat: '&cOsiągnąłeś maksymalny poziom w pracy %jobname%!'
   levelup:
     broadcast: '%playername% jest teraz na poziomie %joblevel% %jobname%.'
     nobroadcast: Jesteś teraz na poziomie %joblevel% %jobname%.
