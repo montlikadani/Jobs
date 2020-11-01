@@ -18,10 +18,10 @@ general:
     'true': '&2Vrai'
     'false': '&cFaux'
     blocks:
-      furnace: Furnace
-      smoker: Smoker
-      blastfurnace: Blast furnace
-      brewingstand: Brewing stand
+      furnace: Four
+      smoker: Fumoir
+      blastfurnace: Haut fourneau
+      brewingstand: Alambic
   admin:
     error: '&cUne erreur est survenue pendant l''exécution de la commande.'
     success: '&eLa commande a été exécutée avec succès.'
