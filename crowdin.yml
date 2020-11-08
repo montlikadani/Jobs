@@ -1,0 +1,24 @@
+files:
+  - source: "/src/main/resources/locale/messages_en.yml"
+    translation: "/src/main/resources/locale/messages_%locale_with_underscore%.yml"
+    languages_mapping:
+      locale_with_underscore:
+        cs: cs
+        de: de
+        en-US: en
+        es-ES: es
+        et: et
+        fr: fr
+        hu: hu
+        ja: ja
+        ko: ko
+        lt: lt
+        no-NO: no
+        pl: pl
+        pt-BR: pt-BR
+        ro: ro
+        ru: ru
+        sv-SE: sv-SE
+        tr: tr
+        zh-CN: zhcn
+        zh-TW: zhtw
