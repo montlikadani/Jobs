@@ -15,7 +15,7 @@ general:
       mins: '&e%mins% &6dakika '
       secs: '&e%secs% &6saniye '
     invalidPage: '&cInvalid page'
-    'true': '&2True'
+    'true': '&2Doğru'
     'false': '&cFalse'
     blocks:
       furnace: Furnace
