@@ -16,9 +16,9 @@ general:
       secs: '&e%secs% &6saniye '
     invalidPage: '&cInvalid page'
     'true': '&2Doğru'
-    'false': '&cFalse'
+    'false': '&cYanlış'
     blocks:
-      furnace: Furnace
+      furnace: Fırın
       smoker: Smoker
       blastfurnace: Blast furnace
       brewingstand: Brewing stand
@@ -56,8 +56,8 @@ command:
       nextPageOff: '&7 Next >>----'
       pageCount: '&2[current]/[total]'
       pageCountHover: '&e[totalEntries] entries'
-      prevPageGui: '&6Previous page '
-      nextPageGui: '&6Next Page'
+      prevPageGui: '&6Önceki sayfa'
+      nextPageGui: '&6Sonraki Sayfa'
   moneyboost:
     help:
       info: Tüm oyunculara para avansı verir.
@@ -183,7 +183,7 @@ command:
       info: Edit current jobs.
       args: ''
       list:
-        job: '&eJobs:'
+        job: '&eMeslek:'
         jobs: '  -> [&e%jobname%&r]'
         actions: '    -> [&e%actionname%&r]'
         material: '      -> [&e%materialname%&r]      '
@@ -479,8 +479,8 @@ command:
     toplineseparator: '&7*********************** &6[playerName] &2(&f[questsDone]&2) &7***********************'
     status:
       changed: '&2The quests status has been changed to&r %status%'
-      started: '&aStarted'
-      stopped: '&cStopped'
+      started: '&aBaşlatıldı'
+      stopped: '&cDurduruldu'
     output:
       completed: '&2      !Completed!&r      '
       questLine: '[progress] &7[questName] &f[done]&7/&8[required]'
