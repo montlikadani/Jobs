@@ -14,22 +14,22 @@ general:
       hours: '&e%hours% &6saat '
       mins: '&e%mins% &6dakika '
       secs: '&e%secs% &6saniye '
-    invalidPage: '&cInvalid page'
+    invalidPage: '&cGeçersiz Sayfa'
     'true': '&2Doğru'
     'false': '&cYanlış'
     blocks:
       furnace: Fırın
-      smoker: Smoker
-      blastfurnace: Blast furnace
-      brewingstand: Brewing stand
+      smoker: Dumancı
+      blastfurnace: Yüksek fırın
+      brewingstand: Simya Standı
   admin:
     error: '&cKomut uygulanırken bir hata oluştu.'
     success: '&eKomut başarıyla uygulandı.'
   error:
     noHelpPage: '&cBu sayıda bir yardım sayfası yok!'
     notNumber: '&eLütfen sayıları kullanın!'
-    job: '&cThe job you selected does not exist or you not joined to this'
-    noCommand: '&cThere is no command by this name!'
+    job: '&cSeçtiğiniz iş mevcut değil veya buna katılmadınız'
+    noCommand: '&cBu isimde bir komut yok!'
     permission: '&cBunun için yetkiniz bulunmamaktadır!'
     noinfo: '&cBilgi bulunamadı!'
     noinfoByPlayer: '&cŞuan [%playername%] adlı oyuncunun bilgisi yok!'
@@ -236,7 +236,7 @@ command:
     output:
       name: ' &eItem ismi: &6%itemname%'
       id: ' &eItem id: &6%itemid%'
-      data: ' &eItem data: &6%itemdata%'
+      data: ' &eEşya ismi: &6%itemdata%'
       usage: ' &eKullanımı: &6%first% &eveya &6%second%'
   placeholders:
     help:
@@ -244,7 +244,7 @@ command:
       args: (parse) (placeholder)
     output:
       list: '&e[place]. &7[placeholder]'
-      outputResult: ' &eresult: &7[result]'
+      outputResult: ' &eSonuç: &7[result]'
       parse: '&6[placeholder] &7by [source] &6result &8|&f[result]&8|'
   entitylist:
     help:
