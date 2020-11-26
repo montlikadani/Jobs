@@ -463,7 +463,7 @@ command:
       info: Wyczyść własność bloku
       args: '[playername]'
     output:
-      cleared: '&2Removed &7[furnaces] &2furnaces, &7[brewing] &2brewing stands, &7[smoker]&2 smokers and &7[blast]&2 blast furnaces.'
+      cleared: '&2Usunięto &7[furnaces] &2piec(y), &7[brewing] &2statyw(ów) alchemiczny(ch), &7[smoker]&2 wędzarkę(ek) i &7[blast]&2 piec(y) hutniczy(ch).'
   skipquest:
     help:
       info: Pomiń dane zadanie i otrzymaj nowe
