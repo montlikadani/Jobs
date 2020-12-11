@@ -42,16 +42,16 @@ command:
   help:
     output:
       info: Scrie /jobs [cmd] ? pentru mai multe informații despre i comandă.
-      cmdUsage: '&2Usage: &7[command]'
+      cmdUsage: '&2Mod de utilizare: &7[command]'
       label: Jobs
       cmdInfoFormat: '[command] &f- &2[description]'
       cmdFormat: '&7/[command] &f[arguments]'
       helpPageDescription: '&2* [description]'
-      title: '&e-------&e ======= &6Jobs &e======= &e-------'
+      title: '&e-------&e ======= &6Joburi &e======= &e-------'
       page: '&e-----&e ====== Pagină &6[1] &eof &6[2] &e====== &e-----'
       fliperSimbols: '&e----------'
-      prevPage: '&2----<< &6Prev '
-      prevPageOff: '&7----<< Prev '
+      prevPage: '&2----<< &6Anterior '
+      prevPageOff: '&7----<< Anterior '
       nextPage: '&6 Urmatorul &2>>----'
       nextPageOff: '&7 Urmatorul >>----'
       pageCount: '&2[current]/[total]'
@@ -93,58 +93,58 @@ command:
       infostats: '&c-----> &aExp rate x%boost% enabled&c <-------'
   schedule:
     help:
-      info: Enables the given scheduler
+      info: Activează programatorul dat
       args: enable [scheduleName] [untilTime]
     output:
-      noScheduleFound: '&cSchedule with this name not found.'
-      alreadyEnabled: '&cThis schedule already enabled.'
-      enabled: '&eSchedule have been enabled from&a %from%&e until&a %until%'
+      noScheduleFound: '&cNu a fost găsit niciun program cu acest nume.'
+      alreadyEnabled: '&cAcest program este deja activat.'
+      enabled: '&Programul a fost activat de la&a %from%&e până la&a %until%'
   itembonus:
     help:
-      info: Check item bonus
+      info: Verifica itemul bonus
       args: ''
     output:
       list: '&e[jobname]: %money% %points% %exp%'
       notAplyingList: '&7[jobname]: %money% %points% %exp%'
       hover: '&7%itemtype%'
-      hoverLevelLimits: "&7From level: %from% \n&7Until level: %until%"
+      hoverLevelLimits: "&7De la nivelul: %from% \n&7Până la nivelul: %until%"
   edititembonus:
     help:
       info: Edit item boost bonus
       args: list/add/remove [jobname] [itemBoostName]
   bonus:
     help:
-      info: Show job bonuses
+      info: Arată bonusurile joburilor
       args: '[jobname]'
     output:
       topline: '&7**************** &2[money] &6[points] &e[exp] &7****************'
-      permission: ' &ePerm bonus: &2%money% &6%points% &e%exp%'
+      permission: ' &eBonus permanent: &2%money% &6%points% &e%exp%'
       item: ' &eItem bonus: &2%money% &6%points% &e%exp%'
-      global: ' &eGlobal bonus: &2%money% &6%points% &e%exp%'
-      dynamic: ' &eDynamic bonus: &2%money% &6%points% &e%exp%'
-      nearspawner: ' &eSpawner bonus: &2%money% &6%points% &e%exp%'
-      petpay: ' &ePetPay bonus: &2%money% &6%points% &e%exp%'
-      area: ' &eArea bonus: &2%money% &6%points% &e%exp%'
-      mcmmo: ' &eMcMMO bonus: &2%money% &6%points% &e%exp%'
-      final: ' &eFinal bonus: &2%money% &6%points% &e%exp%'
-      finalExplanation: ' &eDoes not include Petpay and Near spawner bonus/penalty'
+      global: ' &eBonus global: &2%money% &6%points% &e%exp%'
+      dynamic: ' &eBonus dinamic: &2%money% &6%points% &e%exp%'
+      nearspawner: ' &eBonus spawner: &2%money% &6%points% &e%exp%'
+      petpay: ' &eBonus PetPay: &2%money% &6%points% &e%exp%'
+      area: ' &eBonus zonă: &2%money% &6%points% &e%exp%'
+      mcmmo: ' &eBonus McMMO: &2%money% &6%points% &e%exp%'
+      final: ' &eBonus final: &2%money% &6%points% &e%exp%'
+      finalExplanation: ' &eNu include Petpay și Near spawner bonus/penalizare'
   convert:
     help:
-      info: Converts the database system from one system to another. If you are currently running SQLite, this will convert it to MySQL and vice versa.
+      info: Convertește sistemul de baze de date dintr-un sistem în altul. Dacă rulezi SQLite îl va converti in MySQL și invers.
       args: ''
   limit:
     help:
-      info: Shows payment limits for jobs
+      info: Arată limita de plata pentru joburi
       args: '[playername]'
     output:
-      moneytime: '&eTime left until money limit resets: &2%time%'
-      moneyLimit: '&eMoney limit: &2%current%&e/&2%total%'
-      exptime: '&eTime left until Exp limit resets: &2%time%'
-      expLimit: '&eExp limit: &2%current%&e/&2%total%'
-      pointstime: '&eTime left until Point limit resets: &2%time%'
-      pointsLimit: '&ePoint limit: &2%current%&e/&2%total%'
-      reachedmoneylimit: '&4You have reached money limit in given time!'
-      reachedmoneylimit2: '&eYou can check your limit with &2/jobs limit &ecommand'
+      moneytime: '&eTimp rămas până se resetează limita banilor: &2%time%'
+      moneyLimit: '&eLimită de bani: &2%current%&e/&2%total%'
+      exptime: '&eTimp rămas până se resetează limita experienței: &2%time%'
+      expLimit: '&eLimită de experiență: &2%current%&e/&2%total%'
+      pointstime: '&eTimp rămas până se resetează limita punctelor: &2%time%'
+      pointsLimit: '&eLimită de puncte: &2%current%&e/&2%total%'
+      reachedmoneylimit: '&4Ai atins limita de bani în timpul dat!'
+      reachedmoneylimit2: '&ePoți să îți verifici limita cu &2/jobs limit &ecommand'
       reachedmoneylimit3: '&eBanii câștigați sunt reduși exponențial... Totuși poți câștiga puțin!'
       reachedexplimit: '&4Ai atins limita de experiență în timpul dat!'
       reachedexplimit2: '&ePoți să îți verifici limita cu &2/jobs limit &ecommand'
@@ -222,12 +222,12 @@ command:
         lookHover: '&6Press to grab info from block you are looking'
   blockinfo:
     help:
-      info: Shows information for the block you are looking at.
+      info: Arată informații pentru blocul la care te uiți.
       args: ''
     output:
-      name: ' &eBlock name: &6%blockname%'
-      id: ' &eBlock id: &6%blockid%'
-      data: ' &eBlock data: &6%blockdata%'
+      name: ' &eNume bloc: &6%blockname%'
+      id: ' &eId bloc: &6%blockid%'
+      data: ' &eDate bloc: &6%blockdata%'
       usage: ' &eUsage: &6%first% &eor &6%second%'
   iteminfo:
     help:
