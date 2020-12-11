@@ -1,21 +1,21 @@
 ---
 economy:
   error:
-    nomoney: '&cSorry, no money left in national bank!'
+    nomoney: '&cScuze, nu mai sunt bani in banca națională!'
 limitedItem:
   error:
-    levelup: '&cYou need to level up in [jobname] to use this item!'
+    levelup: '&cTrebuie sa ai un nivel mai mare în [jobname] pentru a folosi acest item!'
 general:
   info:
     toplineseparator: '&7*********************** &6%playername% &7***********************'
     separator: '&7*******************************************************'
     time:
-      days: '&e%days% &6days '
-      hours: '&e%hours% &6hours '
+      days: '&e%days% &6zile '
+      hours: '&e%hours% &6ore '
       mins: '&e%mins% &6min '
-      secs: '&e%secs% &6sec '
-    invalidPage: '&cInvalid page'
-    'true': '&2True'
+      secs: '&e%secs% &6secunde '
+    invalidPage: '&cPagină invalidă'
+    'true': '&2Adevărat'
     'false': '&cFalse'
     blocks:
       furnace: Furnace
