@@ -16,58 +16,58 @@ general:
       secs: '&e%secs% &6secunde '
     invalidPage: '&cPagină invalidă'
     'true': '&2Adevărat'
-    'false': '&cFalse'
+    'false': '&cFals'
     blocks:
-      furnace: Furnace
-      smoker: Smoker
+      furnace: Cuptor
+      smoker: Afumător
       blastfurnace: Blast furnace
       brewingstand: Brewing stand
   admin:
-    error: '&cThere was an error in the command.'
-    success: '&eYour command has been performed.'
+    error: '&cA fost o eroare în comandă.'
+    success: '&eComanda ta a fost executată.'
   error:
-    noHelpPage: '&cThere is no help page by this number!'
-    notNumber: '&ePlease use numbers!'
+    noHelpPage: '&cNu este nici o pagina de ajutor cu acest număr!'
+    notNumber: '&eTe rog folosește numere!'
     job: '&cThe job you selected does not exist or you not joined to this'
-    noCommand: '&cThere is no command by this name!'
-    permission: '&cYou do not have permission to do that!'
-    noinfo: '&cNo information found!'
+    noCommand: '&cNu este nici o comandă cu acest număr!'
+    permission: '&cNu ai permisiunea să faci asta!'
+    noinfo: '&cNici o informație găsită!'
     noinfoByPlayer: '&cNo information found by [%playername%] player name!'
-    ingame: '&cYou can use this command only in game!'
-    fromconsole: '&cYou can use this command only from console!'
-    worldisdisabled: '&cYou can''t use command in this world!'
-    newRegistration: '&eRegistered new ownership for [block] &7[current]&e/&f[max]'
-    noRegistration: '&cYou''ve reached max [block] count!'
+    ingame: '&cPoți folosi această comandă doar in joc!'
+    fromconsole: '&cPoți folosi această comandă doar din consolă!'
+    worldisdisabled: '&cNu poți folosi comanda in lumea aceasta!'
+    newRegistration: '&ePropreietate nouă înregistrată pentru [block] &7[current]&e/&f[max]'
+    noRegistration: '&cAi ajuns la numărul maxim de [block]!'
 command:
   help:
     output:
-      info: Type /jobs [cmd] ? for more information about a command.
+      info: Scrie /jobs [cmd] ? pentru mai multe informații despre i comandă.
       cmdUsage: '&2Usage: &7[command]'
       label: Jobs
       cmdInfoFormat: '[command] &f- &2[description]'
       cmdFormat: '&7/[command] &f[arguments]'
       helpPageDescription: '&2* [description]'
       title: '&e-------&e ======= &6Jobs &e======= &e-------'
-      page: '&e-----&e ====== Page &6[1] &eof &6[2] &e====== &e-----'
+      page: '&e-----&e ====== Pagină &6[1] &eof &6[2] &e====== &e-----'
       fliperSimbols: '&e----------'
       prevPage: '&2----<< &6Prev '
       prevPageOff: '&7----<< Prev '
-      nextPage: '&6 Next &2>>----'
-      nextPageOff: '&7 Next >>----'
+      nextPage: '&6 Urmatorul &2>>----'
+      nextPageOff: '&7 Urmatorul >>----'
       pageCount: '&2[current]/[total]'
-      pageCountHover: '&e[totalEntries] entries'
-      prevPageGui: '&6Previous page '
-      nextPageGui: '&6Next Page'
+      pageCountHover: '&e[totalEntries] intrări'
+      prevPageGui: '&6Pagina anterioară '
+      nextPageGui: '&6Pagina următoare'
   moneyboost:
     help:
-      info: Boosts money gain for all players
+      info: Crește banii pentru toți jucătorii
       args: '[jobname]/all/reset [time]/[rate]'
     output:
       allreset: All money boosts turned off
       jobsboostreset: Money boost has been turned off for %jobname%
-      nothingtoreset: Nothing to reset
-      boostalladded: Money boost of %boost% added for all jobs!
-      boostadded: Money boost of &e%boost% &aadded for &e%jobname%!
+      nothingtoreset: Nimic de resetat
+      boostalladded: Creșterea banilor de %boost% adăugată la toate joburile!
+      boostadded: Creșterea banilor de %boost% adăugată pentru &e%jobname%!
       infostats: '&c-----> &aMoney rate x%boost% enabled&c <-------'
   pointboost:
     help:
@@ -76,18 +76,18 @@ command:
     output:
       allreset: All point boosts turned off
       jobsboostreset: Point boost has been turned off for %jobname%
-      nothingtoreset: Nothing to reset
+      nothingtoreset: Nimic de resetat
       boostalladded: Points boost of %boost% added for all jobs!
       boostadded: Points boost of &e%boost% &aadded for &e%jobname%!
       infostats: '&c-----> &aPoints rate x%boost% enabled&c <-------'
   expboost:
     help:
-      info: Boosts exp gain for all players
+      info: Crește câștigarea experienței pentru toți jucătorii
       args: '[jobname]/all/reset [time]/[rate]'
     output:
       allreset: All exp boosts turned off
       jobsboostreset: Exp boost has been turned off for %jobname%
-      nothingtoreset: Nothing to reset
+      nothingtoreset: Nimic de resetat
       boostalladded: Exp boost of %boost% added for all jobs!
       boostadded: Exp boost of &e%boost% &aadded for &e%jobname%!
       infostats: '&c-----> &aExp rate x%boost% enabled&c <-------'
@@ -145,18 +145,18 @@ command:
       pointsLimit: '&ePoint limit: &2%current%&e/&2%total%'
       reachedmoneylimit: '&4You have reached money limit in given time!'
       reachedmoneylimit2: '&eYou can check your limit with &2/jobs limit &ecommand'
-      reachedmoneylimit3: '&eMoney earned is now reduced exponentially... But you still earn a little!'
-      reachedexplimit: '&4You have reached exp limit in given time!'
-      reachedexplimit2: '&eYou can check your limit with &2/jobs limit &ecommand'
-      reachedpointslimit: '&4You have reached exp limit in given time!'
-      reachedpointslimit2: '&eYou can check your limit with &2/jobs limit &ecommand'
-      notenabled: '&eMoney limit is not enabled'
+      reachedmoneylimit3: '&eBanii câștigați sunt reduși exponențial... Totuși poți câștiga puțin!'
+      reachedexplimit: '&4Ai atins limita de experiență în timpul dat!'
+      reachedexplimit2: '&ePoți să îți verifici limita cu &2/jobs limit &ecommand'
+      reachedpointslimit: '&4Ai atins limita de experiență în timpul dat!'
+      reachedpointslimit2: '&ePoți să îți verifici limita cu &2/jobs limit &ecommand'
+      notenabled: '&e Limita banilor nu e activată'
   resetlimit:
     help:
-      info: Resets a player's payment limits
+      info: Resetează limita plății a unui jucător
       args: '[playername]'
     output:
-      reseted: '&ePayment limits have been reset for: &2%playername%'
+      reseted: '&eLimita plății a fost resetată pentru: &2%playername%'
   resetquest:
     help:
       info: Resets a player's quest
