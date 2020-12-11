@@ -228,72 +228,72 @@ command:
       name: ' &eNume bloc: &6%blockname%'
       id: ' &eId bloc: &6%blockid%'
       data: ' &eDate bloc: &6%blockdata%'
-      usage: ' &eUsage: &6%first% &eor &6%second%'
+      usage: ' &eMod de folosire: &6%first% &esau &6%second%'
   iteminfo:
     help:
-      info: Shows information for the item you are holding.
+      info: Arată informații pentru itemul pe care îl ți.
       args: ''
     output:
-      name: ' &eItem name: &6%itemname%'
-      id: ' &eItem id: &6%itemid%'
-      data: ' &eItem data: &6%itemdata%'
-      usage: ' &eUsage: &6%first% &eor &6%second%'
+      name: ' &eNume item: &6%itemname%'
+      id: ' &eId item: &6%itemid%'
+      data: ' &eDate item: &6%itemdata%'
+      usage: ' &eMod de folosire: &6%first% &esau &6%second%'
   placeholders:
     help:
-      info: List out all placeholders
+      info: Listă a toate substituibilelor
       args: (parse) (placeholder)
     output:
       list: '&e[place]. &7[placeholder]'
-      outputResult: ' &eresult: &7[result]'
+      outputResult: ' &erezultat: &7[result]'
       parse: '&6[placeholder] &7by [source] &6result &8|&f[result]&8|'
   entitylist:
     help:
-      info: Shows all possible entities that can be used with the plugin.
+      info: Arată toate entitățile posibile care pot fi folosite cu pluginul.
       args: ''
   stats:
     help:
-      info: Show the level you are in each job you are part of.
+      info: Arată nivelul tau la fiecare job în care participi.
       args: '[playername]'
     error:
-      nojob: Please join a job first.
+      nojob: Te rog sa te angajezi mai întâi.
     output:
-      message: 'Level %joblevel% for %jobname%: %jobxp%/%jobmaxxp% xp'
-      max-level: '     &cMax level   -   %jobname%'
-    bossBarOutput: 'Lvl %joblevel% %jobname%: %jobxp%/%jobmaxxp% xp%gain%'
+      message: 'Nivel %joblevel% pentru %jobname%: %jobxp%/%jobmaxxp% experiență'
+      max-level: '     &cNivel maxim   -   %jobname%'
+    bossBarOutput: 'Nivel %joblevel% %jobname%: %jobxp%/%jobmaxxp% experiență%gain%'
     bossBarGain: ' &7(&f%gain%&7)'
   shop:
     help:
-      info: Opens special jobs shop.
+      info: Deschide meniul cu joburi speciale.
       args: ''
     info:
-      title: '&e------- &8Jobs shop &e-------'
-      currentPoints: '&eYou have: &6%currentpoints%'
-      price: '&ePrice: &6%price%'
-      reqJobs: '&eRequired jobs:'
-      reqJobsList: '  &6%jobsname%&e: &e%level% lvl'
-      reqTotalLevel: '&6Required total level: &e%totalLevel%'
+      title: '&e------- &8Meniu cu joburi &e-------'
+      currentPoints: '&eAi: &6%currentpoints%'
+      price: '&ePreț: &6%price%'
+      reqJobs: '&eJoburi necesare:'
+      reqJobsList: '  &6%jobsname%&e: &e%level% nivel'
+      reqTotalLevel: '&6Nivel total necesar: &e%totalLevel%'
       reqJobsColor: '&c'
       reqJobsLevelColor: '&4'
       reqTotalLevelColor: '&4'
-      cantOpen: '&cCan''t open this page'
-      NoPermForItem: '&cYou don''t have required permissions for this item!'
-      NoPermToBuy: '&cNo permissions to buy this item'
-      NoJobReqForitem: '&cYou don''t have the required job (&6%jobname%&e) with required (&6%joblevel%&e) level'
-      NoPoints: '&cYou don''t have enough points'
-      NoTotalLevel: '&cTotal jobs level is too low (%totalLevel%)'
-      Paid: '&eYou have paid &6%amount% &efor this item'
+      cantOpen: '&cAceastă pagina nu poate fi deschisă'
+      NoPermForItem: '&cNu au permisiunile necesare pentru acest item!'
+      NoPermToBuy: '&cNu ai permisiunea să cumperi acest item'
+      NoJobReqForitem: '&cNu ai jobul necesar(&6%jobname%&e) cu nivelul necesar(&6%joblevel%&e)'
+      NoPoints: '&cNu ai destule puncte'
+      NoTotalLevel: '&cNivelul total al joburilor e prea mic (%totalLevel%)'
+      Paid: '&eAi plătit &6%amount% &epentru acest item'
   archive:
     help:
-      info: Shows all jobs saved in archive by user.
+      info: Arată toate joburile salvate în arhivă de utilizator.
       args: '[playername]'
     error:
-      nojob: There is no jobs saved.
+      nojob: Nu sunt joburi salvate.
   give:
     help:
-      info: Gives item by jobs name and item category name. Player name is optional
+      info: Dă iteme după numele jobului și numele categoriei. Numele jucătorului este opțional
       args: '[playername] [jobname] [items/limiteditems] [jobitemname]'
     output:
-      notonline: '&4Player with that name is not online!'
+      notonline: '&4Juctorul cu acel nume nu este activ!'
       noitem: '&4Can''t find any item by given name!'
   info:
     help:
