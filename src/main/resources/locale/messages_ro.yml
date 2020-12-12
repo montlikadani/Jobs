@@ -68,29 +68,29 @@ command:
       nothingtoreset: Nimic de resetat
       boostalladded: Creșterea banilor de %boost% adăugată la toate joburile!
       boostadded: Creșterea banilor de %boost% adăugată pentru &e%jobname%!
-      infostats: '&c-----> &aMoney rate x%boost% enabled&c <-------'
+      infostats: '&c-----> &aRata banilor x%boost% activată&c <-------'
   pointboost:
     help:
-      info: Boosts point gain for all players
+      info: Crește câștigul punctelor pentru toți jucătorii
       args: '[jobname]/all/reset [time]/[rate]'
     output:
-      allreset: All point boosts turned off
-      jobsboostreset: Point boost has been turned off for %jobname%
+      allreset: Toate majorările de bani au fost dezactivate
+      jobsboostreset: Majorarea de puncte a fost oprită pentru %jobname%
       nothingtoreset: Nimic de resetat
-      boostalladded: Points boost of %boost% added for all jobs!
-      boostadded: Points boost of &e%boost% &aadded for &e%jobname%!
-      infostats: '&c-----> &aPoints rate x%boost% enabled&c <-------'
+      boostalladded: Majorarea banilor de %boost% adăugată la toate joburile!
+      boostadded: Majorarea punctelor de %boost% adăugată pentru &e%jobname%!
+      infostats: '&c-----> &aRata punctey x%boost% activată&c <-------'
   expboost:
     help:
       info: Crește câștigarea experienței pentru toți jucătorii
       args: '[jobname]/all/reset [time]/[rate]'
     output:
-      allreset: All exp boosts turned off
-      jobsboostreset: Exp boost has been turned off for %jobname%
+      allreset: Toate majorările de experiență au fost dezactivate
+      jobsboostreset: Majorarea experienței a fost oprită pentru %jobname%
       nothingtoreset: Nimic de resetat
-      boostalladded: Exp boost of %boost% added for all jobs!
-      boostadded: Exp boost of &e%boost% &aadded for &e%jobname%!
-      infostats: '&c-----> &aExp rate x%boost% enabled&c <-------'
+      boostalladded: Majorarea experienței de %boost% adăugată la toate joburile!
+      boostadded: Majorarea experienței de &e%boost% &aadăugată pentru &e%jobname%!
+      infostats: '&c-----> &aRata experienței x%boost% activată&c <-------'
   schedule:
     help:
       info: Activează programatorul dat
@@ -110,7 +110,7 @@ command:
       hoverLevelLimits: "&7De la nivelul: %from% \n&7Până la nivelul: %until%"
   edititembonus:
     help:
-      info: Edit item boost bonus
+      info: Editează majorarea itemului bonus
       args: list/add/remove [jobname] [itemBoostName]
   bonus:
     help:
@@ -159,16 +159,16 @@ command:
       reseted: '&eLimita plății a fost resetată pentru: &2%playername%'
   resetquest:
     help:
-      info: Resets a player's quest
+      info: Resetează misiunea unui jucător
       args: '[playername] [jobname]'
     output:
-      reseted: '&eQuest has been reset for: &2%playername%'
-      noQuests: '&eCan''t find any quests'
+      reseted: '&eMisiunea a fost resetată pentru: &2%playername%'
+      noQuests: '&eNu s-au găsit misiuni'
   points:
     help:
-      info: Shows how much points does a player have.
+      info: Arata cate puncte are un jucător.
       args: '[playername]'
-    currentpoints: ' &eCurrent point amount: &6%currentpoints%'
+    currentpoints: ' &eNumărul curent de puncte: &6%currentpoints%'
     totalpoints: ' &eTotal amount of collected points until now: &6%totalpoints%'
   editpoints:
     help:
