@@ -28,11 +28,11 @@ general:
   error:
     noHelpPage: '&cNu este nici o pagina de ajutor cu acest număr!'
     notNumber: '&eTe rog folosește numere!'
-    job: '&cThe job you selected does not exist or you not joined to this'
+    job: '&cJobul pe care l-ai selectat nu există sau nu ești înrolat'
     noCommand: '&cNu este nici o comandă cu acest număr!'
     permission: '&cNu ai permisiunea să faci asta!'
     noinfo: '&cNici o informație găsită!'
-    noinfoByPlayer: '&cNo information found by [%playername%] player name!'
+    noinfoByPlayer: '&cNici o informație găsită de [%playername%]!'
     ingame: '&cPoți folosi această comandă doar in joc!'
     fromconsole: '&cPoți folosi această comandă doar din consolă!'
     worldisdisabled: '&cNu poți folosi comanda in lumea aceasta!'
@@ -63,8 +63,8 @@ command:
       info: Crește banii pentru toți jucătorii
       args: '[jobname]/all/reset [time]/[rate]'
     output:
-      allreset: All money boosts turned off
-      jobsboostreset: Money boost has been turned off for %jobname%
+      allreset: Toate majorările de bani au fost dezactivate
+      jobsboostreset: Majorarea de bani a fost oprită pentru %jobname%
       nothingtoreset: Nimic de resetat
       boostalladded: Creșterea banilor de %boost% adăugată la toate joburile!
       boostadded: Creșterea banilor de %boost% adăugată pentru &e%jobname%!
