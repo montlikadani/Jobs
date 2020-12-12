@@ -20,8 +20,8 @@ general:
     blocks:
       furnace: Cuptor
       smoker: Afumător
-      blastfurnace: Blast furnace
-      brewingstand: Brewing stand
+      blastfurnace: Furnal
+      brewingstand: Stand de poțiuni
   admin:
     error: '&cA fost o eroare în comandă.'
     success: '&eComanda ta a fost executată.'
