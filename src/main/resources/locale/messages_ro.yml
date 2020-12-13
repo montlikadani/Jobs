@@ -169,10 +169,10 @@ command:
       info: Arata cate puncte are un jucător.
       args: '[playername]'
     currentpoints: ' &eNumărul curent de puncte: &6%currentpoints%'
-    totalpoints: ' &eTotal amount of collected points until now: &6%totalpoints%'
+    totalpoints: ' &eNumăr total de puncte colectate până acum: &6%totalpoints%'
   editpoints:
     help:
-      info: Edit player's points.
+      info: Editează punctele jucătorului.
       args: set/add/take [playername] [amount]
     output:
       set: '&ePlayers (&6%playername%&e) points was set to &6%amount%'
