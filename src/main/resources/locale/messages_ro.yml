@@ -404,12 +404,12 @@ command:
       info: Alătură te jobului selectat.
       args: '[jobname]'
     error:
-      alreadyin: You are already in the job %jobname%.
-      fullslots: You cannot join the job %jobname%, there are no slots available.
-      maxjobs: You have already joined too many jobs.
-      rejoin: '&cCan''t rejoin this job. Wait [time]'
-    rejoin: '&aClick to rejoin this job: '
-    success: You have joined the job %jobname%.
+      alreadyin: Ești deja în jobul %jobname%.
+      fullslots: Nu poți să te alături jobului %jobname%, nu mai sunt locuri libere.
+      maxjobs: Te-ai alăturat prea multor alte joburi.
+      rejoin: '&cNu poți să te reînscri la acest job. Așteaptă [time]'
+    rejoin: '&aApasa ca să te realături acestui job: '
+    success: Te-ai alăturat jobului %jobname%.
     confirm: '&2Click to confirm joining action for the &7[jobname] &2job.'
   leave:
     help:
