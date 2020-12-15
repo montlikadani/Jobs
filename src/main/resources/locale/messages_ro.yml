@@ -551,95 +551,95 @@ command:
       noAreasByLoc: '&eNu sunt zone restricționate in această locație'
       areaList: '&eZone restricționate după locația ta: &6%list%'
       selected1: '&ePrimul punct a fost selectat: &6%x%:%y%:%z%'
-      selected2: '&eSelected the second point: &6%x%:%y%:%z%'
-      select: '&eSelect 2 points with the selection tool (%tool%)'
-      exist: '&eRestriction area by this name already exists'
-      dontExist: '&eRestriction area by this name does not exist'
-      wgDontExist: '&eWorldGuard area by this name does not exist'
+      selected2: '&eAl doilea punct a fost selectat: &6%x%:%y%:%z%'
+      select: '&eAu fost selectate 2 puncte cu unealta de selecție (%tool%)'
+      exist: '&eO zonă restricționată cu acest nume există deja'
+      dontExist: '&eNu există o zonă restricționată cu acest nume'
+      wgDontExist: '&eNu există o zonă WorldGuard cu acest nume'
   log:
     help:
-      info: Shows statistics.
+      info: Afișează statistici.
       args: '[playername]'
     output:
       topline: '&7************************* &6%playername% &7*************************'
-      ls: '&7* &6%number%. &3%action%: &6%item% &eqty: %qty% %money%%exp%%points%'
-      money: '&6money: %amount% '
-      exp: '&eexp: %amount% '
-      points: '&6points: %amount%'
-      totalIncomes: '    &6Total money:&2 %money%&6, Total exp:&2 %exp%&6, Total points:&2 %points%'
+      ls: '&7* &6%number%. &3%action%: &6%item% &ecantitate: %qty% %money%%exp%%points%'
+      money: '&6bani: %amount% '
+      exp: '&eexperiență: %amount% '
+      points: '&6puncte: %amount%'
+      totalIncomes: '    &6Totalul banilor:&2 %money%&6, Total experiență:&2 %exp%&6, Total puncte:&2 %points%'
       bottomline: '&7***********************************************************'
-      prev: '&e<<<<< Prev page &2|'
-      next: '&2|&e Next Page >>>>'
-      nodata: '&cData not found'
+      prev: '&e<<<<< Pagina anterioară &2|'
+      next: '&2|&e Pagina Următoare >>>>'
+      nodata: '&cNu au fost găsite date'
   glog:
     help:
-      info: Shows global statistics.
+      info: Afișează statistici globale.
       args: ''
     output:
-      topline: '&7*********************** &6Global statistics &7***********************'
-      ls: '&7* &6%number%. &3%action%: &6%item% &eqty: %qty% %money%%exp%%points%'
-      money: '&6money: %amount% '
-      exp: '&eexp: %amount% '
-      points: '&6points: %amount%'
-      totalIncomes: '    &6Total money:&2 %money%&6, Total exp:&2 %exp%&6, Total points:&2 %points%'
+      topline: '&7*********************** &6Statistici globale &7***********************'
+      ls: '&7* &6%number%. &3%action%: &6%item% &ecantitate: %qty% %money%%exp%%points%'
+      money: '&6bani: %amount% '
+      exp: '&eexperiență: %amount% '
+      points: '&6puncte: %amount%'
+      totalIncomes: '    &6Totalul banilor:&2 %money%&6, Total experiență:&2 %exp%&6, Total puncte:&2 %points%'
       bottomline: '&7**************************************************************'
-      nodata: '&cData not found'
+      nodata: '&cNu au fost găsite date'
   transfer:
     help:
-      info: Transfer a player's job from an old job to a new job.
+      info: Transfera jobul unui jucător dintr-un job vechi in unul nou.
       args: '[playername] [oldjob] [newjob]'
     output:
-      target: You have been transferred from %oldjobname% to %newjobname%.
+      target: Ai fost transferat de la %oldjobname% la %newjobname%.
   promote:
     help:
-      info: Promote the player X levels in a job.
+      info: Promovează jucătorul cu X nivele într-un job.
       args: '[playername] [jobname] [levels]'
     output:
-      target: You have been promoted %levelsgained% levels in %jobname%.
+      target: Ai fost promovat %levelsgained% nivele în %jobname%.
   exp:
     help:
-      info: Change the player exp for job.
+      info: Schimbă experiența jucătorului pentru job.
       args: '[playername] [jobname] set/add/take [amount]'
     error:
-      nojob: '&cThis player must first join a job.'
+      nojob: '&cAcest jucător trebuie sa se alăture unui job mai întâi.'
     output:
-      target: '&eYour exp was changed for %jobname% &eand now you at &6%level%lvl &eand with &6%exp%exp.'
+      target: '&eExperiența ta a fost schimbată pentru %jobname% &eși acum ai &6%level%nivele&eși &6%exp%experiență.'
   level:
     help:
-      info: Change the player's level in a job.
+      info: Schimbă nivelul jucătorului într-un job.
       args: '[playername] [jobname] set/add/take [amount]'
     error:
-      nojob: '&cThis player must first join a job.'
+      nojob: '&cAcest jucător trebuie sa se alăture unui job mai întâi.'
     output:
-      target: '&eYour level was changed for %jobname% &eand now you at &6%level%lvl &eand with &6%exp%exp.'
+      target: '&eNivelul tău a fost schimbat pentru %jobname% &eși acum ai &6%level%nivele&eși &6%exp%experiență.'
   demote:
     help:
-      info: Demote the player X levels in a job.
+      info: Scade Z nivele jucătorului într-un job.
       args: '[playername] [jobname] [levels]'
     output:
-      target: You have been demoted %levelslost% levels in %jobname%.
+      target: Ți-au fost scăzute %levelslost% nivele în %jobname%.
   grantxp:
     help:
-      info: Grants the player X experience in a job.
+      info: Adaugă jucătorului X experiență într-un job.
       args: '[playername] [jobname] [xp]'
     output:
-      target: You have been granted %xpgained% experience in %jobname%.
+      target: Ți-a fost dată %xpgained% experiență în %jobname%.
   removexp:
     help:
-      info: Remove X experience from the player in a job.
+      info: Scade X experiență de la jucător într-un job.
       args: '[playername] [jobname] [xp]'
     output:
-      target: You have lost %xplost% experience in %jobname%.
+      target: Ai pierdut %xplost% experiență în %jobname%.
   signupdate:
     help:
-      info: Manually updates a sign by its name
+      info: Actualizează manual un semn după numele lui
       args: '[jobname]'
   bp:
     help:
-      info: Shows block protections around you in 10 block radius
+      info: Arată protecțiile bloc din jurul tau pe o rază de 10 blocuri
       args: ''
     output:
-      found: '&eFound &6%amount% &eprotected blocks around you'
+      found: '&eAu fost găsite &6%amount% &eblocuri protejate în jurul tău'
       notFound: '&eNo protected blocks found around you'
   reload:
     help:
