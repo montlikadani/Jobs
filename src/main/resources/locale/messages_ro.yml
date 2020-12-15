@@ -640,75 +640,75 @@ command:
       args: ''
     output:
       found: '&eAu fost găsite &6%amount% &eblocuri protejate în jurul tău'
-      notFound: '&eNo protected blocks found around you'
+      notFound: '&eNu au fost găsite blocuri protejate în jurul tău'
   reload:
     help:
-      info: Reload configurations.
+      info: Reîncarcă configurațiile.
   toggle:
     help:
-      info: Toggles payment output on action bar or bossbar.
+      info: Comuta rezultatul plății in bara de acțiune sau bara boss.
       args: actionbar/bossbar
     output:
-      turnedoff: '&4This feature is turned off!'
+      turnedoff: '&4Această funcție este dezactivată!'
       paid:
-        main: '&aYou got:'
-        money: '&e[amount] money'
-        exp: '&7[exp] exp'
-        points: '&6[points] points'
-      'on': '&aToggled: &aON'
-      'off': '&aToggled: &4OFF'
+        main: '&aAi:'
+        money: '&e[amount] bani'
+        exp: '&7[exp] experiență'
+        points: '&6[points] puncte'
+      'on': '&aComutat: &aON'
+      'off': '&aComutat: &aOFF'
 message:
   skillup:
-    broadcast: '%playername% has been promoted to a %titlename% %jobname%.'
-    nobroadcast: Congratulations, you have been promoted to a %titlename% %jobname%.
+    broadcast: '%playername% a fost promovat la %titlename% %jobname%.'
+    nobroadcast: Felicitări, ai fost promovat la %titlename% %jobname%.
   max-level-reached:
-    title: '&2Max level reached'
-    subtitle: '&2in %jobname%!'
-    chat: '&cYou have reached the maximum level in %jobname%!'
+    title: '&cNivel maxim atins'
+    subtitle: '&2în %jobname%!'
+    chat: '&cAi atins nivelul maxim în %jobname%!'
   levelup:
-    broadcast: '%playername% is now a level %joblevel% %jobname%.'
-    nobroadcast: You are now level %joblevel% %jobname%.
+    broadcast: '%playername% este acum la nivelul %joblevel% %jobname%.'
+    nobroadcast: Acum ai nivelul %joblevel% %jobname%.
   leveldown:
-    message: '&cYou lost level&e %lostLevel%&c in&e %jobname%&c job! Level:&6 %joblevel%&c.'
-  cowtimer: '&eYou still need to wait &6%time% &esec to get paid for this job.'
-  blocktimer: '&eYou need to wait &3[time] &esec more to get paid for this!'
-  taxes: '&3[amount] &eserver taxes were transferred to this account'
-  boostStarted: '&eJobs boost time have been started!'
-  boostStoped: '&eJobs boost time have been ended!'
+    message: '&cAi pierdut nivel&e %lostLevel%&c în&e %jobname%&c job! Nivel:&6 %joblevel%&c.'
+  cowtimer: '&eTrebuie să aștepți &6%time% &esecunde pentru a fi platit pentru acest job.'
+  blocktimer: '&eTrebuie să aștepți încă &3[time] &esecunde pentru a fi platit pentru acesta!'
+  taxes: '&3[amount] &etaxe de server au fost transferate în acest cont'
+  boostStarted: '&e Timpul de majorare a joburilor a început!'
+  boostStoped: '&e Timpul de majorare a joburilor s-au terminat!'
   crafting:
-    fullinventory: '&cYour inventory is full!'
+    fullinventory: '&cInventarul tău e plin!'
 signs:
   List: '&0[number].&8[player]&7:&4[level]'
   questList: '&0[number].&8[player]&7:&4[quests]'
   SpecialList:
-    p1: '&b** &8First &b**'
-    p2: '&b** &8Second &b**'
-    p3: '&b** &8Third &b**'
-    p4: '&b** &8Fourth &b**'
-    p5: '&b** &8Fifth &b**'
-    p6: '&b** &8Sixth &b**'
-    p7: '&b** &8Seventh &b**'
-    p8: '&b** &8Eight &b**'
-    p9: '&b** &8Ninth &b**'
-    p10: '&b** &8Tenth &b**'
+    p1: '&b** &8Primul &b**'
+    p2: '&b** &8Al doilea &b**'
+    p3: '&b** &8Al treilea &b**'
+    p4: '&b** &8Al patrulea &b**'
+    p5: '&b** &8Al cincilea &b**'
+    p6: '&b** &8Al șaselea &b**'
+    p7: '&b** &8Al șaptelea &b**'
+    p8: '&b** &8Al optulea &b**'
+    p9: '&b** &8Al nouălea &b**'
+    p10: '&b** &8Al zecelea &b**'
     name: '&9[player]'
-    level: '&8[level] level'
-    quests: '&8[quests] quests'
+    level: '&8[level] nivel'
+    quests: '&8[quests] misiuni'
     bottom: '&b************'
-  cantcreate: '&4You can''t create this sign!'
-  cantdestroy: '&4You can''t destroy this sign!'
+  cantcreate: '&4Nu poți crea acest semn!'
+  cantdestroy: '&4Nu poți distruge acest semn!'
   topline: '&0[Jobs]'
   secondline:
-    join: '&0Join'
-    leave: '&0Leave'
-    toggle: '&0Toggle'
+    join: '&0Alătură-te'
+    leave: '&0Pleacă'
+    toggle: '&0Comută'
     top: '&0Top'
-    browse: '&0Browse'
-    stats: '&0Stats'
-    limit: '&0Limit'
-    info: '&0Info'
-    archive: '&0Archive'
+    browse: '&0Vârf'
+    stats: '&0Statistici'
+    limit: '&0Limită'
+    info: '&0Informații'
+    archive: '&0Arhivă'
 scoreboard:
   topline: '&2Top &e%jobname%'
-  gtopline: '&2Global top list'
+  gtopline: '&2Lista topului global'
   line: '&2%number%. &e%playername% (&6%level%&e)'
