@@ -4,7 +4,7 @@ economy:
     nomoney: '&cScuze, nu mai sunt bani in banca națională!'
 limitedItem:
   error:
-    levelup: '&cTrebuie sa ai un nivel mai mare în [jobname] pentru a folosi acest item!'
+    levelup: '&cTrebuie să ai un nivel mai mare în [jobname] pentru a folosi acest item!'
 general:
   info:
     toplineseparator: '&7*********************** &6%playername% &7***********************'
@@ -26,7 +26,7 @@ general:
     error: '&cA fost o eroare în comandă.'
     success: '&eComanda ta a fost executată.'
   error:
-    noHelpPage: '&cNu este nici o pagina de ajutor cu acest număr!'
+    noHelpPage: '&cNu este nici o pagină de ajutor cu acest număr!'
     notNumber: '&eTe rog folosește numere!'
     job: '&cJobul pe care l-ai selectat nu există sau nu ești înrolat'
     noCommand: '&cNu este nici o comandă cu acest număr!'
@@ -241,11 +241,11 @@ command:
   placeholders:
     help:
       info: Listă a toate substituibilelor
-      args: (analiza)(substituent)
+      args: (parse) (substituent)
     output:
       list: '&e[place]. &7[placeholder]'
       outputResult: ' &erezultat: &7[result]'
-      parse: '&6[placeholder] &7by [source] &6result &8|&f[result]&8|'
+      parse: '&6[placeholder] &7după [source] &6rezultat &8|&f[result]&8|'
   entitylist:
     help:
       info: Arată toate entitățile posibile care pot fi folosite cu pluginul.
@@ -294,28 +294,28 @@ command:
       args: '[playername] [jobname] [items/limiteditems] [jobitemname]'
     output:
       notonline: '&4Juctorul cu acel nume nu este activ!'
-      noitem: '&4Can''t find any item by given name!'
+      noitem: '&4Nu se poate găsi niciun item după numele dat!'
   info:
     help:
-      title: '&2*** &eJobs&2 ***'
-      info: Show how much each job is getting paid and for what.
-      penalty: '&eThis job has a penalty of &c[penalty]% &ebecause there are too many players working in it.'
-      bonus: '&eThis job has a bonus of &2[bonus]% &ebecause there are not enough players working in it.'
+      title: '&2*** &eJoburi&2 ***'
+      info: Arată cât de mult este plătit fiecare job și pentru ce.
+      penalty: '&eAcest job are o penalitate de &c[penalty]% &epentru că sunt prea multi jucători care lucrează în el.'
+      bonus: '&eAcest job are un bonus de &c[bonus]% &epentru că nu sunt destui jucători care lucrează în el.'
       args: '[jobname] [action]'
-      actions: '&eValid actions are: &f%actions%'
-      max: ' - &emax level:&f '
-      newMax: ' &eMax level: &f[max]'
+      actions: '&eAcțiuni valide sunt: &f%actions%'
+      max: ' - &snivel maxim:&f '
+      newMax: ' &eNivel maxim: &f[max]'
       material: '&7%material%'
-      levelRange: ' &a(&e%levelFrom% &a- &e%levelUntil% &alevels)'
-      levelFrom: ' &a(from &e%levelFrom% &alevel)'
-      levelUntil: ' &a(until &e%levelUntil% &alevel)'
+      levelRange: ' &a(&e%levelFrom% &a- &e%levelUntil% &anivele)'
+      levelFrom: ' &a(de la &e%levelFrom% &anivel)'
+      levelUntil: ' &a(până la &e%levelUntil% &anivel)'
       money: ' &2%money%$'
-      points: ' &6%points%pts'
-      exp: ' &e%exp%xp'
+      points: ' &6%points%puncte'
+      exp: ' &e%exp%experiență'
     gui:
-      pickjob: '&ePick your job!'
-      jobinfo: '&e[jobname] info!'
-      actions: '&eValid actions are:'
+      pickjob: '&eAlege-ți jobul!'
+      jobinfo: '&e[jobname] informații!'
+      actions: '&eAcțiuni valide sunt:'
       leftClick: '&eLeft Click for more info'
       middleClick: '&eMiddle Click to leave this job'
       rightClick: '&eRight click to join job'
