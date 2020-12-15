@@ -410,94 +410,94 @@ command:
       rejoin: '&cNu poți să te reînscri la acest job. Așteaptă [time]'
     rejoin: '&aApasa ca să te realături acestui job: '
     success: Te-ai alăturat jobului %jobname%.
-    confirm: '&2Click to confirm joining action for the &7[jobname] &2job.'
+    confirm: '&2Apasă ca sa confirmi alăturarea la jobul &7[jobname] &2job.'
   leave:
     help:
-      info: Leave the selected job.
+      info: Demisionează de la jobul selectat.
       args: '[oldplayerjob]'
-    success: You have left the job %jobname%.
-    confirmationNeed: '&cAre you sure you want to leave from&e [jobname]&c job? Type the command again within&6 [time] seconds &cto confirm!'
+    success: Ai părăsit jobul %jobname%.
+    confirmationNeed: '&2Ești sigur că vrei sa demisionezi de la &e [jobname]&c job? Scrie comandă iar în&6 [time] secunde &cpentru a confirma!'
   leaveall:
     help:
-      info: Leave all your jobs.
+      info: Demisionează de la toate joburile.
     error:
-      nojobs: You do not have any jobs to leave!
-    success: You have left all your jobs.
-    confirmationNeed: '&cAre you sure you want to leave from all jobs? Type the command again within&6 [time] seconds &cto confirm!'
+      nojobs: Nu ai ce joburi să părăsești!
+    success: Ai demisionat de la toate joburile.
+    confirmationNeed: '&2Ești sigur că vrei sa demisionezi de la toate joburile? Scrie comandă iar în&6 [time] secunde &cpentru a confirma!'
   explored:
     help:
-      info: Check who visited this chunk
+      info: Verifică cine a vizitat acest chunk
     error:
-      noexplore: No one visited this chunk
-    fullExplore: '&aThis chunk is fully explored'
+      noexplore: Nimeni nu a vizitat acest chunk
+    fullExplore: '&aAcest chunk este explorat total'
     list: '&e%place%. %playername%'
   browse:
     help:
-      info: List the jobs available to you.
+      info: Listează joburile disponibile.
     error:
-      nojobs: There are no jobs you can join.
+      nojobs: Nu poți să te alături niciunui job.
     output:
-      header: 'You are allowed to join the following jobs:'
-      footer: For more information type in /jobs info [JobName]
-      totalWorkers: ' &7Workers: &e[amount]'
-      penalty: ' &4Penalty: &c[amount]%'
+      header: 'Ai voie sa te alături următoarelor joburi:'
+      footer: Pentru mai multe informații scrie /jobs info [JobName]
+      totalWorkers: ' &7Muncitori: &e[amount]'
+      penalty: ' &4Penalizare: &c[amount]%'
       bonus: ' &2Bonus: &a[amount]%'
-      newHeader: '&2========== [amount] Available Jobs ========='
+      newHeader: '&2========== [amount] Joburi Disponibile ========='
       description: '[description]'
       list: '    &8[place]. &7[jobname]'
       console:
-        newHeader: '&2========== [amount] Available Jobs ========='
+        newHeader: '&2========== [amount] Joburi Disponibile ========='
         description: '[description]'
-        totalWorkers: ' &7Workers: &e[amount]'
-        penalty: ' &4Penalty: &c[amount]%'
+        totalWorkers: ' &7Muncitori: &e[amount]'
+        penalty: ' &4Penalizare: &c[amount]%'
         bonus: ' &2Bonus: &a[amount]%'
         list: ' &6[jobname]'
-        newMax: ' &eMax level: &f[max]'
-      click: '&bClick on the job to see more info about it!'
-      detailed: '&bClick to see more detailed list on job actions'
+        newMax: ' &eNivel maxim: &f[max]'
+      click: '&bApasă pe job pentru a afla mai multe informații despre el!'
+      detailed: '&bApasă că să vezi o lista detaliată cu acțiuni din job'
       jobHeader: '&2========== [jobname] ========='
-      chooseJob: '&7&n&oChoose this job'
-      chooseJobHover: '&7Click here to get this job'
+      chooseJob: '&7&n&oAlege acest job'
+      chooseJobHover: '&7Apasă aici pentru a primi acest job'
   clearownership:
     help:
-      info: Clear block ownership
+      info: Șterge proprietatea asupra unui bloc
       args: '[playername]'
     output:
-      cleared: '&2Removed &7[furnaces] &2furnaces, &7[brewing] &2brewing stands, &7[smoker]&2 smokers and &7[blast]&2 blast furnaces.'
+      cleared: '&2Șterse &7[furnaces] &2cuptoare, &7[brewing] &2standuri de poțiuni, &7[smoker]&2 afumătoare și &7[blast]&2 furnale.'
   skipquest:
     help:
-      info: Skip defined quest and get new one
-      args: '[jobname] [questname] (playerName)'
+      info: Treci peste misiune și primește una nouă
+      args: '[jobname] [questname] (numeJucător)'
     output:
-      questSkipForCost: '&2You skipped the quest and paid:&e %amount%$'
+      questSkipForCost: '&2Ai trecut peste misiune și ai plătit:&e %amount%$'
   quests:
     help:
-      info: List available quests
+      info: Listează misiunile disponibile
       args: '[playername]'
     error:
-      noquests: '&cThere are no quests'
+      noquests: '&2Nu există misiuni noi'
     toplineseparator: '&7*********************** &6[playerName] &2(&f[questsDone]&2) &7***********************'
     status:
-      changed: '&2The quests status has been changed to&r %status%'
-      started: '&aStarted'
-      stopped: '&cStopped'
+      changed: '&2Statusul misiunii a fost schimbat în&r %status%'
+      started: '&aÎncepută'
+      stopped: '&cOprită'
     output:
-      completed: '&2      !Completed!&r      '
+      completed: '&2      !Completată!&r      '
       questLine: '[progress] &7[questName] &f[done]&7/&8[required]'
-      skip: '&7Click to skip this quest'
-      skips: '&7Left skips: &f[skips]'
-      hover: "&f[jobName] \n[desc] \n&7New quest in: [time]"
+      skip: '&7Apasă pentru a trece peste această misiune'
+      skips: '&2Numar rămas de "treceri peste": &f[skips]'
+      hover: "&f[jobName] \n[desc] \n&7Misiune nouă în: [time]"
   fire:
     help:
-      info: Fire the player from the job.
+      info: Concediază jucătorul de la acest job.
       args: '[playername] [jobname]'
     error:
-      nojob: Player does not have the job %jobname%.
+      nojob: Jucătorul nu are jobul %jobname%.
     output:
-      target: You have been fired from %jobname%.
+      target: Ai fost concediat de la %jobname%.
   fireall:
     help:
-      info: Fire player from all their jobs.
+      info: Concediază jucătorul de la toate joburile lui.
       args: '[playername]/all'
     error:
       nojobs: Player does not have any jobs to be fired from!
