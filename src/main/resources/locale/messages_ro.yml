@@ -354,8 +354,8 @@ command:
         info: '&eTopit'
         none: '%jobname% nu primește bani pentru topit.'
       brew:
-        info: '&eBrew'
-        none: '%jobname% does not get money from brewing.'
+        info: '&eCrează poțiuni'
+        none: '%jobname% nu primește bani pentru crearea de poțiuni.'
       eat:
         info: '&eMănâncă'
         none: '%jobname% nu primește bani pentru mâncat.'
@@ -500,57 +500,57 @@ command:
       info: Concediază jucătorul de la toate joburile lui.
       args: '[playername]/all'
     error:
-      nojobs: Player does not have any jobs to be fired from!
+      nojobs: Jucătorul nu are de la ce joburi sa fie concediat!
     output:
-      target: You have been fired from all your jobs.
+      target: Ai fost concediat de la toate joburile.
   employ:
     help:
-      info: Employ the player to the job.
+      info: Angajează jucătorul la job.
       args: '[playername] [jobname]'
     error:
-      alreadyin: Player is already in the job %jobname%.
-      fullslots: You cannot join the job %jobname%, there are no slots available.
+      alreadyin: Jucătorul este deja în jobul %jobname%.
+      fullslots: Nu poți să te alături jobului %jobname%, nu mai sunt locuri libere.
     output:
-      target: You have been employed as a %jobname%.
+      target: Ai fost angajat ca %jobname%.
   top:
     help:
-      info: Shows top players by jobs name.
+      info: Arată topul jucătorilor după numele jobului.
       args: '[jobname]'
     error:
-      nojob: Can't find any job with this name.
+      nojob: Nu s-a putut găsi niciun job cu acest nume.
     output:
-      topline: '&aTop&e %amount% &aplayers by &e%jobname% &ajob'
-      list: '&e%number%&a. &e%playername% &alvl &e%level% &awith&e %exp% &aexp'
-      prev: '&e<<<<< Prev page &2|'
-      next: '&2|&e Next Page >>>>'
-      show: '&2Show from &e[from] &2until &e[until] &2top list'
+      topline: '&aTop&e %amount% &ajutători după &e%jobname% &ajob'
+      list: '&e%number%&a. &e%playername% &anivel &e%level% &awith&e %exp% &aexperiență'
+      prev: '&e<<<<< Pagina anterioară &2|'
+      next: '&2|&e Pagina Următoare >>>>'
+      show: '&2Arată de la &e[from] &2până la &e[until] &2lista top'
   gtop:
     help:
-      info: Shows top players by global jobs level.
+      info: Arată topul jucătorilor după nivelul global al joburilor.
       args: ''
     error:
-      nojob: Can't find any information.
+      nojob: Nu se pot găsi informații.
     output:
-      topline: '&aTop&e %amount% &aplayers by global job level'
-      list: '&e%number%&a. &e%playername% &alvl &e%level% &awith&e %exp% &aexp'
-      prev: '&e<<<<< Prev page &2|'
-      next: '&2|&e Next Page >>>>'
-      show: '&2Show from &e[from] &2until &e[until] &2global top list'
+      topline: '&aTop&e %amount% & jucători după nivelul global al joburilor'
+      list: '&e%number%&a. &e%playername% &anivel &e%level% &awith&e %exp% &aexperiență'
+      prev: '&e<<<<< Pagina anterioară &2|'
+      next: '&2|&e Pagina Următoare >>>>'
+      show: '&2Arată de la &e[from] &2până la &e[until] &2listă top global'
   area:
     help:
-      info: Modify restricted areas.
+      info: Modifică zonele restricționate.
       args: add/remove/info/list
-      addUsage: '&eUsage: &6/Jobs area add [areaName/wg:worldGuardAreaName] [bonus]'
-      removeUsage: '&eUsage: &6/Jobs area remove [areaName]'
+      addUsage: '&eMod de folosire: &6/Jobs area add [areaName/wg:worldGuardAreaName] [bonus]'
+      removeUsage: '&eMod de folosire: &6/Jobs area remove [areaName]'
     output:
-      addedNew: '&eAdded a new restricted area with &6%bonus% &ebonus'
-      removed: '&eRemoved the restricted area &6%name%'
+      addedNew: '&eA fost adăugată o noua zonă restricționată cu &6%bonus% &ebonus'
+      removed: '&eA fost ștearsă zona restricționată &6%name%'
       list: '&e%number%&a. &e%areaname% &e%worldname% (&a%x1%:%y1%:%z1%/&e%x2%:%y2%:%z2%) &6%bonus%'
       wgList: '&e%number%&a. WorldGuard: &e%areaname% &6%bonus%'
-      noAreas: '&eThere are no saved restricted areas'
-      noAreasByLoc: '&eThere are no restricted areas in this location'
-      areaList: '&eRestricted areas by your location: &6%list%'
-      selected1: '&eSelected the first point: &6%x%:%y%:%z%'
+      noAreas: '&eNu există nici o zona restricționată salvată'
+      noAreasByLoc: '&eNu sunt zone restricționate in această locație'
+      areaList: '&eZone restricționate după locația ta: &6%list%'
+      selected1: '&ePrimul punct a fost selectat: &6%x%:%y%:%z%'
       selected2: '&eSelected the second point: &6%x%:%y%:%z%'
       select: '&eSelect 2 points with the selection tool (%tool%)'
       exist: '&eRestriction area by this name already exists'
