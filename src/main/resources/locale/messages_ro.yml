@@ -319,89 +319,89 @@ command:
       leftClick: '&eClick stânga pentru mai multe informații'
       middleClick: '&eClick mijloc pentru a părăsi acest job'
       rightClick: '&eClick dreapta pentru a te alătura acestui job'
-      leftSlots: '&eLeft slots:&f '
-      working: '&2&nAlready working'
-      cantJoin: '&cYou can''t join to the selected job.'
-      max: '&eMax level:&f '
-      back: '&e<<< Back'
-      next: '&eNext >>>'
+      leftSlots: '&eSloturile din stânga:&f '
+      working: '&2&nDeja funcționează'
+      cantJoin: '&cNu te poți alătura jobului selectat.'
+      max: '&eNivel maxim:&f '
+      back: '&e<<< Înapoi'
+      next: '&eUrmătorul >>>'
     output:
       break:
-        info: '&eBreak'
-        none: '%jobname% does not get money for breaking blocks.'
+        info: '&ePauză'
+        none: '%jobname% nu primește bani pentru spargerea blocurilor.'
       tntbreak:
-        info: '&eTNTBreak'
-        none: '%jobname% does not get money for breaking blocks with TNT.'
+        info: '&eSpargereTNT'
+        none: '%jobname% nu primește bani pentru spargerea blocurilor cu TNT.'
       place:
-        info: '&ePlace'
-        none: '%jobname% does not get money for placing blocks.'
+        info: '&ePlasează'
+        none: '%jobname% nu primește bani pentru plasarea blocurilor.'
       striplogs:
-        info: '&eStrip logs'
-        none: '%jobname% does not get money for stripping logs.'
+        info: '&eCioplire lemn'
+        none: '%jobname% nu primește bani pentru cioplirea lemnului.'
       kill:
-        info: '&eKill'
-        none: '%jobname% does not get money for killing monsters.'
+        info: '&eOmoară'
+        none: '%jobname% nu primește bani pentru omorârea monștrilor.'
       mmkill:
         info: '&eMMKill'
-        none: '%jobname% does not get money for killing Mythic monsters.'
+        none: '%jobname% nu primește bani pentru omorârea monștrilor mitici.'
       fish:
-        info: '&eFish'
-        none: '%jobname% does not get money from fishing.'
+        info: '&ePește'
+        none: '%jobname% nu primește bani pentru pescuit.'
       craft:
-        info: '&eCraft'
-        none: '%jobname% does not get money from crafting.'
+        info: '&eFabrică'
+        none: '%jobname% nu primește bani pentru fabricat.'
       smelt:
-        info: '&eSmelt'
-        none: '%jobname% does not get money from smelting.'
+        info: '&eTopit'
+        none: '%jobname% nu primește bani pentru topit.'
       brew:
         info: '&eBrew'
         none: '%jobname% does not get money from brewing.'
       eat:
-        info: '&eEat'
-        none: '%jobname% does not get money from eating food.'
+        info: '&eMănâncă'
+        none: '%jobname% nu primește bani pentru mâncat.'
       dye:
-        info: '&eDye'
-        none: '%jobname% does not get money from dyeing.'
+        info: '&eColorează'
+        none: '%jobname% nu primește bani pentru colorat.'
       enchant:
         info: '&eEnchant'
-        none: '%jobname% does not get money from enchanting.'
+        none: '%jobname% does not get money from enchantat.'
       vtrade:
-        info: '&eVillager trade'
-        none: '%jobname% does not get money for trading a villager.'
+        info: '&eSchimb cu villager'
+        none: '%jobname% nu primește bani pentru schimbul cu un villager.'
       repair:
-        info: '&eRepair'
-        none: '%jobname% does not get money from repairing.'
+        info: '&eRepară'
+        none: '%jobname% nu primește bani pentru reparat.'
       breed:
-        info: '&eBreed'
-        none: '%jobname% does not get money from breeding.'
+        info: '&eInmulțire'
+        none: '%jobname% nu primește bani pentru înmulțirea animalelor.'
       tame:
-        info: '&eTame'
-        none: '%jobname% does not get money from taming.'
+        info: '&eÎmblânzește'
+        none: '%jobname% nu primește bani pentru îmblânzire.'
       milk:
-        info: '&eMilk'
-        none: '%jobname% does not get money from milking cows.'
+        info: '&eMuls'
+        none: '%jobname% nu primește bani pentru muls vaci.'
       shear:
-        info: '&eShear'
-        none: '%jobname% does not get money from shearing sheep.'
+        info: '&eTuns'
+        none: '%jobname% nu primește bani pentru tuns oi.'
       explore:
-        info: '&eExplore'
-        none: '%jobname% does not get money from exploring.'
+        info: '&eExplorat'
+        none: '%jobname% nu primește bani pentru explorat.'
       custom-kill:
-        info: '&eCustom kill'
-        none: '%jobname% does not get money from custom player kills.'
+        info: '&eOmor personalizat'
+        none: '%jobname% nu primește bani pentru omorârea personalizata a jucătorilor.'
       collect:
-        info: '&eCollect'
-        none: '%jobname% does not get money for collecting blocks.'
+        info: '&eColectează'
+        none: '%jobname% nu primește bani pentru colectarea blocurilor.'
       bake:
-        info: '&eBake'
-        none: '%jobname% does not get money for cooking foods.'
+        info: '&eCoace'
+        none: '%jobname% nu primește bani pentru gătit.'
   playerinfo:
     help:
-      info: Show how much each job is getting paid and for what on another player.
+      info: Arată cât de mult este plătit fiecare job și pentru ce pe alt jucător.
       args: '[playername] [jobname] [action]'
   join:
     help:
-      info: Join the selected job.
+      info: Alătură te jobului selectat.
       args: '[jobname]'
     error:
       alreadyin: You are already in the job %jobname%.
