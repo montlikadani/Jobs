@@ -241,7 +241,7 @@ command:
   placeholders:
     help:
       info: Listă a toate substituibilelor
-      args: (parse) (placeholder)
+      args: (analiza)(substituent)
     output:
       list: '&e[place]. &7[placeholder]'
       outputResult: ' &erezultat: &7[result]'
