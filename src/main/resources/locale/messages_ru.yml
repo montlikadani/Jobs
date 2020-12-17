@@ -24,24 +24,24 @@ general:
       brewingstand: Зельеварка
   admin:
     error: '&cВ введенной команде ошибка.'
-    success: '&eВаша команда была выполнена успешно.'
+    success: '&eВаша команда была выполнена.'
   error:
     noHelpPage: '&cНет страницы справочника с этим номером!'
     notNumber: '&eПожалуйста, используйте целые числа!'
-    job: '&cУказанной профессии не существует или вы не устроились в ней'
+    job: '&cУказанной работы не существует или Вы не устроились на ней.'
     noCommand: '&cТакой команды не существует!'
-    permission: '&cУ вас нет прав на совершение этого дествия!'
+    permission: '&cУ Вас нет прав на совершение этого действия!'
     noinfo: '&cИнформация не найдена!'
-    noinfoByPlayer: '&cИнформация не найдена связанная с игроком [%playername%]!'
+    noinfoByPlayer: '&cИнформация по никнейму [%playername%] не найдена!'
     ingame: '&cВы можете использовать эту команду только в игре!'
-    fromconsole: '&cВы можете использовать эту команду только в консоле!'
+    fromconsole: '&cВы можете использовать эту команду только в консоли!'
     worldisdisabled: '&cВы не можете использовать эту команду в этом мире!'
-    newRegistration: '&eRegistered new ownership for [block] &7[current]&e/&f[max]'
-    noRegistration: '&cYou''ve reached max [block] count!'
+    newRegistration: '&eЗарегистрирован новый владелец [block] &7[current]&e/&f[max]'
+    noRegistration: '&cВы достигли лимита зарегистрированных [block]!'
 command:
   help:
     output:
-      info: Используйте /jobs [cmd] ? Для более точной информации.
+      info: Введите /jobs [cmd] ? для более подробной информации о команде.
       cmdUsage: '&2Использование: &7[command]'
       label: Jobs
       cmdInfoFormat: '[command] &f- &2[description]'
@@ -50,10 +50,10 @@ command:
       title: '&e-------&e ======= &6Работы &e======= &e-------'
       page: '&e-----&e ====== Страница &6[1] &eиз &6[2] &e====== &e-----'
       fliperSimbols: '&e----------'
-      prevPage: '&2----<< &6Предыдущая страница '
-      prevPageOff: '&7----<< Предыдущая страница '
-      nextPage: '&6 Следующая страница &2>>----'
-      nextPageOff: '&7 Следующая страница >>----'
+      prevPage: '&2----<< &6Пред. '
+      prevPageOff: '&7----<< Пред. '
+      nextPage: '&6 След. &2>>----'
+      nextPageOff: '&7 След. >>----'
       pageCount: '&2[current]/[total]'
       pageCountHover: '&e[totalEntries] позиций'
       prevPageGui: '&6Предыдущая страница '
@@ -63,45 +63,45 @@ command:
       info: Ускоряет получение денег для всех игроков
       args: '[jobname]/all/reset [time]/[rate]'
     output:
-      allreset: Ускорение получения денег отключено
-      jobsboostreset: Ускорение получения денег %jobname% было отключено
-      nothingtoreset: Нечего сбросить
-      boostalladded: Ускорение получения денег x%boost% было добавлено для всех работ!
-      boostadded: Ускорение получения денег x&e%boost% &aдобавлено к &e%jobname%!
-      infostats: '&c-----> &aУскорение получения денег x%boost% включено&c <-------'
+      allreset: Все множители денег отключены
+      jobsboostreset: Множитель денег %jobname% был отключен
+      nothingtoreset: Нечего сбрасывать
+      boostalladded: Множитель денег x%boost% добавлен для всех работ!
+      boostadded: Множитель денег x&e%boost% &aдобавлен для &e%jobname%!
+      infostats: '&c-----> &aМножитель денег x%boost% включен&c <-------'
   pointboost:
     help:
       info: Ускоряет получение очков для всех игроков
       args: '[jobname]/all/reset [time]/[rate]'
     output:
-      allreset: Ускорение получения очков отключено
-      jobsboostreset: Ускорение получения очков %jobname% было отключено
-      nothingtoreset: Нечего сбросить
-      boostalladded: Ускорение получения очков x%boost% было добавлено для всех работ!
-      boostadded: Ускорение получения очков x&e%boost% &aдобавлено к &e%jobname%!
-      infostats: '&c-----> &aУскорение получения очков x%boost% включено&c <-------'
+      allreset: Все множители очков отключены
+      jobsboostreset: Множитель очков %jobname% был отключен
+      nothingtoreset: Нечего сбрасывать
+      boostalladded: Множитель очков x%boost% добавлен для всех работ!
+      boostadded: Множитель очков x&e%boost% &aдобавлен для &e%jobname%!
+      infostats: '&c-----> &aМножитель очков x%boost% включен&c <-------'
   expboost:
     help:
       info: Ускоряет получение опыта для всех игроков
       args: '[jobname]/all/reset [time]/[rate]'
     output:
-      allreset: Ускорение получения опыта отключено
-      jobsboostreset: Ускорение получения опыта %jobname% было отключено
-      nothingtoreset: Нечего сбросить
-      boostalladded: Ускорение получения опыта %boost% было добавлено для всех работ!
-      boostadded: Ускорение получения опыта &e%boost% &aдобавлено к &e%jobname%!
-      infostats: '&c-----> &aПреумножение опыта x%boost% включено&c <-------'
+      allreset: Все множители опыта отключены
+      jobsboostreset: Множитель опыта %jobname% был отключен
+      nothingtoreset: Нечего сбрасывать
+      boostalladded: Множитель опыта x%boost% добавлен для всех работ!
+      boostadded: Множитель опыта x&e%boost% &aдобавлен для &e%jobname%!
+      infostats: '&c-----> &aМножитель опыта x%boost% включен&c <-------'
   schedule:
     help:
-      info: Enables the given scheduler
+      info: Включает указанный планировщик
       args: enable [scheduleName] [untilTime]
     output:
-      noScheduleFound: '&cSchedule with this name not found.'
-      alreadyEnabled: '&cThis schedule already enabled.'
-      enabled: '&eSchedule have been enabled from&a %from%&e until&a %until%'
+      noScheduleFound: '&cПланировщик с таким названием не найден.'
+      alreadyEnabled: '&cЭтот планировщик уже включен.'
+      enabled: '&eПланировщик включен с&a %from%&e до&a %until%'
   itembonus:
     help:
-      info: Проверить бонусы.
+      info: Просмотреть бонусные предметы
       args: ''
     output:
       list: '&e[jobname]: %money% %points% %exp%'
