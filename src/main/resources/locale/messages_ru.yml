@@ -1,10 +1,10 @@
 ---
 economy:
   error:
-    nomoney: 'Простите, но не осталось денег в банке!'
+    nomoney: '&cПростите, но в национальном банке не осталось средств!'
 limitedItem:
   error:
-    levelup: '&cВам нужно повысить свой уровень в работе под именем [jobname], чтобы использовать эту вещь!'
+    levelup: '&cВам нужно повысить уровень [jobname], чтобы использовать этот предмет!'
 general:
   info:
     toplineseparator: '&7*********************** &6%playername% &7***********************'
@@ -15,15 +15,15 @@ general:
       mins: '&e%mins% &6мин '
       secs: '&e%secs% &6сек '
     invalidPage: '&cНеверная страница'
-    'true': '&2True'
-    'false': '&cFalse'
+    'true': '&2Истина'
+    'false': '&cЛожь'
     blocks:
-      furnace: Furnace
-      smoker: Smoker
-      blastfurnace: Blast furnace
-      brewingstand: Brewing stand
+      furnace: Печь
+      smoker: Коптильня
+      blastfurnace: Плавильная печь
+      brewingstand: Зельеварка
   admin:
-    error: '&cОшибка в этой команде.'
+    error: '&cВ введенной команде ошибка.'
     success: '&eВаша команда была выполнена успешно.'
   error:
     noHelpPage: '&cНет страницы справочника с этим номером!'
