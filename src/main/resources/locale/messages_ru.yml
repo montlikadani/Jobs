@@ -463,11 +463,11 @@ command:
       info: Очистить информацию о владельце.
       args: '[playername]'
     output:
-      cleared: '&2Removed &7[furnaces] &2furnaces, &7[brewing] &2brewing stands, &7[smoker]&2 smokers and &7[blast]&2 blast furnaces.'
+      cleared: '&2Удалено &7[furnaces] &2печей, &7[brewing] &2зельеварок, &7[smoker]&2 коптилен и &7[blast]&2 плавильных печей.'
   skipquest:
     help:
-      info: Skip defined quest and get new one
-      args: '[jobname] [questname] (playerName)'
+      info: Пропустить текущий квест и получить новый
+      args: '[jobname] [questname] (никИгрока)'
     output:
       questSkipForCost: '&2Ты пропустил задание и заплатил:&e %amount%$'
   quests:
@@ -478,70 +478,70 @@ command:
       noquests: '&cКвесты не найдены'
     toplineseparator: '&7*********************** &6[playerName] &2(&f[questsDone]&2) &7***********************'
     status:
-      changed: '&2The quests status has been changed to&r %status%'
-      started: '&aStarted'
-      stopped: '&cStopped'
+      changed: '&2Статус квеста изменен на&r %status%'
+      started: '&aНачат'
+      stopped: '&cОстановлен'
     output:
       completed: '&2      !Завершено!&r      '
       questLine: '[progress] &7[questName] &f[done]&7/&8[required]'
       skip: '&7Нажмите, чтобы пропустить это задание'
-      skips: '&7Left skips: &f[skips]'
-      hover: "&f[jobName] \n[desc] \n&7New quest in: [time]"
+      skips: '&7Осталось пропусков: &f[skips]'
+      hover: "&f[jobName] \n[desc] \n&7Новый квест через: [time]"
   fire:
     help:
-      info: Fire the player from the job.
+      info: Уволить игрока с работы.
       args: '[playername] [jobname]'
     error:
-      nojob: Player does not have the job %jobname%.
+      nojob: Игрок не устроен на работу %jobname%.
     output:
-      target: You have been fired from %jobname%.
+      target: Вы были уволены с работы %jobname%.
   fireall:
     help:
-      info: Fire player from all their jobs.
+      info: Уволить игрока со всех его работ.
       args: '[playername]/all'
     error:
-      nojobs: Player does not have any jobs to be fired from!
+      nojobs: Игрок не устроен ни на одну из работ!
     output:
-      target: You have been fired from all your jobs.
+      target: Вы были уволены со всех Ваших работ.
   employ:
     help:
-      info: Employ the player to the job.
+      info: Устроить игрока на работу.
       args: '[playername] [jobname]'
     error:
-      alreadyin: Player is already in the job %jobname%.
-      fullslots: You cannot join the job %jobname%, there are no slots available.
+      alreadyin: Игрок уже устроен на работу %jobname%.
+      fullslots: Вы не можете устроиться на %jobname% - нет свободных мест.
     output:
-      target: You have been employed as a %jobname%.
+      target: Вы были устроены на работу %jobname%.
   top:
     help:
-      info: Shows top players by jobs name.
+      info: Показывает топ игроков на работе.
       args: '[jobname]'
     error:
-      nojob: Can't find any job with this name.
+      nojob: Не получается найти работу с таким названием.
     output:
-      topline: '&aTop&e %amount% &aplayers by &e%jobname% &ajob'
-      list: '&e%number%&a. &e%playername% &alvl &e%level% &awith&e %exp% &aexp'
+      topline: '&aТоп&e %amount% &aигроков на работе &e%jobname%'
+      list: '&e%number%&a. &e%playername% &aур. &e%level% &aс&e %exp% &aоп.'
       prev: '&e<<<<< Предыдущая страница &2|'
       next: '&2|&e Следующая страница >>>>'
-      show: '&2Show from &e[from] &2until &e[until] &2top list'
+      show: '&2Показывается топ с &e[from] &2до &e[until]'
   gtop:
     help:
-      info: Shows top players by global jobs level.
+      info: Показывает топ игроков на всех работах.
       args: ''
     error:
-      nojob: Can't find any information.
+      nojob: Не получилось найти какие-либо данные.
     output:
-      topline: '&aTop&e %amount% &aplayers by global job level'
-      list: '&e%number%&a. &e%playername% &alvl &e%level% &awith&e %exp% &aexp'
+      topline: '&aТоп&e %amount% &aигроков на всех работах'
+      list: '&e%number%&a. &e%playername% &aур. &e%level% &aс&e %exp% &aоп.'
       prev: '&e<<<<< Предыдущая страница &2|'
       next: '&2|&e Следующая страница >>>>'
-      show: '&2Show from &e[from] &2until &e[until] &2global top list'
+      show: '&2Показывается глобальный топ с &e[from] &2до &e[until]'
   area:
     help:
-      info: Modify restricted areas.
+      info: Изменить ограниченную зону.
       args: add/remove/info/list
-      addUsage: '&eUsage: &6/Jobs area add [areaName/wg:worldGuardAreaName] [bonus]'
-      removeUsage: '&eUsage: &6/Jobs area remove [areaName]'
+      addUsage: '&eИспользование: &6/Jobs area add [названиеЗоны/wg:названиеРегиона] [бонус]'
+      removeUsage: '&eИспользование: &6/Jobs area remove [названиеЗоны]'
     output:
       addedNew: '&eAdded a new restricted area with &6%bonus% &ebonus'
       removed: '&eRemoved the restricted area &6%name%'
