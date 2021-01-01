@@ -241,7 +241,7 @@ command:
   placeholders:
     help:
       info: Список всех плейсхолдеров
-      args: (parse) (placeholder)
+      args: (parse) (плейсхолдеры)
     output:
       list: '&e[place]. &7[placeholder]'
       outputResult: ' &eрезультат: &7[result]'
@@ -257,8 +257,8 @@ command:
     error:
       nojob: Сперва устройтесь на работу.
     output:
-      message: 'Level %joblevel% for %jobname%: %jobxp%/%jobmaxxp% xp'
-      max-level: '     &cMax level   -   %jobname%'
+      message: 'Уровень %joblevel% для %jobname%: %jobxp%/%jobmaxxp% оп.'
+      max-level: '     &cМаксимальный уровень   -   %jobname%'
     bossBarOutput: 'Ур. %joblevel% %jobname%: %jobxp%/%jobmaxxp% оп.%gain%'
     bossBarGain: ' &7(&f%gain%&7)'
   shop:
@@ -324,7 +324,7 @@ command:
       cantJoin: '&cВы не можете устроиться в указанной профессии.'
       max: '&eМаксимальный уровень:&f '
       back: '&e<--Вернуться'
-      next: '&eNext >>>'
+      next: '&eСлед. >>>'
     output:
       break:
         info: '&eРазрушение блоков'
@@ -449,7 +449,7 @@ command:
         newHeader: '&2========== [amount] Доступные Работы ========='
         description: '[description]'
         totalWorkers: ' &7Рабочих: &e[amount]'
-        penalty: ' &4Penalty: &c[amount]%'
+        penalty: ' &4Штраф: &c[amount]%'
         bonus: ' &2Бонус: &a[amount]%'
         list: ' &6[jobname]'
         newMax: ' &eМаксимальный уровень: &f[max]'
