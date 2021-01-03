@@ -548,70 +548,70 @@ command:
       list: '&e%number%&a. &e%areaname% &e%worldname% (&a%x1%:%y1%:%z1%/&e%x2%:%y2%:%z2%) &6%bonus%'
       wgList: '&e%number%&a. WorldGuard: &e%areaname% &6%bonus%'
       noAreas: '&eНе найдено сохраненных ограниченных зон'
-      noAreasByLoc: '&eThere are no restricted areas in this location'
-      areaList: '&eRestricted areas by your location: &6%list%'
-      selected1: '&eSelected the first point: &6%x%:%y%:%z%'
-      selected2: '&eSelected the second point: &6%x%:%y%:%z%'
-      select: '&eSelect 2 points with the selection tool (%tool%)'
-      exist: '&eRestriction area by this name already exists'
-      dontExist: '&eRestriction area by this name does not exist'
-      wgDontExist: '&eWorldGuard area by this name does not exist'
+      noAreasByLoc: '&eНе найдено ограниченных зон в этой локации'
+      areaList: '&eОграниченные зоны на текущей локации: &6%list%'
+      selected1: '&eВыбрана первая точка: &6%x%:%y%:%z%'
+      selected2: '&eВыбрана вторая точка: &6%x%:%y%:%z%'
+      select: '&eВыберите 2 точки инструментом выделения (%tool%)'
+      exist: '&eОграниченная зона с таким названием уже существует'
+      dontExist: '&eОграниченной зоны с таким названием не существует'
+      wgDontExist: '&eЗоны WorldGuard с таким названием не существует'
   log:
     help:
       info: Показать статистику.
       args: '[playername]'
     output:
       topline: '&7************************* &6%playername% &7*************************'
-      ls: '&7* &6%number%. &3%action%: &6%item% &eqty: %qty% %money%%exp%%points%'
-      money: '&6деньги: %amount% '
-      exp: '&eexp: %amount% '
-      points: '&6очки: %amount%'
-      totalIncomes: '    &6Total money:&2 %money%&6, Total exp:&2 %exp%&6, Total points:&2 %points%'
-      bottomline: '&7***********************************************************'
-      prev: '&e<<<<< Prev page &2|'
-      next: '&2|&e Next Page >>>>'
-      nodata: '&cData not found'
-  glog:
-    help:
-      info: Shows global statistics.
-      args: ''
-    output:
-      topline: '&7*********************** &6Global statistics &7***********************'
-      ls: '&7* &6%number%. &3%action%: &6%item% &eqty: %qty% %money%%exp%%points%'
+      ls: '&7* &6%number%. &3%action%: &6%item% &eкол-во: %qty% %money%%exp%%points%'
       money: '&6деньги: %amount% '
       exp: '&eопыт: %amount% '
       points: '&6очки: %amount%'
-      totalIncomes: '    &6Total money:&2 %money%&6, Total exp:&2 %exp%&6, Total points:&2 %points%'
+      totalIncomes: '    &6Всего денег:&2 %money%&6, Всего опыта:&2 %exp%&6, Всего очков:&2 %points%'
+      bottomline: '&7***********************************************************'
+      prev: '&e<<<<< Пред. страница &2|'
+      next: '&2|&e След. страница >>>>'
+      nodata: '&cДанные не найдены'
+  glog:
+    help:
+      info: Показать глобальную статистику.
+      args: ''
+    output:
+      topline: '&7******************* &6Глобальная статистика &7*******************'
+      ls: '&7* &6%number%. &3%action%: &6%item% &eкол-во: %qty% %money%%exp%%points%'
+      money: '&6деньги: %amount% '
+      exp: '&eопыт: %amount% '
+      points: '&6очки: %amount%'
+      totalIncomes: '    &6Всего денег:&2 %money%&6, Всего опыта:&2 %exp%&6, Всего очков:&2 %points%'
       bottomline: '&7**************************************************************'
       nodata: '&cДанные не найдены'
   transfer:
     help:
-      info: Transfer a player's job from an old job to a new job.
+      info: Перенести игрока с одной работы на другую.
       args: '[playername] [oldjob] [newjob]'
     output:
-      target: You have been transferred from %oldjobname% to %newjobname%.
+      target: Вы были перенесены с %oldjobname% на %newjobname%.
   promote:
     help:
-      info: Promote the player X levels in a job.
+      info: Повысить уровень работы игрока X.
       args: '[playername] [jobname] [levels]'
     output:
-      target: You have been promoted %levelsgained% levels in %jobname%.
+      target: Вас повысили на %levelsgained% уровней в работе %jobname%.
   exp:
     help:
-      info: Change the player exp for job.
+      info: Изменить опыт работы игрока.
       args: '[playername] [jobname] set/add/take [amount]'
     error:
-      nojob: '&cThis player must first join a job.'
+      nojob: '&cЭтот игрок ещё не устроился на работу.'
     output:
-      target: '&eYour exp was changed for %jobname% &eand now you at &6%level%lvl &eand with &6%exp%exp.'
+      target: '&eВаш опыт работы %jobname% &eизменился и теперь у Вас &6%level%ур. &eи &6%exp%оп.'
   level:
     help:
-      info: Change the player's level in a job.
+      info: Изменить уровень работы игрока.
       args: '[playername] [jobname] set/add/take [amount]'
     error:
       nojob: '&cThis player must first join a job.'
     output:
-      target: '&eВаш уровень изменился для работы %jobname% &eи сейчас вы &6%level%lvl &eопыта &6%exp%exp.'
+      target: '&eВаш уровень работы %jobname% &eизменился и теперь у Вас &6%level%ур. &eи &6%exp%оп.'
   demote:
     help:
       info: Снизить уровень работы игрока X.
@@ -681,34 +681,34 @@ signs:
   List: '&0[number].&8[player]&7:&4[level]'
   questList: '&0[number].&8[player]&7:&4[quests]'
   SpecialList:
-    p1: '&b** &8First &b**'
-    p2: '&b** &8Second &b**'
-    p3: '&b** &8Third &b**'
-    p4: '&b** &8Fourth &b**'
-    p5: '&b** &8Fifth &b**'
-    p6: '&b** &8Sixth &b**'
-    p7: '&b** &8Seventh &b**'
-    p8: '&b** &8Eight &b**'
-    p9: '&b** &8Ninth &b**'
-    p10: '&b** &8Tenth &b**'
+    p1: '&b** &8Первый &b**'
+    p2: '&b** &8Второй &b**'
+    p3: '&b** &8Третий &b**'
+    p4: '&b** &8Четвертый &b**'
+    p5: '&b** &8Пятый &b**'
+    p6: '&b** &8Шестой &b**'
+    p7: '&b** &8Седьмой &b**'
+    p8: '&b** &8Восьмой &b**'
+    p9: '&b** &8Девятый &b**'
+    p10: '&b** &8Десятый &b**'
     name: '&9[player]'
-    level: '&8[level] level'
-    quests: '&8[quests] quests'
+    level: '&8[level] уровень'
+    quests: '&8[quests] квестов'
     bottom: '&b************'
-  cantcreate: '&4You can''t create this sign!'
-  cantdestroy: '&4You can''t destroy this sign!'
+  cantcreate: '&4Вы не можете установить эту табличку!'
+  cantdestroy: '&4Вы не можете разрушить эту табличку!'
   topline: '&0[Jobs]'
   secondline:
-    join: '&0Join'
-    leave: '&0Leave'
-    toggle: '&0Toggle'
-    top: '&0Top'
-    browse: '&0Browse'
-    stats: '&0Stats'
-    limit: '&0Limit'
-    info: '&0Info'
-    archive: '&0Archive'
+    join: '&0Устроиться'
+    leave: '&0Уволиться'
+    toggle: '&0Переключить'
+    top: '&0Топ'
+    browse: '&0Посмотеть'
+    stats: '&0Статы'
+    limit: '&0Лимит'
+    info: '&0Инф-ия'
+    archive: '&0Архив'
 scoreboard:
-  topline: '&2Top &e%jobname%'
+  topline: '&2Топ &e%jobname%'
   gtopline: 'Глобальный топ'
   line: '&2%number%. &e%playername% (&6%level%&e)'
