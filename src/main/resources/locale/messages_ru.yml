@@ -48,12 +48,12 @@ command:
       cmdFormat: '&7/[command] &f[arguments]'
       helpPageDescription: '&2* [description]'
       title: '&e-------&e ======= &6Работы &e======= &e-------'
-      page: '&e-----&e ====== Страница &6[1] &eиз &6[2] &e====== &e-----'
+      page: '&e-----&e ==== Страница &6[1] &eиз &6[2] &e==== &e-----'
       fliperSimbols: '&e----------'
-      prevPage: '&2----<< &6Пред. '
-      prevPageOff: '&7----<< Пред. '
-      nextPage: '&6 След. &2>>----'
-      nextPageOff: '&7 След. >>----'
+      prevPage: '&2---<< &6Пред. '
+      prevPageOff: '&7---<< Пред. '
+      nextPage: '&6 След. &2>>---'
+      nextPageOff: '&7 След. >>---'
       pageCount: '&2[current]/[total]'
       pageCountHover: '&e[totalEntries] позиций'
       prevPageGui: '&6Предыдущая страница '
@@ -64,7 +64,7 @@ command:
       args: '[jobname]/all/reset [time]/[rate]'
     output:
       allreset: Все множители денег отключены
-      jobsboostreset: Множитель денег %jobname% был отключен
+      jobsboostreset: Множитель денег для %jobname% был отключен
       nothingtoreset: Нечего сбрасывать
       boostalladded: Множитель денег x%boost% добавлен для всех работ!
       boostadded: Множитель денег x&e%boost% &aдобавлен для &e%jobname%!
@@ -75,7 +75,7 @@ command:
       args: '[jobname]/all/reset [time]/[rate]'
     output:
       allreset: Все множители очков отключены
-      jobsboostreset: Множитель очков %jobname% был отключен
+      jobsboostreset: Множитель очков для %jobname% был отключен
       nothingtoreset: Нечего сбрасывать
       boostalladded: Множитель очков x%boost% добавлен для всех работ!
       boostadded: Множитель очков x&e%boost% &aдобавлен для &e%jobname%!
@@ -275,7 +275,7 @@ command:
       reqJobsColor: '&c'
       reqJobsLevelColor: '&4'
       reqTotalLevelColor: '&4'
-      cantOpen: '&cНе могу открыть эту страницу'
+      cantOpen: '&cНе получается открыть эту страницу'
       NoPermForItem: '&cУ Вас нет прав на совершение этого действия!'
       NoPermToBuy: '&cУ Вас нет прав на покупку этого товара!'
       NoJobReqForitem: '&cВы не работаете &6(%jobname%), &eлибо не достигли &6(%joblevel%) &eуровня'
@@ -521,8 +521,8 @@ command:
     output:
       topline: '&aТоп&e %amount% &aигроков на работе &e%jobname%'
       list: '&e%number%&a. &e%playername% &aур. &e%level% &aс&e %exp% &aоп.'
-      prev: '&e<<<<< Предыдущая страница &2|'
-      next: '&2|&e Следующая страница >>>>'
+      prev: '&e<<< Пред. страница &2|'
+      next: '&2|&e След. страница >>>'
       show: '&2Показывается топ с &e[from] &2до &e[until]'
   gtop:
     help:
@@ -533,8 +533,8 @@ command:
     output:
       topline: '&aТоп&e %amount% &aигроков на всех работах'
       list: '&e%number%&a. &e%playername% &aур. &e%level% &aс&e %exp% &aоп.'
-      prev: '&e<<<<< Предыдущая страница &2|'
-      next: '&2|&e Следующая страница >>>>'
+      prev: '&e<<< Пред. страница &2|'
+      next: '&2|&e След. страница >>>'
       show: '&2Показывается глобальный топ с &e[from] &2до &e[until]'
   area:
     help:
@@ -568,8 +568,8 @@ command:
       points: '&6очки: %amount%'
       totalIncomes: '    &6Всего денег:&2 %money%&6, Всего опыта:&2 %exp%&6, Всего очков:&2 %points%'
       bottomline: '&7***********************************************************'
-      prev: '&e<<<<< Пред. страница &2|'
-      next: '&2|&e След. страница >>>>'
+      prev: '&e<<< Пред. страница &2|'
+      next: '&2|&e След. страница >>>'
       nodata: '&cДанные не найдены'
   glog:
     help:
@@ -609,7 +609,7 @@ command:
       info: Изменить уровень работы игрока.
       args: '[playername] [jobname] set/add/take [amount]'
     error:
-      nojob: '&cThis player must first join a job.'
+      nojob: '&cЭтот игрок ещё не устроился на работу.'
     output:
       target: '&eВаш уровень работы %jobname% &eизменился и теперь у Вас &6%level%ур. &eи &6%exp%оп.'
   demote:
@@ -623,58 +623,58 @@ command:
       info: Повысить уровень работы у игрока X.
       args: '[playername] [jobname] [xp]'
     output:
-      target: You have been granted %xpgained% experience in %jobname%.
+      target: Вам выдано %xpgained% опыта в работе %jobname%.
   removexp:
     help:
-      info: Remove X experience from the player in a job.
+      info: Снять X опыта игрока в указанной работе.
       args: '[playername] [jobname] [xp]'
     output:
-      target: You have lost %xplost% experience in %jobname%.
+      target: Вы потеряли %xplost% опыта в работе %jobname%.
   signupdate:
     help:
-      info: Manually updates a sign by its name
+      info: Вручную обновить табличку по её названию
       args: '[jobname]'
   bp:
     help:
-      info: Shows block protections around you in 10 block radius
+      info: Показать защиту блоков в радиусе 10 блоков от Вас
       args: ''
     output:
-      found: '&eFound &6%amount% &eprotected blocks around you'
-      notFound: '&eNo protected blocks found around you'
+      found: '&eНайдено &6%amount% &eзащищенных блоков возле Вас'
+      notFound: '&eЗащищенных блоков не найдено'
   reload:
     help:
-      info: Reload configurations.
+      info: Перезагрузить конфигурации.
   toggle:
     help:
-      info: Toggles payment output on action bar or bossbar.
+      info: Переключить вывод выплат в action bar или bossbar.
       args: actionbar/bossbar
     output:
-      turnedoff: '&4This feature is turned off!'
+      turnedoff: '&4Эта функция отключена!'
       paid:
         main: '&aВы получили:'
         money: '&e[amount] денег'
         exp: '&7[exp] опыта'
         points: '&6[points] очков'
-      'on': '&aToggled: &aON'
-      'off': '&aToggled: &4OFF'
+      'on': '&aПереключение: &aВКЛ.'
+      'off': '&aПереключение: &4ВЫКЛ.'
 message:
   skillup:
-    broadcast: '%playername% has been promoted to a %titlename% %jobname%.'
-    nobroadcast: Congratulations, you have been promoted to a %titlename% %jobname%.
+    broadcast: '%playername% был повышен до %titlename% %jobname%.'
+    nobroadcast: Поздравляем, Вы были повышены до %titlename% %jobname%.
   max-level-reached:
-    title: '&2Max level reached'
-    subtitle: '&2in %jobname%!'
-    chat: '&cYou have reached the maximum level in %jobname%!'
+    title: '&2Достигнут макс. уровень'
+    subtitle: '&2в работе %jobname%!'
+    chat: '&cВы достигли максимальный уровень в работе %jobname%!'
   levelup:
-    broadcast: '%playername% is now a level %joblevel% %jobname%.'
-    nobroadcast: You are now level %joblevel% %jobname%.
+    broadcast: '%playername% теперь на уровне %joblevel% %jobname%.'
+    nobroadcast: Теперь Вы на уровне %joblevel% %jobname%.
   leveldown:
-    message: '&cYou lost level&e %lostLevel%&c in&e %jobname%&c job! Level:&6 %joblevel%&c.'
-  cowtimer: '&eYou still need to wait &6%time% &esec to get paid for this job.'
-  blocktimer: '&eYou need to wait &3[time] &esec more to get paid for this!'
-  taxes: '&3[amount] &eserver taxes were transferred to this account'
-  boostStarted: '&eJobs boost time have been started!'
-  boostStoped: '&eJobs boost time have been ended!'
+    message: '&cВы потеряли уровень&e %lostLevel%&c в работе&e %jobname%&c! Уровень:&6 %joblevel%&c.'
+  cowtimer: '&eВы должны подождать &6%time% &eсек. для получения выплаты за эту работу.'
+  blocktimer: '&eВы должны подождать &3[time] &eсек. для получения выплаты за это!'
+  taxes: '&3[amount] &eсерверных налогов перенесены на этот аккаунт'
+  boostStarted: '&eУскоритель работ начался!'
+  boostStoped: '&eУскоритель работ закончился!'
   crafting:
     fullinventory: '&cВаш инвентарь заполнен!'
 signs:
