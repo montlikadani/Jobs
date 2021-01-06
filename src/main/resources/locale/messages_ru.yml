@@ -50,10 +50,10 @@ command:
       title: '&e-------&e ======= &6Работы &e======= &e-------'
       page: '&e-----&e ==== Страница &6[1] &eиз &6[2] &e==== &e-----'
       fliperSimbols: '&e----------'
-      prevPage: '&2---<< &6Пред. '
-      prevPageOff: '&7---<< Пред. '
-      nextPage: '&6 След. &2>>---'
-      nextPageOff: '&7 След. >>---'
+      prevPage: '&2---<< &6Назад '
+      prevPageOff: '&7---<< Назад '
+      nextPage: '&6 Далее &2>>---'
+      nextPageOff: '&7 Далее >>---'
       pageCount: '&2[current]/[total]'
       pageCountHover: '&e[totalEntries] позиций'
       prevPageGui: '&6Предыдущая страница '
@@ -281,7 +281,7 @@ command:
       NoJobReqForitem: '&cВы не работаете &6(%jobname%), &eлибо не достигли &6(%joblevel%) &eуровня'
       NoPoints: '&cУ Вас недостаточно очков'
       NoTotalLevel: '&cУ Вас недостаточный совокупный уровень работ. Требуется (%totalLevel%)'
-      Paid: '&eВы заплатили &6%amount% &eза эту вещь'
+      Paid: '&eВы заплатили &6%amount% &eза этот предмет'
   archive:
     help:
       info: Показывает все работы, сохраненные в архиве пользователем.
@@ -290,27 +290,27 @@ command:
       nojob: Нет сохранённых работ.
   give:
     help:
-      info: Выдать предмет по названию Работы либо по категории. Имя игрока необязательно.
+      info: Выдать предмет по названию работы либо по категории. Имя игрока необязательно
       args: '[playername] [jobname] [items/limiteditems] [jobitemname]'
     output:
       notonline: '&4Этот игрок не в сети!'
-      noitem: '&4Нет предмета с таким именем!'
+      noitem: '&4Нет предмета с таким названием!'
   info:
     help:
       title: '&2*** &eРаботы&2 ***'
-      info: Показывает информацию о работе.
-      penalty: '&eРабота &c[penalty]% &eв данный момент ограничена, потому что уже достаточно игроков на этой работе.'
-      bonus: '&eУ этой работы предусмотрен бонус &2[bonus]%&e, т.к недостаточно игроков на этой работе.'
+      info: Вывести заработок и задачи каждой работы.
+      penalty: '&eНа эту работу наложен штраф &c[penalty]%&e, так как на неё устроено слишком много игроков.'
+      bonus: '&eНа эту работу предусмотрен бонус &2[bonus]%&e, так как на неё устроено недостаточно игроков.'
       args: '[jobname] [action]'
       actions: '&eДопустимые действия: &f%actions%'
       max: ' - &eмаксимальный уровень:&f '
-      newMax: ' &eНовый максимальный уровень: &f[max]'
+      newMax: ' &eМаксимальный уровень: &f[max]'
       material: '&7%material%'
       levelRange: ' &a(&e%levelFrom% &a- &e%levelUntil% &aуровней)'
       levelFrom: ' &a(от &e%levelFrom% &aуровня)'
-      levelUntil: ' &a(вплоть до &e%levelUntil% &aуровня)'
+      levelUntil: ' &a(до &e%levelUntil% &aуровня)'
       money: ' &2%money%$'
-      points: ' &6%points%очк.'
+      points: ' &6%points%оч.'
       exp: ' &e%exp%оп.'
     gui:
       pickjob: '&eВыберите Вашу работу!'
@@ -321,10 +321,10 @@ command:
       rightClick: '&eНажмите ПКМ, чтобы устроиться на работу'
       leftSlots: '&eОсталось вакансий:&f '
       working: '&2&nТекущая работа'
-      cantJoin: '&cВы не можете устроиться в указанной профессии.'
+      cantJoin: '&cВы не можете устроиться на выбранную работу.'
       max: '&eМаксимальный уровень:&f '
-      back: '&e<--Вернуться'
-      next: '&eСлед. >>>'
+      back: '&e<<< Назад'
+      next: '&eДалее >>>'
     output:
       break:
         info: '&eРазрушение блоков'
