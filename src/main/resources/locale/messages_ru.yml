@@ -515,7 +515,7 @@ command:
   top:
     help:
       info: Показывает топ игроков на работе.
-      args: '[jobname]/clear pageNumber'
+      args: '[jobname]/clear номерСтраницы'
     error:
       nojob: Не получается найти работу с таким названием.
     output:
@@ -527,7 +527,7 @@ command:
   gtop:
     help:
       info: Показывает топ игроков на всех работах.
-      args: clear/pageNumber
+      args: clear/номерСтраницы
     error:
       nojob: Не получилось найти какие-либо данные.
     output:
