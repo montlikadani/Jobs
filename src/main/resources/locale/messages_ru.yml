@@ -34,7 +34,7 @@ general:
     noinfo: '&cИнформация не найдена!'
     noinfoByPlayer: '&cИнформация по никнейму [%playername%] не найдена!'
     ingame: '&cВы можете использовать эту команду только в игре!'
-    fromconsole: '&cВы можете использовать эту команду только в консоли!'
+    fromconsole: '&cВы можете использовать эту команду только из консоли!'
     worldisdisabled: '&cВы не можете использовать эту команду в этом мире!'
     newRegistration: '&eЗарегистрирован новый владелец [block] &7[current]&e/&f[max]'
     noRegistration: '&cВы достигли лимита зарегистрированных [block]!'
@@ -121,13 +121,13 @@ command:
       permission: ' &eБонус привилегии: &2%money% &6%points% &e%exp%'
       item: ' &eБонус предмета: &2%money% &6%points% &e%exp%'
       global: ' &eГлобальный бонус: &2%money% &6%points% &e%exp%'
-      dynamic: ' &eДинмаичный бонус: &2%money% &6%points% &e%exp%'
+      dynamic: ' &eДинамичный бонус: &2%money% &6%points% &e%exp%'
       nearspawner: ' &eБонус спавнера: &2%money% &6%points% &e%exp%'
       petpay: ' &eБонус питомца: &2%money% &6%points% &e%exp%'
       area: ' &eБонус зоны: &2%money% &6%points% &e%exp%'
       mcmmo: ' &eБонус McMMO: &2%money% &6%points% &e%exp%'
       final: ' &eИтоговый бонус: &2%money% &6%points% &e%exp%'
-      finalExplanation: ' &eНе включает бонусы/пенальти Petpay и Спавнеров'
+      finalExplanation: ' &eНе включает бонусы/штрафы питомцев и рассадников мобов'
   convert:
     help:
       info: Конвертирует данные из одного вида БД в другой. Если сейчас все работает под SQLite, то команда конвертирует все данные в MySQL или наоборот.
