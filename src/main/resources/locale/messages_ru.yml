@@ -442,11 +442,11 @@ command:
       totalWorkers: ' &7Рабочих: &e[amount]'
       penalty: ' &4Штраф: &c[amount]%'
       bonus: ' &2Бонус: &a[amount]%'
-      newHeader: '&2========== [amount] Доступные Работы ========='
+      newHeader: '&2========== [amount] доступных работ ========='
       description: '[description]'
       list: '    &8[place]. &7[jobname]'
       console:
-        newHeader: '&2========== [amount] Доступные Работы ========='
+        newHeader: '&2========== [amount] доступных работ ========='
         description: '[description]'
         totalWorkers: ' &7Рабочих: &e[amount]'
         penalty: ' &4Штраф: &c[amount]%'
