@@ -527,7 +527,7 @@ command:
   gtop:
     help:
       info: Wyświetla najlepszych graczy według globalnego poziomu prac.
-      args: clear/pageNumber
+      args: clear/numerStrony
     error:
       nojob: Nie można znaleźć żadnych informacji.
     output:
