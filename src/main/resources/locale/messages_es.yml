@@ -18,10 +18,10 @@ general:
     'true': '&2Veritat'
     'false': '&cFals'
     blocks:
-      furnace: Furnace
-      smoker: Smoker
-      blastfurnace: Blast furnace
-      brewingstand: Brewing stand
+      furnace: Horno
+      smoker: Aumador
+      blastfurnace: Alto Hordo
+      brewingstand: Soporte para pociones
   admin:
     error: '&cSe ha producido un error al aplicar el conjuro.'
     success: '&eEl conjuro ha sido aplicado.'
