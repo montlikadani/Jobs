@@ -36,8 +36,8 @@ general:
     ingame: '&cEsto es un conjuro y solo puede ser usado por un jugador.'
     fromconsole: '&cEsto es un comando y solo puede ser usado desde la consola.'
     worldisdisabled: '&cNo puedes usar este conjuro en este mundo.'
-    newRegistration: '&eRegistered new ownership for [block] &7[current]&e/&f[max]'
-    noRegistration: '&cYou''ve reached max [block] count!'
+    newRegistration: '&eSe ha registrado un nuevo propietario para [block] &7[current]&e/&f[max]'
+    noRegistration: '&c¡Has alcanzado el número máximo de [block]!'
 command:
   help:
     output:
@@ -639,7 +639,7 @@ command:
       info: Shows block protections around you in 10 block radius
       args: ''
     output:
-      found: '&eFound &6%amount% &eprotected blocks around you'
+      found: '&eSe encontraron &6%amount% &ebloques de protección alrededor tuya'
       notFound: '&eNo se encontraron bloques de protección alrededor tuyo'
   reload:
     help:
@@ -649,7 +649,7 @@ command:
       info: Toggles payment output on action bar or bossbar.
       args: actionbar/bossbar
     output:
-      turnedoff: '&4This feature is turned off!'
+      turnedoff: '&4Esta caracteristica ha sido deshabilitada!'
       paid:
         main: '&aTienes:'
         money: '&e[amount] dinero'
@@ -662,9 +662,9 @@ message:
     broadcast: '%playername% ha sido ascendido a %titlename% %jobname%.'
     nobroadcast: Felicidades, has sido ascendido a %titlename% %jobname%.
   max-level-reached:
-    title: '&2Max level reached'
-    subtitle: '&2in %jobname%!'
-    chat: '&cYou have reached the maximum level in %jobname%!'
+    title: '&2Alcanzaste el nivel máximo'
+    subtitle: '&2en %jobname%!'
+    chat: '&cAlcanzaste el maximo nivel para este trabajo: %jobname%!'
   levelup:
     broadcast: '%playername% ahora es nivel %joblevel% %jobname%.'
     nobroadcast: Ahora eres nivel %joblevel% %jobname%.
