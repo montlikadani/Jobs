@@ -19,7 +19,7 @@ general:
     'false': '&cFalskt'
     blocks:
       furnace: Furnace
-      smoker: Smoker
+      smoker: Rök
       blastfurnace: Blast furnace
       brewingstand: Brewing stand
   admin:
