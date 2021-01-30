@@ -23,15 +23,15 @@ general:
       blastfurnace: Hochofen
       brewingstand: Braustand
   admin:
-    error: '&cEs ist ein Fehler aufgetreten.'
+    error: '&cIn dem Command ist ein Fehler aufgetreten.'
     success: '&eDer Befehl ist erfolgreich ausgeführt worden.'
   error:
     noHelpPage: '&cEs gibt keine Hilfeseite mit dieser Nummer.'
     notNumber: '&eBitte benutze Nummern!'
-    job: '%cDer Job des du ausgesucht hast existiert nicht oder du bist nicht disem angestellt'
+    job: '%cDer Job den du ausgesucht hast existiert nicht oder du bist nicht disem angestellt'
     noCommand: '&cEs gibt keinen Befehl mit diesem Namen!'
-    permission: '&cDu hast keine Berechtigung für diesen Befehl!'
-    noinfo: '&cKeine Informationen vorhanden.'
+    permission: '&c Dafür hast du keine Rechte!'
+    noinfo: '&cKeine Informationen vorhanden!'
     noinfoByPlayer: '&cKeine Informationen für [%playername%] gefunden!'
     ingame: '&cDer Befehl kann nur ingame benutzt werden!'
     fromconsole: '&cDer Befehl kann nur in der Konsole benutzt werden!'
