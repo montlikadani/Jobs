@@ -23,7 +23,7 @@ general:
       blastfurnace: Hochofen
       brewingstand: Braustand
   admin:
-    error: '&cIn dem Command ist ein Fehler aufgetreten.'
+    error: '&cIn dem Befehl ist ein Fehler aufgetreten.'
     success: '&eDer Befehl ist erfolgreich ausgeführt worden.'
   error:
     noHelpPage: '&cEs gibt keine Hilfeseite mit dieser Nummer.'
