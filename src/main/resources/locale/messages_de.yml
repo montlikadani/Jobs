@@ -33,15 +33,15 @@ general:
     permission: '&c Dafür hast du keine Rechte!'
     noinfo: '&cKeine Informationen vorhanden!'
     noinfoByPlayer: '&cKeine Informationen für [%playername%] gefunden!'
-    ingame: '&cDer Befehl kann nur ingame benutzt werden!'
+    ingame: '&cDer Befehl kann nur im Spiel benutzt werden!'
     fromconsole: '&cDer Befehl kann nur in der Konsole benutzt werden!'
     worldisdisabled: '&cDer Befehl kann nicht in dieser Welt ausgeführt werden!'
     newRegistration: '#&eneuer Besitzer für [block] &7[current]&e/&f[max] registriert'
-    noRegistration: '&c Du hast di maximale [block]-Zahl erreicht!'
+    noRegistration: '&c Du hast die maximale [block]-Zahl erreicht!'
 command:
   help:
     output:
-      info: Type /jobs [cmd] ? um Infos über einen Befehl anzusehen.
+      info: Schreibe /jobs [cmd] ? um mehr infos über einen Befehl zu bekommen.
       cmdUsage: '&2Verwende: &7[command]'
       label: Jobs
       cmdInfoFormat: '[command] &f- &2[description]'
@@ -55,17 +55,17 @@ command:
       nextPage: '&6 Nächste Seite &2>>----'
       nextPageOff: '&7 Nächste Seite >>----'
       pageCount: '&2[current]/[total]'
-      pageCountHover: '&e[totalEntries] einträge'
+      pageCountHover: '&e[totalEntries] Einträge'
       prevPageGui: '&6Vorherige Seite '
       nextPageGui: '&6Nächste Seite'
   moneyboost:
     help:
-      info: Der Geldbonus für alle Spieler wird erhöht.
+      info: Der Geldbonus für alle Spieler wird erhöht
       args: '[jobname]/all/reset [time]/[rate]'
     output:
-      allreset: Alle Geld-Bonis sind ausgeschaltet.
-      jobsboostreset: Der Geld-Bonus für %jobname% wurde ausgeschaltet.
-      nothingtoreset: Es ist nichts zum resetten da.
+      allreset: Alle Geld Bonis sind ausgeschaltet
+      jobsboostreset: Der Geld-Bonus für %jobname% wurde ausgeschaltet
+      nothingtoreset: Es ist nichts zum zurücksetzen da
       boostalladded: Ein Geld-Bonus um %boost% wurde für alle Jobs hinzugefügt!
       boostadded: Es wurde ein Geld-Bonus um &e%boost% &afür &e%jobname% hinzugefügt!
       infostats: '&c-----> &aGeldboost x%boost% eingeschaltet!&c <-------'
