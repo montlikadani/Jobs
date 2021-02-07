@@ -15,8 +15,8 @@ general:
       mins: '&e%mins% &6Minuten '
       secs: '&e%secs% &6Sekunden '
     invalidPage: '&cUngültige Seite'
-    'true': 'Wahr'
-    'false': 'Falsch'
+    'true': '&2True'
+    'false': '&cFalse'
     blocks:
       furnace: Ofen
       smoker: Räucherofen
