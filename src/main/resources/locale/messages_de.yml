@@ -24,14 +24,14 @@ general:
       brewingstand: Braustand
   admin:
     error: '&cIn dem Befehl ist ein Fehler aufgetreten.'
-    success: '&eDer Befehl ist erfolgreich ausgeführt worden.'
+    success: '&eDer Befehl wurde erfolgreich ausgeführt.'
   error:
-    noHelpPage: '&cEs gibt keine Hilfeseite mit dieser Nummer.'
+    noHelpPage: '&cEs gibt keine Hilfsseite mit dieser Nummer!'
     notNumber: '&eBitte benutze Nummern!'
-    job: '%cDer Job den du ausgesucht hast existiert nicht oder du bist nicht disem angestellt'
+    job: '%cDer Job, den du ausgesucht hast existiert nicht oder du bist nicht diesem beigetreten'
     noCommand: '&cEs gibt keinen Befehl mit diesem Namen!'
     permission: '&c Dafür hast du keine Rechte!'
-    noinfo: '&cKeine Informationen vorhanden!'
+    noinfo: '&cKeine Informationen gefunden!'
     noinfoByPlayer: '&cKeine Informationen für [%playername%] gefunden!'
     ingame: '&cDer Befehl kann nur im Spiel benutzt werden!'
     fromconsole: '&cDer Befehl kann nur in der Konsole benutzt werden!'
@@ -515,7 +515,7 @@ command:
   top:
     help:
       info: Zeigt die Top Spieler nach Berufen.
-      args: '[jobname]/clear pageNumber'
+      args: '[jobname]/leere Seitennummer'
     error:
       nojob: Konnte keinen Beruf mit diesem Namen finden.
     output:
@@ -527,7 +527,7 @@ command:
   gtop:
     help:
       info: Zeigt die Top Spieler nach dem globalen Job Level.
-      args: clear/pageNumber
+      args: leer/Seitennummer
     error:
       nojob: Keine Informationen gefunden.
     output:
