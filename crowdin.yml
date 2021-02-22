@@ -3,6 +3,7 @@ files:
     translation: "/src/main/resources/locale/messages_%locale_with_underscore%.yml"
     languages_mapping:
       locale_with_underscore:
+        bg: bg
         cs: cs
         de: de
         en-US: en
