@@ -1,41 +1,41 @@
 ---
 economy:
   error:
-    nomoney: '&cSorry, no money left in national bank!'
+    nomoney: '&cЗа съжаление няма достатъчно пари в националната банка!'
 limitedItem:
   error:
-    levelup: '&cYou need to level up in [jobname] to use this item!'
+    levelup: '&cТрябва да вдигнеш нивото на [jobname] работата си, за да използваш този предмет!'
 general:
   info:
     toplineseparator: '&7*********************** &6%playername% &7***********************'
     separator: '&7*******************************************************'
     time:
-      days: '&e%days% &6days '
-      hours: '&e%hours% &6hours '
-      mins: '&e%mins% &6min '
-      secs: '&e%secs% &6sec '
-    invalidPage: '&cInvalid page'
+      days: '&e%days% &6Дни '
+      hours: '&e%hours% &6Часове '
+      mins: '&e%mins% &6мин '
+      secs: '&e%secs% &6сек '
+    invalidPage: '&cНевалидна страница'
     'true': '&2True'
     'false': '&cFalse'
     blocks:
-      furnace: Furnace
-      smoker: Smoker
-      blastfurnace: Blast furnace
-      brewingstand: Brewing stand
+      furnace: Пещ
+      smoker: Опушвач
+      blastfurnace: Доменна Пещ
+      brewingstand: Станд за отвари
   admin:
-    error: '&cThere was an error in the command.'
-    success: '&eYour command has been performed.'
+    error: '&cИмаше грешка в командата.'
+    success: '&eВашата команда беше изпълнена.'
   error:
-    noHelpPage: '&cThere is no help page by this number!'
-    notNumber: '&ePlease use numbers!'
-    job: '&cThe job you selected does not exist or you not joined to this'
-    noCommand: '&cThere is no command by this name!'
-    permission: '&cYou do not have permission to do that!'
-    noinfo: '&cNo information found!'
-    noinfoByPlayer: '&cNo information found by [%playername%] player name!'
-    ingame: '&cYou can use this command only in game!'
-    fromconsole: '&cYou can use this command only from console!'
-    worldisdisabled: '&cYou can''t use command in this world!'
+    noHelpPage: '&cНяма помощна страница с този номер!'
+    notNumber: '&eМоля използвайте числа!'
+    job: '&cРаботата, която сте избрали не съществува или не сте влезли в нея, за да правите това'
+    noCommand: '&cНяма команда с това име!'
+    permission: '&cНямате право да правите това!'
+    noinfo: '&cНе е намерена информация!'
+    noinfoByPlayer: '&cНе е намерена информация от това име [%playername%]!'
+    ingame: '&cМоже да използвате тази команда само в играта!'
+    fromconsole: '&cМоже да използвате тази команда само от конзолата!'
+    worldisdisabled: '&cНе може да използвате команди в този свят!'
     newRegistration: '&eRegistered new ownership for [block] &7[current]&e/&f[max]'
     noRegistration: '&cYou''ve reached max [block] count!'
 command:
