@@ -36,50 +36,50 @@ general:
     ingame: '&cМоже да използвате тази команда само в играта!'
     fromconsole: '&cМоже да използвате тази команда само от конзолата!'
     worldisdisabled: '&cНе може да използвате команди в този свят!'
-    newRegistration: '&eRegistered new ownership for [block] &7[current]&e/&f[max]'
-    noRegistration: '&cYou''ve reached max [block] count!'
+    newRegistration: '&eРегистриран е нова собственост за [block] &7[current]&e/&f[max]'
+    noRegistration: '&cВие достигнахте максималния брой [block]!'
 command:
   help:
     output:
-      info: Type /jobs [cmd] ? for more information about a command.
-      cmdUsage: '&2Usage: &7[command]'
+      info: Напишете /jobs [cmd] ? за повече информация относно команда.
+      cmdUsage: '&2Употреба: &7[command]'
       label: Jobs
       cmdInfoFormat: '[command] &f- &2[description]'
       cmdFormat: '&7/[command] &f[arguments]'
       helpPageDescription: '&2* [description]'
       title: '&e-------&e ======= &6Jobs &e======= &e-------'
-      page: '&e-----&e ====== Page &6[1] &eof &6[2] &e====== &e-----'
+      page: '&e-----&e ====== Страница &6[1] &eот &6[2] &e====== &e-----'
       fliperSimbols: '&e----------'
-      prevPage: '&2----<< &6Prev '
-      prevPageOff: '&7----<< Prev '
-      nextPage: '&6 Next &2>>----'
-      nextPageOff: '&7 Next >>----'
+      prevPage: '&2----<< &6Предишна '
+      prevPageOff: '&7----<< Предишна '
+      nextPage: '&6 Следваща &2>>----'
+      nextPageOff: '&7 Следваща >>----'
       pageCount: '&2[current]/[total]'
-      pageCountHover: '&e[totalEntries] entries'
-      prevPageGui: '&6Previous page '
-      nextPageGui: '&6Next Page'
+      pageCountHover: '&e[totalEntries] записи'
+      prevPageGui: '&6Предишна страница '
+      nextPageGui: '&6Следваща Страница'
   moneyboost:
     help:
-      info: Boosts money gain for all players
+      info: Увеличава печалбата на пари за всички играчи
       args: '[jobname]/all/reset [time]/[rate]'
     output:
-      allreset: All money boosts turned off
-      jobsboostreset: Money boost has been turned off for %jobname%
-      nothingtoreset: Nothing to reset
-      boostalladded: Money boost of %boost% added for all jobs!
-      boostadded: Money boost of &e%boost% &aadded for &e%jobname%!
-      infostats: '&c-----> &aMoney rate x%boost% enabled&c <-------'
+      allreset: Всички увеличения на пари са изключени
+      jobsboostreset: Увеличените пари бяха изключени за %jobname%
+      nothingtoreset: Нищо за рестартиране
+      boostalladded: Увеличаване на пари от %boost% добавено за всички професии!
+      boostadded: Увеличаване на пари от &e%boost% &aдобавено за &e%jobname%!
+      infostats: '&c-----> &aПари x%boost% включени&c <-------'
   pointboost:
     help:
-      info: Boosts point gain for all players
+      info: Увеличаване на точки за всички играчи
       args: '[jobname]/all/reset [time]/[rate]'
     output:
-      allreset: All point boosts turned off
-      jobsboostreset: Point boost has been turned off for %jobname%
-      nothingtoreset: Nothing to reset
-      boostalladded: Points boost of %boost% added for all jobs!
-      boostadded: Points boost of &e%boost% &aadded for &e%jobname%!
-      infostats: '&c-----> &aPoints rate x%boost% enabled&c <-------'
+      allreset: Всички увеличения на точки са изключени
+      jobsboostreset: Увеличаването на точки беше изключено за %jobname%
+      nothingtoreset: Нищо за рестартиране
+      boostalladded: Увеличаване на точки за %boost% добавено към всички професии!
+      boostadded: Увеличаване на точки от &e%boost% &aдобавено за &e%jobname%!
+      infostats: '&c-----> &aТочки x%boost% включени&c <-------'
   expboost:
     help:
       info: Boosts exp gain for all players
