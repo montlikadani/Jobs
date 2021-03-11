@@ -527,7 +527,7 @@ command:
   gtop:
     help:
       info: Arată topul jucătorilor după nivelul global al joburilor.
-      args: clear/pageNumber
+      args: șterge/Numarulpaginii
     error:
       nojob: Nu se pot găsi informații.
     output:
