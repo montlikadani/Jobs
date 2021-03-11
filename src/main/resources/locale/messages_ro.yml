@@ -515,7 +515,7 @@ command:
   top:
     help:
       info: Arată topul jucătorilor după numele jobului.
-      args: '[jobname]/clear pageNumber'
+      args: '[jobname]/șterge Numărulpaginii'
     error:
       nojob: Nu s-a putut găsi niciun job cu acest nume.
     output:
