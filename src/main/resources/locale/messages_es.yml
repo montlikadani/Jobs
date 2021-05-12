@@ -609,9 +609,9 @@ command:
       info: Change the player's level in a job.
       args: '[playername] [jobname] set/add/take [amount]'
     error:
-      nojob: '&cThis player must first join a job.'
+      nojob: '&cEste jugador debe primero entrar en un trabajo.'
     output:
-      target: '&eYour level was changed for %jobname% &eand now you at &6%level%lvl &eand with &6%exp%exp.'
+      target: '&eTu nivel ha sido cambiado por el trabajo %jobname% &ey ahora tienes el nivel &6%level%lvl &ey tienes &6%exp% de experiencia.'
   demote:
     help:
       info: Desciende a un jugador X niveles en un trabajo.
