@@ -42,7 +42,7 @@ command:
   help:
     output:
       info: 输入 /jobs [cmd] ? 查看关于此命令的更多信息.
-      cmdUsage: '&2Usage: &7[command]'
+      cmdUsage: '&2用法: &7[command]'
       label: Jobs
       cmdInfoFormat: '[command] &f- &2[description]'
       cmdFormat: '&7/[command] &f[arguments]'
@@ -50,14 +50,14 @@ command:
       title: '&e---&e ===== &6Jobs 插件 - &d汉化 Izzel_Aliz &e===== &e---'
       page: '&e-----&e ====== 第 &6[1] &e页 - 共 &6[2] 页 &e====== &e-----'
       fliperSimbols: '&e----------'
-      prevPage: '&2----<< &6Prev '
-      prevPageOff: '&7----<< Prev '
-      nextPage: '&6 Next &2>>----'
-      nextPageOff: '&7 Next >>----'
+      prevPage: '&2----<< &6上页 '
+      prevPageOff: '&7----<< 上页 '
+      nextPage: '&6 下页 &2>>----'
+      nextPageOff: '&7 下页 >>----'
       pageCount: '&2[current]/[total]'
-      pageCountHover: '&e[totalEntries] entries'
-      prevPageGui: '&6Previous page '
-      nextPageGui: '&6Next Page'
+      pageCountHover: '&e[totalEntries] 条目'
+      prevPageGui: '&6上一页 '
+      nextPageGui: '&6下一页'
   moneyboost:
     help:
       info: 加成玩家得到的游戏币
@@ -93,12 +93,12 @@ command:
       infostats: '&c-----> &a经验获得 x%boost% 倍正在进行&c <-------'
   schedule:
     help:
-      info: Enables the given scheduler
+      info: 启用安排日程
       args: enable [scheduleName] [untilTime]
     output:
-      noScheduleFound: '&cSchedule with this name not found.'
-      alreadyEnabled: '&cThis schedule already enabled.'
-      enabled: '&eSchedule have been enabled from&a %from%&e until&a %until%'
+      noScheduleFound: '&c找不到使用此名称的日程'
+      alreadyEnabled: '&c这个日程已经启用'
+      enabled: '&e日程已从&a %from%&e到&a %until%启用'
   itembonus:
     help:
       info: Check item bonus
@@ -110,7 +110,7 @@ command:
       hoverLevelLimits: "&7From level: %from% \n&7Until level: %until%"
   edititembonus:
     help:
-      info: Edit item boost bonus
+      info: 编辑物品最高奖金
       args: list/add/remove [jobname] [itemBoostName]
   bonus:
     help:
