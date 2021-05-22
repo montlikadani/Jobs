@@ -402,7 +402,7 @@ command:
   join:
     help:
       info: Bli med i den valgte jobben.
-      args: '[jobname]'
+      args: '[jobfullname]'
     error:
       alreadyin: Du er allerede med i jobben %jobname%.
       fullslots: Du kan ikke bli med i jobben %jobname%, det er ingen ledige plasser.
