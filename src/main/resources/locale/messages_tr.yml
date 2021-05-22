@@ -402,7 +402,7 @@ command:
   join:
     help:
       info: Seçilen mesleğe girer.
-      args: '[jobname]'
+      args: '[jobfullname]'
     error:
       alreadyin: Zaten %jobname% mesleğindesin.
       fullslots: Şuan %jobname% mesleğine katılamazsın çünkü yeterli yer yok.
