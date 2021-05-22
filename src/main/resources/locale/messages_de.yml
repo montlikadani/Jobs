@@ -402,7 +402,7 @@ command:
   join:
     help:
       info: Ausgewählten Job erlernen.
-      args: '[jobname]'
+      args: '[jobfullname]'
     error:
       alreadyin: Du bist bereits %jobname%.
       fullslots: Du kannst kein %jobname% werden, da keine freie Arbeitsstelle vorhanden ist.
