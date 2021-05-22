@@ -402,7 +402,7 @@ command:
   join:
     help:
       info: Připojit se k vybrané práci.
-      args: '[jobname]'
+      args: '[jobfullname]'
     error:
       alreadyin: Už jsi zaměstnaný jako %jobname%.
       fullslots: Nemuzes se pripojit do prace %jobname%, nejsou volna mista.
