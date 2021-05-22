@@ -402,7 +402,7 @@ command:
   join:
     help:
       info: Sluit aan bij de geselecteerde baan.
-      args: '[jobname]'
+      args: '[jobfullname]'
     error:
       alreadyin: Je bent al bij de baan %jobname%.
       fullslots: Je kan niet bij de baan %jobname% aansluiten, er is niet genoeg plek.
