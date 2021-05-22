@@ -402,7 +402,7 @@ command:
   join:
     help:
       info: 加入选择的职业.
-      args: '[jobname]'
+      args: '[jobfullname]'
     error:
       alreadyin: 你已经加入了职业 %jobname%.
       fullslots: 你不能加入职业 %jobname%, 已经满员.
