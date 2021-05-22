@@ -402,7 +402,7 @@ command:
   join:
     help:
       info: Alătură te jobului selectat.
-      args: '[jobname]'
+      args: '[jobfullname]'
     error:
       alreadyin: Ești deja în jobul %jobname%.
       fullslots: Nu poți să te alături jobului %jobname%, nu mai sunt locuri libere.
