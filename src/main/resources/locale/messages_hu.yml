@@ -402,7 +402,7 @@ command:
   join:
     help:
       info: Csatlakozás a megadott munkához.
-      args: '[jobname]'
+      args: '[jobfullname]'
     error:
       alreadyin: '&cMár csatlakoztál a(z) %jobname%&c munkához!'
       fullslots: '&cNem tudsz csatlakozni a(z) %jobname%&c munkához, mert nincsenek rendelkezésre álló helyek.'
