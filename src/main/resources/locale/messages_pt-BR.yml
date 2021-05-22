@@ -402,7 +402,7 @@ command:
   join:
     help:
       info: Ingressar na profissão selecionada.
-      args: '[jobname]'
+      args: '[jobfullname]'
     error:
       alreadyin: Você já entrou na profissão %jobname%.
       fullslots: Você não pode entrar na profissão %jobname% porque não há vagas disponíveis.
