@@ -402,7 +402,7 @@ command:
   join:
     help:
       info: '[職業名]の職業に就きます'
-      args: '[jobname]'
+      args: '[jobfullname]'
     error:
       alreadyin: '%jobname% はすでに就いている職業です'
       fullslots: '%jobname% に就くことができませんでした。利用可能なスロットがありません'
