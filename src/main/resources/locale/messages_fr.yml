@@ -402,7 +402,7 @@ command:
   join:
     help:
       info: Rejoindre le métier sélectionné.
-      args: '[jobname]'
+      args: '[jobfullname]'
     error:
       alreadyin: Vous exercez déjà le métier de %jobname%.
       fullslots: Vous ne pouvez pas devenir %jobname%, il n'y a plus de places disponibles.
