@@ -402,7 +402,7 @@ command:
   join:
     help:
       info: Join the selected job.
-      args: '[jobname]'
+      args: '[jobfullname]'
     error:
       alreadyin: You are already in the job %jobname%.
       fullslots: You cannot join the job %jobname%, there are no slots available.
