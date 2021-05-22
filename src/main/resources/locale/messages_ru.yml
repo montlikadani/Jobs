@@ -402,7 +402,7 @@ command:
   join:
     help:
       info: Устроиться работу.
-      args: '[jobname]'
+      args: '[jobfullname]'
     error:
       alreadyin: Вы уже устроились на работу %jobname%.
       fullslots: Невозможно устроиться на %jobname% - нет свободных мест.
