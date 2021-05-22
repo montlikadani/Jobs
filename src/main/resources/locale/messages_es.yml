@@ -402,7 +402,7 @@ command:
   join:
     help:
       info: Trabajar en la profesión.
-      args: '[jobname]'
+      args: '[jobfullname]'
     error:
       alreadyin: Ya estás trabajando de %jobname%.
       fullslots: No puedes trabajar en la profesión de %jobname%, ya que no hay puestos libres.
