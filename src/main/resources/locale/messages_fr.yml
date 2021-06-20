@@ -18,7 +18,7 @@ general:
     'true': '&2Vrai'
     'false': '&cFaux'
     blocks:
-      furnace: Four
+      furnace: Fourneau
       smoker: Fumoir
       blastfurnace: Haut fourneau
       brewingstand: Alambic
@@ -27,17 +27,17 @@ general:
     success: '&eLa commande a été exécutée avec succès.'
   error:
     noHelpPage: '&cIl n''y a pas de page d''aide portant ce numéro !'
-    notNumber: '&eVeuillez utiliser des chiffres !'
-    job: 'Le métier que vous avez choisi n’existe pas ou vous n’avez pas rejoins celui-ci'
-    noCommand: '&cIl n''y pas de commande portant ce nom!'
-    permission: '&cVous n''avez pas la permission de faire ça!'
+    notNumber: '&eVeuillez utiliser des nombres !'
+    job: 'Le métier que vous avez choisi n’existe pas ou vous n’avez pas rejoint celui-ci'
+    noCommand: '&cIl n''y pas de commande portant ce nom !'
+    permission: '&cVous n''avez pas la permission de faire ça !'
     noinfo: '&cAucune information trouvée !'
-    noinfoByPlayer: '&cAucune information trouvée par [%playername%] nom du joueur!'
-    ingame: '&cVous ne pouvez utiliser cette commande qu''en jeu!'
-    fromconsole: '&cCette commande doit être lancée depuis la console!'
-    worldisdisabled: '&cVous ne pouvez pas utiliser cette commande dans ce monde!'
+    noinfoByPlayer: '&cAucune information trouvée pour le nom de joueur [%playername%] !'
+    ingame: '&cVous ne pouvez utiliser cette commande qu''en jeu !'
+    fromconsole: '&cCette commande doit être lancée depuis la console !'
+    worldisdisabled: '&cVous ne pouvez pas utiliser cette commande dans ce monde !'
     newRegistration: '&eNouveau propriétaire enregistré pour [block] (&7[current]&e/&f[max]&e)'
-    noRegistration: '&cVous avez atteins la limite de [block] maximal !'
+    noRegistration: '&cVous avez atteint la limite de [block] !'
 command:
   help:
     output:
@@ -56,27 +56,27 @@ command:
       nextPageOff: '&7 Suivant >>----'
       pageCount: '&2[current]/[total]'
       pageCountHover: '&e[totalEntries] entrées'
-      prevPageGui: 'Page précédente '
-      nextPageGui: 'Page suivante'
+      prevPageGui: '&6Page précédente '
+      nextPageGui: '&6Page suivante'
   moneyboost:
     help:
-      info: Booster le gain d'argent pour tous les joueurs
+      info: Booste le gain d'argent pour tous les joueurs
       args: '[jobname]/all/reset [time]/[rate]'
     output:
       allreset: Tous les boost d'argent ont été désactivés
       jobsboostreset: Le boost d'argent pour le métier %jobname% a été désactivé
-      nothingtoreset: Il n'y a rien à remettre à zéro.
-      boostalladded: Un boost d'argent de %boost% a été activé pour tous les métiers!
-      boostadded: Un boost d'argent de &e%boost% &aa été activé pour le métier &e%jobname%!
+      nothingtoreset: Il n'y a rien à remettre à zéro
+      boostalladded: Un boost d'argent de %boost% a été activé pour tous les métiers !
+      boostadded: Un boost d'argent de &e%boost% &aa été activé pour le métier &e%jobname% !
       infostats: '&c-----> &aBoost d''argent x%boost% activé&c <-------'
   pointboost:
     help:
-      info: Booster les points pour tous les joueurs
+      info: Booste les points pour tous les joueurs
       args: '[jobname]/all/reset [time]/[rate]'
     output:
       allreset: Tous les boosts de points ont été désactivés
       jobsboostreset: Le boost de points pour le métier %jobname% a été désactivé
-      nothingtoreset: Il n'y a rien à remettre à zéro.
+      nothingtoreset: Il n'y a rien à remettre à zéro
       boostalladded: Un boost de points de %boost% a été activé pour tous les métiers !
       boostadded: Un boost de points de &e%boost% &aa été activé pour le métier &e%jobname%!
       infostats: '&c-----> &aBoost de points x%boost% activé&c <-------'
