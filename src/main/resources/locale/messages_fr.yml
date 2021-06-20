@@ -137,8 +137,8 @@ command:
       info: Affiche les limites de payement des métiers.
       args: '[playername]'
     output:
-      moneytime: '&eTemps restant avant le reset de la limite d''argent: &2%hour%&eh &2%min%&em &2%sec%&es'
-      moneyLimit: '&eLimite d''argent journalié: &2%money%&e/&2%totalmoney%'
+      moneytime: '&eTemps restant avant la réinitialisation de la limite d''argent : &2%time%'
+      moneyLimit: '&eLimite d''argent : &2%current%&e/&2%total%'
       exptime: '&eTemps restant avant la réinitialisation de la limite d''expérience : &2%time%'
       expLimit: '&eLimite d''expérience : &2%current%&e/&2%total%'
       pointstime: '&eTemps restant avant la réinitialisation de la limite de points : &2%time%'
@@ -240,11 +240,11 @@ command:
       usage: ' &eUtilisation : &6%first% &eou &6%second%'
   placeholders:
     help:
-      info: Liste de tout les placeholders
+      info: Liste de tous les placeholders
       args: (parse) (placeholder)
     output:
       list: '&e[place]. &7[placeholder]'
-      outputResult: ' &erésultat: &7[result]'
+      outputResult: ' &erésultat : &7[result]'
       parse: '&6[placeholder] &7par [source] &6résultat &8|&f[result]&8|'
   entitylist:
     help:
@@ -257,27 +257,27 @@ command:
     error:
       nojob: Vous n'avez pas de métier.
     output:
-      message: 'Niveau %joblevel% pour %jobname%: %jobxp%/%jobmaxxp% xp'
+      message: 'Niveau %joblevel% pour %jobname% : %jobxp%/%jobmaxxp% xp'
       max-level: '     &cNiveau max   -   %jobname%'
-    bossBarOutput: 'Niveau %joblevel% %jobname%: %jobxp%/%jobmaxxp% xp%gain%'
+    bossBarOutput: 'Niveau %joblevel% %jobname% : %jobxp%/%jobmaxxp% xp%gain%'
     bossBarGain: ' &7(&f%gain%&7)'
   shop:
     help:
-      info: Ouvre les shops de métiers.
+      info: Ouvre le magasin de métiers.
       args: ''
     info:
-      title: '&e------- &8Boutique de Jobs &e-------'
-      currentPoints: '&eVous avez: &6%currentpoints%'
+      title: '&e------- &8Boutique de Métiers &e-------'
+      currentPoints: '&eVous avez : &6%currentpoints%'
       price: '&ePrix : &6%price%'
       reqJobs: '&eMétiers requis :'
       reqJobsList: '  &6%jobsname%&e : niveau &e%level%'
-      reqTotalLevel: '&6Niveau total requis: &e%totalLevel%'
+      reqTotalLevel: '&6Niveau total requis : &e%totalLevel%'
       reqJobsColor: '&c'
       reqJobsLevelColor: '&4'
       reqTotalLevelColor: '&4'
       cantOpen: '&cImpossible d''ouvrir cette page'
-      NoPermForItem: '&cVous n''avez pas la permission requise pour cet objet!'
-      NoPermToBuy: '&cVous n''avez pas la permission requise pour acheter cet objet!'
+      NoPermForItem: '&cVous n''avez pas la permission requise pour cet objet !'
+      NoPermToBuy: '&cVous n''avez pas la permission requise pour acheter cet objet'
       NoJobReqForitem: '&cVous n''avez pas le métier requis (&6%jobname%&e) ou/ni le niveau (&6%joblevel%&e)'
       NoPoints: '&cVous n''avez pas assez de points'
       NoTotalLevel: '&cVotre niveau total de métier est trop bas (%totalLevel%)'
@@ -293,7 +293,7 @@ command:
       info: Donne un objet par nom de métier et nom de catégorie d'objet. Le pseudo est facultatif.
       args: '[playername] [jobname] [items/limiteditems] [jobitemname]'
     output:
-      notonline: '&4Le joueur avec ce nom n''est pas connecté!'
+      notonline: '&4Le joueur avec ce nom n''est pas connecté !'
       noitem: '&4Ce nom ne correspond à aucun objet !'
   info:
     help:
@@ -408,15 +408,15 @@ command:
       fullslots: Vous ne pouvez pas devenir %jobname%, il n'y a plus de places disponibles.
       maxjobs: Vous exercez déjà trop de métiers.
       rejoin: '&cVous ne pouvez pas retourner dans ce métier maintenant. Attendez [time]'
-    rejoin: '&aClique pour rejoindre ce métier: '
+    rejoin: '&aCliquez pour rejoindre ce métier : '
     success: Vous exercez maintenant le métier de %jobname%.
-    confirm: '&2Clique pour confirmer l''action de rejoindre le &2métier &7[jobname].'
+    confirm: '&2Cliquez pour confirmer l''action de rejoindre le &2métier &7[jobname].'
   leave:
     help:
       info: Quitter le métier sélectionné.
       args: '[oldplayerjob]'
     success: Vous n'exercez plus le métier de %jobname%.
-    confirmationNeed: '&cEs-tu sûr que tu veux quitter le métier [jobname]&c ? Tape la commande une seconde fois dans les [time] secondes qui suivent pour confirmer !'
+    confirmationNeed: '&cÊtes-vous sûr de vouloir quitter le métier [jobname]&c ? Tapez la commande une seconde fois dans les [time] secondes qui suivent pour confirmer !'
   leaveall:
     help:
       info: Quitter tous vos métiers.
@@ -520,10 +520,10 @@ command:
       nojob: Aucun métier ne porte ce nom.
     output:
       topline: '&aTop&e %amount% &ades joueurs pour le métier de &e%jobname%'
-      list: '&e%number%&a. &e%playername% &aniv. &e%level% &aavec&e %exp% &aEXP'
+      list: '&e%number%&a. &e%playername% &aniv. &e%level% &aavec&e %exp% &aXP'
       prev: '&e<<<<< Page précédente &2|'
       next: '&2|&e Page suivante >>>>'
-      show: '&2Montre la Top List de &e[from] &2jusqu''à &e[until]'
+      show: '&2Montre le Top de &e[from] &2jusqu''à &e[until]'
   gtop:
     help:
       info: Affiche le top des joueurs par niveau global de métiers.
@@ -531,25 +531,25 @@ command:
     error:
       nojob: Impossible de trouver des informations.
     output:
-      topline: '&aTop&e %amount% &ades joueurs par métier'
-      list: '&e%number%&a. &e%playername% &aniv. &e%level% &aavec&e %exp% &aEXP'
+      topline: '&aTop&e %amount% &ades joueurs par niveau de métier global'
+      list: '&e%number%&a. &e%playername% &aniv. &e%level% &aavec&e %exp% &aXP'
       prev: '&e<<<<< Page précédente &2|'
       next: '&2|&e Page suivante >>>>'
-      show: '&2Montre la Top List de &e[from] &2jusqu''à &e[until]'
+      show: '&2Montre le Top global de &e[from] &2jusqu''à &e[until]'
   area:
     help:
       info: Modifie les restrictions de zone
       args: add/remove/info/list
-      addUsage: '&eUtilisation: &6/Jobs area add [areaName/wg:worldGuardAreaName] [bonus]'
-      removeUsage: '&eUtilisation: &6/Jobs area remove [areaName]'
+      addUsage: '&eUtilisation : &6/Jobs area add [Nom de zone/wg:Nom de zone WorldGuard] [bonus]'
+      removeUsage: '&eUtilisation : &6/Jobs area remove [areaName]'
     output:
       addedNew: '&eNouvelle zone restrictive ajoutée avec &6%bonus% &ebonus'
-      removed: '&eZone restrictive &6%name% supprimée'
+      removed: '&eZone restrictive &6%name% &esupprimée'
       list: '&e%number%&a. &e%areaname% &e%worldname% (&a%x1%:%y1%:%z1%/&e%x2%:%y2%:%z2%) &6%bonus%'
-      wgList: '&e%number%&a. WorldGuard: &e%areaname% &6%bonus%'
+      wgList: '&e%number%&a. WorldGuard : &e%areaname% &6%bonus%'
       noAreas: '&eIl n''y a aucune zone sauvegardée'
       noAreasByLoc: '&eIl n''y a aucune zone restrictive en ce lieu'
-      areaList: '&eZone restrictive à votre position: &6%list%'
+      areaList: '&eZone restrictive à votre position : &6%list%'
       selected1: '&ePremier point sélectionné: &6%x%:%y%:%z%'
       selected2: '&eSecond point sélectionné: &6%x%:%y%:%z%'
       select: '&eSélectionnez deux points avec l''outil de sélection (%tool%)'
