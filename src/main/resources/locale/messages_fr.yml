@@ -139,36 +139,36 @@ command:
     output:
       moneytime: '&eTemps restant avant le reset de la limite d''argent: &2%hour%&eh &2%min%&em &2%sec%&es'
       moneyLimit: '&eLimite d''argent journalié: &2%money%&e/&2%totalmoney%'
-      exptime: '&eTemps restant avant la réinitialisation de la limite d''argent: &2%time%'
+      exptime: '&eTemps restant avant la réinitialisation de la limite d''expérience : &2%time%'
       expLimit: '&eLimite d''expérience : &2%current%&e/&2%total%'
-      pointstime: '&eTemps restant avant la réinitialisation de la limite de point: &2%time%'
-      pointsLimit: '&eLimite de points: &2%current%&e/&2%total%'
-      reachedmoneylimit: '&4Vous avez atteint le maximum d''argent gagné pendant le temps imparti!'
+      pointstime: '&eTemps restant avant la réinitialisation de la limite de points : &2%time%'
+      pointsLimit: '&eLimite de points : &2%current%&e/&2%total%'
+      reachedmoneylimit: '&4Vous avez atteint le maximum d''argent gagné pendant le temps imparti !'
       reachedmoneylimit2: '&eVous pouvez vérifier la limite en faisant &2/jobs limit'
-      reachedmoneylimit3: '&e L''argent récolté est maintenant réduite exponentiellement... Mais tu gagne toujours un petit peu!'
-      reachedexplimit: '&4Vous avez atteint le maximum d’expérience gagné pendant le temps imparti!'
+      reachedmoneylimit3: '&eL''argent récolté est maintenant réduite exponentiellement... Mais vous en gagnerez toujours un peu !'
+      reachedexplimit: '&4Vous avez atteint le maximum d’expérience gagné pendant le temps imparti !'
       reachedexplimit2: '&eVous pouvez vérifier la limite en faisant &2/jobs limit'
-      reachedpointslimit: '&4Vous avez atteint le maximum de points gagné pendant le temps imparti!'
+      reachedpointslimit: '&4Vous avez atteint le maximum de points gagné pendant le temps imparti !'
       reachedpointslimit2: '&eVous pouvez vérifier la limite en faisant &2/jobs limit'
       notenabled: '&eLa limite d''argent n''est pas activée'
   resetlimit:
     help:
-      info: Remet à zéro les limites de paiements des joueurs
+      info: Remet à zéro les limites de paiements d'un joueur
       args: '[playername]'
     output:
-      reseted: '&eLa limite de paiement a été remise à zéro pour: &2%playername%'
+      reseted: '&eLa limite de paiement a été remise à zéro pour : &2%playername%'
   resetquest:
     help:
-      info: Réinitialisé la quête du joueur
+      info: Réinitialise la quête du joueur
       args: '[playername] [jobname]'
     output:
-      reseted: '&eLa quête à bien été remise à zéro pour le joueur: &2%playername%'
-      noQuests: '&eAucune quête à été trouvé'
+      reseted: '&eLa quête a été réinitialisé pour le joueur : &2%playername%'
+      noQuests: '&eAucune quête n''a été trouvée'
   points:
     help:
       info: Affiche le nombre de points d'un joueur.
       args: '[playername]'
-    currentpoints: ' &eNombre de points actuel: &6%currentpoints%'
+    currentpoints: ' &eNombre de points actuel : &6%currentpoints%'
     totalpoints: ' &eNombre de points total collecté : &6%totalpoints%'
   editpoints:
     help:
@@ -198,11 +198,11 @@ command:
         hand: '&6MAIN '
         handHover: '&6Cliquez pour prendre les infos de l''objet dans votre main'
         or: '&eou '
-        look: '&6Regarde à'
+        look: '&6Regarde'
         lookHover: '&6Cliquez pour prendre les infos du bloc que vous regardez'
   editquests:
     help:
-      info: Modifier la quêtes en cours.
+      info: Modifier les quêtes en cours.
       args: ''
       list:
         quest: '&eQuêtes :'
@@ -218,7 +218,7 @@ command:
         hand: '&6MAIN '
         handHover: '&6Cliquez pour afficher les infos de l''objet dans votre main'
         or: '&eou '
-        look: '&6Regarde à'
+        look: '&6Regarde'
         lookHover: '&6Cliquez pour afficher les infos du bloc que vous regardez'
   blockinfo:
     help:
@@ -227,7 +227,7 @@ command:
     output:
       name: ' &eNom du bloc : &6%blockname%'
       id: ' &eID du bloc : &6%blockid%'
-      data: ' &eDonnée du bloc : &6%blockdata%'
+      data: ' &eDonnées du bloc : &6%blockdata%'
       usage: ' &eUtilisation : &6%first% &eou &6%second%'
   iteminfo:
     help:
@@ -297,32 +297,32 @@ command:
       noitem: '&4Ce nom ne correspond à aucun objet !'
   info:
     help:
-      title: '&2*** &eJobs&2 ***'
+      title: '&2*** &eMétiers&2 ***'
       info: Montre combien est payé chaque métier et pour quelle action.
       penalty: '&eCe métier a &c[penalty]% &ede pénalité car trop de joueurs le pratiquent.'
       bonus: '&eCe métier a &2[bonus]% &ede bonus car peu de joueurs le pratiquent.'
       args: '[jobname] [action]'
-      actions: '&eLes actions possibles sont: &f%actions%'
-      max: ' - &eNiveau Max:&f '
-      newMax: ' &eNiveau maximum : &f[max]'
+      actions: '&eLes actions possibles sont : &f%actions%'
+      max: ' - &eNiveau maximal :&f '
+      newMax: ' &eNiveau maximal : &f[max]'
       material: '&7%material%'
       levelRange: ' &a(&e%levelFrom% &a- &e%levelUntil% &aniveaux)'
-      levelFrom: ' &a(à partir du &aniveau &e%levelFrom%)'
-      levelUntil: ' &a(jusqu''au &aniveau &e%levelUntil%)'
+      levelFrom: ' &a(à partir du niveau &e%levelFrom%&a)'
+      levelUntil: ' &a(jusqu''au niveau &e%levelUntil%&a)'
       money: ' &2%money% $'
       points: ' &6%points% Points'
       exp: ' &e%exp% XP'
     gui:
       pickjob: '&eChoisissez un métier !'
-      jobinfo: '&e[jobname] info!'
-      actions: '&eActions rémunérées:'
+      jobinfo: '&e[jobname] info !'
+      actions: '&eActions rémunérées :'
       leftClick: '&eClic gauche pour plus d''infos'
-      middleClick: '&eClique molette pour quitter ce métier'
+      middleClick: '&eClic molette pour quitter ce métier'
       rightClick: '&eClic droit pour rejoindre ce métier'
       leftSlots: '&ePlaces restantes :&f '
       working: '&2&nVous exercez déjà ce métier'
       cantJoin: '&cVous ne pouvez pas rejoindre le métier sélectionné.'
-      max: '&eNiveau maximum :&f '
+      max: '&eNiveau maximal :&f '
       back: '&e<<< Retour'
       next: '&eSuivant >>>'
     output:
@@ -330,8 +330,8 @@ command:
         info: '&eCasser'
         none: '%jobname% ne donne rien en cassant des blocs.'
       tntbreak:
-        info: '&eCasser du TNT'
-        none: '%jobname% ne donne rien en cassant des blocs avec de la TNT.'
+        info: '&eCasser avec du TNT'
+        none: '%jobname% ne donne rien en cassant des blocs avec du TNT.'
       place:
         info: '&ePlacer'
         none: '%jobname% ne donne rien en plaçant des blocs.'
@@ -342,19 +342,19 @@ command:
         info: '&eTuer'
         none: '%jobname% ne donne rien en tuant des monstres.'
       mmkill:
-        info: 'TuerMM'
+        info: '&eTuer des boss'
         none: '%jobname% ne donne rien en tuant des boss.'
       fish:
         info: '&ePêcher'
         none: '%jobname% ne donne rien en pêchant.'
       craft:
-        info: '&eFabriquer'
+        info: '&eCrafter'
         none: '%jobname% ne donne rien en craftant.'
       smelt:
         info: '&eCuire'
         none: '%jobname% ne donne rien en faisant cuire.'
       brew:
-        info: '&eBrasser'
+        info: '&eInfuser'
         none: '%jobname% ne donne rien en faisant infuser.'
       eat:
         info: '&eManger'
@@ -423,10 +423,10 @@ command:
     error:
       nojobs: Vous n'exercez aucun métier !
     success: Vous avez quitté tous vos métiers.
-    confirmationNeed: '&cEs-tu sûr que tu veux quitter tous tes métiers ? Tape la commande une seconde fois dans les [time] secondes qui suivent pour confirmer !'
+    confirmationNeed: '&cÊtes-vous sûr de vouloir quitter tous vos métiers ? Tapez la commande une seconde fois dans les&6 [time] secondes&c qui suivent pour confirmer !'
   explored:
     help:
-      info: Vérifie qui a visité ce tronçon
+      info: Vérifie qui a visité ce chunk
     error:
       noexplore: Personne n'a visité ce tronçon
     fullExplore: '&aCe chunk est complètement exploré'
