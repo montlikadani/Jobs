@@ -1,10 +1,10 @@
 ---
 economy:
   error:
-    nomoney: '&cIl n''y a plus d''argent dans les caisses du serveur!'
+    nomoney: '&cIl n''y a plus d''argent dans les caisses du serveur !'
 limitedItem:
   error:
-    levelup: '&cVous devez augmenter votre niveau dans le métier [jobname] pour utiliser cet objet!'
+    levelup: '&cVous devez augmenter votre niveau dans le métier [jobname] pour utiliser cet objet !'
 general:
   info:
     toplineseparator: '&7*********************** &6%playername% &7***********************'
@@ -460,7 +460,7 @@ command:
       chooseJobHover: '&7Cliquez ici pour travailler dans ce métier'
   clearownership:
     help:
-      info: Clear block ownership
+      info: Supprime la propriété du bloc
       args: '[playername]'
     output:
       cleared: '&7[furnaces] &2fours, &7[brewing] &2alambic, &7[smoker]&2 fumoirs et &7[blast]&2 haut fourneaux supprimés.'
@@ -485,7 +485,7 @@ command:
       completed: '&2      ! Terminé !&r      '
       questLine: '[progress] &7[questName] &f[done]&7/&8[required]'
       skip: '&7Cliquez pour passer cette quête'
-      skips: '&7Left skips: &f[skips]'
+      skips: '&7Passes restants : &f[skips]'
       hover: "&f[jobName] \n[desc] \n&7Nouvelle quête dans : [time]"
   fire:
     help:
