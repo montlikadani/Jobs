@@ -148,7 +148,7 @@ command:
       reachedmoneylimit3: '&eMoney earned is now reduced exponentially... But you still earn a little!'
       reachedexplimit: '&4EXP limitine ulaştın!'
       reachedexplimit2: '&elimitlere bakmak için &2/jobs limit &eyazabilirsin.'
-      reachedpointslimit: '&4Puan limitine ulaştın!'
+      reachedpointslimit: '&4You have reached points limit in given time!'
       reachedpointslimit2: '&elimitlere bakmak için &2/jobs limit &eyazabilirsin.'
       notenabled: '&ePara limiti şuan deaktif.'
   resetlimit:
