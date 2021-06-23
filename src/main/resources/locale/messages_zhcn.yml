@@ -148,7 +148,7 @@ command:
       reachedmoneylimit3: '&eMoney earned is now reduced exponentially... But you still earn a little!'
       reachedexplimit: '&4你达到了一段时间内的经验限制!'
       reachedexplimit2: '&e你可以通过 &2/jobs limit &e查看你的限制'
-      reachedpointslimit: '&4你达到了一段时间内的点数限制!'
+      reachedpointslimit: '&4You have reached points limit in given time!'
       reachedpointslimit2: '&e你可以通过 &2/jobs limit &e查看你的限制'
       notenabled: '&e未启用限制'
   resetlimit:
