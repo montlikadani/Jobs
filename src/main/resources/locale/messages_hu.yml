@@ -148,7 +148,7 @@ command:
       reachedmoneylimit3: '&eA szerzett pénz most már exponenciálisan csökkentve... De még mindig egy kicsit keres!'
       reachedexplimit: '&4Elérted a határidőt a meghatározott időben!'
       reachedexplimit2: '&eA korlátot ellenőrizheted a &2/jobs limit &eparanccsal.'
-      reachedpointslimit: '&4Elérted a határidőt a meghatározott időben!'
+      reachedpointslimit: '&4You have reached points limit in given time!'
       reachedpointslimit2: '&eA korlátot ellenőrizheted a &2/jobs limit &eparanccsal.'
       notenabled: '&cA pénzkorlát nem engedélyezett.'
   resetlimit:
