@@ -148,7 +148,7 @@ command:
       reachedmoneylimit3: '&eEl dinero ganado ahora se reduce exponencialmente... ¡Pero aún ganas un poco!'
       reachedexplimit: '&4Has alcanzado el límite de Experiencia obtenida por minuto!'
       reachedexplimit2: '&ePuedes comprobar el límite con el conjuro &2/jobs limit'
-      reachedpointslimit: '&4Haz alcanzado el límite de Puntos obtenidos por minuto!'
+      reachedpointslimit: '&4You have reached points limit in given time!'
       reachedpointslimit2: '&ePuedes comprobar el límite con el conjuro &2/jobs limit'
       notenabled: '&eLa función de limitación de pagos está desactivada.'
   resetlimit:
