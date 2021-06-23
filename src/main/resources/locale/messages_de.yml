@@ -148,7 +148,7 @@ command:
       reachedmoneylimit3: '&eDas verdiente Geld wird exponentiell reduziert... Aber du verdienst immer noch etwas!'
       reachedexplimit: '&4Du hast dein XP-Limit erreicht!'
       reachedexplimit2: '&eDu kannst dein XP-Limit mit &2/jobs limit &eabfragen'
-      reachedpointslimit: '&4Du hast dein Punktelimit erreicht!'
+      reachedpointslimit: '&4You have reached points limit in given time!'
       reachedpointslimit2: '&eDu kannst dein Punktelimit mit &2/jobs limit &eabfragen'
       notenabled: '&eEs ist keine Lohnbegrenzung aktiviert.'
   resetlimit:
