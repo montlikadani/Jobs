@@ -148,7 +148,7 @@ command:
       reachedmoneylimit3: '&eL''argent récolté est maintenant réduite exponentiellement... Mais vous en gagnerez toujours un peu !'
       reachedexplimit: '&4Vous avez atteint le maximum d’expérience gagné pendant le temps imparti !'
       reachedexplimit2: '&eVous pouvez vérifier la limite en faisant &2/jobs limit'
-      reachedpointslimit: '&4Vous avez atteint le maximum de points gagné pendant le temps imparti !'
+      reachedpointslimit: '&4You have reached points limit in given time!'
       reachedpointslimit2: '&eVous pouvez vérifier la limite en faisant &2/jobs limit'
       notenabled: '&eLa limite d''argent n''est pas activée'
   resetlimit:
