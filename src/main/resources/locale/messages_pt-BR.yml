@@ -148,7 +148,7 @@ command:
       reachedmoneylimit3: '&eO dinheiro ganho agora é reduzido exponencialmente... Mas você ainda ganha um pouco!'
       reachedexplimit: '&4Você atingiu o limite de exp em um determinado período!'
       reachedexplimit2: '&eVocê pode verificar seu limite com o comando &2/jobs limit'
-      reachedpointslimit: '&4Você atingiu o limite de exp em um determinado período!'
+      reachedpointslimit: '&4You have reached points limit in given time!'
       reachedpointslimit2: '&eVocê pode verificar seu limite com o comando &2/jobs limit'
       notenabled: 'O limite de dinheiro não está ativado'
   resetlimit:
