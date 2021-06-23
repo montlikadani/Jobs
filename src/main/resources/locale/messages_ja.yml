@@ -148,7 +148,7 @@ command:
       reachedmoneylimit3: '&eMoney earned is now reduced exponentially... But you still earn a little!'
       reachedexplimit: '&4経験値獲得上限に達しました'
       reachedexplimit2: '&2/jobs limit &eコマンドで上限を確認できます'
-      reachedpointslimit: '&4ポイント獲得上限に達しました'
+      reachedpointslimit: '&4You have reached points limit in given time!'
       reachedpointslimit2: '&2/jobs limit &eコマンドで上限を確認できます'
       notenabled: '&e上限は有効化されていません'
   resetlimit:
