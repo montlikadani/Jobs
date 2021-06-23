@@ -148,7 +148,7 @@ command:
       reachedmoneylimit3: '&ePenger opptjent er nå redusert eksponentielt... Men du tjener fortsatt litt!'
       reachedexplimit: '&4Du har nådd XP-grensen på gitt tid!'
       reachedexplimit2: '&eDu kan sjekke grensen din med kommandoen &2/jobs limit'
-      reachedpointslimit: '&4Du har nådd XP-grensen i gitt tid!'
+      reachedpointslimit: '&4You have reached points limit in given time!'
       reachedpointslimit2: '&eDu kan sjekke grensen din med kommandoen &2/jobs limit'
       notenabled: '&ePengegrense er deaktivert'
   resetlimit:
