@@ -148,7 +148,7 @@ command:
       reachedmoneylimit3: '&e獲得遊戲幣的數量已相應地減少... 但你仍然可以獲得一點點!'
       reachedexplimit: '&4你達到了一段時間内的經驗限制!'
       reachedexplimit2: '&e你可以通過 &2/jobs limit &e查看你的限制'
-      reachedpointslimit: '&4你達到了一段時間内的點數限制!'
+      reachedpointslimit: '&4You have reached points limit in given time!'
       reachedpointslimit2: '&e你可以通過 &2/jobs limit &e查看你的限制'
       notenabled: '&e未啟用限制'
   resetlimit:
