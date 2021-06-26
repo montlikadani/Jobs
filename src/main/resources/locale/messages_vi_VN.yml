@@ -1,33 +1,33 @@
 ---
 economy:
   error:
-    nomoney: '&cSorry, no money left in national bank!'
+    nomoney: '&cXin lỗi, không còn tiền trong ngân hàng quốc gia!'
 limitedItem:
   error:
-    levelup: '&cYou need to level up in [jobname] to use this item!'
+    levelup: '&cBạn cần lên cấp [jobname] để sử dụng vật phẩm này!'
 general:
   info:
     toplineseparator: '&7*********************** &6%playername% &7***********************'
     separator: '&7*******************************************************'
     time:
-      days: '&e%days% &6days '
-      hours: '&e%hours% &6hours '
-      mins: '&e%mins% &6min '
-      secs: '&e%secs% &6sec '
-    invalidPage: '&cInvalid page'
-    'true': '&2True'
-    'false': '&cFalse'
+      days: '&e%days% &6ngày '
+      hours: '&e%hours% &6giờ '
+      mins: '&e%mins% &6phút '
+      secs: '&e%secs% &6giây '
+    invalidPage: '&cKhông có trang này'
+    'true': '&2Đúng'
+    'false': '&cSai'
     blocks:
-      furnace: Furnace
-      smoker: Smoker
-      blastfurnace: Blast furnace
-      brewingstand: Brewing stand
+      furnace: Lò nung
+      smoker: Lò hun khói
+      blastfurnace: Lò luyện sắt
+      brewingstand: Giàn pha thuốc
   admin:
-    error: '&cThere was an error in the command.'
-    success: '&eYour command has been performed.'
+    error: '&cCó một lỗi trong lệnh.'
+    success: '&eĐã thực hiện lệnh.'
   error:
-    noHelpPage: '&cThere is no help page by this number!'
-    notNumber: '&ePlease use numbers!'
+    noHelpPage: '&cKhông có trang trợ giúp với số này!'
+    notNumber: '&eVui lòng sử dụng số!'
     job: '&cThe job you selected does not exist or you not joined to this'
     noCommand: '&cThere is no command by this name!'
     permission: '&cYou do not have permission to do that!'
