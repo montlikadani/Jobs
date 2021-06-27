@@ -381,14 +381,14 @@ command:
         info: '&eTraire'
         none: '%jobname% ne donne rien lors de la traite d''une vache.'
       shear:
-        info: '&eCisailler'
-        none: '%jobname% ne donne rien en taillant la laine d''un mouton.'
+        info: '&eTondre'
+        none: '%jobname% ne donne rien en tondant la laine d''un mouton.'
       explore:
         info: '&eExplorer'
         none: '%jobname% ne donne rien en explorant.'
       custom-kill:
-        info: 'TuerJoueur'
-        none: '%jobname% ne donne rien en tuant des joueurs particuliers.'
+        info: 'Tuer des joueurs'
+        none: '%jobname% ne donne rien en tuant des joueurs.'
       collect:
         info: '&eCollecter'
         none: '%jobname% ne gagne pas d''argent en collectant les blocs.'
@@ -410,13 +410,13 @@ command:
       rejoin: '&cVous ne pouvez pas retourner dans ce métier maintenant. Attendez [time]'
     rejoin: '&aCliquez pour rejoindre ce métier : '
     success: Vous exercez maintenant le métier de %jobname%.
-    confirm: '&2Cliquez pour confirmer l''action de rejoindre le &2métier &7[jobname].'
+    confirm: '&2Cliquez pour confirmer l''action de rejoindre le métier &7[jobname]&2.'
   leave:
     help:
       info: Quitter le métier sélectionné.
       args: '[oldplayerjob]'
     success: Vous n'exercez plus le métier de %jobname%.
-    confirmationNeed: '&cÊtes-vous sûr de vouloir quitter le métier [jobname]&c ? Tapez la commande une seconde fois dans les [time] secondes qui suivent pour confirmer !'
+    confirmationNeed: '&cÊtes-vous sûr de vouloir quitter le métier&e [jobname]&c ? Tapez la commande une seconde fois dans les &6[time] secondes &cqui suivent pour confirmer !'
   leaveall:
     help:
       info: Quitter tous vos métiers.
@@ -553,9 +553,9 @@ command:
       selected1: '&ePremier point sélectionné: &6%x%:%y%:%z%'
       selected2: '&eSecond point sélectionné: &6%x%:%y%:%z%'
       select: '&eSélectionnez deux points avec l''outil de sélection (%tool%)'
-      exist: '&eune zone restrictive portant ce nom existe déjà!'
-      dontExist: '&eLa zone restrictive de ce nom n''existe pas.'
-      wgDontExist: '&eLa zone WorldGuard de ce nom n''existe pas.'
+      exist: '&eUne zone restrictive portant ce nom existe déjà'
+      dontExist: '&eIl n''existe aucune zone restrictive portant ce nom'
+      wgDontExist: '&eIl n''existe aucune zone WorldGuard portant ce nom'
   log:
     help:
       info: Affiche les statistiques.
@@ -566,7 +566,7 @@ command:
       money: '&6argent : %amount% '
       exp: '&eXP : %amount% '
       points: '&6points : %amount%'
-      totalIncomes: '    &6Total gains:&2 %money%&6, Total exp:&2 %exp%&6, Total points:&2 %points%'
+      totalIncomes: '    &6Total gains :&2 %money%&6, Total XP :&2 %exp%&6, Total points :&2 %points%'
       bottomline: '&7***********************************************************'
       prev: '&e<<<<< Page précédente &2|'
       next: '&2|&e Page suivante >>>>'
@@ -611,7 +611,7 @@ command:
     error:
       nojob: '&cCe joueur doit d''abord choisir un métier.'
     output:
-      target: '&eVotre niveau a été changé pour %jobname%&e et maintenant vous êtes niveau &6%level%lvl &eet avec &6%exp% XP.'
+      target: '&eVotre niveau a été changé pour %jobname%&e et maintenant vous êtes niveau &6%level% &eavec &6%exp% XP.'
   demote:
     help:
       info: Rétrograde le joueur de X niveaux dans un métier.
@@ -655,8 +655,8 @@ command:
         money: '&e[amount] $'
         exp: '&7[exp] XP'
         points: '&6[points] points'
-      'on': '&aChangé : &aON'
-      'off': '&aChangé : &4OFF'
+      'on': '&aChangé : &aACTIVÉ'
+      'off': '&aChangé : &4DESACTIVÉ'
 message:
   skillup:
     broadcast: '%playername% a été promu %titlename% %jobname%.'
@@ -665,7 +665,7 @@ message:
     broadcast: '%playername% est maintenant %jobname% niveau %joblevel%.'
     nobroadcast: Vous êtes maintenant %jobname% niveau %joblevel%.
   leveldown:
-    message: '&cVous avez perdu &e%lostLevel%&c niveaux dans le métier de %jobname% ! &6Niveau : %joblevel%&c.'
+    message: '&cVous avez perdu &e%lostLevel%&c niveaux dans le métier de&e %jobname%&c ! Niveau :&6 %joblevel%&c.'
   cowtimer: '&eVous devez attendre &6%time% &esec avant d''être payé à nouveau pour ce métier.'
   blocktimer: '&eVous devez attendre &3[time] &esecondes avant d''être payé à nouveau !'
   taxes: '&3[amount] &ede taxes du serveur ont été transférées sur ce compte'
