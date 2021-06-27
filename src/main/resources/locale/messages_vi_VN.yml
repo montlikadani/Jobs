@@ -50,14 +50,14 @@ command:
       title: '&e-------&e ======= &6Jobs &e======= &e-------'
       page: '&e-----&e ====== Page &6[1] &eof &6[2] &e====== &e-----'
       fliperSimbols: '&e----------'
-      prevPage: '&2----<< &6Prev '
-      prevPageOff: '&7----<< Prev '
-      nextPage: '&6 Next &2>>----'
-      nextPageOff: '&7 Next >>----'
+      prevPage: '&2----<< &6Trước '
+      prevPageOff: '&7----<< Trước '
+      nextPage: '&6 Kế &2>>----'
+      nextPageOff: '&7 Kế >>----'
       pageCount: '&2[current]/[total]'
       pageCountHover: '&e[totalEntries] entries'
-      prevPageGui: '&6Previous page '
-      nextPageGui: '&6Next Page'
+      prevPageGui: '&6Trang trước '
+      nextPageGui: '&6Trang kế'
   moneyboost:
     help:
       info: Boosts money gain for all players
