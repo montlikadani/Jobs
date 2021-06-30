@@ -19,7 +19,7 @@ general:
     'false': '&cZakázáno'
     blocks:
       furnace: Pec
-      smoker: Smoker
+      smoker: Kouřím
       blastfurnace: Blast furnace
       brewingstand: Brewing stand
   admin:
