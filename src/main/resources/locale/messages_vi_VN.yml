@@ -36,26 +36,26 @@ general:
     ingame: '&cBạn chỉ có thể sử dụng lệnh này trong trò chơi!'
     fromconsole: '&cBạn chỉ có thể sử dụng lệnh này từ bảng điều khiển!'
     worldisdisabled: '&cBạn không thể sử dụng lệnh trong thế giới này!'
-    newRegistration: '&eRegistered new ownership for [block] &7[current]&e/&f[max]'
-    noRegistration: '&cYou''ve reached max [block] count!'
+    newRegistration: '&eĐã đăng ký chủ sở hữu mới cho [block] &7[current]&e/&f[max]'
+    noRegistration: '&cBạn đã đạt đến số lượng tối đa [block]!'
 command:
   help:
     output:
-      info: Type /jobs [cmd] ? for more information about a command.
-      cmdUsage: '&2Usage: &7[command]'
+      info: Nhập /jobs [cmd] ? để xem thông tin thêm về lệnh.
+      cmdUsage: '&2Sử dụng: &7[command]'
       label: Jobs
       cmdInfoFormat: '[command] &f- &2[description]'
       cmdFormat: '&7/[command] &f[arguments]'
       helpPageDescription: '&2* [description]'
-      title: '&e-------&e ======= &6Jobs &e======= &e-------'
-      page: '&e-----&e ====== Page &6[1] &eof &6[2] &e====== &e-----'
+      title: '&e-------&e ======= &6Công việc &e======= &e-------'
+      page: '&e-----&e ====== Trang &6[1] &ecủa &6[2] &e====== &e-----'
       fliperSimbols: '&e----------'
       prevPage: '&2----<< &6Trước '
       prevPageOff: '&7----<< Trước '
       nextPage: '&6 Kế &2>>----'
       nextPageOff: '&7 Kế >>----'
       pageCount: '&2[current]/[total]'
-      pageCountHover: '&e[totalEntries] entries'
+      pageCountHover: '&e[totalEntries] mục'
       prevPageGui: '&6Trang trước '
       nextPageGui: '&6Trang kế'
   moneyboost:
