@@ -93,7 +93,7 @@ command:
       infostats: '&c-----> &aImpulso de experiência de x%boost% ativado&c <-------'
   schedule:
     help:
-      info: Enables the given scheduler
+      info: Habilite o agendador concedido
       args: enable [scheduleName] [untilTime]
     output:
       noScheduleFound: '&cSchedule with this name not found.'
