@@ -219,65 +219,65 @@ command:
         handHover: '&6Premi per prendere informazioni dall''oggetto che hai in mano'
         or: '&eo '
         look: '&6GUARDANDO'
-        lookHover: '&6Press to grab info from block you are looking'
+        lookHover: '&6Premi per ottenere informazioni dal blocco che stai cercando'
   blockinfo:
     help:
-      info: Shows information for the block you are looking at.
+      info: Mostra le informazioni per il blocco che stai guardando.
       args: ''
     output:
-      name: ' &eBlock name: &6%blockname%'
-      id: ' &eBlock id: &6%blockid%'
-      data: ' &eBlock data: &6%blockdata%'
-      usage: ' &eUsage: &6%first% &eor &6%second%'
+      name: ' &eNome blocco: &6%blockname%'
+      id: ' &eID blocco: &6%blockid%'
+      data: ' &eData blocco: &6%blockdata%'
+      usage: ' &eUtilizzo: &6%first% &eo &6%second%'
   iteminfo:
     help:
-      info: Shows information for the item you are holding.
+      info: Mostra le informazioni per l'oggetto che stai tenendo.
       args: ''
     output:
-      name: ' &eItem name: &6%itemname%'
-      id: ' &eItem id: &6%itemid%'
-      data: ' &eItem data: &6%itemdata%'
-      usage: ' &eUsage: &6%first% &eor &6%second%'
+      name: ' &eNome oggetto: &6%itemname%'
+      id: ' &eID oggetto: &6%itemid%'
+      data: ' &eData oggetto: &6%itemdata%'
+      usage: ' &eUtilizzo: &6%first% &eor &6%second%'
   placeholders:
     help:
-      info: List out all placeholders
-      args: (parse) (placeholder)
+      info: Elenca tutti i placeholders
+      args: (analisi) (placeholder)
     output:
       list: '&e[place]. &7[placeholder]'
-      outputResult: ' &eresult: &7[result]'
-      parse: '&6[placeholder] &7by [source] &6result &8|&f[result]&8|'
+      outputResult: ' &erisultato: &7[result]'
+      parse: '&6[placeholder] &7da [source] &6risultato &8|&f[result]&8|'
   entitylist:
     help:
-      info: Shows all possible entities that can be used with the plugin.
+      info: Mostra tutte le possibili entità che possono essere utilizzate con il plugin.
       args: ''
   stats:
     help:
-      info: Show the level you are in each job you are part of.
+      info: Mostra il tuo livello in ogni lavoro di cui fai parte.
       args: '[playername]'
     error:
-      nojob: Please join a job first.
+      nojob: Per favore, unisciti prima a un lavoro.
     output:
-      message: 'Level %joblevel% for %jobname%: %jobxp%/%jobmaxxp% xp'
-      max-level: '     &cMax level   -   %jobname%'
-    bossBarOutput: 'Lvl %joblevel% %jobname%: %jobxp%/%jobmaxxp% xp%gain%'
+      message: 'Livello %joblevel% per %jobname%: %jobxp%/%jobmaxxp% xp'
+      max-level: '     &cLivello Max   -   %jobname%'
+    bossBarOutput: 'Livello %joblevel% %jobname%: %jobxp%/%jobmaxxp% xp%gain%'
     bossBarGain: ' &7(&f%gain%&7)'
   shop:
     help:
-      info: Opens special jobs shop.
+      info: Apre un negozio di lavori speciali.
       args: ''
     info:
-      title: '&e------- &8Jobs shop &e-------'
-      currentPoints: '&eYou have: &6%currentpoints%'
-      price: '&ePrice: &6%price%'
-      reqJobs: '&eRequired jobs:'
+      title: '&e------- &8Negozio di lavori &e-------'
+      currentPoints: '&eHai: &6%currentpoints%'
+      price: '&ePrezzo: &6%price%'
+      reqJobs: '&eRichiede lavori:'
       reqJobsList: '  &6%jobsname%&e: &e%level% lvl'
-      reqTotalLevel: '&6Required total level: &e%totalLevel%'
+      reqTotalLevel: '&6Richiede livello totale: &e%totalLevel%'
       reqJobsColor: '&c'
       reqJobsLevelColor: '&4'
       reqTotalLevelColor: '&4'
-      cantOpen: '&cCan''t open this page'
-      NoPermForItem: '&cYou don''t have required permissions for this item!'
-      NoPermToBuy: '&cNo permissions to buy this item'
+      cantOpen: '&cImpossibile aprire questa pagina'
+      NoPermForItem: '&cNon disponi delle autorizzazioni necessarie per questo elemento!'
+      NoPermToBuy: '&cNessuna autorizzazione per acquistare questo oggetto'
       NoJobReqForitem: '&cNon hai il lavoro richiesto (&6%jobname%&e) con il livello richiesto (&6%joblevel%&e) '
       NoPoints: '&cNon hai abbastanza punti '
       NoTotalLevel: '&cIl livello totale dei lavori è troppo basso (%totalLevel%) '
@@ -299,42 +299,42 @@ command:
     help:
       title: '&2*** &eLavori&2 ***'
       info: Mostra quanto viene pagato ogni lavoro e per cosa. 
-      penalty: '&eThis job has a penalty of &c[penalty]% &ebecause there are too many players working in it.'
-      bonus: '&eThis job has a bonus of &2[bonus]% &ebecause there are not enough players working in it.'
+      penalty: '&eQuesto lavoro ha una penalità del &c[penalty]% &eperché ci sono troppi giocatori che ci lavorano. '
+      bonus: '&eQuesto lavoro ha un bonus del &2[bonus]% &eperché non ci sono abbastanza giocatori che ci lavorano. '
       args: '[jobname] [action]'
-      actions: '&eValid actions are: &f%actions%'
-      max: ' - &emax level:&f '
-      newMax: ' &eMax level: &f[max]'
+      actions: '&eLe azioni valide sono: &f%actions%'
+      max: ' - &elivello massimo:&f '
+      newMax: '&eLivello massimo: &f[max]'
       material: '&7%material%'
-      levelRange: ' &a(&e%levelFrom% &a- &e%levelUntil% &alevels)'
-      levelFrom: ' &a(from &e%levelFrom% &alevel)'
-      levelUntil: ' &a(until &e%levelUntil% &alevel)'
+      levelRange: ' &a(&e%levelFrom% &a- &e%levelUntil% &alivelli)'
+      levelFrom: ' &a(da &e%levelFrom% &alivello)'
+      levelUntil: '&a(fino a &e%levelUntil% &alivello)'
       money: ' &2%money%$'
-      points: ' &6%points%pts'
+      points: ' &6%points%punti'
       exp: ' &e%exp%xp'
     gui:
-      pickjob: '&ePick your job!'
-      jobinfo: '&e[jobname] info!'
-      actions: '&eValid actions are:'
-      leftClick: '&eLeft Click for more info'
-      middleClick: '&eMiddle Click to leave this job'
-      rightClick: '&eRight click to join job'
-      leftSlots: '&eLeft slots:&f '
-      working: '&2&nAlready working'
-      cantJoin: '&cYou can''t join to the selected job.'
-      max: '&eMax level:&f '
-      back: '&e<<< Back'
-      next: '&eNext >>>'
+      pickjob: '&eScegli il tuo lavoro!'
+      jobinfo: '&e[jobname] informazioni!'
+      actions: '&eLe azioni valide sono:'
+      leftClick: '&eFare clic con il tasto sinistro per maggiori informazioni'
+      middleClick: '&eFare clic centrale per lasciare questo lavoro'
+      rightClick: '&eFare clic con il tasto destro per partecipare al lavoro'
+      leftSlots: '&eSlot a sinistra:&f '
+      working: '&2&nGià funzionante'
+      cantJoin: '&cNon puoi unirti al lavoro selezionato.'
+      max: '&eLivello Max:&f '
+      back: '&e<<< Indietro'
+      next: '&eAvanti >>>'
     output:
       break:
-        info: '&eBreak'
-        none: '%jobname% does not get money for breaking blocks.'
+        info: '&eRompi'
+        none: '%jobname% non ottiene soldi per rompere i blocchi.'
       tntbreak:
-        info: '&eTNTBreak'
-        none: '%jobname% does not get money for breaking blocks with TNT.'
+        info: '&eRottura con TNT'
+        none: '%jobname% non ottiene soldi per rompere i blocchi con TNT.'
       place:
-        info: '&ePlace'
-        none: '%jobname% does not get money for placing blocks.'
+        info: '&ePiazzare'
+        none: '%jobname% non ottiene denaro per piazzare blocchi.'
       striplogs:
         info: '&eStrip logs'
         none: '%jobname% does not get money for stripping logs.'
@@ -360,38 +360,38 @@ command:
         info: '&eEat'
         none: '%jobname% does not get money from eating food.'
       dye:
-        info: '&eDye'
-        none: '%jobname% does not get money from dyeing.'
+        info: '&eColore'
+        none: '%jobname% non ottiene denaro dalla tintura. '
       enchant:
-        info: '&eEnchant'
-        none: '%jobname% does not get money from enchanting.'
+        info: '&eIncantesimo'
+        none: '%jobname% non ottiene denaro dall''incantamento. '
       vtrade:
-        info: '&eVillager trade'
-        none: '%jobname% does not get money for trading a villager.'
+        info: '&eCommercio degli abitanti del villaggio '
+        none: '%jobname% non ottiene denaro per aver scambiato con un abitante del villaggio.'
       repair:
-        info: '&eRepair'
-        none: '%jobname% does not get money from repairing.'
+        info: '&eRiparazione '
+        none: '%jobname% non ottieni denaro dalla riparazione.'
       breed:
-        info: '&eBreed'
-        none: '%jobname% does not get money from breeding.'
+        info: '&eRiprodurre'
+        none: '%jobname% non ottiene denaro dalla riproduzione.'
       tame:
-        info: '&eTame'
-        none: '%jobname% does not get money from taming.'
+        info: '&eDomare'
+        none: '%jobname% non ottiene denaro dall''addomesticamento.'
       milk:
-        info: '&eMilk'
-        none: '%jobname% does not get money from milking cows.'
+        info: '&eLatte'
+        none: '%jobname% non ottiene denaro dalla mungitura delle mucche. '
       shear:
-        info: '&eShear'
-        none: '%jobname% does not get money from shearing sheep.'
+        info: '&eCesoia'
+        none: '%jobname% non ottiene denaro dalla tosatura delle pecore.'
       explore:
-        info: '&eExplore'
-        none: '%jobname% does not get money from exploring.'
+        info: '&eEsplora'
+        none: '%jobname% non ottiene denaro dall''esplorazione.'
       custom-kill:
-        info: '&eCustom kill'
-        none: '%jobname% does not get money from custom player kills.'
+        info: '&eUccisione personalizzata'
+        none: '%jobname% non ottiene denaro dalle uccisioni personalizzate dei giocatori.'
       collect:
-        info: '&eCollect'
-        none: '%jobname% does not get money for collecting blocks.'
+        info: '&eRaccogliere'
+        none: '%jobname% non ottiene denaro per la raccolta di blocchi. '
       bake:
         info: '&eBake'
         none: '%jobname% does not get money for cooking foods.'
@@ -547,9 +547,9 @@ command:
       removed: '&eRemoved the restricted area &6%name%'
       list: '&e%number%&a. &e%areaname% &e%worldname% (&a%x1%:%y1%:%z1%/&e%x2%:%y2%:%z2%) &6%bonus%'
       wgList: '&e%number%&a. WorldGuard: &e%areaname% &6%bonus%'
-      noAreas: '&eThere are no saved restricted areas'
-      noAreasByLoc: '&eThere are no restricted areas in this location'
-      areaList: '&eRestricted areas by your location: &6%list%'
+      noAreas: '&eNon ci sono aree riservate salvate'
+      noAreasByLoc: '&eNon ci sono aree riservate in questa località'
+      areaList: '&eAree riservate in base alla tua posizione: &6%list% '
       selected1: '&eSelected the first point: &6%x%:%y%:%z%'
       selected2: '&eSelected the second point: &6%x%:%y%:%z%'
       select: '&eSelect 2 points with the selection tool (%tool%)'
@@ -652,7 +652,7 @@ command:
       turnedoff: '&4This feature is turned off!'
       paid:
         main: '&aYou got:'
-        money: '&e[amount] money'
+        money: '&e[amount] soldi'
         exp: '&7[exp] exp'
         points: '&6[points] points'
       'on': '&aToggled: &aON'
@@ -706,5 +706,5 @@ signs:
     archive: '&0Archive'
 scoreboard:
   topline: '&2Top &e%jobname%'
-  gtopline: '&2Global top list'
+  gtopline: '&2Lista classifica globale'
   line: '&2%number%. &e%playername% (&6%level%&e)'
