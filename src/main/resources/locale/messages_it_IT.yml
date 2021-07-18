@@ -37,17 +37,17 @@ general:
     fromconsole: '&cPuoi usare questo comando solo da console!'
     worldisdisabled: '&cNon puoi usare il comando in questo mondo!'
     newRegistration: '&eNuova proprietà registrata per [block] &7[current]&e/&f[max]'
-    noRegistration: '&cHai raggiunto il numero massimo di [blocchi]!'
+    noRegistration: '&cHai raggiunto il numero massimo di [block]!'
 command:
   help:
     output:
-      info: Digitando /jobs [comando] ? per ulteriori informazioni su un comando.
-      cmdUsage: '&2Uso: &7[comando]'
+      info: Digitando /jobs [cmd] ? per ulteriori informazioni su un comando.
+      cmdUsage: '&2Uso: &7[command]'
       label: Jobs
       cmdInfoFormat: '[command] &f- &2[description]'
       cmdFormat: '&7/[command] &f[arguments]'
       helpPageDescription: '&2* [description]'
-      title: '&e-------&e ======= &6Jobs &e======= &e-------'
+      title: '&e-------&e ======= &6Lavori &e======= &e-------'
       page: '&e-----&e ====== Page &6[1] &eof &6[2] &e====== &e-----'
       fliperSimbols: '&e----------'
       prevPage: '&2----<< &6Prec'
@@ -118,94 +118,94 @@ command:
       args: '[jobname]'
     output:
       topline: '&7**************** &2[money] &6[points] &e[exp] &7****************'
-      permission: ' &eBonus permanente: &2%denaro% &6%punti% &e%exp%'
-      item: ' &eItem bonus: &2%money% &6%points% &e%exp%'
-      global: ' &eGlobal bonus: &2%money% &6%points% &e%exp%'
-      dynamic: ' &eDynamic bonus: &2%money% &6%points% &e%exp%'
-      nearspawner: ' &eSpawner bonus: &2%money% &6%points% &e%exp%'
+      permission: ' &eBonus permanente: &2%money% &6%points% &e%exp%'
+      item: ' &eBonus oggetto: &2%money% &6%points% &e%exp%'
+      global: ' &eBonus globale: &2%money% &6%points% &e%exp%'
+      dynamic: ' &eBonus dinamico: &2%money% &6%points% &e%exp%'
+      nearspawner: ' &eBonus generatore: &2%money% &6%points% &e%exp%'
       petpay: ' &ePetPay bonus: &2%money% &6%points% &e%exp%'
-      area: ' &eArea bonus: &2%money% &6%points% &e%exp%'
-      mcmmo: ' &eMcMMO bonus: &2%money% &6%points% &e%exp%'
-      final: ' &eFinal bonus: &2%money% &6%points% &e%exp%'
-      finalExplanation: ' &eDoes not include Petpay and Near spawner bonus/penalty'
+      area: ' &eBonus di area: &2%money% &6%points% &e%exp%'
+      mcmmo: ' &eBonus McMMO: &2%money% &6%points% &e%exp%'
+      final: ' &eBonus finale: &2%money% &6%points% &e%exp%'
+      finalExplanation: ' &eNon include bonus/penalità Petpay e Near spawner'
   convert:
     help:
-      info: Converts the database system from one system to another. If you are currently running SQLite, this will convert it to MySQL and vice versa.
+      info: Converte il sistema di database da un sistema all'altro. Se stai eseguendo SQLite, questo lo convertirà in MySQL e viceversa.
       args: ''
   limit:
     help:
-      info: Shows payment limits for jobs
+      info: Mostra i limiti di pagamento per i lavori
       args: '[playername]'
     output:
-      moneytime: '&eTime left until money limit resets: &2%time%'
-      moneyLimit: '&eMoney limit: &2%current%&e/&2%total%'
-      exptime: '&eTime left until Exp limit resets: &2%time%'
-      expLimit: '&eExp limit: &2%current%&e/&2%total%'
-      pointstime: '&eTime left until Point limit resets: &2%time%'
-      pointsLimit: '&ePoint limit: &2%current%&e/&2%total%'
-      reachedmoneylimit: '&4You have reached money limit in given time!'
-      reachedmoneylimit2: '&eYou can check your limit with &2/jobs limit &ecommand'
-      reachedmoneylimit3: '&eMoney earned is now reduced exponentially... But you still earn a little!'
-      reachedexplimit: '&4You have reached exp limit in given time!'
-      reachedexplimit2: '&eYou can check your limit with &2/jobs limit &ecommand'
-      reachedpointslimit: '&4You have reached points limit in given time!'
-      reachedpointslimit2: '&eYou can check your limit with &2/jobs limit &ecommand'
-      notenabled: '&eMoney limit is not enabled'
+      moneytime: '&eTempo rimasto fino al ripristino del limite di denaro: &2%time%'
+      moneyLimit: '&eLimite di denaro: &2%current%&e/&2%total%'
+      exptime: '&eTempo rimasto fino al ripristino del limite di Exp: &2%time%'
+      expLimit: '&eLimite Exp: &2%current%&e/&2%total%'
+      pointstime: '&eTempo rimanente fino al ripristino del limite di punti: &2%time%'
+      pointsLimit: '&eLimite punti: &2%current%&e/&2%total%'
+      reachedmoneylimit: '&4Hai raggiunto il limite di denaro in un dato momento!'
+      reachedmoneylimit2: '&ePuoi controllare il tuo limite con &2/jobs limite &ecomando'
+      reachedmoneylimit3: '&eIl denaro guadagnato è ora ridotto in modo esponenziale... Ma tu guadagni ancora un po''!'
+      reachedexplimit: '&4Hai raggiunto il limite di esperienza in un dato momento!'
+      reachedexplimit2: '&ePuoi controllare il tuo limite con &2/jobs limite &ecomando'
+      reachedpointslimit: '&4Hai raggiunto il limite di punti in un dato momento!'
+      reachedpointslimit2: '&ePuoi controllare il tuo limite con &2/jobs limite &ecomando'
+      notenabled: '&eIl limite di denaro non è abilitato'
   resetlimit:
     help:
-      info: Resets a player's payment limits
+      info: Reimposta i limiti di pagamento di un giocatore
       args: '[playername]'
     output:
-      reseted: '&ePayment limits have been reset for: &2%playername%'
+      reseted: '&eI limiti di pagamento sono stati reimpostati per: &2%playername%'
   resetquest:
     help:
-      info: Resets a player's quest
+      info: Reimposta la missione di un giocatore
       args: '[playername] [jobname]'
     output:
-      reseted: '&eQuest has been reset for: &2%playername%'
-      noQuests: '&eCan''t find any quests'
+      reseted: '&eMissioni resettate per: &2%playername%'
+      noQuests: '&eNon riesco a trovare nessuna missione'
   points:
     help:
-      info: Shows how much points does a player have.
+      info: Mostra quanti punti ha un giocatore.
       args: '[playername]'
-    currentpoints: ' &eCurrent point amount: &6%currentpoints%'
-    totalpoints: ' &eTotal amount of collected points until now: &6%totalpoints%'
+    currentpoints: ' &ePunti correnti: &6%currentpoints%'
+    totalpoints: ' &eQuantità totale di punti raccolti fino ad ora: &6%totalpoints%'
   editpoints:
     help:
-      info: Edit player's points.
+      info: Modifica i punti del giocatore.
       args: set/add/take [playername] [amount]
     output:
-      set: '&ePlayers (&6%playername%&e) points was set to &6%amount%'
-      add: '&ePlayer (&6%playername%&e) got additional &6%amount% &epoints. Now they have &6%total%'
-      take: '&ePlayer (&6%playername%&e) lost &6%amount% &epoints. Now they have &6%total%'
+      set: '&eI punti del giocatore (&6%playername%&e) sono stati impostati su &6%amount%'
+      add: '&eIl giocatore (&6%playername%&e) ha ottenuto ulteriori &6%amount% &epunti. Ora ha un totale di&6%total%'
+      take: '&eIl giocatore (&6%playername%&e) ha perso &6%amount% &epunti. Ora ha un totale di &6%total%'
   editjobs:
     help:
-      info: Edit current jobs.
+      info: Modifica i lavori correnti.
       args: ''
       list:
-        job: '&eJobs:'
+        job: '&eLavori:'
         jobs: '  -> [&e%jobname%&r]'
         actions: '    -> [&e%actionname%&r]'
         material: '      -> [&e%materialname%&r]      '
         materialRemove: '&c[X]'
         materialAdd: '      -> &e[&2+&e]'
-        money: '        -> &eMoney: &6%amount%'
+        money: '        -> &eSoldi: &6%amount%'
         exp: '        -> &eExp: &6%amount%'
-        points: '        -> &ePoints: &6%amount%'
+        points: '        -> &ePunti: &6%amount%'
       modify:
-        newValue: '&eEnter new value'
-        enter: '&eEnter new name or press '
-        hand: '&6HAND '
-        handHover: '&6Press to grab info from item in your hand'
-        or: '&eor '
-        look: '&6LOOKING AT'
-        lookHover: '&6Press to grab info from block you are looking'
+        newValue: '&eInserisci il nuovo valore'
+        enter: '&eInserire un nuovo nome o premere '
+        hand: '&6MANO '
+        handHover: '&6Premi per prendere informazioni dall''oggetto che hai in mano'
+        or: '&eo '
+        look: '&6GUARDANDO'
+        lookHover: '&6Premi per ottenere informazioni dal blocco che stai cercando'
   editquests:
     help:
-      info: Edit current quests.
+      info: Modifica le missioni correnti.
       args: ''
       list:
-        quest: '&eQuests:'
+        quest: '&eMissioni:'
         jobs: '  -> [&e%jobname%&r]'
         quests: '  -> [&e%questname%&r]'
         actions: '    -> [&e%actionname%&r]'
@@ -213,12 +213,12 @@ command:
         objectiveRemove: '&c[X]'
         objectiveAdd: '      -> &e[&2+&e]'
       modify:
-        newValue: '&eEnter new value'
-        enter: '&eEnter new name or press '
-        hand: '&6HAND '
-        handHover: '&6Press to grab info from item in your hand'
-        or: '&eor '
-        look: '&6LOOKING AT'
+        newValue: '&eInserisci il nuovo valore'
+        enter: '&eInserire un nuovo nome o premere '
+        hand: '&6MANO '
+        handHover: '&6Premi per prendere informazioni dall''oggetto che hai in mano'
+        or: '&eo '
+        look: '&6GUARDANDO'
         lookHover: '&6Press to grab info from block you are looking'
   blockinfo:
     help:
@@ -278,27 +278,27 @@ command:
       cantOpen: '&cCan''t open this page'
       NoPermForItem: '&cYou don''t have required permissions for this item!'
       NoPermToBuy: '&cNo permissions to buy this item'
-      NoJobReqForitem: '&cYou don''t have the required job (&6%jobname%&e) with required (&6%joblevel%&e) level'
-      NoPoints: '&cYou don''t have enough points'
-      NoTotalLevel: '&cTotal jobs level is too low (%totalLevel%)'
-      Paid: '&eYou have paid &6%amount% &efor this item'
+      NoJobReqForitem: '&cNon hai il lavoro richiesto (&6%jobname%&e) con il livello richiesto (&6%joblevel%&e) '
+      NoPoints: '&cNon hai abbastanza punti '
+      NoTotalLevel: '&cIl livello totale dei lavori è troppo basso (%totalLevel%) '
+      Paid: '&eHai pagato &6%amount% &eper questo articolo '
   archive:
     help:
-      info: Shows all jobs saved in archive by user.
+      info: Mostra tutti i lavori salvati nell'archivio dall'utente. 
       args: '[playername]'
     error:
-      nojob: There is no jobs saved.
+      nojob: Non ci sono lavori salvati.
   give:
     help:
-      info: Gives item by jobs name and item category name. Player name is optional
+      info: Fornisce l'elemento in base al nome del lavoro e al nome della categoria dell'elemento. Il nome del giocatore è facoltativo 
       args: '[playername] [jobname] [items/limiteditems] [jobitemname]'
     output:
-      notonline: '&4Player with that name is not online!'
-      noitem: '&4Can''t find any item by given name!'
+      notonline: '&4Il giocatore con quel nome non è online! '
+      noitem: '&4Impossibile trovare alcun elemento con il nome specificato! '
   info:
     help:
-      title: '&2*** &eJobs&2 ***'
-      info: Show how much each job is getting paid and for what.
+      title: '&2*** &eLavori&2 ***'
+      info: Mostra quanto viene pagato ogni lavoro e per cosa. 
       penalty: '&eThis job has a penalty of &c[penalty]% &ebecause there are too many players working in it.'
       bonus: '&eThis job has a bonus of &2[bonus]% &ebecause there are not enough players working in it.'
       args: '[jobname] [action]'
