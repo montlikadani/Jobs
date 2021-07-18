@@ -1,27 +1,27 @@
 ---
 economy:
   error:
-    nomoney: '&cSorry, no money left in national bank!'
+    nomoney: '&cSpiacente, non sono rimasti soldi nella banca nazionale!'
 limitedItem:
   error:
-    levelup: '&cYou need to level up in [jobname] to use this item!'
+    levelup: 'Devi salire di livello in [jobname] per usare questo oggetto!'
 general:
   info:
     toplineseparator: '&7*********************** &6%playername% &7***********************'
     separator: '&7*******************************************************'
     time:
-      days: '&e%days% &6days '
-      hours: '&e%hours% &6hours '
+      days: '&e%days% &6giorni '
+      hours: '&e%hours% &6ore '
       mins: '&e%mins% &6min '
       secs: '&e%secs% &6sec '
-    invalidPage: '&cInvalid page'
-    'true': '&2True'
-    'false': '&cFalse'
+    invalidPage: '&cPagina non valida'
+    'true': '&2Vero'
+    'false': '&cFalso'
     blocks:
-      furnace: Furnace
-      smoker: Smoker
-      blastfurnace: Blast furnace
-      brewingstand: Brewing stand
+      furnace: Fornace
+      smoker: Fumatore
+      blastfurnace: Forno fusorio
+      brewingstand: Alambicco
   admin:
     error: '&cThere was an error in the command.'
     success: '&eYour command has been performed.'
