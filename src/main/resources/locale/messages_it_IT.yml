@@ -23,26 +23,26 @@ general:
       blastfurnace: Forno fusorio
       brewingstand: Alambicco
   admin:
-    error: '&cThere was an error in the command.'
-    success: '&eYour command has been performed.'
+    error: '&cSi è verificato un errore nel comando.'
+    success: '&eIl tuo comando è stato eseguito.'
   error:
-    noHelpPage: '&cThere is no help page by this number!'
-    notNumber: '&ePlease use numbers!'
-    job: '&cThe job you selected does not exist or you not joined to this'
-    noCommand: '&cThere is no command by this name!'
-    permission: '&cYou do not have permission to do that!'
-    noinfo: '&cNo information found!'
-    noinfoByPlayer: '&cNo information found by [%playername%] player name!'
-    ingame: '&cYou can use this command only in game!'
-    fromconsole: '&cYou can use this command only from console!'
-    worldisdisabled: '&cYou can''t use command in this world!'
-    newRegistration: '&eRegistered new ownership for [block] &7[current]&e/&f[max]'
-    noRegistration: '&cYou''ve reached max [block] count!'
+    noHelpPage: '&cNon c''è nessuna pagina di aiuto con questo numero!'
+    notNumber: '&ePer favore usa numeri!'
+    job: '&cIl lavoro che hai selezionato non esiste o non hai aderito a questo'
+    noCommand: '&cNon c''è nessun comando con questo nome!'
+    permission: '&cNon hai il permesso per farlo!'
+    noinfo: '&cNessuna informazione trovata!'
+    noinfoByPlayer: '&cNessuna informazione trovata dal giocatore [%playername%] !'
+    ingame: 'Puoi usare questo comando solo nel gioco!'
+    fromconsole: '&cPuoi usare questo comando solo da console!'
+    worldisdisabled: '&cNon puoi usare il comando in questo mondo!'
+    newRegistration: '&eNuova proprietà registrata per [block] &7[current]&e/&f[max]'
+    noRegistration: '&cHai raggiunto il numero massimo di [blocchi]!'
 command:
   help:
     output:
-      info: Type /jobs [cmd] ? for more information about a command.
-      cmdUsage: '&2Usage: &7[command]'
+      info: Digitando /jobs [comando] ? per ulteriori informazioni su un comando.
+      cmdUsage: '&2Uso: &7[comando]'
       label: Jobs
       cmdInfoFormat: '[command] &f- &2[description]'
       cmdFormat: '&7/[command] &f[arguments]'
@@ -50,75 +50,75 @@ command:
       title: '&e-------&e ======= &6Jobs &e======= &e-------'
       page: '&e-----&e ====== Page &6[1] &eof &6[2] &e====== &e-----'
       fliperSimbols: '&e----------'
-      prevPage: '&2----<< &6Prev '
-      prevPageOff: '&7----<< Prev '
-      nextPage: '&6 Next &2>>----'
-      nextPageOff: '&7 Next >>----'
+      prevPage: '&2----<< &6Prec'
+      prevPageOff: '&7----<< Prec '
+      nextPage: '&6 Avanti &2>>----'
+      nextPageOff: '&7 Avanti >>----'
       pageCount: '&2[current]/[total]'
-      pageCountHover: '&e[totalEntries] entries'
-      prevPageGui: '&6Previous page '
-      nextPageGui: '&6Next Page'
+      pageCountHover: '&e[totalEntries] voci'
+      prevPageGui: '&6pagina precedente'
+      nextPageGui: '&6Pagina successiva'
   moneyboost:
     help:
-      info: Boosts money gain for all players
+      info: Aumenta il guadagno di denaro per tutti i giocatori
       args: '[jobname]/all/reset [time]/[rate]'
     output:
-      allreset: All money boosts turned off
-      jobsboostreset: Money boost has been turned off for %jobname%
-      nothingtoreset: Nothing to reset
-      boostalladded: Money boost of %boost% added for all jobs!
-      boostadded: Money boost of &e%boost% &aadded for &e%jobname%!
-      infostats: '&c-----> &aMoney rate x%boost% enabled&c <-------'
+      allreset: Tutti gli aumenti di denaro disattivati
+      jobsboostreset: L'aumento di denaro è stato disattivato per %jobname%
+      nothingtoreset: Niente da ripristinare
+      boostalladded: Aumento di denaro di %boost% aggiunto per tutti i lavori!
+      boostadded: Aumento di denaro di &e%boost% &aggiunto per &e%jobname%!
+      infostats: '&c-----> &aRitmo soldi x%boost% abilitato&c <-------'
   pointboost:
     help:
-      info: Boosts point gain for all players
+      info: Aumenta il guadagno di punti per tutti i giocatori
       args: '[jobname]/all/reset [time]/[rate]'
     output:
-      allreset: All point boosts turned off
-      jobsboostreset: Point boost has been turned off for %jobname%
-      nothingtoreset: Nothing to reset
-      boostalladded: Points boost of %boost% added for all jobs!
-      boostadded: Points boost of &e%boost% &aadded for &e%jobname%!
-      infostats: '&c-----> &aPoints rate x%boost% enabled&c <-------'
+      allreset: Tutti i potenziamenti dei punti disattivati
+      jobsboostreset: L'aumento dei punti è stato disattivato per %jobname%
+      nothingtoreset: Niente da ripristinare
+      boostalladded: Aumento di punti di %boost% aggiunto per tutti i lavori!
+      boostadded: Boost di punti di &e%boost% &aggiunto per &e%jobname%!
+      infostats: '&c-----> &aTasso punti x%boost% abilitato&c <-------'
   expboost:
     help:
-      info: Boosts exp gain for all players
+      info: Aumenta il guadagno di esperienza per tutti i giocatori
       args: '[jobname]/all/reset [time]/[rate]'
     output:
-      allreset: All exp boosts turned off
-      jobsboostreset: Exp boost has been turned off for %jobname%
-      nothingtoreset: Nothing to reset
-      boostalladded: Exp boost of %boost% added for all jobs!
-      boostadded: Exp boost of &e%boost% &aadded for &e%jobname%!
-      infostats: '&c-----> &aExp rate x%boost% enabled&c <-------'
+      allreset: Tutti i potenziamenti exp disattivati
+      jobsboostreset: L'aumento dell'esperienza è stato disattivato per %jobname%
+      nothingtoreset: Niente da resettare
+      boostalladded: Aumento Exp di %boost% aggiunto per tutti i lavori!
+      boostadded: Potenziamento Exp di &e%boost% &aaggiunto per &e%jobname%!
+      infostats: '&c-----> &aExp rate x%boost% abilitato&c <-------'
   schedule:
     help:
-      info: Enables the given scheduler
+      info: Abilita lo scheduler indicato
       args: enable [scheduleName] [untilTime]
     output:
-      noScheduleFound: '&cSchedule with this name not found.'
-      alreadyEnabled: '&cThis schedule already enabled.'
-      enabled: '&eSchedule have been enabled from&a %from%&e until&a %until%'
+      noScheduleFound: '&cPianificazione con questo nome non trovata.'
+      alreadyEnabled: '&cQuesta pianificazione è già abilitata.'
+      enabled: '&eLa pianificazione è stata abilitata dal& %from%&e fino al&%until%'
   itembonus:
     help:
-      info: Check item bonus
+      info: Controlla il bonus dell'oggetto
       args: ''
     output:
       list: '&e[jobname]: %money% %points% %exp%'
       notAplyingList: '&7[jobname]: %money% %points% %exp%'
       hover: '&7%itemtype%'
-      hoverLevelLimits: "&7From level: %from% \n&7Until level: %until%"
+      hoverLevelLimits: "&7Da livello: %from%\n&7Fino al livello: %until%"
   edititembonus:
     help:
-      info: Edit item boost bonus
+      info: Modifica bonus potenziamento oggetto
       args: list/add/remove [jobname] [itemBoostName]
   bonus:
     help:
-      info: Show job bonuses
+      info: Mostra bonus lavoro
       args: '[jobname]'
     output:
       topline: '&7**************** &2[money] &6[points] &e[exp] &7****************'
-      permission: ' &ePerm bonus: &2%money% &6%points% &e%exp%'
+      permission: ' &eBonus permanente: &2%denaro% &6%punti% &e%exp%'
       item: ' &eItem bonus: &2%money% &6%points% &e%exp%'
       global: ' &eGlobal bonus: &2%money% &6%points% &e%exp%'
       dynamic: ' &eDynamic bonus: &2%money% &6%points% &e%exp%'
