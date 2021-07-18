@@ -19,7 +19,7 @@ general:
     'false': '&cFalso'
     blocks:
       furnace: Fornace
-      smoker: Fumatore
+      smoker: Affumicatore
       blastfurnace: Forno fusorio
       brewingstand: Alambicco
   admin:
@@ -413,83 +413,83 @@ command:
     confirm: '&2Fare clic per confermare l''azione di partecipazione per &7[jobname] &2lavoro.'
   leave:
     help:
-      info: Leave the selected job.
+      info: Lascia il lavoro selezionato.
       args: '[oldplayerjob]'
-    success: You have left the job %jobname%.
-    confirmationNeed: '&cAre you sure you want to leave from&e [jobname]&c job? Type the command again within&6 [time] seconds &cto confirm!'
+    success: Hai lasciato il lavoro %jobname%.
+    confirmationNeed: '&cSei sicuro di voler partire da&e [jobname]&c lavoro? Digita nuovamente il comando entro&6 [time] secondi &cper confermare!'
   leaveall:
     help:
-      info: Leave all your jobs.
+      info: Lascia tutti i tuoi lavori.
     error:
-      nojobs: You do not have any jobs to leave!
-    success: You have left all your jobs.
-    confirmationNeed: '&cAre you sure you want to leave from all jobs? Type the command again within&6 [time] seconds &cto confirm!'
+      nojobs: Non hai nessun lavoro da lasciare!
+    success: Hai lasciato tutti i tuoi lavori.
+    confirmationNeed: '&cSei sicuro di voler lasciare tutti i lavori? Digita nuovamente il comando entro&6 [time] secondi &cper confermare!'
   explored:
     help:
-      info: Check who visited this chunk
+      info: Controlla chi ha visitato questo chunk
     error:
-      noexplore: No one visited this chunk
-    fullExplore: '&aThis chunk is fully explored'
+      noexplore: Nessuno ha visitato questo chunk
+    fullExplore: '&aQuesto pezzo è stato completamente esplorato'
     list: '&e%place%. %playername%'
   browse:
     help:
-      info: List the jobs available to you.
+      info: Elenca i lavori a tua disposizione.
     error:
-      nojobs: There are no jobs you can join.
+      nojobs: Non ci sono lavori a cui puoi unirti.
     output:
-      header: 'You are allowed to join the following jobs:'
-      footer: For more information type in /jobs info [JobName]
-      totalWorkers: ' &7Workers: &e[amount]'
-      penalty: ' &4Penalty: &c[amount]%'
+      header: 'Puoi partecipare ai seguenti lavori:'
+      footer: Per maggiori informazioni digita /jobs info [JobName]
+      totalWorkers: ' &7Lavoratori: &e[amount]'
+      penalty: ' &4Penalità: &c[amount]%'
       bonus: ' &2Bonus: &a[amount]%'
-      newHeader: '&2========== [amount] Available Jobs ========='
+      newHeader: '&2========== [amount] Lavori disponibili ========='
       description: '[description]'
       list: '    &8[place]. &7[jobname]'
       console:
-        newHeader: '&2========== [amount] Available Jobs ========='
+        newHeader: '&2========== [amount] Lavori disponibili ========='
         description: '[description]'
-        totalWorkers: ' &7Workers: &e[amount]'
-        penalty: ' &4Penalty: &c[amount]%'
+        totalWorkers: ' &7Lavoratori: &e[amount]'
+        penalty: ' &4Penalità: &c[amount]%'
         bonus: ' &2Bonus: &a[amount]%'
         list: ' &6[jobname]'
-        newMax: ' &eMax level: &f[max]'
-      click: '&bClick on the job to see more info about it!'
-      detailed: '&bClick to see more detailed list on job actions'
+        newMax: ' &eLivello massimo: &f[max]'
+      click: '&bFai clic sul lavoro per vedere maggiori informazioni a riguardo!'
+      detailed: '&bFare clic per visualizzare un elenco più dettagliato sulle azioni lavorative'
       jobHeader: '&2========== [jobname] ========='
-      chooseJob: '&7&n&oChoose this job'
-      chooseJobHover: '&7Click here to get this job'
+      chooseJob: '&7&n&oScegli questo lavoro'
+      chooseJobHover: '&7Clicca qui per ottenere questo lavoro'
   clearownership:
     help:
-      info: Clear block ownership
+      info: Cancella la proprietà del blocco
       args: '[playername]'
     output:
-      cleared: '&2Removed &7[furnaces] &2furnaces, &7[brewing] &2brewing stands, &7[smoker]&2 smokers and &7[blast]&2 blast furnaces.'
+      cleared: '&2Rimuovi &7[furnaces] &2forni, &7[brewing] &2alambicchi, &7[smoker]&2 affumicatori e &7[blast]&2 forni fusori.'
   skipquest:
     help:
-      info: Skip defined quest and get new one
-      args: '[jobname] [questname] (playerName)'
+      info: Salta la missione definita e prendine una nuova
+      args: '[jobname] [questname] (nome del giocatore)'
     output:
-      questSkipForCost: '&2You skipped the quest and paid:&e %amount%$'
+      questSkipForCost: '&2Hai saltato la missione e hai pagato:&e %amount%$'
   quests:
     help:
-      info: List available quests
+      info: Elenca le missioni disponibili
       args: '[playername]'
     error:
-      noquests: '&cThere are no quests'
+      noquests: '&cNon ci sono missioni'
     toplineseparator: '&7*********************** &6[playerName] &2(&f[questsDone]&2) &7***********************'
     status:
-      changed: '&2The quests status has been changed to&r %status%'
-      started: '&aStarted'
-      stopped: '&cStopped'
+      changed: '&2Lo stato delle missioni è stato cambiato in&%status%'
+      started: '&ainiziato'
+      stopped: '&cInterrotto'
     output:
-      completed: '&2      !Completed!&r      '
+      completed: '&2      !Completato!&r      '
       questLine: '[progress] &7[questName] &f[done]&7/&8[required]'
-      skip: '&7Click to skip this quest'
-      skips: '&7Left skips: &f[skips]'
-      hover: "&f[jobName] \n[desc] \n&7New quest in: [time]"
+      skip: '&7Fai clic per saltare questa missione'
+      skips: '&7Salta sinistra: &f[skips]'
+      hover: "&f[jobName] \n[desc] \n&7Nuova missione in: [time]"
   fire:
     help:
-      info: Fire the player from the job.
+      info: Licenzia il giocatore dal lavoro.
       args: '[playername] [jobname]'
     error:
       nojob: Il giocatore non ha il lavoro %jobname%.
@@ -514,37 +514,37 @@ command:
       target: Sei stato assunto come %jobname%.
   top:
     help:
-      info: Shows top players by jobs name.
-      args: '[jobname]/clear pageNumber'
+      info: Mostra i migliori giocatori in base al nome del lavoro.
+      args: '[jobname]/cancella numero di pagine'
     error:
-      nojob: Can't find any job with this name.
+      nojob: Non riesco a trovare nessun lavoro con questo nome.
     output:
-      topline: '&aTop&e %amount% &aplayers by &e%jobname% &ajob'
+      topline: '&aClassifica&e %amount% &agiocatori del lavoro &e%jobname%'
       list: '&e%number%&a. &e%playername% &alvl &e%level% &awith&e %exp% &aexp'
-      prev: '&e<<<<< Prev page &2|'
-      next: '&2|&e Next Page >>>>'
-      show: '&2Show from &e[from] &2until &e[until] &2top list'
+      prev: '&e<<<<< pagina prec &2|'
+      next: '&2|&e Pagina suc >>>>'
+      show: '&2Mostra da &e[from] &2fino a &e[until] &2in cima alla lista'
   gtop:
     help:
-      info: Shows top players by global jobs level.
-      args: clear/pageNumber
+      info: Mostra i migliori giocatori per livello di lavoro globale.
+      args: cancella/numero pagine
     error:
-      nojob: Can't find any information.
+      nojob: Non riesco a trovare alcuna informazione.
     output:
-      topline: '&aTop&e %amount% &aplayers by global job level'
+      topline: '&aClassifica&e %amount% &agiocatori per livello di lavoro globale'
       list: '&e%number%&a. &e%playername% &alvl &e%level% &awith&e %exp% &aexp'
-      prev: '&e<<<<< Prev page &2|'
-      next: '&2|&e Next Page >>>>'
-      show: '&2Show from &e[from] &2until &e[until] &2global top list'
+      prev: '&e<<<<< Pagina prec &2|'
+      next: '&2|&e Pagina suc >>>>'
+      show: '&2Mostra da &e[from] &2fino a &e[until] &2la classifica globale'
   area:
     help:
-      info: Modify restricted areas.
+      info: Modifica aree riservate.
       args: add/remove/info/list
-      addUsage: '&eUsage: &6/Jobs area add [areaName/wg:worldGuardAreaName] [bonus]'
-      removeUsage: '&eUsage: &6/Jobs area remove [areaName]'
+      addUsage: '&eUs: &6/Jobs area add [areaName/wg:worldGuardAreaName] [bonus]'
+      removeUsage: '&eUsa: &6/Jobs area remove [areaName]'
     output:
-      addedNew: '&eAdded a new restricted area with &6%bonus% &ebonus'
-      removed: '&eRemoved the restricted area &6%name%'
+      addedNew: '&eAggiunta una nuova area riservata con &6%bonus% &ebonus'
+      removed: '&eRimossa l''area riservata &6%name%'
       list: '&e%number%&a. &e%areaname% &e%worldname% (&a%x1%:%y1%:%z1%/&e%x2%:%y2%:%z2%) &6%bonus%'
       wgList: '&e%number%&a. WorldGuard: &e%areaname% &6%bonus%'
       noAreas: '&eNon ci sono aree riservate salvate'
