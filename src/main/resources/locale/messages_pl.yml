@@ -148,7 +148,7 @@ command:
       reachedmoneylimit3: '&eZarobione pieniądze są teraz stopniowo zmniejszane... Ale nadal możesz trochę zarobić!'
       reachedexplimit: '&4Osiągnąłeś limit Exp''a w określonym czasie!'
       reachedexplimit2: '&eMożesz sprawdzić swój limit używając komendy &2/jobs limit'
-      reachedpointslimit: '&4Osiągnąłeś limit Exp''a w określonym czasie!'
+      reachedpointslimit: '&4Uzyskałeś/aś limit pienieżny w danym czasie!'
       reachedpointslimit2: '&eMożesz sprawdzić swój limit używając komendy &2/jobs limit'
       notenabled: '&eLimit pieniędzy nie jest włączony'
   resetlimit:
@@ -402,7 +402,7 @@ command:
   join:
     help:
       info: Dołącza do wybranej pracy.
-      args: '[jobname]'
+      args: '[jobfullname]'
     error:
       alreadyin: Jesteś już w pracy %jobname%.
       fullslots: Nie możesz dołączyć do pracy %jobname%, nie ma żadnych dostępnych miejsc.

@@ -19,7 +19,7 @@ general:
     'false': '&cZakázáno'
     blocks:
       furnace: Pec
-      smoker: Smoker
+      smoker: Kouřím
       blastfurnace: Blast furnace
       brewingstand: Brewing stand
   admin:
@@ -148,7 +148,7 @@ command:
       reachedmoneylimit3: '&eVydelane penize jsou nyni redukovany exponencialne... Ale furt ziskavas trochu!'
       reachedexplimit: '&4dosahl jsi limitu expu v danem case!'
       reachedexplimit2: '&eMuzes zkontrolovat tvuj limit s &2/jobs limit &ecommand'
-      reachedpointslimit: '&4Dosahl jsi limitu expu v danem case!'
+      reachedpointslimit: '&4You have reached points limit in given time!'
       reachedpointslimit2: '&eMuzes zkontrolovat tvuj limit s &2/jobs limit &ecommand'
       notenabled: '&eLimit penez neni zapnuty'
   resetlimit:
@@ -402,7 +402,7 @@ command:
   join:
     help:
       info: Připojit se k vybrané práci.
-      args: '[jobname]'
+      args: '[jobfullname]'
     error:
       alreadyin: Už jsi zaměstnaný jako %jobname%.
       fullslots: Nemuzes se pripojit do prace %jobname%, nejsou volna mista.

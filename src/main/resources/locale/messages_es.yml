@@ -148,7 +148,7 @@ command:
       reachedmoneylimit3: '&eEl dinero ganado ahora se reduce exponencialmente... ¡Pero aún ganas un poco!'
       reachedexplimit: '&4Has alcanzado el límite de Experiencia obtenida por minuto!'
       reachedexplimit2: '&ePuedes comprobar el límite con el conjuro &2/jobs limit'
-      reachedpointslimit: '&4Haz alcanzado el límite de Puntos obtenidos por minuto!'
+      reachedpointslimit: '&4You have reached points limit in given time!'
       reachedpointslimit2: '&ePuedes comprobar el límite con el conjuro &2/jobs limit'
       notenabled: '&eLa función de limitación de pagos está desactivada.'
   resetlimit:
@@ -402,7 +402,7 @@ command:
   join:
     help:
       info: Trabajar en la profesión.
-      args: '[jobname]'
+      args: '[jobfullname]'
     error:
       alreadyin: Ya estás trabajando de %jobname%.
       fullslots: No puedes trabajar en la profesión de %jobname%, ya que no hay puestos libres.
@@ -609,9 +609,9 @@ command:
       info: Change the player's level in a job.
       args: '[playername] [jobname] set/add/take [amount]'
     error:
-      nojob: '&cThis player must first join a job.'
+      nojob: '&cEste jugador debe primero entrar en un trabajo.'
     output:
-      target: '&eYour level was changed for %jobname% &eand now you at &6%level%lvl &eand with &6%exp%exp.'
+      target: '&eTu nivel ha sido cambiado por el trabajo %jobname% &ey ahora tienes el nivel &6%level%lvl &ey tienes &6%exp% de experiencia.'
   demote:
     help:
       info: Desciende a un jugador X niveles en un trabajo.

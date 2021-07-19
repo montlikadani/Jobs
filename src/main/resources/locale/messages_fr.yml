@@ -1,10 +1,10 @@
 ---
 economy:
   error:
-    nomoney: '&cIl n''y a plus d''argent dans les caisses du serveur!'
+    nomoney: '&cIl n''y a plus d''argent dans les caisses du serveur !'
 limitedItem:
   error:
-    levelup: '&cVous devez augmenter votre niveau dans le métier [jobname] pour utiliser cet objet!'
+    levelup: '&cVous devez augmenter votre niveau dans le métier [jobname] pour utiliser cet objet !'
 general:
   info:
     toplineseparator: '&7*********************** &6%playername% &7***********************'
@@ -18,7 +18,7 @@ general:
     'true': '&2Vrai'
     'false': '&cFaux'
     blocks:
-      furnace: Four
+      furnace: Fourneau
       smoker: Fumoir
       blastfurnace: Haut fourneau
       brewingstand: Alambic
@@ -27,17 +27,17 @@ general:
     success: '&eLa commande a été exécutée avec succès.'
   error:
     noHelpPage: '&cIl n''y a pas de page d''aide portant ce numéro !'
-    notNumber: '&eVeuillez utiliser des chiffres !'
-    job: 'Le métier que vous avez choisi n’existe pas ou vous n’avez pas rejoins celui-ci'
-    noCommand: '&cIl n''y pas de commande portant ce nom!'
-    permission: '&cVous n''avez pas la permission de faire ça!'
+    notNumber: '&eVeuillez utiliser des nombres !'
+    job: 'Le métier que vous avez choisi n’existe pas ou vous n’avez pas rejoint celui-ci'
+    noCommand: '&cIl n''y pas de commande portant ce nom !'
+    permission: '&cVous n''avez pas la permission de faire ça !'
     noinfo: '&cAucune information trouvée !'
-    noinfoByPlayer: '&cAucune information trouvée par [%playername%] nom du joueur!'
-    ingame: '&cVous ne pouvez utiliser cette commande qu''en jeu!'
-    fromconsole: '&cCette commande doit être lancée depuis la console!'
-    worldisdisabled: '&cVous ne pouvez pas utiliser cette commande dans ce monde!'
+    noinfoByPlayer: '&cAucune information trouvée pour le nom de joueur [%playername%] !'
+    ingame: '&cVous ne pouvez utiliser cette commande qu''en jeu !'
+    fromconsole: '&cCette commande doit être lancée depuis la console !'
+    worldisdisabled: '&cVous ne pouvez pas utiliser cette commande dans ce monde !'
     newRegistration: '&eNouveau propriétaire enregistré pour [block] (&7[current]&e/&f[max]&e)'
-    noRegistration: '&cVous avez atteins la limite de [block] maximal !'
+    noRegistration: '&cVous avez atteint la limite de [block] !'
 command:
   help:
     output:
@@ -56,44 +56,44 @@ command:
       nextPageOff: '&7 Suivant >>----'
       pageCount: '&2[current]/[total]'
       pageCountHover: '&e[totalEntries] entrées'
-      prevPageGui: 'Page précédente '
-      nextPageGui: 'Page suivante'
+      prevPageGui: '&6Page précédente '
+      nextPageGui: '&6Page suivante'
   moneyboost:
     help:
-      info: Booster le gain d'argent pour tous les joueurs
+      info: Booste le gain d'argent pour tous les joueurs
       args: '[jobname]/all/reset [time]/[rate]'
     output:
       allreset: Tous les boost d'argent ont été désactivés
       jobsboostreset: Le boost d'argent pour le métier %jobname% a été désactivé
-      nothingtoreset: Il n'y a rien à remettre à zéro.
-      boostalladded: Un boost d'argent de %boost% a été activé pour tous les métiers!
-      boostadded: Un boost d'argent de &e%boost% &aa été activé pour le métier &e%jobname%!
+      nothingtoreset: Il n'y a rien à remettre à zéro
+      boostalladded: Un boost d'argent de %boost% a été activé pour tous les métiers !
+      boostadded: Un boost d'argent de &e%boost% &aa été activé pour le métier &e%jobname% !
       infostats: '&c-----> &aBoost d''argent x%boost% activé&c <-------'
   pointboost:
     help:
-      info: Booster les points pour tous les joueurs
+      info: Booste les points pour tous les joueurs
       args: '[jobname]/all/reset [time]/[rate]'
     output:
       allreset: Tous les boosts de points ont été désactivés
       jobsboostreset: Le boost de points pour le métier %jobname% a été désactivé
-      nothingtoreset: Il n'y a rien à remettre à zéro.
+      nothingtoreset: Il n'y a rien à remettre à zéro
       boostalladded: Un boost de points de %boost% a été activé pour tous les métiers !
-      boostadded: Un boost de points de &e%boost% &aa été activé pour le métier &e%jobname%!
+      boostadded: Un boost de points de &e%boost% &aa été activé pour le métier &e%jobname% !
       infostats: '&c-----> &aBoost de points x%boost% activé&c <-------'
   expboost:
     help:
-      info: Booster l'XP pour tous les joueurs
+      info: Booste l'XP pour tous les joueurs
       args: '[jobname]/all/reset [time]/[rate]'
     output:
       allreset: Tous les boost d'XP ont été désactivés
-      jobsboostreset: Le boost d'EXP pour le métier %jobname% a été désactivé
+      jobsboostreset: Le boost d'XP pour le métier %jobname% a été désactivé
       nothingtoreset: Il n'y a rien à remettre à zéro.
       boostalladded: Un boost d'XP de %boost% a été activé pour tous les métiers !
       boostadded: Un boost d'XP de &e%boost% &aa été activé pour le métier &e%jobname% !
       infostats: '&c-----> &aBoost &2XP x%boost% &aactivé&c <-------'
   schedule:
     help:
-      info: Active les planificateurs donnés
+      info: Active le planificateur donné
       args: enable [scheduleName] [untilTime]
     output:
       noScheduleFound: '&cPlanificateur avec ce nom introuvable.'
@@ -107,7 +107,7 @@ command:
       list: '&e[jobname]: %money% %points% %exp%'
       notAplyingList: '&7[jobname]: %money% %points% %exp%'
       hover: '&7%itemtype%'
-      hoverLevelLimits: "&7Du niveau: %from%\n&7Au niveau: %until%"
+      hoverLevelLimits: "&7Du niveau : %from%\n&7Au niveau : %until%"
   edititembonus:
     help:
       info: Éditer l'objet bonus
@@ -118,57 +118,57 @@ command:
       args: '[jobname]'
     output:
       topline: '&7**************** &2[money] &6[points] &e[exp] &7****************'
-      permission: ' &eBonus de premissions: &2%money% &6%points% &e%exp%'
-      item: ' &eBonus d''objet: &2%money% &6%points% &e%exp%'
-      global: ' &eBonus global: &2%money% &6%points% &e%exp%'
-      dynamic: ' &eBonus dynamique: &2%money% &6%points% &e%exp%'
-      nearspawner: ' &eBonus de Spawner: &2%money% &6%points% &e%exp%'
-      petpay: ' &eBonus paie animaux: &2%money% &6%points% &e%exp%'
-      area: ' &eBonus de zone: &2%money% &6%points% &e%exp%'
-      mcmmo: ' &eMcMMO bonus: &2%money% &6%points% &e%exp%'
-      final: ' &eBonus final: &2%money% &6%points% &e%exp%'
+      permission: ' &eBonus de premissions : &2%money% &6%points% &e%exp%'
+      item: ' &eBonus d''objet : &2%money% &6%points% &e%exp%'
+      global: ' &eBonus global : &2%money% &6%points% &e%exp%'
+      dynamic: ' &eBonus dynamique : &2%money% &6%points% &e%exp%'
+      nearspawner: ' &eBonus de Spawner : &2%money% &6%points% &e%exp%'
+      petpay: ' &eBonus PetPay : &2%money% &6%points% &e%exp%'
+      area: ' &eBonus de zone : &2%money% &6%points% &e%exp%'
+      mcmmo: ' &eBonus McMMO : &2%money% &6%points% &e%exp%'
+      final: ' &eBonus final : &2%money% &6%points% &e%exp%'
       finalExplanation: ' &eN''inclut pas les bonus/pénalités des spawners à proximité et de PetPay'
   convert:
     help:
-      info: Convertis le système de la base de données. Si vous utilisez SQLite, cela sera converti à MySQL et vice-versa.
+      info: Convertit le système de la base de données. Si vous utilisez SQLite, cela sera converti à MySQL et vice-versa.
       args: ''
   limit:
     help:
       info: Affiche les limites de payement des métiers.
       args: '[playername]'
     output:
-      moneytime: '&eTemps restant avant le reset de la limite d''argent: &2%hour%&eh &2%min%&em &2%sec%&es'
-      moneyLimit: '&eLimite d''argent journalié: &2%money%&e/&2%totalmoney%'
-      exptime: '&eTemps restant avant la réinitialisation de la limite d''argent: &2%time%'
+      moneytime: '&eTemps restant avant la réinitialisation de la limite d''argent : &2%time%'
+      moneyLimit: '&eLimite d''argent : &2%current%&e/&2%total%'
+      exptime: '&eTemps restant avant la réinitialisation de la limite d''expérience : &2%time%'
       expLimit: '&eLimite d''expérience : &2%current%&e/&2%total%'
-      pointstime: '&eTemps restant avant la réinitialisation de la limite de point: &2%time%'
-      pointsLimit: '&eLimite de points: &2%current%&e/&2%total%'
-      reachedmoneylimit: '&4Vous avez atteint le maximum d''argent gagné pendant le temps imparti!'
+      pointstime: '&eTemps restant avant la réinitialisation de la limite de points : &2%time%'
+      pointsLimit: '&eLimite de points : &2%current%&e/&2%total%'
+      reachedmoneylimit: '&4Vous avez atteint le maximum d''argent gagné pendant le temps imparti !'
       reachedmoneylimit2: '&eVous pouvez vérifier la limite en faisant &2/jobs limit'
-      reachedmoneylimit3: '&e L''argent récolté est maintenant réduite exponentiellement... Mais tu gagne toujours un petit peu!'
-      reachedexplimit: '&4Vous avez atteint le maximum d’expérience gagné pendant le temps imparti!'
+      reachedmoneylimit3: '&eL''argent récolté est maintenant réduite exponentiellement... Mais vous en gagnerez toujours un peu !'
+      reachedexplimit: '&4Vous avez atteint le maximum d’expérience gagné pendant le temps imparti !'
       reachedexplimit2: '&eVous pouvez vérifier la limite en faisant &2/jobs limit'
-      reachedpointslimit: '&4Vous avez atteint le maximum de points gagné pendant le temps imparti!'
+      reachedpointslimit: '&4Vous avez atteint le maximum de points gagné pendant le temps imparti !'
       reachedpointslimit2: '&eVous pouvez vérifier la limite en faisant &2/jobs limit'
       notenabled: '&eLa limite d''argent n''est pas activée'
   resetlimit:
     help:
-      info: Remet à zéro les limites de paiements des joueurs
+      info: Remet à zéro les limites de paiements d'un joueur
       args: '[playername]'
     output:
-      reseted: '&eLa limite de paiement a été remise à zéro pour: &2%playername%'
+      reseted: '&eLa limite de paiement a été remise à zéro pour : &2%playername%'
   resetquest:
     help:
-      info: Réinitialisé la quête du joueur
+      info: Réinitialise la quête du joueur
       args: '[playername] [jobname]'
     output:
-      reseted: '&eLa quête à bien été remise à zéro pour le joueur: &2%playername%'
-      noQuests: '&eAucune quête à été trouvé'
+      reseted: '&eLa quête a été réinitialisé pour le joueur : &2%playername%'
+      noQuests: '&eAucune quête n''a été trouvée'
   points:
     help:
       info: Affiche le nombre de points d'un joueur.
       args: '[playername]'
-    currentpoints: ' &eNombre de points actuel: &6%currentpoints%'
+    currentpoints: ' &eNombre de points actuel : &6%currentpoints%'
     totalpoints: ' &eNombre de points total collecté : &6%totalpoints%'
   editpoints:
     help:
@@ -198,11 +198,11 @@ command:
         hand: '&6MAIN '
         handHover: '&6Cliquez pour prendre les infos de l''objet dans votre main'
         or: '&eou '
-        look: '&6Regarde à'
+        look: '&6Regarde'
         lookHover: '&6Cliquez pour prendre les infos du bloc que vous regardez'
   editquests:
     help:
-      info: Modifier la quêtes en cours.
+      info: Modifier les quêtes en cours.
       args: ''
       list:
         quest: '&eQuêtes :'
@@ -218,7 +218,7 @@ command:
         hand: '&6MAIN '
         handHover: '&6Cliquez pour afficher les infos de l''objet dans votre main'
         or: '&eou '
-        look: '&6Regarde à'
+        look: '&6Regarde'
         lookHover: '&6Cliquez pour afficher les infos du bloc que vous regardez'
   blockinfo:
     help:
@@ -227,7 +227,7 @@ command:
     output:
       name: ' &eNom du bloc : &6%blockname%'
       id: ' &eID du bloc : &6%blockid%'
-      data: ' &eDonnée du bloc : &6%blockdata%'
+      data: ' &eDonnées du bloc : &6%blockdata%'
       usage: ' &eUtilisation : &6%first% &eou &6%second%'
   iteminfo:
     help:
@@ -240,11 +240,11 @@ command:
       usage: ' &eUtilisation : &6%first% &eou &6%second%'
   placeholders:
     help:
-      info: Liste de tout les placeholders
+      info: Liste de tous les placeholders
       args: (parse) (placeholder)
     output:
       list: '&e[place]. &7[placeholder]'
-      outputResult: ' &erésultat: &7[result]'
+      outputResult: ' &erésultat : &7[result]'
       parse: '&6[placeholder] &7par [source] &6résultat &8|&f[result]&8|'
   entitylist:
     help:
@@ -257,27 +257,27 @@ command:
     error:
       nojob: Vous n'avez pas de métier.
     output:
-      message: 'Niveau %joblevel% pour %jobname%: %jobxp%/%jobmaxxp% xp'
+      message: 'Niveau %joblevel% pour %jobname% : %jobxp%/%jobmaxxp% xp'
       max-level: '     &cNiveau max   -   %jobname%'
-    bossBarOutput: 'Niveau %joblevel% %jobname%: %jobxp%/%jobmaxxp% xp%gain%'
+    bossBarOutput: 'Niveau %joblevel% %jobname% : %jobxp%/%jobmaxxp% xp%gain%'
     bossBarGain: ' &7(&f%gain%&7)'
   shop:
     help:
-      info: Ouvre les shops de métiers.
+      info: Ouvre le magasin de métiers.
       args: ''
     info:
-      title: '&e------- &8Boutique de Jobs &e-------'
-      currentPoints: '&eVous avez: &6%currentpoints%'
+      title: '&e------- &8Boutique de Métiers &e-------'
+      currentPoints: '&eVous avez : &6%currentpoints%'
       price: '&ePrix : &6%price%'
       reqJobs: '&eMétiers requis :'
       reqJobsList: '  &6%jobsname%&e : niveau &e%level%'
-      reqTotalLevel: '&6Niveau total requis: &e%totalLevel%'
+      reqTotalLevel: '&6Niveau total requis : &e%totalLevel%'
       reqJobsColor: '&c'
       reqJobsLevelColor: '&4'
       reqTotalLevelColor: '&4'
       cantOpen: '&cImpossible d''ouvrir cette page'
-      NoPermForItem: '&cVous n''avez pas la permission requise pour cet objet!'
-      NoPermToBuy: '&cVous n''avez pas la permission requise pour acheter cet objet!'
+      NoPermForItem: '&cVous n''avez pas la permission requise pour cet objet !'
+      NoPermToBuy: '&cVous n''avez pas la permission requise pour acheter cet objet'
       NoJobReqForitem: '&cVous n''avez pas le métier requis (&6%jobname%&e) ou/ni le niveau (&6%joblevel%&e)'
       NoPoints: '&cVous n''avez pas assez de points'
       NoTotalLevel: '&cVotre niveau total de métier est trop bas (%totalLevel%)'
@@ -293,36 +293,36 @@ command:
       info: Donne un objet par nom de métier et nom de catégorie d'objet. Le pseudo est facultatif.
       args: '[playername] [jobname] [items/limiteditems] [jobitemname]'
     output:
-      notonline: '&4Le joueur avec ce nom n''est pas connecté!'
+      notonline: '&4Le joueur avec ce nom n''est pas connecté !'
       noitem: '&4Ce nom ne correspond à aucun objet !'
   info:
     help:
-      title: '&2*** &eJobs&2 ***'
+      title: '&2*** &eMétiers&2 ***'
       info: Montre combien est payé chaque métier et pour quelle action.
       penalty: '&eCe métier a &c[penalty]% &ede pénalité car trop de joueurs le pratiquent.'
       bonus: '&eCe métier a &2[bonus]% &ede bonus car peu de joueurs le pratiquent.'
       args: '[jobname] [action]'
-      actions: '&eLes actions possibles sont: &f%actions%'
-      max: ' - &eNiveau Max:&f '
-      newMax: ' &eNiveau maximum : &f[max]'
+      actions: '&eLes actions possibles sont : &f%actions%'
+      max: ' - &eNiveau maximal :&f '
+      newMax: ' &eNiveau maximal : &f[max]'
       material: '&7%material%'
       levelRange: ' &a(&e%levelFrom% &a- &e%levelUntil% &aniveaux)'
-      levelFrom: ' &a(à partir du &aniveau &e%levelFrom%)'
-      levelUntil: ' &a(jusqu''au &aniveau &e%levelUntil%)'
+      levelFrom: ' &a(à partir du niveau &e%levelFrom%&a)'
+      levelUntil: ' &a(jusqu''au niveau &e%levelUntil%&a)'
       money: ' &2%money% $'
       points: ' &6%points% Points'
       exp: ' &e%exp% XP'
     gui:
       pickjob: '&eChoisissez un métier !'
-      jobinfo: '&e[jobname] info!'
-      actions: '&eActions rémunérées:'
+      jobinfo: '&e[jobname] info !'
+      actions: '&eActions rémunérées :'
       leftClick: '&eClic gauche pour plus d''infos'
-      middleClick: '&eClique molette pour quitter ce métier'
+      middleClick: '&eClic molette pour quitter ce métier'
       rightClick: '&eClic droit pour rejoindre ce métier'
       leftSlots: '&ePlaces restantes :&f '
       working: '&2&nVous exercez déjà ce métier'
       cantJoin: '&cVous ne pouvez pas rejoindre le métier sélectionné.'
-      max: '&eNiveau maximum :&f '
+      max: '&eNiveau maximal :&f '
       back: '&e<<< Retour'
       next: '&eSuivant >>>'
     output:
@@ -330,8 +330,8 @@ command:
         info: '&eCasser'
         none: '%jobname% ne donne rien en cassant des blocs.'
       tntbreak:
-        info: '&eCasser du TNT'
-        none: '%jobname% ne donne rien en cassant des blocs avec de la TNT.'
+        info: '&eCasser avec du TNT'
+        none: '%jobname% ne donne rien en cassant des blocs avec du TNT.'
       place:
         info: '&ePlacer'
         none: '%jobname% ne donne rien en plaçant des blocs.'
@@ -342,19 +342,19 @@ command:
         info: '&eTuer'
         none: '%jobname% ne donne rien en tuant des monstres.'
       mmkill:
-        info: 'TuerMM'
+        info: '&eTuer des boss'
         none: '%jobname% ne donne rien en tuant des boss.'
       fish:
         info: '&ePêcher'
         none: '%jobname% ne donne rien en pêchant.'
       craft:
-        info: '&eFabriquer'
+        info: '&eCrafter'
         none: '%jobname% ne donne rien en craftant.'
       smelt:
         info: '&eCuire'
         none: '%jobname% ne donne rien en faisant cuire.'
       brew:
-        info: '&eBrasser'
+        info: '&eInfuser'
         none: '%jobname% ne donne rien en faisant infuser.'
       eat:
         info: '&eManger'
@@ -381,14 +381,14 @@ command:
         info: '&eTraire'
         none: '%jobname% ne donne rien lors de la traite d''une vache.'
       shear:
-        info: '&eCisailler'
-        none: '%jobname% ne donne rien en taillant la laine d''un mouton.'
+        info: '&eTondre'
+        none: '%jobname% ne donne rien en tondant la laine d''un mouton.'
       explore:
         info: '&eExplorer'
         none: '%jobname% ne donne rien en explorant.'
       custom-kill:
-        info: 'TuerJoueur'
-        none: '%jobname% ne donne rien en tuant des joueurs particuliers.'
+        info: 'Tuer des joueurs'
+        none: '%jobname% ne donne rien en tuant des joueurs.'
       collect:
         info: '&eCollecter'
         none: '%jobname% ne gagne pas d''argent en collectant les blocs.'
@@ -402,33 +402,33 @@ command:
   join:
     help:
       info: Rejoindre le métier sélectionné.
-      args: '[jobname]'
+      args: '[jobfullname]'
     error:
       alreadyin: Vous exercez déjà le métier de %jobname%.
       fullslots: Vous ne pouvez pas devenir %jobname%, il n'y a plus de places disponibles.
       maxjobs: Vous exercez déjà trop de métiers.
       rejoin: '&cVous ne pouvez pas retourner dans ce métier maintenant. Attendez [time]'
-    rejoin: '&aClique pour rejoindre ce métier: '
+    rejoin: '&aCliquez pour rejoindre ce métier : '
     success: Vous exercez maintenant le métier de %jobname%.
-    confirm: '&2Clique pour confirmer l''action de rejoindre le &2métier &7[jobname].'
+    confirm: '&2Cliquez pour confirmer l''action de rejoindre le métier &7[jobname]&2.'
   leave:
     help:
       info: Quitter le métier sélectionné.
       args: '[oldplayerjob]'
     success: Vous n'exercez plus le métier de %jobname%.
-    confirmationNeed: '&cEs-tu sûr que tu veux quitter le métier [jobname]&c ? Tape la commande une seconde fois dans les [time] secondes qui suivent pour confirmer !'
+    confirmationNeed: '&cÊtes-vous sûr de vouloir quitter le métier&e [jobname]&c ? Tapez la commande une seconde fois dans les &6[time] secondes &cqui suivent pour confirmer !'
   leaveall:
     help:
       info: Quitter tous vos métiers.
     error:
       nojobs: Vous n'exercez aucun métier !
     success: Vous avez quitté tous vos métiers.
-    confirmationNeed: '&cEs-tu sûr que tu veux quitter tous tes métiers ? Tape la commande une seconde fois dans les [time] secondes qui suivent pour confirmer !'
+    confirmationNeed: '&cÊtes-vous sûr de vouloir quitter tous vos métiers ? Tapez la commande une seconde fois dans les&6 [time] secondes&c qui suivent pour confirmer !'
   explored:
     help:
-      info: Vérifie qui a visité ce tronçon
+      info: Vérifie qui a visité ce chunk
     error:
-      noexplore: Personne n'a visité ce tronçon
+      noexplore: Personne n'a visité ce chunk
     fullExplore: '&aCe chunk est complètement exploré'
     list: '&e%place%. %playername%'
   browse:
@@ -437,39 +437,39 @@ command:
     error:
       nojobs: Il n'y a aucun métier que vous pouvez rejoindre.
     output:
-      header: 'Vous pouvez exercer les métiers suivants:'
+      header: 'Vous pouvez exercer les métiers suivants :'
       footer: Pour plus d'informations, tapez /jobs info [JobName]
       totalWorkers: ' &7Travailleurs : &e[amount]'
-      penalty: ' &4Pénalité: &c[amount]%'
+      penalty: ' &4Pénalité : &c[amount]%'
       bonus: ' &2Bonus : &a[amount] %'
-      newHeader: '&2========== [amount] Métiers Dsiponibles ========='
+      newHeader: '&2========== [amount] Métiers Disponibles ========='
       description: '[description]'
       list: '    &8[place]. &7[jobname]'
       console:
-        newHeader: '&2========== [amount] Métiers Dsiponibles ========='
+        newHeader: '&2========== [amount] Métiers Disponibles ========='
         description: '[description]'
         totalWorkers: ' &7Travailleurs : &e[amount]'
-        penalty: ' &4Pénalité: &c[amount]%'
+        penalty: ' &4Pénalité : &c[amount]%'
         bonus: ' &2Bonus : &a[amount]%'
         list: ' &6[jobname]'
-        newMax: ' &eNiveau maximum : &f[max]'
-      click: '&bCliquez sur le métier pour en savoir plus dessus !'
+        newMax: ' &eNiveau maximal : &f[max]'
+      click: '&bCliquez sur le métier pour en savoir plus !'
       detailed: '&bCliquez pour obtenir une liste plus détaillée sur les actions d''un métier'
       jobHeader: '&2========== [jobname] ========='
       chooseJob: '&7&n&oChoisir ce métier'
       chooseJobHover: '&7Cliquez ici pour travailler dans ce métier'
   clearownership:
     help:
-      info: Clear block ownership
+      info: Supprime la propriété du bloc
       args: '[playername]'
     output:
-      cleared: '&7[furnaces] &2fours, &7[brewing] &2alambic, &7[smoker]&2 fumoirs et &7[blast]&2 haut fourneaux supprimés.'
+      cleared: '&7[furnaces] &2fours, &7[brewing] &2alambics, &7[smoker]&2 fumoirs et &7[blast]&2 haut fourneaux supprimés.'
   skipquest:
     help:
       info: Passer la quête pour en obtenir une nouvelle
-      args: '[jobname] [questname] (playerName)'
+      args: '[jobname] [questname] (Nom du joueur)'
     output:
-      questSkipForCost: '&2Vous avez passé la quête et payé:&e %amount%$'
+      questSkipForCost: '&2Vous avez passé la quête et payé :&e %amount% $'
   quests:
     help:
       info: Affiche les quêtes disponibles
@@ -485,7 +485,7 @@ command:
       completed: '&2      ! Terminé !&r      '
       questLine: '[progress] &7[questName] &f[done]&7/&8[required]'
       skip: '&7Cliquez pour passer cette quête'
-      skips: '&7Left skips: &f[skips]'
+      skips: '&7Passes restants : &f[skips]'
       hover: "&f[jobName] \n[desc] \n&7Nouvelle quête dans : [time]"
   fire:
     help:
@@ -500,7 +500,7 @@ command:
       info: Renvoie le joueur de tous ses métiers.
       args: '[playername]/all'
     error:
-      nojobs: Le joueur n'a aucun métier!
+      nojobs: Le joueur n'a aucun métier !
     output:
       target: Vous avez été renvoyé de tous vos métiers.
   employ:
@@ -520,10 +520,10 @@ command:
       nojob: Aucun métier ne porte ce nom.
     output:
       topline: '&aTop&e %amount% &ades joueurs pour le métier de &e%jobname%'
-      list: '&e%number%&a. &e%playername% &aniv. &e%level% &aavec&e %exp% &aEXP'
+      list: '&e%number%&a. &e%playername% &aniv. &e%level% &aavec&e %exp% &aXP'
       prev: '&e<<<<< Page précédente &2|'
       next: '&2|&e Page suivante >>>>'
-      show: '&2Montre la Top List de &e[from] &2jusqu''à &e[until]'
+      show: '&2Montre le Top de &e[from] &2jusqu''à &e[until]'
   gtop:
     help:
       info: Affiche le top des joueurs par niveau global de métiers.
@@ -531,31 +531,31 @@ command:
     error:
       nojob: Impossible de trouver des informations.
     output:
-      topline: '&aTop&e %amount% &ades joueurs par métier'
-      list: '&e%number%&a. &e%playername% &aniv. &e%level% &aavec&e %exp% &aEXP'
+      topline: '&aTop&e %amount% &ades joueurs par niveau de métier global'
+      list: '&e%number%&a. &e%playername% &aniv. &e%level% &aavec&e %exp% &aXP'
       prev: '&e<<<<< Page précédente &2|'
       next: '&2|&e Page suivante >>>>'
-      show: '&2Montre la Top List de &e[from] &2jusqu''à &e[until]'
+      show: '&2Montre le Top global de &e[from] &2jusqu''à &e[until]'
   area:
     help:
       info: Modifie les restrictions de zone
       args: add/remove/info/list
-      addUsage: '&eUtilisation: &6/Jobs area add [areaName/wg:worldGuardAreaName] [bonus]'
-      removeUsage: '&eUtilisation: &6/Jobs area remove [areaName]'
+      addUsage: '&eUtilisation : &6/Jobs area add [Nom de zone/wg:Nom de zone WorldGuard] [bonus]'
+      removeUsage: '&eUtilisation : &6/Jobs area remove [areaName]'
     output:
       addedNew: '&eNouvelle zone restrictive ajoutée avec &6%bonus% &ebonus'
-      removed: '&eZone restrictive &6%name% supprimée'
+      removed: '&eZone restrictive &6%name% &esupprimée'
       list: '&e%number%&a. &e%areaname% &e%worldname% (&a%x1%:%y1%:%z1%/&e%x2%:%y2%:%z2%) &6%bonus%'
-      wgList: '&e%number%&a. WorldGuard: &e%areaname% &6%bonus%'
+      wgList: '&e%number%&a. WorldGuard : &e%areaname% &6%bonus%'
       noAreas: '&eIl n''y a aucune zone sauvegardée'
       noAreasByLoc: '&eIl n''y a aucune zone restrictive en ce lieu'
-      areaList: '&eZone restrictive à votre position: &6%list%'
+      areaList: '&eZone restrictive à votre position : &6%list%'
       selected1: '&ePremier point sélectionné: &6%x%:%y%:%z%'
       selected2: '&eSecond point sélectionné: &6%x%:%y%:%z%'
       select: '&eSélectionnez deux points avec l''outil de sélection (%tool%)'
-      exist: '&eune zone restrictive portant ce nom existe déjà!'
-      dontExist: '&eLa zone restrictive de ce nom n''existe pas.'
-      wgDontExist: '&eLa zone WorldGuard de ce nom n''existe pas.'
+      exist: '&eUne zone restrictive portant ce nom existe déjà'
+      dontExist: '&eIl n''existe aucune zone restrictive portant ce nom'
+      wgDontExist: '&eIl n''existe aucune zone WorldGuard portant ce nom'
   log:
     help:
       info: Affiche les statistiques.
@@ -566,7 +566,7 @@ command:
       money: '&6argent : %amount% '
       exp: '&eXP : %amount% '
       points: '&6points : %amount%'
-      totalIncomes: '    &6Total gains:&2 %money%&6, Total exp:&2 %exp%&6, Total points:&2 %points%'
+      totalIncomes: '    &6Total gains :&2 %money%&6, Total XP :&2 %exp%&6, Total points :&2 %points%'
       bottomline: '&7***********************************************************'
       prev: '&e<<<<< Page précédente &2|'
       next: '&2|&e Page suivante >>>>'
@@ -581,7 +581,7 @@ command:
       money: '&6argent : %amount% '
       exp: '&eXP : %amount% '
       points: '&6points : %amount%'
-      totalIncomes: '    &6Total gains:&2 %money%&6, Total exp:&2 %exp%&6, Total points:&2 %points%'
+      totalIncomes: '    &6Total gains :&2 %money%&6, Total XP :&2 %exp%&6, Total points :&2 %points%'
       bottomline: '&7**************************************************************'
       nodata: '&cDonnées introuvables'
   transfer:
@@ -603,7 +603,7 @@ command:
     error:
       nojob: '&cCe joueur doit d''abord choisir un métier.'
     output:
-      target: '&eVotre expérience a été changée pour le métier %jobname% &eet maintenant vous êtes niveau &6%level% &eavec &6%exp% EXP.'
+      target: '&eVotre expérience a été changée pour le métier %jobname% &eet maintenant vous êtes niveau &6%level% &eavec &6%exp% XP.'
   level:
     help:
       info: Change le niveau d'un joueur dans un métier.
@@ -611,7 +611,7 @@ command:
     error:
       nojob: '&cCe joueur doit d''abord choisir un métier.'
     output:
-      target: '&eVotre niveau a été changé pour %jobname%&e et maintenant vous êtes niveau &6%level%lvl &eet avec &6%exp%exp.'
+      target: '&eVotre niveau a été changé pour %jobname%&e et maintenant vous êtes niveau &6%level% &eavec &6%exp% XP.'
   demote:
     help:
       info: Rétrograde le joueur de X niveaux dans un métier.
@@ -623,23 +623,23 @@ command:
       info: Donne X points d'expérience au joueur dans un métier.
       args: '[playername] [jobname] [xp]'
     output:
-      target: Vous avez gagné %xpgained% EXP en tant que %jobname%.
+      target: Vous avez gagné %xpgained% XP en tant que %jobname%.
   removexp:
     help:
       info: Enlève X points d'expérience au joueur dans un métier.
       args: '[playername] [jobname] [xp]'
     output:
-      target: Vous avez perdu %xplost% EXP en tant que %jobname%.
+      target: Vous avez perdu %xplost% XP en tant que %jobname%.
   signupdate:
     help:
       info: Met à jour manuellement le panneau par son nom
       args: '[jobname]'
   bp:
     help:
-      info: Affiche les protections des blocs alentour dans un rayon de 10 blocs.
+      info: Affiche les protections des blocs dans un rayon de 10 blocs
       args: ''
     output:
-      found: '&6%amount% &eblocs protégées ont été trouvés autour de vous.'
+      found: '&6%amount% &eblocs protégées ont été trouvés autour de vous'
       notFound: '&eIl n''y a aucun bloc protégé autour de vous'
   reload:
     help:
@@ -651,12 +651,12 @@ command:
     output:
       turnedoff: '&4Cette option est désactivée !'
       paid:
-        main: '&aVous recevez:'
+        main: '&aVous recevez :'
         money: '&e[amount] $'
         exp: '&7[exp] XP'
         points: '&6[points] points'
-      'on': '&aChangé: &aON'
-      'off': '&aChangé: &4OFF'
+      'on': '&aChangé : &aACTIVÉ'
+      'off': '&aChangé : &4DESACTIVÉ'
 message:
   skillup:
     broadcast: '%playername% a été promu %titlename% %jobname%.'
@@ -665,14 +665,14 @@ message:
     broadcast: '%playername% est maintenant %jobname% niveau %joblevel%.'
     nobroadcast: Vous êtes maintenant %jobname% niveau %joblevel%.
   leveldown:
-    message: '&cVous avez perdu &e%lostLevel%&c niveau dans le métier de %jobname%! &6Niveau: %joblevel%&c.'
-  cowtimer: '&eVous devez attendre &6%time% &esec avant d''être payé à nouveau.'
-  blocktimer: '&eVous devez attendre &3[time] &esec avant d''être payé à nouveau.'
+    message: '&cVous avez perdu &e%lostLevel%&c niveaux dans le métier de&e %jobname%&c ! Niveau :&6 %joblevel%&c.'
+  cowtimer: '&eVous devez attendre &6%time% &esec avant d''être payé à nouveau pour ce métier.'
+  blocktimer: '&eVous devez attendre &3[time] &esecondes avant d''être payé à nouveau !'
   taxes: '&3[amount] &ede taxes du serveur ont été transférées sur ce compte'
-  boostStarted: '&eLe boost métier a commencé!'
-  boostStoped: '&eLe boost métier est terminé!'
+  boostStarted: '&eLe boost métier a commencé !'
+  boostStoped: '&eLe boost métier est terminé !'
   crafting:
-    fullinventory: 'Votre inventaire est plein!'
+    fullinventory: 'Votre inventaire est plein !'
 signs:
   List: '&0[number].&8[player]&7:&4[level]'
   questList: '&0[number].&8[player]&7:&4[quests]'
@@ -692,7 +692,7 @@ signs:
     quests: '&8[quests] quêtes'
     bottom: '&b************'
   cantcreate: '&4Vous ne pouvez pas créer ce panneau !'
-  cantdestroy: '&4Vous ne pouvez pas détruire ce panneau!'
+  cantdestroy: '&4Vous ne pouvez pas détruire ce panneau !'
   topline: '&0[Jobs]'
   secondline:
     join: '&0Rejoindre'

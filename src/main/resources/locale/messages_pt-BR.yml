@@ -36,8 +36,8 @@ general:
     ingame: '&cVocê pode usar este comando apenas no jogo!'
     fromconsole: '&cVocê pode usar este comando apenas no console!'
     worldisdisabled: '&cVocê não pode usar o comando neste mundo!'
-    newRegistration: '&eRegistered new ownership for [block] &7[current]&e/&f[max]'
-    noRegistration: '&cYou''ve reached max [block] count!'
+    newRegistration: '&eNovo proprietário registrado para [block] &7[current]&e/&f[max]'
+    noRegistration: '&cVocê atingiu a quantidade máxima de [block]!'
 command:
   help:
     output:
@@ -93,12 +93,12 @@ command:
       infostats: '&c-----> &aImpulso de experiência de x%boost% ativado&c <-------'
   schedule:
     help:
-      info: Enables the given scheduler
+      info: Habilite o agendador concedido
       args: enable [scheduleName] [untilTime]
     output:
-      noScheduleFound: '&cSchedule with this name not found.'
-      alreadyEnabled: '&cThis schedule already enabled.'
-      enabled: '&eSchedule have been enabled from&a %from%&e until&a %until%'
+      noScheduleFound: '&cAgendamento com este nome não encontrado.'
+      alreadyEnabled: '&cEsse agendamento já está habilitado.'
+      enabled: '&eAgendamento habilitado desde&a %from%&e até&a %until%'
   itembonus:
     help:
       info: Verificar item bônus
@@ -148,7 +148,7 @@ command:
       reachedmoneylimit3: '&eO dinheiro ganho agora é reduzido exponencialmente... Mas você ainda ganha um pouco!'
       reachedexplimit: '&4Você atingiu o limite de exp em um determinado período!'
       reachedexplimit2: '&eVocê pode verificar seu limite com o comando &2/jobs limit'
-      reachedpointslimit: '&4Você atingiu o limite de exp em um determinado período!'
+      reachedpointslimit: '&4Você atingiu o limite de pontos em determinado período!'
       reachedpointslimit2: '&eVocê pode verificar seu limite com o comando &2/jobs limit'
       notenabled: 'O limite de dinheiro não está ativado'
   resetlimit:
@@ -257,8 +257,8 @@ command:
     error:
       nojob: Entre primeiro em uma Profissão.
     output:
-      message: 'Level %joblevel% for %jobname%: %jobxp%/%jobmaxxp% xp'
-      max-level: '     &cMax level   -   %jobname%'
+      message: 'Nível %joblevel% para %jobname%: %jobxp%/%jobmaxxp% exp'
+      max-level: '     &cNível máximo   -   %jobname%'
     bossBarOutput: 'Lvl %joblevel% %jobname%: %jobxp%/%jobmaxxp% xp%gain%'
     bossBarGain: ' &7(&f%gain%&7)'
   shop:
@@ -402,7 +402,7 @@ command:
   join:
     help:
       info: Ingressar na profissão selecionada.
-      args: '[jobname]'
+      args: '[jobfullname]'
     error:
       alreadyin: Você já entrou na profissão %jobname%.
       fullslots: Você não pode entrar na profissão %jobname% porque não há vagas disponíveis.
@@ -463,7 +463,7 @@ command:
       info: Remover posse do bloco
       args: '[playername]'
     output:
-      cleared: '&2Removed &7[furnaces] &2furnaces, &7[brewing] &2brewing stands, &7[smoker]&2 smokers and &7[blast]&2 blast furnaces.'
+      cleared: '&2Removido&7[furnaces] &2fornalhas, &7[brewing] &2suporte de poções, &7[smoker]&2 defumadores e &7[blast]&2 alto-fornos.'
   skipquest:
     help:
       info: Pular missão escolhida e obter outra
@@ -515,7 +515,7 @@ command:
   top:
     help:
       info: Mostra os melhores jogadores pelo nome da profissão.
-      args: '[jobname]/clear pageNumber'
+      args: '[jobname]/limpar pageNumber'
     error:
       nojob: Não foi possível encontrar nenhuma profissão com este nome.
     output:
@@ -527,7 +527,7 @@ command:
   gtop:
     help:
       info: Mostra os melhores jogadores por nível de emprego global.
-      args: clear/pageNumber
+      args: limpar/pageNumber
     error:
       nojob: Não foi possível encontrar qualquer informação.
     output:

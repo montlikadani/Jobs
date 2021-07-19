@@ -148,7 +148,7 @@ command:
       reachedmoneylimit3: '&eВаш заработок постепенно уменьшается... Но вы еще можете заработать немного!'
       reachedexplimit: '&4Вы достигли лимита опыта, который можно получить!'
       reachedexplimit2: '&eВы можете проверить свой лимит командой &2/jobs limit'
-      reachedpointslimit: '&4Вы достигли лимита очков, которые можно получить!'
+      reachedpointslimit: '&4Вы достигли предела очков, которые можно получить!'
       reachedpointslimit2: '&eВы можете проверить свой лимит командой &2/jobs limit'
       notenabled: '&eЛимит денег выключен'
   resetlimit:
@@ -402,7 +402,7 @@ command:
   join:
     help:
       info: Устроиться работу.
-      args: '[jobname]'
+      args: '[jobfullname]'
     error:
       alreadyin: Вы уже устроились на работу %jobname%.
       fullslots: Невозможно устроиться на %jobname% - нет свободных мест.

@@ -148,7 +148,7 @@ command:
       reachedmoneylimit3: '&eA szerzett pénz most már exponenciálisan csökkentve... De még mindig egy kicsit keres!'
       reachedexplimit: '&4Elérted a határidőt a meghatározott időben!'
       reachedexplimit2: '&eA korlátot ellenőrizheted a &2/jobs limit &eparanccsal.'
-      reachedpointslimit: '&4Elérted a határidőt a meghatározott időben!'
+      reachedpointslimit: '&4Elérted a pontkorlátot az adott időben!'
       reachedpointslimit2: '&eA korlátot ellenőrizheted a &2/jobs limit &eparanccsal.'
       notenabled: '&cA pénzkorlát nem engedélyezett.'
   resetlimit:
@@ -311,7 +311,7 @@ command:
       levelUntil: ' &a(amíg &e%levelUntil% &aszint)'
       money: ' &2%money%$'
       points: ' &6%points% pont'
-      exp: ' &e%exp%tapasztalat'
+      exp: ' &e%exp%xp'
     gui:
       pickjob: '&eVálassz egy munkát!'
       jobinfo: '&e[jobname] információ!'
@@ -402,7 +402,7 @@ command:
   join:
     help:
       info: Csatlakozás a megadott munkához.
-      args: '[jobname]'
+      args: '[jobfullname]'
     error:
       alreadyin: '&cMár csatlakoztál a(z) %jobname%&c munkához!'
       fullslots: '&cNem tudsz csatlakozni a(z) %jobname%&c munkához, mert nincsenek rendelkezésre álló helyek.'

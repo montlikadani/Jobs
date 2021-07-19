@@ -148,7 +148,7 @@ command:
       reachedmoneylimit3: '&eBanii câștigați sunt reduși exponențial... Totuși poți câștiga puțin!'
       reachedexplimit: '&4Ai atins limita de experiență în timpul dat!'
       reachedexplimit2: '&ePoți să îți verifici limita cu &2/jobs limit &ecommand'
-      reachedpointslimit: '&4Ai atins limita de experiență în timpul dat!'
+      reachedpointslimit: '&4You have reached points limit in given time!'
       reachedpointslimit2: '&ePoți să îți verifici limita cu &2/jobs limit &ecommand'
       notenabled: '&e Limita banilor nu e activată'
   resetlimit:
@@ -402,7 +402,7 @@ command:
   join:
     help:
       info: Alătură te jobului selectat.
-      args: '[jobname]'
+      args: '[jobfullname]'
     error:
       alreadyin: Ești deja în jobul %jobname%.
       fullslots: Nu poți să te alături jobului %jobname%, nu mai sunt locuri libere.

@@ -4,7 +4,7 @@ economy:
     nomoney: '&c你的账户资金不足!'
 limitedItem:
   error:
-    levelup: '&cYou need to level up in [jobname] to use this item!'
+    levelup: '&c你需要升级 [jobname] 才能使用此物品！'
 general:
   info:
     toplineseparator: '&7*********************** &6%playername% &7***********************'
@@ -14,35 +14,35 @@ general:
       hours: '&e%hours% &6小时 '
       mins: '&e%mins% &6分 '
       secs: '&e%secs% &6秒 '
-    invalidPage: '&cInvalid page'
-    'true': '&2True'
-    'false': '&cFalse'
+    invalidPage: '&c页面无效'
+    'true': '&2开'
+    'false': '&c关'
     blocks:
-      furnace: Furnace
-      smoker: Smoker
-      blastfurnace: Blast furnace
-      brewingstand: Brewing stand
+      furnace: 熔炉
+      smoker: 烟熏炉
+      blastfurnace: 高炉
+      brewingstand: 酿造台
   admin:
     error: '&c执行命令出错.'
     success: '&a你的命令执行成功.'
   error:
     noHelpPage: '&c帮助页面没有这个页数!'
     notNumber: '&e请使用数字!'
-    job: '&cThe job you selected does not exist or you not joined to this'
-    noCommand: '&cThere is no command by this name!'
+    job: '您选择的工作不存在或未加入'
+    noCommand: '&c无此命令！'
     permission: '&c你没有权限这样做!'
     noinfo: '&c没有找到信息!'
     noinfoByPlayer: '&c没有找到玩家 [%playername%] 的信息!'
     ingame: '&c你只能在游戏中使用!'
     fromconsole: '&c你只能在控制台使用这条指令!'
     worldisdisabled: '&c你不能在这个世界使用这个指令!'
-    newRegistration: '&eRegistered new ownership for [block] &7[current]&e/&f[max]'
-    noRegistration: '&cYou''ve reached max [block] count!'
+    newRegistration: '&e为[block]&7[current]&e/&f[max] 注册了新所有权'
+    noRegistration: '&c您已达到最大[block] 数量'
 command:
   help:
     output:
       info: 输入 /jobs [cmd] ? 查看关于此命令的更多信息.
-      cmdUsage: '&2Usage: &7[command]'
+      cmdUsage: '&2用法: &7[command]'
       label: Jobs
       cmdInfoFormat: '[command] &f- &2[description]'
       cmdFormat: '&7/[command] &f[arguments]'
@@ -50,14 +50,14 @@ command:
       title: '&e---&e ===== &6Jobs 插件 - &d汉化 Izzel_Aliz &e===== &e---'
       page: '&e-----&e ====== 第 &6[1] &e页 - 共 &6[2] 页 &e====== &e-----'
       fliperSimbols: '&e----------'
-      prevPage: '&2----<< &6Prev '
-      prevPageOff: '&7----<< Prev '
-      nextPage: '&6 Next &2>>----'
-      nextPageOff: '&7 Next >>----'
+      prevPage: '&2----<< &6上页 '
+      prevPageOff: '&7----<< 上页 '
+      nextPage: '&6 下页 &2>>----'
+      nextPageOff: '&7 下页 >>----'
       pageCount: '&2[current]/[total]'
-      pageCountHover: '&e[totalEntries] entries'
-      prevPageGui: '&6Previous page '
-      nextPageGui: '&6Next Page'
+      pageCountHover: '&e[totalEntries] 条目'
+      prevPageGui: '&6上一页 '
+      nextPageGui: '&6下一页'
   moneyboost:
     help:
       info: 加成玩家得到的游戏币
@@ -93,12 +93,12 @@ command:
       infostats: '&c-----> &a经验获得 x%boost% 倍正在进行&c <-------'
   schedule:
     help:
-      info: Enables the given scheduler
+      info: 启用安排日程
       args: enable [scheduleName] [untilTime]
     output:
-      noScheduleFound: '&cSchedule with this name not found.'
-      alreadyEnabled: '&cThis schedule already enabled.'
-      enabled: '&eSchedule have been enabled from&a %from%&e until&a %until%'
+      noScheduleFound: '&c找不到使用此名称的日程'
+      alreadyEnabled: '&c这个日程已经启用'
+      enabled: '&e日程已从&a %from%&e到&a %until%启用'
   itembonus:
     help:
       info: Check item bonus
@@ -110,7 +110,7 @@ command:
       hoverLevelLimits: "&7From level: %from% \n&7Until level: %until%"
   edititembonus:
     help:
-      info: Edit item boost bonus
+      info: 编辑物品最高奖金
       args: list/add/remove [jobname] [itemBoostName]
   bonus:
     help:
@@ -148,7 +148,7 @@ command:
       reachedmoneylimit3: '&eMoney earned is now reduced exponentially... But you still earn a little!'
       reachedexplimit: '&4你达到了一段时间内的经验限制!'
       reachedexplimit2: '&e你可以通过 &2/jobs limit &e查看你的限制'
-      reachedpointslimit: '&4你达到了一段时间内的点数限制!'
+      reachedpointslimit: '&4You have reached points limit in given time!'
       reachedpointslimit2: '&e你可以通过 &2/jobs limit &e查看你的限制'
       notenabled: '&e未启用限制'
   resetlimit:
@@ -402,7 +402,7 @@ command:
   join:
     help:
       info: 加入选择的职业.
-      args: '[jobname]'
+      args: '[jobfullname]'
     error:
       alreadyin: 你已经加入了职业 %jobname%.
       fullslots: 你不能加入职业 %jobname%, 已经满员.
